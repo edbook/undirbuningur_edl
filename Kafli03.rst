@@ -262,7 +262,8 @@ Margföldun vigra
 
 Margfeldi vigra er tvenns konar, *innfeldi* (punktfeldi, e. dot product, scalar product) og *krossfeldi* (e. cross product, vector product).
 
-----------------
+Innfeldi
+~~~~~~~~
 
 **Innfeldi** tveggja vigra er táknað með punkti og útkoman er *tala*: :math:`c = \overline{a} \cdot \overline{b}` .
 Ef þættir vigranna eru þekktir er innfeldið reiknað:
@@ -320,7 +321,9 @@ Ef vigrarnir eru gefnir með lengd og stefnuhorni er innfeldi þeirra:
         \phi &= 36.8 ° = 0.644 \text{Rad}
       \end{aligned}
 
-------------------------
+
+Krossfeldi
+~~~~~~~~~~
 
 **Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\overline{c} = \overline{a} \times \overline{b}` .
 Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu :math:`\overline{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}` .

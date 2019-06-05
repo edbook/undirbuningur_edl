@@ -1,49 +1,81 @@
 Kraftar
 =======
 
-*Kraftar* (e. force) eru :ref:`vigrar <s.vigrar>`, þ.e. *kraftar hafa bæði stærð og stefnu*.
-Einingin fyrir krafta er *Newton*. Eitt Newton er sá kraftur sem þarf til þess að gefa :math:`1 \text{ kg}` massa hröðunina :math:`1 \frac{\text{m}}{\text{s}^2}` .
-Kraftar eru margfeldi massa og hröðunar og því má Newton, :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
+*Kraftur* (e. force) er orð sem við notum um samspil hluta sem veldur breytingu á hreyfingu þeirra, þ.e. valda því að hlutirnir fá hröðun. Kraftar eru :ref:`vigrar <s.vigrar>`, sem þýðir að þeir hafa  *bæði stærð og stefnu*.
+SI- einingin fyrir krafta er *Newton*, táknað :math:`\text{N}`. Eitt Newton er sá kraftur sem þarf til þess að gefa :math:`1 \text{ kg}` massa hröðunina :math:`1 \frac{\text{m}}{\text{s}^2}` .
+Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
 
 .. note::
-  Athugið að *massi* (e. mass) er ekki það sama og þyngd.
-  Massi hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er.
-  *Þyngd* (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, margfeldi massans við þyngdarhröðunina :math:`g`.
+  Athugið að í eðlisfræði er *massi* (e. mass) ekki það sama og þyngd, þó orðin hafi yfirleitt sömu merkingu í daglegu tali.
 
-Kraftar eru yfirleitt táknaðir með :math:`F` eða :math:`f`.
+  *Massi* hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
 
-.. note::
-  Þyngdarkraftur og aðrir kraftar sem beitt er á hluti er oft táknaðir með stórum staf: :math:`F` en viðbragðskraftar (t.d. núningur) með litlum :math:`f` .
-  Táknmálið er hinsvegar ekki heilagt en skýrist yfirleitt á samhengi.
+  *Þyngd* (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, þ.e. margfeldi massans við þyngdarhröðunina :math:`g`. SI-eining þyngdar er Newton.
+
+Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu *force*. :math:`F` er þá táknið fyrir þyngdarkraft og aðra krafta sem beitt er á hluti en :math:`f` táknar viðbragðskrafta eins og t.d. núning.
+
+.. tip::
+  Skoðum samlagningu kraftvigra.
+  Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kraftinum :math:`F_I=1000 \text{N}` en Gunna beint til hægri með kraftinum :math:`F_G = 1200 \text{N}`. Í hvaða átt hreyfist reipið?
+
+  **Lausn**
+  Þar sem krafar Ingu og Gunnu eru vigrar notum við vigursamlagningu til þess að skoða hver heildarkrafturinn er á reipið.
+
+  .. figure:: ./myndir/kraftar/reipitog.svg
+    :align: center
+    :width: 80%
+
+  Kraftvigur Ingu bendir til vinstri, þ.a. :math:`x` hnit hans er neikvætt.
+
+  .. math::
+    \overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix}
+
+  Kraftvigur Gunnu bendir til hægri, þ.a. :math:`x` hnit hans er jákvætt.
+
+  .. math::
+    \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}
+
+  Leggjum nú saman vigrana:
+
+  .. math::
+    \begin{aligned}
+    \overline{F_{net}} &= \overline{F}_I + \overline{F}_G \\
+    &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix} \\
+    &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}
+    \end{aligned}
+
+  Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
 
 Lögmál Newtons
 --------------
-Enski eðlisfræðingurinn `Isaac Newton <https://is.wikipedia.org/wiki/Isaac_Newton>`_ setti fram þrjú kraftalögmál á 17. öld.
+Enski eðlisfræðingurinn `Isaac Newton <https://is.wikipedia.org/wiki/Isaac_Newton>`_ setti fram þrjú lögmál um krafta á 17. öld, en þau mynda grunn þess hluta eðlisfræðinnar sem er kölluð aflfræði (e. classical mechanics).
 
 Fyrsta lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~~
 "Hlutur sem enginn kraftur verkar á helst kyrr eða ferðast áfram á jöfnum hraða."
 
-Þetta lögmál er oft nefnt **tregðulögmálið**
-Ef summa allra krafta sem verka á hlutinn er núll :math:`\left(\sum\overline{F} = 0 \right)` þá er heildarhröðunin :math:`\overline{a}=0`.
-Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn :math:`\overline{v}` er fasti.
-Munið að fasti hraðinn :math:`v=0` þýðir að hluturinn er kyrr.
+Þetta lögmál er oft nefnt **tregðulögmálið** og segir m.a. að bolti muni liggja kyrr á jörðinni þangað til einhver sparkar í hann og að boltinn muni halda áfram að rúlla endalaust, nema núningur hans við grasflötina hægi á honum.
+
+Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
+Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
 
 Annað lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~
+"Kraftur sem verkar á hlut er margfeldi massa hlutarins og hröðunar sem hann verður fyrir."
+
 .. math::
    \overline{F} = m \overline{a}
 
-Kraftur sem verkar á hlut er margfeldi massa hlutarins og hröðunar sem hann verður fyrir.
 Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
 Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft.
 
 Þriðja lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~~
+"Sérhvert átak á sér gagnátak."
+
 .. math::
    \overline{F}_{AB} = -\overline{F}_{BA}
 
-"Sérhvert átak á sér gagnátak."
 :math:`F_{AB}` er kraftur sem hlutur A veldur á B og :math:`F_{BA}` er verkun B á A.
 Kraftarnir eru jafnstórir en stefna gegn hvorum öðrum.
 
@@ -60,6 +92,7 @@ Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
 
 Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá.
 
+
 Núningskraftur
 --------------
 Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
@@ -75,7 +108,7 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
 
   **Lausn**
 
-  **(a)** Fyrst kassinn hreyfist ekki er hraði hans fasti (í núlli), og því hlýtur heildarkrafturinn sem verkar á hann að vera núll.
+  **(a)** Fyrst kassinn hreyfist ekki er hraði hans fasti (í núlli) og því hlýtur heildarkrafturinn sem verkar á hann að vera núll.
   Skoðum kraftana betur:
 
   Kassinn verður fyrir þyngdarkrafti :math:`F_g` og gólfið ýtir á móti með jafnstórum en gagnstefna normalkrafti :math:`f_n`.
@@ -188,3 +221,29 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
     F_{g,x} = F_g \sin{\theta} = 49 \text{N} \cdot \sin{30°} = 24.5 \text{N}
 
   Þar með hlýtur núningskrafturinn að vera :math:`f_{nún} = F_{g,x}= 24.5 \text{N}` .
+
+Vægi
+----
+
+*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`. Vægi er yfirleitt sett sem jákvætt ef það veldur hreyfingu rangsælis.
+
+.. tip::
+  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til þess að lyfta kassanum?
+
+  .. figure:: ./myndir/kraftar/vog.svg
+    :align: center
+    :width: 60%
+
+  **Lausn**
+
+  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er stærra en vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera neikvætt
+
+  Reiknum nú heildarvægið um punktinn :math:`A`
+
+  .. math::
+    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 50 \text{N m}-F\cdot 5\text{ m}
+
+  Heildarvægið er neikvætt ef :math:`50 \text{N m}<F \cdot 5\text{ m}` þ.e.
+
+  .. math::
+    F>\frac{50 \text{N m}}{5\text{m}} = 10 \text{N}

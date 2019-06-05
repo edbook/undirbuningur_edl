@@ -13,18 +13,20 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
   v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
 
 .. note::
-  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður til að tákna mismun og breytingar.
+  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði til að tákna mismun og breytingar.
 
 .. note::
   Hraði er hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
   Hraði getur verið í allar stefnur :math:`(x,y,z)` svo hraðavigurinn er yfirleitt táknaður með :math:`\overline{v}=(v_x, v_y, v_z)` .
-  Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, aðeins einn þáttur hraðavigursins er ekki núll.
+  Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, þ.e. aðeins einn þáttur hraðavigursins er ekki núll.
 
 .. tip::
 
   Allra bestu hlaupararnir í 100 metra spretthlaupi klára hlaupið á um 10 sekúndum. Hver er meðalhraði hlauparanna í kílómetrum á klukkustund?
 
   **Lausn**
+
+  Meðalhraði hlauparanna, í metrum á sekúndu, er:
 
   .. math::
     \frac{100\text{ m}}{10\text{ s}}=10\frac{\text{m}}{\text{s}}
@@ -60,6 +62,8 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
 .. math::
   a=\frac{v_2-v_1}{t_2-t_1}=\frac{\Delta v}{\Delta t}
 
+Þegar hröðunin er núll þá er hraðinn fastur, þ.e. ekki að breytast með tíma.
+
 .. note::
   Líkt og hraði þá er hröðun líka :ref:`vigur <s.vigrar>` með stærð og stefnu.
   Hröðunarvigurinn er yfirleitt táknaður með :math:`\vec{a}=(a_x,a_y,a_z)` .
@@ -68,7 +72,7 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
 
 .. tip::
   Til þess að eldflaug geti komist úr þyngdarsviði jarðarinnar þarf hún að ferðast með hraðanum :math:`11.2` km/s.
-  Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstöðu og er komin í lausnarhraðann eftir 6 mínútur?
+  Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstöðu og er komin í lausnarhraðann eftir 10 mínútur?
 
   **Lausn**
 
@@ -88,7 +92,7 @@ Sé *staðsetning* hlutar teiknuð upp sem fall af tíma þá táknar hallatala 
   :width: 75 %
   :align: center
 
-Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala grafsins *hröðun* hlutarins. Hér er það gert fyrir fyrra dæmið:
+Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala grafsins *hröðun* hlutarins. Hér er það gert fyrir seinna dæmið:
 
 .. image:: ./myndir/hradi/eldflaug.svg
   :width: 75 %

@@ -1,4 +1,4 @@
-PWD /Users/gudnyh/Seafile/edlisfraedi/myndir
+PWD /Users/gudnyh/sumar19/undirbuningur_edl/myndir/vinna
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./vinna2.tex
 OUTPUT vinna2.log

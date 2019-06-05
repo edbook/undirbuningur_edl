@@ -1,7 +1,7 @@
-PWD /Users/gudnyh/sumar19/undirbuningur_edl/myndir/vinna
+PWD /Users/gudnyh/sumar19/undirbuningur_edl/myndir/kraftar
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
-INPUT ./vinna3.tex
-OUTPUT vinna3.log
+INPUT ./vog.tex
+OUTPUT vog.log
 INPUT /usr/local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-basic.lua
 INPUT /usr/local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-lua.lua
 INPUT /usr/local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-package.lua
@@ -171,9 +171,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-INPUT ./vinna3.aux
-INPUT ./vinna3.aux
-OUTPUT vinna3.aux
+INPUT ./vog.aux
+INPUT ./vog.aux
+OUTPUT vog.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -200,7 +200,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-OUTPUT vinna3.pdf
-INPUT ./vinna3.aux
+INPUT /Users/gudnyh/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
+OUTPUT vog.pdf
+INPUT ./vog.aux
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb

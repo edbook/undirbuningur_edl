@@ -11,24 +11,14 @@ Hugsum okkur hlut sem hefur fastan massa :math:`m`. Nú verður þessi hlutur fy
 .. math::
   \sum \overline{F} = m \frac{d\overline{v}}{dt}
 
-Við skilgreinum *skriðþunga* hlutar á hreyfingu sem margfeldi massans og hraðans sem hann er á.
+Við skilgreinum *skriðþunga* (e. momentum) hlutar á hreyfingu sem margfeldi massans og hraðans sem hann er á.
 
 .. math::
   \overline{p}=m\overline{v}
 
 Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan massalitlir hlutir á hægri hreyfingu mjög lítinn.
 
-
-
-.. tip::
-  :math:`m=1600` kg bíll keyrir áfram á :math:`v=5` m/s.
-  Skriðþungi hans er :math:`P=mv= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
-  Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.
-
-  Byssukúla hefur hraðann :math:`v=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
-  Skriðþungi hennar er þá  :math:`P=mv =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, næstum tvöföldum hljóðhraða.
-
-Einnig gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem verður á skriðþunga hlutarins.
+Því gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem verður á skriðþunga hlutarins.
 
 .. math::
   \sum \overline{F} = \frac{d\overline{p}}{dt}
@@ -36,9 +26,18 @@ Einnig gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem ve
 Þetta þýðir því að það ef koma á massamiklum hlut á mikla hreyfingu úr kyrrstöðu þarf mikinn kraft.
 Hugsaðu þér að þú sért að versla í innkaupakerru. Í upphafi ferðarinnar er kerran tóm og hún lætur auðveldlega að stjórn. Eftir því sem vörurnar safnast í hana, þyngist hún og það verður sífellt erfiðara (krefst meiri krafts) að koma henni af stað. Að sama skapi er erfitt að stoppa hana sé hún komin á skrið.
 
+.. tip::
+  :math:`m=1600` kg bíll keyrir áfram á :math:`v=5` m/s.
+  Skriðþungi hans er :math:`P=mv= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
+  Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.
+
+  Byssukúla hefur hraðann :math:`v=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
+  Skriðþungi hennar er þá  :math:`P=mv =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.
+
+
 Atlag
 -----
-Hugsum okkur hlut sem verður fyrir kröftum (sem hafa summuna :math:`\sum \overline{F}`) frá tímanum :math:`t_1` til tímans :math:`t_2`. Þá er *atlag* kraftsins margfeldi kraftanna við lengd tímabilsins:
+Hugsum okkur hlut sem verður fyrir kröftum (sem hafa summuna :math:`\sum \overline{F}`) frá tímanum :math:`t_1` til tímans :math:`t_2`. Þá er *atlag* (e. impulse) kraftsins margfeldi kraftanna við lengd tímabilsins:
 
 .. math::
   \overline{J} = \sum \overline{F}(t_2-t_1) = \sum \overline{F} \Delta t
@@ -76,13 +75,16 @@ Ef summa allra kraftanna sem verka á kerfi er núll, þá er breyting heildarsk
 .. note::
   Skriðþungi er varðveittur ef engir kraftar koma utan frá.
 
-Hugsum okkur tvær kúlur sem renna á núningslausu borði. Þær hafa ekki endilega sama massann en önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`v_0`. Þá er skriðþungi kerfisins :math:`m_1v_0`. Hvað gerist þegar þær rekast saman?
+Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa ekki endilega sama massann en önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`v_0`. Þá er heildarskriðþungi kerfisins :math:`m_1v_0`. Hvað gerist þegar þær rekast saman?
 
 .. figure:: ./myndir/skrth/skrth1.svg
   :align: center
   :width: 60%
 
-Áður en kúlurnar skella saman þá er heildarskriðþungi kerfisins margfeldi :math:`v_0` við massa kúlu 1. Við áreksturinn varðveitist skriðþunginn, svo við vitum að skriðþunginn eftir áreksturinn er sá sami og fyrir. Þegar seinni kúlan tekur við öllum skriðþunganum og fær hraðann :math:`v_2` á meðan hin stöðvast þá er talað um *fjaðrandi árekstur*.
+Fullkomlega fjaðrandi árekstur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Áður en kúlurnar skella saman þá er heildarskriðþungi kerfisins margfeldi :math:`v_0` við massa kúlu 1. Við áreksturinn varðveitist skriðþunginn, svo við vitum að skriðþunginn eftir áreksturinn er sá sami og fyrir. Þegar seinni kúlan tekur við öllum skriðþunganum og fær hraðann :math:`v_2` á meðan hin stöðvast þá er talað um *fullkomlega fjaðrandi árekstur*.
 
 .. note::
   Í fjaðrandi árekstrum er bæði skriðþungi og hreyfiorka kerfisins varðveitt.
@@ -103,7 +105,8 @@ Fyrst skriðþunginn er varðveittur þá er:
 
 Ef kúlurnar tvær hafa sama massann :math:`m_1=m_2` þá mun seinni kúlan fara áfram með hraðanum :math:`v_2=v_0`
 
--------------
+Fullkomlega ófjaðrandi árekstur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En hvað ef kúlurnar eru þannig gerðar að þær klístrist saman við áreksturinn? Þá er talað um *fullkomlega ófjaðrandi árekstur* og kúlurnar myndu ferðast áfram, klesstar saman, en með annan hraða en fyrir árekstur.
 
@@ -126,9 +129,10 @@ Hér er skriðþunginn líka varðveittur, svo:
 
 Ef kúlurnar hafa sama massann :math:`m_1=m_2` þá er hraðinn sem kúlurnar ferðast saman á hálfur upprunalegi hraðinn: :math:`v_1=v_2=\frac12 v_0`.
 
---------------
+Önnur tilvik
+~~~~~~~~~~~~
 
-Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan er ekki varðveitt, en hlutirnir ferðast ekki á sama hraða eftir árekstur.
+Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan er ekki varðveitt og hlutirnir ferðast ekki á sama hraða eftir árekstur.
 
 .. figure:: ./myndir/skrth/skrth5.svg
   :align: center
@@ -148,11 +152,13 @@ Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan e
   :align: center
   :width: 60%
 
+----------------------
 
 .. math::
-  \begin{array}{ c | c }
+  \begin{array}{| c | c |}
    \hline
-  \text{Fjaðrandi árekstur} & \text{Hreyfiorkan er varðveitt} \\ \hline
+  \text{Fullkomlega fjaðrandi árekstur} & \text{Hreyfiorkan er varðveitt} \\ \hline
+  \text{Fullkomlega ófjaðrandi árekstur} & \text{Hlutirnir klessast saman og} \\
+  &                           \text{ferðast áfram með sama hraða}   \\ \hline
   \text{Ófjaðrandi árekstur} & \text{Hreyfiorkan er ekki varðveitt} \\ \hline
-  \text{Fullkomlega ófjaðrandi árekstur} & \text{Hlutirnir ferðast áfram með sama hraða} \\ \hline
   \end{array}

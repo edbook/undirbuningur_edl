@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. Vigrar &mdash; Undirbúningur í eðlisfræði 2018</title>
+  <title>3. Vigrar &mdash; Undirbúningur í eðlisfræði 2019</title>
   
 
   
@@ -100,7 +100,7 @@
         <link rel="index" title="Atriðaskrá"
               href="genindex.html"/>
         <link rel="search" title="Leit" href="search.html"/>
-    <link rel="top" title="Undirbúningur í eðlisfræði 2018" href="index.html"/>
+    <link rel="top" title="Undirbúningur í eðlisfræði 2019" href="index.html"/>
         <link rel="next" title="4. Hraði og hröðun" href="Kafli04.html"/>
         <link rel="prev" title="2. Mælieiningar" href="Kafli02.html"/>
 
@@ -180,7 +180,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#samlagning-vigra">3.4. Samlagning vigra</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#margfoldun-vigra">3.5. Margföldun vigra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#margfoldun-vigra">3.5. Margföldun vigra</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#innfeldi">3.5.1. Innfeldi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#krossfeldi">3.5.2. Krossfeldi</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli04.html">4. Hraði og hröðun</a><ul>
@@ -217,7 +221,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
@@ -236,6 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="formulublad.html#kraftar">10.5. Kraftar</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
 </ul>
 
           
@@ -325,7 +335,7 @@ Tveir vigrar eru <em>samsíða</em> ef þeir hafa sömu hallatölu.</p>
 <p class="first admonition-title">Dæmi</p>
 <p>Finnum vigur sem er samsíða <span class="math notranslate nohighlight">\(\overline{a}=(-1,6)\)</span> og hefur lengdina 9.</p>
 <p>Hallatala <span class="math notranslate nohighlight">\(\overline{a}\)</span> er <span class="math notranslate nohighlight">\(h_{\bar{a}}=\frac{a_y}{a_x}=\frac{6}{-1}=-6\)</span> .
-Þá vitum við að vigurinn sem við leitum að, <span class="math notranslate nohighlight">\(b\)</span> , uppfyllir það sama:</p>
+Þá vitum við að vigurinn sem við leitum að, <span class="math notranslate nohighlight">\(\overline{b}\)</span> , uppfyllir það sama:</p>
 <div class="math notranslate nohighlight">
 \[h_{\bar{b}}=\frac{b_y}{b_x}=-6\]</div>
 <p>sem er jafngilt því að <span class="math notranslate nohighlight">\(b_y=-6b_x\)</span> .</p>
@@ -343,27 +353,42 @@ Tveir vigrar eru <em>samsíða</em> ef þeir hafa sömu hallatölu.</p>
   b_x&amp;=\frac{9}{\sqrt{37}} \approx 1.480\\
   b_y&amp;= -6b_x = \frac{-54}{\sqrt{37}} \approx -8.878
 \end{aligned}\end{split}\]</div>
-<p class="last">Vigur sem er samsíða <span class="math notranslate nohighlight">\(\overline{a}=(-1,6)\)</span> og hefur lengdina 9 er því <span class="math notranslate nohighlight">\(\overline{b}= \begin{pmatrix} \frac{9}{\sqrt{37}} \\  \frac{-54}{\sqrt{37}} \end{pmatrix}\)</span></p>
+<p>Vigur sem er samsíða <span class="math notranslate nohighlight">\(\overline{a}=(-1,6)\)</span> og hefur lengdina 9 er því</p>
+<div class="last math notranslate nohighlight">
+\[\begin{split}\overline{b}= \frac{1}{\sqrt{37}} \begin{pmatrix} 9 \\  -54 \end{pmatrix}\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="a-lia-vigra">
 <h2>3.2. Að liða vigra<a class="headerlink" href="#a-lia-vigra" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Vigra er líka hægt að tákna með pólhnitum, þá eru hnitin lengd og stefnuhorn: <span class="math notranslate nohighlight">\(\overline{a} = (a,\theta)\)</span> .
 Hornið <span class="math notranslate nohighlight">\(\theta\)</span> er skilgreint frá jákvæðum x-ás og að vigrinum.
-Með þessum upplýsingum er hægt að liða vigurinn eftir x- og y-ás með því að nota hornaföll.</p>
-<p>Þættir vigursins eru föll af stefnuhorninu sem er oft merkt <span class="math notranslate nohighlight">\(\theta\)</span> eða <span class="math notranslate nohighlight">\(\phi\)</span> :</p>
+Með þessum upplýsingum er hægt að liða vigurinn eftir x- og y-ás með því að nota hornaföll.
+<a class="reference external" href="http://edbook.hi.is/undirbuningur_stae/Kafli07.html">Hér</a> má finna efni um hornaföll.</p>
+<p>Þættir vigursins eru föll af stefnuhorninu sem er yfirleitt merkt <span class="math notranslate nohighlight">\(\theta\)</span> eða <span class="math notranslate nohighlight">\(\phi\)</span> :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a_x = a\cos(\theta) \\
 a_y = a\sin(\theta)\end{split}\]</div>
-<p>þar sem <span class="math notranslate nohighlight">\(a=|\overline{a}|\)</span>.</p>
+<p>þar sem <span class="math notranslate nohighlight">\(a=|\overline{a}|\)</span> er lengd vigursins.</p>
 <p>Myndrænt má ímynda sér að ljósi sé lýst á x-ásinn með vasaljósi sem er hornrétt á ásinn.
 x-þáttur vigursins er þá eins og skuggi vigursins á x-ásnum.
 Þetta er líka kallað ofanvarp vigursins á x-ásinn.</p>
-<blockquote>
-<div><div class="figure align-center">
+<div class="admonition tip">
+<p class="first admonition-title">Dæmi</p>
+<p>Hér sjáum við aftur vigurinn frá því í upphafi kaflans:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\overline{a}= (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}\end{split}\]</div>
+<p>en nú skulum við athuga hvernig við getum lýst honum með lengd og stefnuhorni.</p>
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/mynd-vigur.svg"><img alt="_images/mynd-vigur.svg" src="_images/mynd-vigur.svg" width="60%" /></a>
 </div>
-</div></blockquote>
+<p>Lengd vigursins er eins og áður 5, en stefnuhornið finnum við með því að skoða skammhliðarnar.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\tan(\theta) = \frac{a_y}{a_x} = \frac{3}{4}\\
+\theta\approx 0.6435\end{split}\]</div>
+<p class="last">Vigurinn <span class="math notranslate nohighlight">\((4,3)\)</span> má því líka skrifa sem <span class="math notranslate nohighlight">\((a,\theta) = (5,0.6435)\)</span></p>
+</div>
+<p>Öllum vigrum er hægt að lýsa með annað hvort lengdum í <span class="math notranslate nohighlight">\(x\)</span>- og <span class="math notranslate nohighlight">\(y\)</span>- stefnu eða með lengd og stefnuhorni.
+Eins og við höfum séð er lítið mál að breyta á milli.</p>
 </div>
 <div class="section" id="einingarvigrar">
 <h2>3.3. Einingarvigrar<a class="headerlink" href="#einingarvigrar" title="Varanlegur hlekkur á titilinn">¶</a></h2>
@@ -410,7 +435,8 @@ og summa þeirra er frá upphafspunkti fyrri vigursins til endapunkts þess sein
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Athugasemd</p>
-<p>Þó að <span class="math notranslate nohighlight">\(\overline{c} = \overline{a} + \overline{b}\)</span> þýðir það <strong>ekki</strong> að <span class="math notranslate nohighlight">\(c = a + b\)</span>.</p>
+<p>Þegar vigrar eru lagðir saman þá leggjast lengdirnar yfirleitt <strong>ekki</strong> saman.
+Þó að <span class="math notranslate nohighlight">\(\overline{c} = \overline{a} + \overline{b}\)</span> þýðir það <strong>ekki</strong> að <span class="math notranslate nohighlight">\(c = a + b\)</span>.</p>
 <p>Í dæminu hér á undan er t.d.</p>
 <div class="last math notranslate nohighlight">
 \[\begin{split}c = |\overline{c}| = \sqrt{5^2+6^2} \approx 7,8 \\
@@ -463,7 +489,8 @@ C&amp;=(x_3,y_3)=(3,-1)
     &amp;= (s \cdot v_x, s \cdot v_y, s \cdot v_z)
 \end{aligned}\end{split}\]</div>
 <p>Margfeldi vigra er tvenns konar, <em>innfeldi</em> (punktfeldi, e. dot product, scalar product) og <em>krossfeldi</em> (e. cross product, vector product).</p>
-<hr class="docutils" />
+<div class="section" id="innfeldi">
+<h3>3.5.1. Innfeldi<a class="headerlink" href="#innfeldi" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><strong>Innfeldi</strong> tveggja vigra er táknað með punkti og útkoman er <em>tala</em>: <span class="math notranslate nohighlight">\(c = \overline{a} \cdot \overline{b}\)</span> .
 Ef þættir vigranna eru þekktir er innfeldið reiknað:</p>
 <div class="math notranslate nohighlight">
@@ -475,12 +502,12 @@ Ef þættir vigranna eru þekktir er innfeldið reiknað:</p>
 <div class="last math notranslate nohighlight">
 \[\overline{a} \cdot \overline{b} = a_x b_x + a_y b_y = 7\cdot (-1)+ 8\cdot 3 = -7+24 =17\]</div>
 </div>
-<p>Ef vigrarnir eru gefnir með lengd og stefnuhorni er innföldunin:</p>
+<p>Ef vigrarnir eru gefnir með lengd og stefnuhorni er innfeldi þeirra:</p>
 <div class="math notranslate nohighlight">
 \[\overline{a} \cdot \overline{b} = a b \cos{\phi}\]</div>
 <p>þar sem <span class="math notranslate nohighlight">\(\phi\)</span> er hornið milli <span class="math notranslate nohighlight">\(\overline{a}\)</span> og <span class="math notranslate nohighlight">\(\overline{b}\)</span> þegar þeir hafa sama upphafspunkt.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Aðvörun</p>
+<div class="admonition note">
+<p class="first admonition-title">Athugasemd</p>
 <p class="last"><strong>Tveir vigrar eru hornréttir ef innfeldi þeirra er núll.</strong></p>
 </div>
 <div class="admonition tip">
@@ -505,10 +532,12 @@ Lengdirnar eru:</p>
 \[\begin{split}\begin{aligned}
   \overline{a} \cdot \overline{b} &amp;= a b \cos{\phi} \\
   \cos{\phi} &amp;= \frac{\overline{a} \cdot \overline{b}}{a b} = \frac{16}{\sqrt{20} \cdot \sqrt{20}} = \frac{16}{20}\\
-  \phi &amp;= 36.8 ° = 0.644
+  \phi &amp;= 36.8 ° = 0.644 \text{Rad}
 \end{aligned}\end{split}\]</div>
 </div>
-<hr class="docutils" />
+</div>
+<div class="section" id="krossfeldi">
+<h3>3.5.2. Krossfeldi<a class="headerlink" href="#krossfeldi" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><strong>Krossfeldi</strong> (e. cross product) er táknað með krossi og útkoman er <em>vigur</em>: <span class="math notranslate nohighlight">\(\overline{c} = \overline{a} \times \overline{b}\)</span> .
 Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu <span class="math notranslate nohighlight">\(\overline{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}\)</span> .</p>
 <div class="math notranslate nohighlight">
@@ -544,6 +573,7 @@ Stefna hans ákvarðast af <strong>hægri</strong> handar reglunni:</p>
   &amp;= -3 \hat{\imath} +6 \hat{\jmath} - 3\hat{k}\\
   &amp;= (-3,6,-3)
 \end{aligned}\end{split}\]</div>
+</div>
 </div>
 </div>
 </div>
@@ -586,7 +616,7 @@ Stefna hans ákvarðast af <strong>hægri</strong> handar reglunni:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2018',
+            VERSION:'2019',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

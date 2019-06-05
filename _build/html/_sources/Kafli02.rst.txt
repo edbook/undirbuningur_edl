@@ -12,16 +12,16 @@ SI-grunneiningarnar eru sjö:
 .. math::
  \begin{array}{c | c | c}
 	  \text{Mælistærð} & \text{Eining} & \text{Tákn} \\ \hline
-	  \text{vegalengd} & \text{metri} & m \\
-    \text{tími} & \text{sekúnda} & s \\
-    \text{massi} & \text{kílógramm} & kg\\
-	  \text{rafstraumur} & \text{Ampere} & A\\
-    \text{hitastig} & \text{Kelvin} & K \\
-    \text{ljósstyrkur} & \text{candela} & cd \\
-    \text{fjöldi} & \text{mól} & mól \\ \hline
+	  \text{Vegalengd} & \text{Metri} & m \\
+    \text{Tími} & \text{Sekúnda} & s \\
+    \text{Massi} & \text{Kílógramm} & kg\\
+	  \text{Rafstraumur} & \text{Amper} & A\\
+    \text{Hitastig} & \text{Kelvin} & K \\
+    \text{Ljósstyrkur} & \text{Candela} & cd \\
+    \text{Fjöldi} & \text{Mól} & mól \\ \hline
   \end{array}
 
-Aðrar einingar í SI einingakerfinu eru settar saman úr grunneiningunum.
+Einingar fyrir aðrar stærðir eru settar saman úr grunneiningum SI einingakerfisins.
 Hraði, breyting á staðsetningu yfir eitthvert tímabil, hefur eininguna metrar á sekúndu (m/s).
 
 .. tip::

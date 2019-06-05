@@ -1,6 +1,6 @@
 Orka
 ====
-Öll eðlisfræðileg kerfi hafa að geyma orku af einhverju tagi, en hún segir til um hve mikla vinnu þarf til þess að breyta ástandi kerfisins. 
+Öll eðlisfræðileg kerfi hafa að geyma orku af einhverju tagi, en hún segir til um hve mikla vinnu þarf til þess að breyta ástandi kerfisins.
 
 Varðveisla orku er eitt af mikilvægustu lögmálum eðlisfræðinnar.
 
@@ -10,11 +10,11 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 *Mættisorka* (e. potential energy) er geymd á einhvern máta:
 
 - efnaorka (í efnatengjum sameinda)
-- kjarnorka (í atómum)
+- kjarnorka (í kjörnum atóma)
 - stöðuorka (t.d. vegna þyngdar- og segulsviða)
 - spennuorka (t.d. í teygðum og þjöppuðum gormum)
 
-*Hreyfiorka* (e. kinetic energy) finnst hvar sem hlutir eru á hreyfingu:
+*Hreyfiorka* (e. kinetic energy) er þar sem hlutir eða eindir eru á hreyfingu:
 
 - varmarorka (titrandi atóm)
 - hljóð (titrandi efni)
@@ -24,26 +24,33 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 .. tip::
     **Orka breytir um form.**
 
-    Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, sem breytist í *hreyfiorku* á meðan fallinu stendur. Við lendinguna losnar hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma.
-    Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann, og þar af leiðandi meiri hreyfiorku og hraða þegar niður er komið.
+    Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
+    Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
 
-    Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin t.d. í formi *efnaorku*.
+    Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í formi *efnaorku*.
 
 
 Vinna
 -----
 Kraftur :math:`F` er sagður vinna *vinnu* (e. work) þegar hann flytur hlut um *vegalengd* (e. displacement) :math:`s` .
-Vinna er oft táknuð með :math:`W` :
+Vinna er oft táknuð með :math:`W` og er margfeldi kraftsins og færslunnar:
 
 .. math::
   W=F\cdot s
 
-Einingin fyrir vinnu er Joule, táknað J.
+Einingin fyrir vinnu er Joule, táknað :math:`J`.
 
 .. math::
   1 \text{ J} = 1 \text{ N} \cdot 1 \text{ m} = 1 \frac{\text{kg}\text{ m}^2}{\text{s}^2}
 
-Vinna er innfeldi kraftavigursins og færsluvigursins:
+.. tip::
+  Vinna togkrafts :math:`T=25 \text{ N}` við að flytja hlut vegalengdina :math:`s=10 \text{ m}` er
+
+  .. math::
+    W=F\cdot s = 25 \text{ N} \cdot 10 \text{ m} = 250 \text{ J}
+
+Ef vinna er ekki samsíða færslunni þurfum við að skoða vigrana sem krafturinn og færslan eru.
+Vinna er þá innfeldi kraftavigursins og færsluvigursins:
 
 .. math::
   \begin{aligned}
@@ -79,13 +86,6 @@ Vinna er innfeldi kraftavigursins og færsluvigursins:
     :align: center
     :width: 70%
 
-.. tip::
-  Vinna togkrafts :math:`T=25 \text{ N}` við að flytja hlut vegalengdina :math:`s=10 \text{ m}` er
-
-  .. math::
-    W=F\cdot s = 25 \text{ N} \cdot 10 \text{ m} = 250 \text{ J}
-
-
 Afl
 ---
 Afl er breyting á vinnu á tímabili, eða tímaafleiða vinnu:
@@ -101,10 +101,12 @@ Einingin fyrir afl er Watt, táknað W.
 .. math::
   1 W=\frac{1 \text{ J}}{1\text{ s}}
 
+.. note::
+  Passið ykkur á því að ruglast ekki á einingunni Watt fyrir afl og tákninu :math:`W` sem er notuð fyrir orku! Það er yfirleitt skýrt af samhenginu hvort er um að ræða.
 
 Hreyfiorka
 ----------
-Hlutir með massann :math:`m` sem fara á hraðanum :math:`v` hafa hreyfiorku (e. kinetic energy) :math:`K` :
+Hlutur sem hefur massann :math:`m`  og fer á hraðanum :math:`v` hefur hreyfiorku (e. kinetic energy) :math:`K` :
 
 .. math::
   K= \frac{1}{2}mv^2
@@ -119,7 +121,7 @@ Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytin
   Þar er lítill núningur, en samt nóg til þess að hægja á sleðanum.
   Hver er vinna núningsins ef upphafshraði sleðans er :math:`v_1 =10` m/s og lokahraðinn er :math:`v_2=5` m/s?
 
-  *Lausn*
+  **Lausn**
 
   Við vitum að vinnan :math:`W` er jöfn breytingunni á hreyfiorkunni.
   Hreyfiorkan í upphafi er

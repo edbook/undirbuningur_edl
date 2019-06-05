@@ -36,7 +36,7 @@ Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu 
     \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}
 
   Leggjum nú saman vigrana:
-  
+
   .. math::
     \begin{aligned}
     \overline{F_{net}} &= \overline{F}_I + \overline{F}_G \\
@@ -92,8 +92,6 @@ Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
 
 Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá.
 
-.. tip::
-  Kassi (:math:`m=10`kg) liggur sleipu á skáplani með hallann :math:`\alpha=20°`.
 
 Núningskraftur
 --------------
@@ -223,3 +221,29 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
     F_{g,x} = F_g \sin{\theta} = 49 \text{N} \cdot \sin{30°} = 24.5 \text{N}
 
   Þar með hlýtur núningskrafturinn að vera :math:`f_{nún} = F_{g,x}= 24.5 \text{N}` .
+
+Vægi
+----
+
+*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`. Vægi er yfirleitt sett sem jákvætt ef það veldur hreyfingu rangsælis.
+
+.. tip::
+  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til þess að lyfta kassanum?
+
+  .. figure:: ./myndir/kraftar/vog.svg
+    :align: center
+    :width: 60%
+
+  **Lausn**
+
+  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er stærra en vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera neikvætt
+
+  Reiknum nú heildarvægið um punktinn :math:`A`
+
+  .. math::
+    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 50 \text{N m}-F\cdot 5\text{ m}
+
+  Heildarvægið er neikvætt ef :math:`50 \text{N m}<F \cdot 5\text{ m}` þ.e.
+
+  .. math::
+    F>\frac{50 \text{N m}}{5\text{m}} = 10 \text{N}

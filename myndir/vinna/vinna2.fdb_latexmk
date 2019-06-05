@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1531233489 "vinna2.tex" "vinna2.pdf" "vinna2" 1531233490
+["lualatex"] 1559655933 "vinna2.tex" "vinna2.pdf" "vinna2" 1559655934
   "/Users/gudnyh/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1526502935 134930 00ae4e6b8bb3b328fba6fb1bcf4ea21b ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1480098701 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1480098701 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -140,9 +140,9 @@
   "/usr/local/texlive/2018/texmf-dist/tex/luatex/lualibs/lualibs-util-tpl.lua" 1480098845 7100 ccfb5023bc761673396964848d85b5e2 ""
   "/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/luaotfload-characters.lua" 1485820867 1548690 99578c3eff8b68cae3da45a4a7cbfcf2 ""
   "/usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1526502429 1360355 ab6c9d5d26d62ec2cd7b54f1e676a9a4 ""
-  "vinna2.aux" 1531233489 8 a94a2480d3289e625eea47cd1b285758 ""
-  "vinna2.tex" 1531233489 563 37188fd19e89b4cd1a040b61ddcd65fe ""
+  "vinna2.aux" 1559655934 8 a94a2480d3289e625eea47cd1b285758 ""
+  "vinna2.tex" 1559655933 564 00141442050bbb1fd00b3c628284e26a ""
   (generated)
   "vinna2.log"
-  "vinna2.aux"
   "vinna2.pdf"
+  "vinna2.aux"

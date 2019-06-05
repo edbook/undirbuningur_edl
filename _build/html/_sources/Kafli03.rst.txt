@@ -64,7 +64,7 @@ Tveir vigrar eru *samsíða* ef þeir hafa sömu hallatölu.
   Finnum vigur sem er samsíða :math:`\overline{a}=(-1,6)` og hefur lengdina 9.
 
   Hallatala :math:`\overline{a}` er :math:`h_{\bar{a}}=\frac{a_y}{a_x}=\frac{6}{-1}=-6` .
-  Þá vitum við að vigurinn sem við leitum að, :math:`b` , uppfyllir það sama:
+  Þá vitum við að vigurinn sem við leitum að, :math:`\overline{b}` , uppfyllir það sama:
 
   .. math::
     h_{\bar{b}}=\frac{b_y}{b_x}=-6
@@ -89,7 +89,10 @@ Tveir vigrar eru *samsíða* ef þeir hafa sömu hallatölu.
       b_y&= -6b_x = \frac{-54}{\sqrt{37}} \approx -8.878
     \end{aligned}
 
-  Vigur sem er samsíða :math:`\overline{a}=(-1,6)` og hefur lengdina 9 er því :math:`\overline{b}= \begin{pmatrix} \frac{9}{\sqrt{37}} \\  \frac{-54}{\sqrt{37}} \end{pmatrix}`
+  Vigur sem er samsíða :math:`\overline{a}=(-1,6)` og hefur lengdina 9 er því
+
+  .. math::
+    \overline{b}= \frac{1}{\sqrt{37}} \begin{pmatrix} 9 \\  -54 \end{pmatrix}
 
 Að liða vigra
 -------------
@@ -97,22 +100,42 @@ Að liða vigra
 Vigra er líka hægt að tákna með pólhnitum, þá eru hnitin lengd og stefnuhorn: :math:`\overline{a} = (a,\theta)` .
 Hornið :math:`\theta` er skilgreint frá jákvæðum x-ás og að vigrinum.
 Með þessum upplýsingum er hægt að liða vigurinn eftir x- og y-ás með því að nota hornaföll.
+`Hér <http://edbook.hi.is/undirbuningur_stae/Kafli07.html>`_ má finna efni um hornaföll.
 
-Þættir vigursins eru föll af stefnuhorninu sem er oft merkt :math:`\theta` eða :math:`\phi` :
+Þættir vigursins eru föll af stefnuhorninu sem er yfirleitt merkt :math:`\theta` eða :math:`\phi` :
 
 .. math::
   a_x = a\cos(\theta) \\
   a_y = a\sin(\theta)
 
-þar sem :math:`a=|\overline{a}|`.
+þar sem :math:`a=|\overline{a}|` er lengd vigursins.
 
 Myndrænt má ímynda sér að ljósi sé lýst á x-ásinn með vasaljósi sem er hornrétt á ásinn.
 x-þáttur vigursins er þá eins og skuggi vigursins á x-ásnum.
 Þetta er líka kallað ofanvarp vigursins á x-ásinn.
 
+.. tip::
+  Hér sjáum við aftur vigurinn frá því í upphafi kaflans:
+
+  .. math::
+    \overline{a}= (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}
+
+  en nú skulum við athuga hvernig við getum lýst honum með lengd og stefnuhorni.
+
   .. figure:: ./myndir/vigrar/mynd-vigur.svg
      :width: 60%
      :align: center
+
+  Lengd vigursins er eins og áður 5, en stefnuhornið finnum við með því að skoða skammhliðarnar.
+
+  .. math::
+    \tan(\theta) = \frac{a_y}{a_x} = \frac{3}{4}\\
+    \theta\approx 0.6435
+
+  Vigurinn :math:`(4,3)` má því líka skrifa sem :math:`(a,\theta) = (5,0.6435)`
+
+Öllum vigrum er hægt að lýsa með annað hvort lengdum í :math:`x`- og :math:`y`- stefnu eða með lengd og stefnuhorni.
+Eins og við höfum séð er lítið mál að breyta á milli.
 
 Einingarvigrar
 --------------
@@ -169,6 +192,7 @@ og summa þeirra er frá upphafspunkti fyrri vigursins til endapunkts þess sein
    :align: center
 
 .. note::
+  Þegar vigrar eru lagðir saman þá leggjast lengdirnar yfirleitt **ekki** saman.
   Þó að :math:`\overline{c} = \overline{a} + \overline{b}` þýðir það **ekki** að :math:`c = a + b`.
 
   Í dæminu hér á undan er t.d.
@@ -238,7 +262,8 @@ Margföldun vigra
 
 Margfeldi vigra er tvenns konar, *innfeldi* (punktfeldi, e. dot product, scalar product) og *krossfeldi* (e. cross product, vector product).
 
-----------------
+Innfeldi
+~~~~~~~~
 
 **Innfeldi** tveggja vigra er táknað með punkti og útkoman er *tala*: :math:`c = \overline{a} \cdot \overline{b}` .
 Ef þættir vigranna eru þekktir er innfeldið reiknað:
@@ -254,14 +279,14 @@ Ef þættir vigranna eru þekktir er innfeldið reiknað:
     .. math::
       \overline{a} \cdot \overline{b} = a_x b_x + a_y b_y = 7\cdot (-1)+ 8\cdot 3 = -7+24 =17
 
-Ef vigrarnir eru gefnir með lengd og stefnuhorni er innföldunin:
+Ef vigrarnir eru gefnir með lengd og stefnuhorni er innfeldi þeirra:
 
 .. math::
   \overline{a} \cdot \overline{b} = a b \cos{\phi}
 
 þar sem :math:`\phi` er hornið milli :math:`\overline{a}` og :math:`\overline{b}` þegar þeir hafa sama upphafspunkt.
 
-.. warning::
+.. note::
   **Tveir vigrar eru hornréttir ef innfeldi þeirra er núll.**
 
 .. tip::
@@ -293,10 +318,12 @@ Ef vigrarnir eru gefnir með lengd og stefnuhorni er innföldunin:
       \begin{aligned}
         \overline{a} \cdot \overline{b} &= a b \cos{\phi} \\
         \cos{\phi} &= \frac{\overline{a} \cdot \overline{b}}{a b} = \frac{16}{\sqrt{20} \cdot \sqrt{20}} = \frac{16}{20}\\
-        \phi &= 36.8 ° = 0.644
+        \phi &= 36.8 ° = 0.644 \text{Rad}
       \end{aligned}
 
-------------------------
+
+Krossfeldi
+~~~~~~~~~~
 
 **Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\overline{c} = \overline{a} \times \overline{b}` .
 Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu :math:`\overline{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}` .

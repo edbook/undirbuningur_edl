@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Undirbúningur í eðlisfræði, Háskóli Íslands, haust 2018
-=======================================================
+Undirbúningur í eðlisfræði, Háskóli Íslands, 2019
+=================================================
 
 .. toctree::
    :maxdepth: 2
@@ -13,6 +13,7 @@ Undirbúningur í eðlisfræði, Háskóli Íslands, haust 2018
 
    Kafli*
    formulublad
+   hugtok
 
 .. Indices and tables
 .. ==================

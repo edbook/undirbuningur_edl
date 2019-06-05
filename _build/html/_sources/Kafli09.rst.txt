@@ -36,20 +36,19 @@ Með mörgum tilraunum og úrvinnslu gagnanna var hægt að smíða líkan sem l
 Verklegar æfingar
 -----------------
 Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.
-Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma.
-Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ).
+Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma. Í kennslustofum ætluðum verklegum tilraunum eru strangari reglur um umgengni, t.d. um neyslu matar og drykkja, sem öllum ber að kynna sér og fylgja.
+Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir.
 
 `Þetta skjal <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ fjallar um meðferð og úrvinnslu gagna og er þess virði að lesa.
-
 Á heimasvæði `Martins Swift <https://notendur.hi.is/~martin/e0/>`_ má nálgast allskonar ítarefni um verklegar tilraunir.
 
 Verkbækur
 ---------
 Hver hópur þarf að halda vinnubók yfir allar tilraunirnar, þar skal safna saman öllu sem við kemur tilraununum.
 Rúðustrikuð stílabók, A4 eða A5, hentar vel í verkið.
-Efni sem er skráð á laus blöð skal hefta eða líma inn í bókina.
+Gögn sem eru skráð á laus blöð skal hefta eða líma inn í bókina.
 
-Helstu efnisatriði vinnubókar eru:
+Helstu efnisatriði vinnubókar fyrir hverja tilraun eru:
 
 * Skilgreining á tilraun og aðstæðum ásamt rissmynd af uppstillingu
 * Skilgreining og algebraisk nöfn á allar mældar og afleiddar stærðir
@@ -58,12 +57,14 @@ Helstu efnisatriði vinnubókar eru:
 * Samanburður við líkön ef við á og ályktun um samræmi/misræmi mælinga og líkans.
 * Slóðin frá frumgögnum til ályktana þarf alltaf að vera skýr og óslitin.
 
+Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé vel unnin og skýr.
+
 `Meira um verkbækur <https://notendur.hi.is/~martin/e0/verkbok/>`_ af síðu Martins.
 
 Markverðir stafir
 -----------------
 Ef þú myndir mæla þykkt kennslubókarinnar í *Eðlisfræði 1* með venjulegri reglustriku myndirðu geta sagt að hún væri 2.7 cm á þykkt.
-Þú mættir ekki segja að hún væri 2.70 cm þykk, því reglustrikan er ekki nógu nákvæm, bókin gæti allt eins verið 2.68 cm eða 2.73 cm án þess að það sæist í mælingunni.
+Þú mættir ekki segja að hún væri 2.70 cm þykk, því reglustrikan er ekki nógu nákvæm, bókin gæti allt eins verið 2.68 cm eða 2.73 cm án þess að þú sæir það í mælingunni.
 Ef þú myndir síðan mæla þykktina aftur en nú með `skíðmáli <https://is.wikipedia.org/wiki/Sk%C3%ADðmál>`_ myndirðu komast að því að hún væri 2.723 cm þykk.
 Munurinn sem væri á mælingunum tveimur væri sá að *óvissa* (e. uncertainty) eða *skekkja* (e. error) skíðmálsins er minni en óvissa reglustrikunnar.
 
@@ -85,14 +86,12 @@ Reglustrikan myndi gefa þykkt bókarinnar með tveimur markverðum stöfum, en 
 Markverðir stafir í samlagningu fer því eftir aukastöfum stærðanna, en ekki óvissu þeirra.
 
 .. tip::
-  Hér hefur talan 138.2 mesta óvissu (fæsta aukastafi aftan við kommu) svo gefa þarf svarið með jafn mikilli óvissu, þ.e. einum aukastaf á eftir kommu.
-  Flestar reiknivélar myndu gefa svarið 153.613.
+	.. math::
+		27.153 + 138.2-11.74=153.6
 
-  .. math::
-    27.153 + 138.2-11.74=153.6
+	Hér hefur talan 138.2 mesta óvissu (fæsta aukastafi aftan við kommu) svo gefa þarf svarið með jafn mikilli óvissu, þ.e. einum aukastaf á eftir kommu. Flestar reiknivélar myndu gefa svarið 153.613 en í vísindalegum útreikningum getum við ekki tekið mark á síðustu tveimur tölunum.
 
-.. note::
-  Reglur þessar um meðferð markverðra stafa eiga við um alla útreikninga í eðlisfræði, bæði verklegum og fræðilegum.
+Reglur þessar um meðferð markverðra stafa eiga við um alla útreikninga í eðlisfræði, bæði verklegum og fræðilegum.
 
 Staðalform
 ----------
@@ -102,9 +101,9 @@ Staðalform (e. `scientific notation <https://en.wikipedia.org/wiki/Scientific_n
 Þetta skýrist best með dæmum:
 
 .. tip::
-	Ljóshraðinn, með níu markverðum stöfum, er :math:`c=299792458` m/s. Á staðalformi er ljóshraðinn skrifaður :math:`c=2.99792458\cdot10^8` m/s.
+	Ljóshraðinn, með níu markverðum stöfum, er :math:`c=299792458` m/s. Á staðalformi er ljóshraðinn skrifaður :math:`c=2.99792458\cdot10^8` m/s, en þá er komman færð áfram um 8 sæti.
 
-	Í flestum tilvikum er nógu nákvæmt að vinna með þrjá markverða stafi: :math:`c=3.00\cdot10^8` m/s og er það yfirleitt gert.
+	Í langflestum tilvikum er nógu nákvæmt að vinna með þrjá markverða stafi: :math:`c=3.00\cdot10^8` m/s og er það yfirleitt gert.
 
 	.. math::
 		\begin{aligned}
@@ -116,28 +115,38 @@ Staðalform (e. `scientific notation <https://en.wikipedia.org/wiki/Scientific_n
 Óvissureikningar
 ----------------
 
-Látum :math:`A \pm \Delta A` og :math:`B \pm \Delta B` vera mælistærðir með óvissum og látum :math:`k` vera fasta. Þegar :math:`A \pm \Delta A` er margfölduð með fastanum
+Látum :math:`A \pm \Delta A` og :math:`B \pm \Delta B` vera mælistærðir með óvissum og látum :math:`k` vera fasta.
+
+---------------
+
+Þegar :math:`A \pm \Delta A` er margfölduð með fastanum
 :math:`k` þá fæst að
 
 .. math::
 	k \cdot \left( A \pm \Delta A  \right)= kA \pm k\Delta A
+
+---------------
 
 Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru lagðar saman fáum við:
 
 .. math::
 	\left( A \pm \Delta A \right) + \left( B \pm \Delta B \right) = \left( A + B \right) \pm \left( \Delta A + \Delta B \right)
 
+---------------
+
 Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru dregnar frá hvor annarri fáum við:
 
 .. math::
 	\left( A \pm \Delta A \right) - \left( B \pm \Delta B \right) = \left( A - B \right) \pm \left( \Delta A + \Delta B \right)
+
+---------------
 
 Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru margfaldaðar saman fáum við:
 
 .. math::
 	\left( A \pm \Delta A \right) \cdot \left( B \pm \Delta B \right) = AB \pm \Delta A B \pm A \Delta B \pm \Delta A \Delta B
 
-Þar sem :math:`\Delta A` og :math:`\Delta B` eru yfirleitt litlar stærðir í samanburði við :math:`A` og :math:`B` leyfum við okkur að
+en þar sem :math:`\Delta A` og :math:`\Delta B` eru yfirleitt litlar stærðir í samanburði við :math:`A` og :math:`B` leyfum við okkur að
 sleppa :math:`\Delta A \Delta B` liðnum. Þá höfum við fengið að:
 
 .. math::
@@ -148,11 +157,15 @@ Svona má reikna óvissuna á margfeldi mældra stærða. Oft getur þó verið 
 .. math::
 	\left( A \pm \Delta A \right) \cdot \left( B \pm \Delta B \right) = AB \left( 1 \pm \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right) \right)
 
+---------------
+
 Fyrir deilingu tveggja mældra stærða :math:`A \pm \Delta A` og :math:`B \pm \Delta B` fáum við:
 
 .. math::
 	\frac{\left( A \pm \Delta A \right)}{\left( B \pm \Delta B \right)} =
 	\frac{A}{B}\left( 1 \pm \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right) \right)
+
+---------------
 
 Gerum loks ráð fyrir að við höfum stærð :math:`x \pm \Delta x` og fall :math:`f(x)`. Óvissuna í :math:`f(x)` má reikna með eftirfarandi hætti (Taylor-liðun):
 
