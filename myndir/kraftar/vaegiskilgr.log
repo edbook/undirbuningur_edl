@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  6 JUN 2019 13:46
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  6 JUN 2019 13:36
  restricted system commands enabled.
-**vog.tex
-(./vog.tex
+**vaegiskilgr.tex
+(./vaegiskilgr.tex
 LaTeX2e <2018-04-01> patch level 2
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.107 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
@@ -419,8 +419,8 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (./vog.aux)
-\openout1 = vog.aux
+))) (./vaegiskilgr.aux)
+\openout1 = vaegiskilgr.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -481,33 +481,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 10.
+(Font)              <7> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 10.
+(Font)              <5> on input line 6.
 (load luc: /Users/gudnyh/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
-ts/otl/lmroman9-regular.luc) [1
+ts/otl/lmroman9-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+ [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./vog.
-aux))
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./vaeg
+iskilgr.aux))
 
 Here is how much of LuaTeX's memory you used:
- 12185 strings out of 494413
+ 12276 strings out of 494413
  100000,319454 words of node,token memory allocated
- 2364 words of node memory still in use:
-   38 hlist, 1 vlist, 1 rule, 4 math, 69 glue, 1 kern, 8 glyph, 186 attribute, 4
-5 glue_spec, 186 attribute_list, 1 write, 121 pdf_literal, 8 pdf_colorstack node
-s
-   avail lists: 2:25,3:123,4:13,5:23,6:1,7:92,8:2,9:44
- 15861 multiletter control sequences out of 65536+600000
- 26 fonts using 1476487 bytes
- 55i,7n,56p,399b,574s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.ot
-f></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on vog.pdf (1 page, 18144 bytes).
+ 2484 words of node memory still in use:
+   41 hlist, 1 vlist, 1 rule, 10 math, 81 glue, 1 kern, 11 glyph, 183 attribute,
+ 45 glue_spec, 183 attribute_list, 1 write, 107 pdf_literal, 8 pdf_colorstack no
+des
+   avail lists: 2:25,3:109,4:13,5:23,6:1,7:113,8:4,9:47
+ 15944 multiletter control sequences out of 65536+600000
+ 32 fonts using 1849847 bytes
+ 55i,7n,56p,407b,620s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on vaegiskilgr.pdf (1 page, 38277 bytes).
 
-PDF statistics: 26 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+PDF statistics: 31 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

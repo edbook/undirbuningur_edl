@@ -6,9 +6,9 @@ SI- einingin fyrir krafta er *Newton*, táknað :math:`\text{N}`. Eitt Newton er
 Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
 
 .. note::
-  Athugið að í eðlisfræði er *massi* (e. mass) ekki það sama og þyngd, þó orðin hafi yfirleitt sömu merkingu í daglegu tali.
+  Athugið að í eðlisfræði er *massi* (e. mass) ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.
 
-  *Massi* hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
+  *Massi* (e. mass) hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
 
   *Þyngd* (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, þ.e. margfeldi massans við þyngdarhröðunina :math:`g`. SI-eining þyngdar er Newton.
 
@@ -59,6 +59,8 @@ Fyrsta lögmál Newtons
 Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
 Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
 
+.. _s.lnII:
+
 Annað lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~
 "Kraftur sem verkar á hlut er margfeldi massa hlutarins og hröðunar sem hann verður fyrir."
@@ -67,7 +69,7 @@ Annað lögmál Newtons
    \overline{F} = m \overline{a}
 
 Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
-Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft.
+Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hlutar.
 
 Þriðja lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~~
@@ -92,13 +94,11 @@ Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
 
 Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá.
 
-
 Núningskraftur
 --------------
 Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
 Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
 Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.
-
 
 .. tip::
   **(a)** Ásta ætlar að toga þungan kassa eftir steypugólfi og beitir til þess krafti :math:`F_{tog}` á kassann.
@@ -225,10 +225,28 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
 Vægi
 ----
 
-*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`. Vægi er yfirleitt sett sem jákvætt ef það veldur hreyfingu rangsælis.
+*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`.
+
+.. math::
+
+	M=F\cdot r \qquad  \qquad  M_{tot} = \sum_i M_i= \sum_i F_i\cdot r_i
+
+Þar sem :math:`r` er fjarlægð kraftsins :math:`F` frá punktinum sem reikna á vægið um.
+Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.
+
+.. figure:: ./myndir/kraftar/vaegiskilgr.svg
+  :align: center
+  :width: 60%
+
+Hér má sjá tvo jafnstóra krafta, :math:`F_1` og :math:`F_2` verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
+Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægið frá :math:`F_2` er meira vegna þess að armurinn er lengri, :math:`r_2>r_1`. Heildarvægið um veltipunktinn er þá summan:
+
+.. math::
+
+	M_{tot} = \sum_i M_i = M_1 + M_2 = F_1r_1+F_2r_2
 
 .. tip::
-  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til þess að lyfta kassanum?
+  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til halda kassanum kyrrum?
 
   .. figure:: ./myndir/kraftar/vog.svg
     :align: center
@@ -236,14 +254,14 @@ Vægi
 
   **Lausn**
 
-  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er stærra en vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera neikvætt
+  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er jafn stórt og vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera núll.
 
-  Reiknum nú heildarvægið um punktinn :math:`A`
-
-  .. math::
-    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 50 \text{N m}-F\cdot 5\text{ m}
-
-  Heildarvægið er neikvætt ef :math:`50 \text{N m}<F \cdot 5\text{ m}` þ.e.
+  Reiknum nú heildarvægið um punktinn :math:`A` :
 
   .. math::
-    F>\frac{50 \text{N m}}{5\text{m}} = 10 \text{N}
+    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 500 \text{N m}-F\cdot 5\text{ m}
+
+  Heildarvægið er núll ef :math:`500 \text{N m}=F \cdot 5\text{ m}` þ.e.
+
+  .. math::
+    F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}

@@ -11,7 +11,7 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 
 - efnaorka (í efnatengjum sameinda)
 - kjarnorka (í kjörnum atóma)
-- stöðuorka (t.d. vegna þyngdar- og segulsviða)
+- stöðuorka (t.d. vegna þyngdarsviði jarðar)
 - spennuorka (t.d. í teygðum og þjöppuðum gormum)
 
 *Hreyfiorka* (e. kinetic energy) er þar sem hlutir eða eindir eru á hreyfingu:
@@ -22,12 +22,12 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 - raforka (rafeindir á hreyfingu)
 
 .. tip::
-    **Orka breytir um form.**
+  **Orka breytir um form.**
 
-    Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
-    Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
+  Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
+  Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
 
-    Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í formi *efnaorku*.
+  Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í formi *efnaorku*.
 
 
 Vinna

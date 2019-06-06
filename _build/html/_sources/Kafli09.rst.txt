@@ -32,7 +32,6 @@ Ein tilraunanna sem framkvæmd er verklega hluta Eðlisfræði 1 snýst um einfa
 Með mörgum tilraunum og úrvinnslu gagnanna var hægt að smíða líkan sem lýsir raunveruleikanum svo vel að hægt er að tala um vísindalegan sannleik.
 Þið fáið svo tækifæri til að spreyta ykkur á prófun þessa líkans og í leiðinni æfa ykkur í vísindalegum aðferðum við tilraunir.
 
-
 Verklegar æfingar
 -----------------
 Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.

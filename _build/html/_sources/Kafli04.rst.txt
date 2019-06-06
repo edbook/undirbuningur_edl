@@ -92,11 +92,15 @@ Sé *staðsetning* hlutar teiknuð upp sem fall af tíma þá táknar hallatala 
   :width: 75 %
   :align: center
 
+-----------------
+
 Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala grafsins *hröðun* hlutarins. Hér er það gert fyrir seinna dæmið:
 
 .. image:: ./myndir/hradi/eldflaug.svg
   :width: 75 %
   :align: center
+
+----------------
 
 .. note::
   Láréttur ferill á :math:`v-t` grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( :math:`a=0` ).  Þá er ferillinn á :math:`x-t` grafi (staðsetning sem fall af tíma grafi) líka bein lína, þ.e. hallatalan er sú sama allstaðar.
