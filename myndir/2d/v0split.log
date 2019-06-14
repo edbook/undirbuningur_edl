@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  28 JUN 2018 13:15
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  7 JUN 2019 11:15
  restricted system commands enabled.
 **v0split.tex
 (./v0split.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.109 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
@@ -496,14 +496,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 lit.aux))
 
 Here is how much of LuaTeX's memory you used:
- 12211 strings out of 494413
+ 12271 strings out of 494413
  100000,319454 words of node,token memory allocated
- 2671 words of node memory still in use:
-   51 hlist, 3 vlist, 1 rule, 4 local_par, 12 math, 83 glue, 1 kern, 6 penalty, 
-30 glyph, 166 attribute, 45 glue_spec, 166 attribute_list, 1 write, 91 pdf_liter
+ 2758 words of node memory still in use:
+   51 hlist, 3 vlist, 1 rule, 4 local_par, 12 math, 89 glue, 1 kern, 6 penalty, 
+30 glyph, 175 attribute, 45 glue_spec, 175 attribute_list, 1 write, 94 pdf_liter
 al, 6 pdf_colorstack nodes
-   avail lists: 2:25,3:99,4:11,5:26,6:5,7:136,8:11,9:59
- 15879 multiletter control sequences out of 65536+600000
+   avail lists: 2:25,3:102,4:11,5:26,6:5,7:142,8:11,9:59
+ 15939 multiletter control sequences out of 65536+600000
  32 fonts using 1849847 bytes
  55i,7n,56p,387b,698s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -512,7 +512,7 @@ usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on v0split.pdf (1 page, 47182 bytes).
+Output written on v0split.pdf (1 page, 46983 bytes).
 
 PDF statistics: 35 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream

@@ -24,6 +24,9 @@
   {% endif %}
 
   {# CSS #}
+  <!-- profadi ad baeta vid, breyttist ekki
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  -->
 
   {# OPENSEARCH #}
   {% if not embedded %}
@@ -34,17 +37,19 @@
   {% endif %}
 
   {# RTD hosts this file, so just load on non RTD builds #}
-  {% if not READTHEDOCS %}
+  <!--{% if not READTHEDOCS %}-->
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-  {% endif %}
+  <!--{% endif %}-->
 
   {% for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
 
+  <!--
   {% for cssfile in extra_css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {% endfor %}
+  -->
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
@@ -76,6 +81,33 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+
+  <!-- eftirfarandi var ekki hja okkur fyrir -->
+  {% if not embedded %}
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'{{ url_root }}',
+            VERSION:'{{ release|e }}',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+            HAS_SOURCE:  {{ has_source|lower }},
+            CONTEXT:     '{{ data_capture_context }}',
+            DATA_CAPTURE_URL: '{{ data_capture_url }}',
+            DATA_CAPTURE_METHOD: '{{ data_capture_method }}',
+            DATA_CAPTURE_SUBJECT_NAME: '{{ data_capture_subject_name }}',
+            DATA_CAPTURE_VERB_NAME: '{{ data_capture_verb_name }}',
+            DATA_CAPTURE_OBJECT_NAME: '{{ data_capture_object_name }}',
+            DATA_CAPTURE_CONTEXT_NAME: '{{ data_capture_context_name }}'
+        };
+    </script>
+    {% set script_files = script_files + ["_static/embedded_video.js" ] %}
+    {%- for scriptfile in script_files %}
+      <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+
+  {% endif %}
+
 
 </head>
 

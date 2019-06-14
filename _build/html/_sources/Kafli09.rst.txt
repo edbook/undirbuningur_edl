@@ -169,9 +169,13 @@ Fyrir deilingu tveggja mældra stærða :math:`A \pm \Delta A` og :math:`B \pm \
 Gerum loks ráð fyrir að við höfum stærð :math:`x \pm \Delta x` og fall :math:`f(x)`. Óvissuna í :math:`f(x)` má reikna með eftirfarandi hætti (Taylor-liðun):
 
 .. math::
-		f(x \pm \Delta x) = f(x) \pm f'(x)\Delta x
+	f(x \pm \Delta x) = f(x) \pm f'(x)\Delta x
 
-þar sem að :math:`f'(x)` er gildi afleiðu :math:`f` í :math:`x`. Hér eftir verða gefin nokkur dæmi um slíka reikninga:
+þar sem að :math:`f'(x)` er gildi afleiðu :math:`f` í :math:`x`.
+
+--------------
+
+Á eftirfarandi slóðum má finna nokkur dæmi um óvissureikninga;
 
 .. Goodshit Guðný - þetta er haxbert
 

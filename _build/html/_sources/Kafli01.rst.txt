@@ -1,13 +1,16 @@
 Um námsefnið
 ============
+
 Þetta námsefni er ætlað öllum sem langar að læra eðlisfræði, sérstaklega þeim sem eru að hefja nám við Verkfræði- og Náttúruvísindasvið Háskóla Íslands (VoN).
 
-Farið er yfir helstu grunnatriði í eðlisfræði sem gott er að hafa góð tök á í upphafi námsins en efnið er sett fram til að gefa verðandi nemendum tækifæri til að skerpa á þessum atriðum áður en kennsla hefst.
+Farið er yfir helstu grunnatriði í eðlisfræði sem gott er að hafa góð tök á í upphafi námsins en efnið er sett fram til að gefa verðandi nemendum tækifæri til að skerpa á þessum atriðum.
 
 Í námskeiðunum  *Eðlisfræði 1V*, *Eðlisfræði 1R* og *Eðlisfræði B* má reikna með að farið verði hratt yfir mörg atriðanna sem fram koma á þessari síðu.
 
-Heilræði (?)
-------------
+Heilræði
+--------
+
+.. embedded-video:: yWMKYID5fr8
 
 Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna öll dæmin sem sett eru fyrir (og jafnvel fleiri) til þess að ná góðum tökum á efninu. Nemendum stendur til boða alls konar aðstoð:
 
@@ -19,7 +22,7 @@ Nánari upplýsingar um kennslufyrirkomulag, skiptingu í hópa og heimaverkefni
 
 Það getur borgað sig að reikna heimadæmin með öðrum sem sitja námskeiðið, ræða þau upphátt og hjálpast að.
 
-Ef ykkur vantar einhvern tímann ráðleggingar um námið ykkar er best að leita til Nemendaþjónustu VoN í Tæknigarði.
+Ef ykkur vantar einhvern tímann ráðleggingar um námið ykkar er best að leita til Nemendaþjónustu VoN í Tæknigarði, námsráðgjafa eða stjórnanda námsleiðarinnar ykkar.
 
 Hvað er eðlisfræði?
 -------------------

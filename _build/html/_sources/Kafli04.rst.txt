@@ -13,7 +13,7 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
   v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
 
 .. note::
-  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði til að tákna mismun og breytingar.
+  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði og stærðfræði til að tákna mismun og breytingar.
 
 .. note::
   Hraði er hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
@@ -52,6 +52,7 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
     \end{aligned}
 
   því einingarnar styttast út.
+
 
 
 Hröðun
@@ -103,7 +104,7 @@ Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala graf
 ----------------
 
 .. note::
-  Láréttur ferill á :math:`v-t` grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( :math:`a=0` ).  Þá er ferillinn á :math:`x-t` grafi (staðsetning sem fall af tíma grafi) líka bein lína, þ.e. hallatalan er sú sama allstaðar.
+  Láréttur ferill á :math:`v-t` grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( :math:`a=0` ).  Þá er ferillinn á :math:`x-t` grafi (staðsetning sem fall af tíma grafi) líka bein lína með fasta hallatölu.
 
 .. tip::
   Blettatígur sér antílópu í 35 m fjarlægð og hleypur af stað.
@@ -228,6 +229,37 @@ Tímaóháðu jöfnuna má leiða út með því að setja saman þessar tvær j
       x&= 75\text{ m}
     \end{aligned}
 
+Afstæður hraði
+--------------
+
+Engar áhyggjur, hér verður ekki farið út í afstæðiskenningu Einsteins!
+
+
+Hraði ljóss og hljóðs
+---------------------
+
+Hljóð berst frá uppsprettu sinni til eyrna okkar með því að hrista efnið sem ber það (t.d. loft eða vatn), en hraði hljóðbylgnanna fer eftir því hvaða efni það er og hvert hitastig þess er. Hraði hljóðs í lofti við 20°C er:
+
+.. math::
+
+	v_{loft} = 344 \text{m/s}
+
+en hraði ljóss í vatni við 20°C er:
+
+.. math::
+
+	v_{vatn} = 1482 \text{m/s}
+
+Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:
+
+.. math::
+
+	c = 3.00\cdot 10^8 \text{m/s}
+
+Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki) það líka.
+
+.. tip::
+  Sýnidæmi um þrumur og eldingar.
 
 Þyngdarhröðun
 -------------
@@ -306,7 +338,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
 .. tip::
   SpaceX ætlar að skjóta upp eldflaug.
   Vélar eldflaugarinnar gefa henni hröðun :math:`a_1=30.0\text{ m/s}^2` upp á við.
-  Eftir 10 sekúndur er slökkt á vélunum og eldflaugin verður í frjálsu falli.
+  Eftir 10 sekúndur bila vélarnar og eldflaugin verður í frjálsu falli.
 
   * Hve langt kemst skutlan upp áður en hún tekur að falla í átt að jörðu?
   * Hver verður hraði eldflaugarinnar þegar hún brotlendir aftur á jörðinni?
@@ -315,7 +347,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
   **Lausn**
 
   Munum að allir hlutir nálægt yfirborði jarðar fá hröðunina :math:`g=9.82\text{ m/s}^2` , sama hvort þeir eru á hreyfingu eða verða fyrir öðrum hröðunum.
-  Við gerum ráð fyrir að eldflaugin verði líka fyrir þeirri hröðun.
+  Við gerum ráð fyrir að eldflaugin fari ekki mjög langt og verði þess vegna fyrir þeirri hröðun allan tímann.
   Heildarhröðunin á eldflaugina á meðan kveikt er á vélunum er því :math:`a_1-g=30.0\text{ m/s}^s-9.8\text{ m/s}^2 = 20.2\text{ m/s}^2` .
   Skiptum reikningum okkar upp í nokkra hluta (0 er upphafsástand, 1 er þegar vélarnar bila, 2 er þegar flaugin er í hámarkshæð og 3 þegar hún brotlendir).
 

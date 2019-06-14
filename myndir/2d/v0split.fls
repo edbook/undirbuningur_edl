@@ -1,4 +1,4 @@
-PWD /Users/gudnyh/Seafile/edlisfraedi/myndir/2d
+PWD /Users/gudnyh/sumar19/undirbuningur_edl/myndir/2d
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./v0split.tex
 OUTPUT v0split.log

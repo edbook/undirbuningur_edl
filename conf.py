@@ -16,16 +16,20 @@
 import sys
 import os
 import shlex
+import sphinx_rtd_theme
+sys.path.insert(0, os.path.abspath('.'))
+# sys.path.append('/gudnyh/sumar/undirbuningur_edl/Sphinx_ext')
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-#needs_sphinx = '1.0'
+# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -49,10 +53,24 @@ extensions = [
     # 'sagecell.sagecell',
     # Extension for embedding sage cells (https://sagecell.sagemath.org/).
     # See README.txt in sagecell-extension folder.
+    # tok sage ut, er ekki ad nota
     'hoverrole.hoverrole',
     # Extension for providing Icelandic to English translation of mathematical terms
     # on mouse-over. See README in hoverrole folder.
-    'scrolldepth.scrolldepth'
+    'scrolldepth.scrolldepth',
+
+    'sphinx.ext.ifconfig',
+
+    # fyrir Reauthoring
+    'Sphinx_ext.activityduration',
+    'Sphinx_ext.htmlform',
+    'Sphinx_ext.instructorfeedback',
+    'Sphinx_ext.eqt',
+    'Sphinx_ext.instructorguide',
+    'Sphinx_ext.embeddedvideo',
+    'Sphinx_ext.xy_click',
+    'Sphinx_ext.questions',
+    'Sphinx_ext.iframe'
 
 ]
 
@@ -112,9 +130,9 @@ locale_dirs = ['locale/']
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
-#today = ''
+# today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+# today_fmt = '%B %d, %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -122,27 +140,27 @@ exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
-#default_role = None
+# default_role = None
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
-#add_function_parentheses = True
+# add_function_parentheses = True
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
-#add_module_names = True
+# add_module_names = True
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
-#show_authors = False
+# show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
-#modindex_common_prefix = []
+# modindex_common_prefix = []
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
-#keep_warnings = False
+# keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
@@ -158,22 +176,23 @@ html_theme_path = ['_themes']
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+# html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+# html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+# html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+# html_short_title = 'Námsefni í eðlisfræði'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 # SET TO UNIVERSITY OF ICELAND RAUNVÍSINDADEILD LOGO
 html_logo = '_static/hi_horiz_raunvisindadeild.png'
+
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -189,26 +208,26 @@ html_static_path = ['_static']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+# html_extra_path = []
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-#html_last_updated_fmt = '%b %d, %Y'
+# html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
-#html_use_smartypants = True
+# html_use_smartypants = True
 
-#html_add_permalinks = True
+# html_add_permalinks = True
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+# html_sidebars = {}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
+# html_additional_pages = {}
 
 # If false, no module index is generated.
-#html_domain_indices = True
+html_domain_indices = True
 
 # If false, no index is generated.
 #html_use_index = True
@@ -263,9 +282,9 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '''
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{hyperref}
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{hyperref}
 ''',
 
     # Latex figure (float) alignment

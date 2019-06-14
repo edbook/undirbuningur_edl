@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>4. Hraði og hröðun &mdash; Undirbúningur í eðlisfræði 2019</title>
@@ -17,6 +16,7 @@
   
 
   
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   
   
@@ -24,106 +24,48 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
-
-  
-
-	<!-- hoverrole.py css code -->
-	<style type="text/css">
-		a.tooltip {outline:none; border-bottom: thin dotted; background: #ffeedd}
-		a.tooltip strong {line-height:30px;}
-		a.tooltip:hover {text-decoration:none;} 
-		a.tooltip span {
-		    z-index:10;display:none; padding:14px 20px;
-		    margin-top:-30px; margin-left:12px;
-		    width:310px; line-height:16px;
-		}
-		a.tooltip:hover span{
-		    display:inline; position:absolute; color:#111;
-		    border:1px solid #DCA; background:#fffAF0;}
-		.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
-		    
-		/*CSS3*/
-		a.tooltip span
-		{
-		    border-radius:4px;
-		    box-shadow: 5px 5px 8px #CCC;
-		}
-	</style>
-
-
-	<script src="http://sagecell.sagemath.org/static/jquery.min.js"></script>
-	<script src="http://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-    
-    <script> 
-    // the buttonText string says what will be written on the 
-    // sage cell evaluation button.
-    // It can be changed here.
-    var buttonText = "Keyra"
-    </script>
-    
-	<script>sagecell.makeSagecell({inputLocation: ".sage", evalButtonText:buttonText});</script>
-    
-    <script>sagecell.makeSagecell({inputLocation: ".rsage", languages:["r"], evalButtonText: buttonText });</script>
-
-    <script>sagecell.makeSagecell({inputLocation: ".osage", languages:["octave"], evalButtonText: buttonText});</script>
-
-	<script>sagecell.makeSagecell({inputLocation: ".sageAuto", evalButtonText:buttonText, autoeval: true});</script>
-    
-    <script>sagecell.makeSagecell({inputLocation: ".rsageAuto", languages:["r"], evalButtonText: buttonText, autoeval: true});</script>
-
-    <script>sagecell.makeSagecell({inputLocation: ".osageAuto", languages:["octave"], evalButtonText: buttonText, autoeval: true});</script>
-	
-    <script>sagecell.makeSagecell({inputLocation: ".sageAutoHidden", evalButtonText :buttonText, autoeval: true, hide: ["evalButton"], template: sagecell.templates.minimal});</script>
-    
-    <script>sagecell.makeSagecell({inputLocation: ".rsageAutoHidden", languages:["r"], evalButtonText: buttonText, autoeval: true, hide: ["evalButton"], template: sagecell.templates.minimal});</script>
-
-    <script>sagecell.makeSagecell({inputLocation: ".osageAutoHidden", languages:["octave"], evalButtonText:buttonText, autoeval: true, hide: ["evalButton"], template: sagecell.templates.minimal});</script>
-
-
-	<style type="text/css">
-		.sagecell .CodeMirror-scroll {
-			overflow-y: hidden;
-			overflow-x: auto;
-		}
-		.sagecell .CodeMirror {
-			height: auto;
-		}
-	</style>
-
-    
         <link rel="index" title="Atriðaskrá"
               href="genindex.html"/>
         <link rel="search" title="Leit" href="search.html"/>
     <link rel="top" title="Undirbúningur í eðlisfræði 2019" href="index.html"/>
         <link rel="next" title="5. Hreyfing í tveimur víddum" href="Kafli05.html"/>
         <link rel="prev" title="3. Vigrar" href="Kafli03.html"/>
-
-    
-    <!-- ADD YOUR GOOGLE ANALYTICS TRACKING CODE HERE-->
-    <script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  		ga('create', 'UA-29852053-2', 'auto');
-  		ga('send', 'pageview');
-
-	</script>
-
-    <script>top.scrolldepth_tags = []; </script>
-
-     
-
+    <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+    <script>ggbAppletId = []; </script> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2019',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            CONTEXT:     '',
+            DATA_CAPTURE_URL: '',
+            DATA_CAPTURE_METHOD: '',
+            DATA_CAPTURE_SUBJECT_NAME: '',
+            DATA_CAPTURE_VERB_NAME: '',
+            DATA_CAPTURE_OBJECT_NAME: '',
+            DATA_CAPTURE_CONTEXT_NAME: ''
+        };
+    </script>
+    
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/embedded_video.js"></script>
+
+  
 
 </head>
 
@@ -133,45 +75,21 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search">
-        
-
-        
-          <a href="index.html" class="icon icon-home"> Undirbúningur í eðlisfræði
-        
-
-        
-          
-          <img src="_static/hi_horiz_raunvisindadeild.png" class="logo" />
-        
-        </a>
-
-        
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Leit" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-        
+      <div class="wy-side-nav-search logobgn">
+        <a href="index.html" class="fa fa-home"> Undirbúningur í eðlisfræði</a>
       </div>
-
+      
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
-          
-          
-              <ul class="current">
+        
+            <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.1. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#si-einingakerfi">2.1. SI-einingakerfið</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli02.html#forskeyti-si-kerfisins">2.1.1. Forskeyti SI-kerfisins</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#si-einingakerfi">2.1. SI-einingakerfið</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
 </ul>
 </li>
@@ -180,11 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#samlagning-vigra">3.4. Samlagning vigra</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#margfoldun-vigra">3.5. Margföldun vigra</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#innfeldi">3.5.1. Innfeldi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#krossfeldi">3.5.2. Krossfeldi</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#margfoldun-vigra">3.5. Margföldun vigra</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">4. Hraði og hröðun</a><ul>
@@ -192,7 +106,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#hroun">4.2. Hröðun</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#myndraen-tulkun">4.3. Myndræn túlkun</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#augnablikshrai-og-augnablikshroun">4.4. Augnablikshraði og augnablikshröðun</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#yngdarhroun">4.5. Þyngdarhröðun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#afstaeur-hrai">4.5. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hrai-ljoss-og-hljos">4.6. Hraði ljóss og hljóðs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yngdarhroun">4.7. Þyngdarhröðun</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
@@ -201,12 +117,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#logmal-newtons">6.1. Lögmál Newtons</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#fyrsta-logmal-newtons">6.1.1. Fyrsta lögmál Newtons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#anna-logmal-newtons">6.1.2. Annað lögmál Newtons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#rija-logmal-newtons">6.1.3. Þriðja lögmál Newtons</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#logmal-newtons">6.1. Lögmál Newtons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
@@ -222,12 +133,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
@@ -247,12 +153,20 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">12. Test</a></li>
 </ul>
 
-          
         
       </div>
-      &nbsp;
+      <div class="wy-side-nav-search">
+      <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -261,8 +175,8 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
         <a href="index.html">Undirbúningur í eðlisfræði</a>
+        
       </nav>
-
 
       
       <div class="wy-nav-content">
@@ -274,16 +188,13 @@
     <li>4. Hraði og hröðun</li>
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/Kafli04.rst.txt" rel="nofollow"> View page source</a>
-          
+          <a href="_sources/Kafli04.rst.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
   <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+          <div role="main">
             
   <div class="section" id="hrai-og-hroun">
 <h1>4. Hraði og hröðun<a class="headerlink" href="#hrai-og-hroun" title="Varanlegur hlekkur á titilinn">¶</a></h1>
@@ -295,17 +206,17 @@ Algengast er að nota metra á sekúndu (m/s) í útreikningum, en í daglegu ta
 <div class="math notranslate nohighlight">
 \[v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}\]</div>
 <div class="admonition note">
-<p class="first admonition-title">Athugasemd</p>
-<p class="last">Gríski stafurinn <span class="math notranslate nohighlight">\(\Delta\)</span> (stórt delta) er oft notaður í eðlisfræði til að tákna mismun og breytingar.</p>
+<p class="admonition-title">Athugasemd</p>
+<p>Gríski stafurinn <span class="math notranslate nohighlight">\(\Delta\)</span> (stórt delta) er oft notaður í eðlisfræði og stærðfræði til að tákna mismun og breytingar.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Athugasemd</p>
-<p class="last">Hraði er hefur bæði stærð og stefnu og er því <a class="reference internal" href="Kafli03.html#s-vigrar"><span class="std std-ref">vigur</span></a> .
+<p class="admonition-title">Athugasemd</p>
+<p>Hraði er hefur bæði stærð og stefnu og er því <a class="reference internal" href="Kafli03.html#s-vigrar"><span class="std std-ref">vigur</span></a> .
 Hraði getur verið í allar stefnur <span class="math notranslate nohighlight">\((x,y,z)\)</span> svo hraðavigurinn er yfirleitt táknaður með <span class="math notranslate nohighlight">\(\overline{v}=(v_x, v_y, v_z)\)</span> .
 Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, þ.e. aðeins einn þáttur hraðavigursins er ekki núll.</p>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Allra bestu hlaupararnir í 100 metra spretthlaupi klára hlaupið á um 10 sekúndum. Hver er meðalhraði hlauparanna í kílómetrum á klukkustund?</p>
 <p><strong>Lausn</strong></p>
 <p>Meðalhraði hlauparanna, í metrum á sekúndu, er:</p>
@@ -326,7 +237,7 @@ Við vitum að <span class="math notranslate nohighlight">\(1 \text{ km} = 1 \cd
   &amp;=\frac{10\cdot 1 \cdot 3600}{1000 \cdot 1} \frac{\text{ km}}{\text{ klst}} \\
   &amp;=36 \frac{\text{km}}{\text{klst}}
 \end{aligned}\end{split}\]</div>
-<p class="last">því einingarnar styttast út.</p>
+<p>því einingarnar styttast út.</p>
 </div>
 </div>
 <div class="section" id="hroun">
@@ -337,19 +248,19 @@ Ef hraði hlutar við tímann <span class="math notranslate nohighlight">\(t_1\)
 \[a=\frac{v_2-v_1}{t_2-t_1}=\frac{\Delta v}{\Delta t}\]</div>
 <p>Þegar hröðunin er núll þá er hraðinn fastur, þ.e. ekki að breytast með tíma.</p>
 <div class="admonition note">
-<p class="first admonition-title">Athugasemd</p>
+<p class="admonition-title">Athugasemd</p>
 <p>Líkt og hraði þá er hröðun líka <a class="reference internal" href="Kafli03.html#s-vigrar"><span class="std std-ref">vigur</span></a> með stærð og stefnu.
 Hröðunarvigurinn er yfirleitt táknaður með <span class="math notranslate nohighlight">\(\vec{a}=(a_x,a_y,a_z)\)</span> .</p>
-<p class="last"><strong>Hröðunarvigurinn og hraðavigurinn eru ekki endilega samstefna.</strong></p>
+<p><strong>Hröðunarvigurinn og hraðavigurinn eru ekki endilega samstefna.</strong></p>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Til þess að eldflaug geti komist úr þyngdarsviði jarðarinnar þarf hún að ferðast með hraðanum <span class="math notranslate nohighlight">\(11.2\)</span> km/s.
 Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstöðu og er komin í lausnarhraðann eftir 10 mínútur?</p>
 <p><strong>Lausn</strong></p>
 <p>10 mínútur eru 600 sekúndur, hér er því <span class="math notranslate nohighlight">\(t_2=600\)</span> s og <span class="math notranslate nohighlight">\(v_2=11.2\)</span> km/s <span class="math notranslate nohighlight">\(=11200\)</span> m/s. Þar sem eldflaugin byrjar í kyrrstöðu er <span class="math notranslate nohighlight">\(v_1=0\)</span> m/s og <span class="math notranslate nohighlight">\(t_1=0\)</span>.
 Því þarf hröðunin að vera</p>
-<div class="last math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[a=\frac{v_2-v_1}{t_2-t_1} =\frac{11200 \text{m/s}-0 \text{m/s}}{600 \text{s}-0\text{s}}=\frac{11200 \text{m/s}}{600\text{s}}=18.67 \text{m/s}^2\]</div>
 </div>
 </div>
@@ -364,11 +275,11 @@ Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstö
 </a>
 <hr class="docutils" />
 <div class="admonition note">
-<p class="first admonition-title">Athugasemd</p>
-<p class="last">Láréttur ferill á <span class="math notranslate nohighlight">\(v-t\)</span> grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( <span class="math notranslate nohighlight">\(a=0\)</span> ).  Þá er ferillinn á <span class="math notranslate nohighlight">\(x-t\)</span> grafi (staðsetning sem fall af tíma grafi) líka bein lína, þ.e. hallatalan er sú sama allstaðar.</p>
+<p class="admonition-title">Athugasemd</p>
+<p>Láréttur ferill á <span class="math notranslate nohighlight">\(v-t\)</span> grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( <span class="math notranslate nohighlight">\(a=0\)</span> ).  Þá er ferillinn á <span class="math notranslate nohighlight">\(x-t\)</span> grafi (staðsetning sem fall af tíma grafi) líka bein lína með fasta hallatölu.</p>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Blettatígur sér antílópu í 35 m fjarlægð og hleypur af stað.
 Einni sekúndu síðar hefur antílópan áttað sig á hættunni og hleypur af stað.
 Blettatígrar geta hlaupið á 99 km/klst (en aðeins í 100 metra sprettum) en antílópur geta hlaupið á hraðanum 81 km/klst og hafa þol í lengri vegalengdir.
@@ -386,7 +297,7 @@ Mismunurinn á hraða þeirra er <span class="math notranslate nohighlight">\(27
 Blettatígurinn nær antílópunni <strong>2.5 sekúndum</strong> eftir að hann hleypur af stað.</p>
 <p>Svona dæmi er oft þægilegt að leysa myndrænt. Hér er staðsetning dýranna teiknuð sem fall af tíma og þá er auðvelt að sjá að blettatígurinn nær antílópunni þegar ferlarnir skerast.
 Hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn <span class="math notranslate nohighlight">\(t=3.6363\)</span> m/s er merktur inn því það er tíminn sem það tæki blettatígurinn að hlaupa sinn 100 metra sprett.</p>
-<div class="last figure align-center">
+<div class="figure align-center">
 <img alt="_images/antilopa.svg" src="_images/antilopa.svg" /></div>
 </div>
 </div>
@@ -436,7 +347,7 @@ Hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn <span cla
 \[\begin{split}\begin{aligned}
   &amp;\text{Upphaflega jafnan} &amp; \frac{dx(t)}{dt}&amp;= a\cdot t +v_0\\
   &amp;\text{Umritum}  &amp;  dx(t) &amp;=  (a\cdot t +v_0) dt\\
-  &amp;\text{Heildum} &amp; \int_0^x dx &amp;= \int_0^t (a\cdot t +v_0) dt&nbsp;\\
+  &amp;\text{Heildum} &amp; \int_0^x dx &amp;= \int_0^t (a\cdot t +v_0) dt \\
   &amp;\text{ } &amp; x(t)-x_0 &amp;= \frac12 a\cdot t^2 + v_0 \cdot t \\
   &amp; \text{ } &amp; x(t) &amp;= x_0 + v_0 \cdot t +\frac12 a\cdot t^2
 \end{aligned}\end{split}\]</div>
@@ -454,21 +365,42 @@ Hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn <span cla
   &amp; &amp; v^2&amp;=v_0^2 + 2a\cdot (x-x_0)
 \end{aligned}\end{split}\]</div>
 </div></div><div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Bíll bíður á rauðu ljósi. Þegar ljósið verður grænt fær bíllinn hröðunina <span class="math notranslate nohighlight">\(6 \frac{\text{ m}}{\text{ s}^2}\)</span> . Hve hratt fer hann eftir 5 sekúndur og hve langt í burtu er hann?</p>
 <p><strong>Lausn</strong></p>
 <p>Notum <a class="reference internal" href="#s-hreyfijofnur"><span class="std std-ref">hreyfijöfnurnar</span></a> :</p>
-<div class="last math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   v&amp;=v_0+a\cdot t = 0\frac{\text{ m}}{\text{ s}}+6 \frac{\text{ m}}{\text{ s}^2} \cdot 5\text{ s} \\
   v&amp;= 30 \frac{\text{ m}}{\text{ s}}\\
-  x&amp;=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 = 0\text{ m}+0\frac{\text{ m}}{\text{ s}}\cdot 5\text{ s} + \frac{1}{2}\cdot 6 \frac{\text{ m}}{\text{ s}^2} \cdot (5\text{ s})^2&nbsp;\\
+  x&amp;=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 = 0\text{ m}+0\frac{\text{ m}}{\text{ s}}\cdot 5\text{ s} + \frac{1}{2}\cdot 6 \frac{\text{ m}}{\text{ s}^2} \cdot (5\text{ s})^2 \\
   x&amp;= 75\text{ m}
 \end{aligned}\end{split}\]</div>
 </div>
 </div>
+<div class="section" id="afstaeur-hrai">
+<h2>4.5. Afstæður hraði<a class="headerlink" href="#afstaeur-hrai" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Engar áhyggjur, hér verður ekki farið út í afstæðiskenningu Einsteins!</p>
+</div>
+<div class="section" id="hrai-ljoss-og-hljos">
+<h2>4.6. Hraði ljóss og hljóðs<a class="headerlink" href="#hrai-ljoss-og-hljos" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Hljóð berst frá uppsprettu sinni til eyrna okkar með því að hrista efnið sem ber það (t.d. loft eða vatn), en hraði hljóðbylgnanna fer eftir því hvaða efni það er og hvert hitastig þess er. Hraði hljóðs í lofti við 20°C er:</p>
+<div class="math notranslate nohighlight">
+\[v_{loft} = 344 \text{m/s}\]</div>
+<p>en hraði ljóss í vatni við 20°C er:</p>
+<div class="math notranslate nohighlight">
+\[v_{vatn} = 1482 \text{m/s}\]</div>
+<p>Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:</p>
+<div class="math notranslate nohighlight">
+\[c = 3.00\cdot 10^8 \text{m/s}\]</div>
+<p>Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki) það líka.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<p>Sýnidæmi um þrumur og eldingar.</p>
+</div>
+</div>
 <div class="section" id="yngdarhroun">
-<h2>4.5. Þyngdarhröðun<a class="headerlink" href="#yngdarhroun" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2>4.7. Þyngdarhröðun<a class="headerlink" href="#yngdarhroun" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Allt sem er nálægt yfirborði jarðarinnar verður fyrir sömu hröðun í átt að miðju jarðarinnar (í daglegu tali köllum við þessa átt <em>niður</em>).
 Við táknum þessa tilteknu hröðun, <em>þyngdarhröðun</em>, með <span class="math notranslate nohighlight">\(g\)</span>.</p>
 <p><span class="math notranslate nohighlight">\(g\)</span> er vigur sem bendir í átt að miðju jarðar.
@@ -476,7 +408,7 @@ Gildi <span class="math notranslate nohighlight">\(g\)</span> er dálítið mism
 <div class="math notranslate nohighlight">
 \[g=9.82\frac{\text{ m}}{\text{ s}^2}\]</div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Una stendur á Golden Gate brúnni í San Fransisco og ætlar að taka mynd af útsýninu. Þar er þyngdarhröðunin 9,80 m/s <span class="math notranslate nohighlight">\(^2\)</span> .
 Henni bregður og missir símann sinn yfir handriðið, síminn steypist að yfirborði sjávarins, 67 metrum neðar.</p>
 <p>Hve hratt hreyfist síminn þegar hann skellur á yfirborðinu? Hve langan tíma tekur fallið?
@@ -496,15 +428,15 @@ Henni bregður og missir símann sinn yfir handriðið, síminn steypist að yfi
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   v&amp;=v_0+a\cdot t \\
-  t&amp;=\frac{v-v_0}{a} = \frac{36.2 \frac{\text{ m}}{\text{ s}}}{9.80 \frac{\text{ m}}{\text{ s}^2}}&nbsp;\\
+  t&amp;=\frac{v-v_0}{a} = \frac{36.2 \frac{\text{ m}}{\text{ s}}}{9.80 \frac{\text{ m}}{\text{ s}^2}} \\
   t&amp;=3.7 \text{s}
 \end{aligned}\end{split}\]</div>
-<div class="last figure align-center">
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/unasimi.svg"><img alt="_images/unasimi.svg" src="_images/unasimi.svg" width="30%" /></a>
 </div>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>Körfubolta er kastað beint upp með hraðanum <span class="math notranslate nohighlight">\(v_0=5 \frac{\text{ m}}{\text{ s}}\)</span> .
 Hve hátt drífur boltinn?</p>
 <p><strong>Lausn</strong></p>
@@ -519,23 +451,23 @@ Upphafleg staðsetning boltans er <span class="math notranslate nohighlight">\(x
   \left(0 \frac{\text{ m}}{\text{ s}}\right) &amp;= \left(5 \frac{\text{ m}}{\text{ s}}\right)^2+2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2}) \cdot(x-0 \text{m}) \\
   x &amp;= \frac{\left(5 \frac{\text{ m}}{\text{ s}}\right)^2}{-2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2})} = 1.27 \text{ m}
 \end{aligned}\end{split}\]</div>
-<div class="last figure align-center">
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/asakarfa.svg"><img alt="_images/asakarfa.svg" src="_images/asakarfa.svg" width="30%" /></a>
 </div>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Dæmi</p>
+<p class="admonition-title">Dæmi</p>
 <p>SpaceX ætlar að skjóta upp eldflaug.
 Vélar eldflaugarinnar gefa henni hröðun <span class="math notranslate nohighlight">\(a_1=30.0\text{ m/s}^2\)</span> upp á við.
-Eftir 10 sekúndur er slökkt á vélunum og eldflaugin verður í frjálsu falli.</p>
+Eftir 10 sekúndur bila vélarnar og eldflaugin verður í frjálsu falli.</p>
 <ul class="simple">
-<li>Hve langt kemst skutlan upp áður en hún tekur að falla í átt að jörðu?</li>
-<li>Hver verður hraði eldflaugarinnar þegar hún brotlendir aftur á jörðinni?</li>
-<li>Hvenær brotlendir hún á jörðinni?</li>
+<li><p>Hve langt kemst skutlan upp áður en hún tekur að falla í átt að jörðu?</p></li>
+<li><p>Hver verður hraði eldflaugarinnar þegar hún brotlendir aftur á jörðinni?</p></li>
+<li><p>Hvenær brotlendir hún á jörðinni?</p></li>
 </ul>
 <p><strong>Lausn</strong></p>
 <p>Munum að allir hlutir nálægt yfirborði jarðar fá hröðunina <span class="math notranslate nohighlight">\(g=9.82\text{ m/s}^2\)</span> , sama hvort þeir eru á hreyfingu eða verða fyrir öðrum hröðunum.
-Við gerum ráð fyrir að eldflaugin verði líka fyrir þeirri hröðun.
+Við gerum ráð fyrir að eldflaugin fari ekki mjög langt og verði þess vegna fyrir þeirri hröðun allan tímann.
 Heildarhröðunin á eldflaugina á meðan kveikt er á vélunum er því <span class="math notranslate nohighlight">\(a_1-g=30.0\text{ m/s}^s-9.8\text{ m/s}^2 = 20.2\text{ m/s}^2\)</span> .
 Skiptum reikningum okkar upp í nokkra hluta (0 er upphafsástand, 1 er þegar vélarnar bila, 2 er þegar flaugin er í hámarkshæð og 3 þegar hún brotlendir).</p>
 <p>Notum nú <a class="reference internal" href="#s-hreyfijofnur"><span class="std std-ref">hreyfijöfnurnar</span></a> til að reikna hve hratt flaugin fer þegar vélarnar bila.</p>
@@ -594,23 +526,22 @@ Reiknum að lokum hve langan tíma fallið til jarðarinnar tekur:</p>
   t_3 &amp;= 25 \text{ s}\\
 \end{aligned}\end{split}\]</div>
 <p>Þessi misheppnaða svaðilför eldflaugarinnar tekur hana því <span class="math notranslate nohighlight">\(t_1+t_2+t_3=55.5 \text{s}\)</span> .</p>
-<a class="last reference internal image-reference" href="_images/flokid.svg"><div align="center" class="align-center"><img alt="_images/flokid.svg" src="_images/flokid.svg" width="75%" /></div>
+<a class="reference internal image-reference" href="_images/flokid.svg"><div align="center" class="align-center"><img alt="_images/flokid.svg" src="_images/flokid.svg" width="75%" /></div>
 </a>
 </div>
 </div>
 </div>
 
 
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Kafli05.html" class="btn btn-neutral float-right" title="5. Hreyfing í tveimur víddum" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Kafli05.html" class="btn btn-neutral float-right" title="5. Hreyfing í tveimur víddum"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Kafli03.html" class="btn btn-neutral" title="3. Vigrar" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Kafli03.html" class="btn btn-neutral" title="3. Vigrar"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -621,40 +552,16 @@ Reiknum að lokum hve langan tíma fallið til jarðarinnar tekur:</p>
     <p>
     </p>
   </div>
-
 </footer>
-
         </div>
       </div>
 
     </section>
 
   </div>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'2019',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/dynsite.js"></script>
 
   
   
@@ -664,18 +571,13 @@ Reiknum að lokum hve langan tíma fallið til jarðarinnar tekur:</p>
       });
   </script>
   
-<script src="_static/jquery.scrolldepth.js"></script>
-<script>
-    jQuery.scrollDepth({
-        percentage: false,
-        userTiming: false,
-        pixelDepth: false,
-        nonInteraction: false,
-        elements: top.scrolldepth_tags
-}); 
-</script>
-
-
+  <script>
+      window.addEventListener("load", function(){
+        for(var i in ggbAppletId){
+            ggbAppletId[i].inject(i);
+        }
+      });
+          </script> 
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  28 JUN 2018 11:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  7 JUN 2019 11:13
  restricted system commands enabled.
 **kasthr.tex
 (./kasthr.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.102 seconds
+luaotfload | main : initialization completed in 0.101 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
@@ -484,29 +484,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 6.
+(load luc: /Users/gudnyh/Library/texlive/2018/texmf-var/luatex-cache/generic/fon
+ts/otl/lmroman9-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+ [1
 
-[1
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./kasthr.aux))
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./kast
+hr.aux))
 
 Here is how much of LuaTeX's memory you used:
- 12344 strings out of 494413
+ 12394 strings out of 494413
  100000,319454 words of node,token memory allocated
- 2402 words of node memory still in use:
-   39 hlist, 1 vlist, 1 rule, 10 math, 70 glue, 2 kern, 7 glyph, 185 attribute, 
-45 glue_spec, 185 attribute_list, 1 write, 119 pdf_literal, 6 pdf_colorstack nod
+ 2493 words of node memory still in use:
+   39 hlist, 1 vlist, 1 rule, 10 math, 76 glue, 2 kern, 7 glyph, 195 attribute, 
+45 glue_spec, 195 attribute_list, 1 write, 122 pdf_literal, 6 pdf_colorstack nod
 es
-   avail lists: 2:25,3:121,4:11,5:24,6:1,7:98,8:2,9:45
- 16021 multiletter control sequences out of 65536+600000
- 25 fonts using 1344807 bytes
- 55i,7n,56p,386b,579s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 2:25,3:124,4:11,5:24,6:1,7:104,8:3,9:45
+ 16062 multiletter control sequences out of 65536+600000
+ 32 fonts using 1849847 bytes
+ 55i,7n,56p,386b,587s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on kasthr.pdf (1 page, 17143 bytes).
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on kasthr.pdf (1 page, 31192 bytes).
 
-PDF statistics: 19 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+PDF statistics: 27 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -7,13 +7,14 @@ Undirbúningur í eðlisfræði, Háskóli Íslands, 2019
 =================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :numbered:
    :glob:
 
    Kafli*
    formulublad
    hugtok
+   test
 
 .. Indices and tables
 .. ==================
