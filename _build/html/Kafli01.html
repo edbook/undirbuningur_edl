@@ -27,14 +27,14 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+  
+        <link rel="search" title="Leit" href="search.html"/>
         <link rel="index" title="Atriðaskrá"
               href="genindex.html"/>
-        <link rel="search" title="Leit" href="search.html"/>
     <link rel="top" title="Undirbúningur í eðlisfræði 2019" href="index.html"/>
         <link rel="next" title="2. Mælieiningar" href="Kafli02.html"/>
-        <link rel="prev" title="Undirbúningur í eðlisfræði, Háskóli Íslands, 2019" href="index.html"/>
-    <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-    <script>ggbAppletId = []; </script> 
+        <link rel="prev" title="Undirbúningur í eðlisfræði, Háskóli Íslands, 2019" href="index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -62,10 +62,16 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/rendermath.js"></script>
       <script type="text/javascript" src="_static/embedded_video.js"></script>
 
   
+
+
+  <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+  <script>ggbAppletId = []; </script>
 
 </head>
 
@@ -75,21 +81,45 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search logobgn">
-        <a href="index.html" class="fa fa-home"> Undirbúningur í eðlisfræði</a>
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Undirbúningur í eðlisfræði
+        
+
+        
+          
+          <img src="_static/hi_horiz_raunvisindadeild.png" class="logo" />
+        
+        </a>
+
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
       </div>
-      
+
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
-        
-            <ul class="current">
+          
+          
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#heilraei">1.1. Heilræði</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#si-einingakerfi">2.1. SI-einingakerfið</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#si-einingakerfi">2.1. SI-einingakerfið</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli02.html#forskeyti-si-kerfisins">2.1.1. Forskeyti SI-kerfisins</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
 </ul>
 </li>
@@ -98,7 +128,11 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#samlagning-vigra">3.4. Samlagning vigra</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#margfoldun-vigra">3.5. Margföldun vigra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#margfoldun-vigra">3.5. Margföldun vigra</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#innfeldi">3.5.1. Innfeldi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#krossfeldi">3.5.2. Krossfeldi</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli04.html">4. Hraði og hröðun</a><ul>
@@ -117,7 +151,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#logmal-newtons">6.1. Lögmál Newtons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#logmal-newtons">6.1. Lögmál Newtons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#fyrsta-logmal-newtons">6.1.1. Fyrsta lögmál Newtons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#anna-logmal-newtons">6.1.2. Annað lögmál Newtons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli06.html#rija-logmal-newtons">6.1.3. Þriðja lögmál Newtons</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
@@ -133,7 +172,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
@@ -149,24 +193,19 @@
 <li class="toctree-l2"><a class="reference internal" href="formulublad.html#hrai">10.2. Hraði</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formulublad.html#hroun">10.3. Hröðun</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formulublad.html#hreyfijofnur">10.4. Hreyfijöfnur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="formulublad.html#kraftar">10.5. Kraftar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formulublad.html#tvivi-hreyfing">10.5. Tvívíð hreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formulublad.html#kraftar">10.6. Kraftar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formulublad.html#orka">10.7. Orka</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">12. Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">12. Fjölvalsspurningar í Sphinx</a></li>
 </ul>
 
+          
         
       </div>
-      <div class="wy-side-nav-search">
-      <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-      </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -288,12 +327,12 @@ Af þeim 29 sem mættu á ráðstefnuna fengu 17 Nóbelsverðlaun en Curie var s
   </script>
   
   <script>
-      window.addEventListener("load", function(){
-        for(var i in ggbAppletId){
-            ggbAppletId[i].inject(i);
-        }
-      });
-          </script> 
+    window.addEventListener("load", function(){
+      for(var i in ggbAppletId){
+        ggbAppletId[i].inject(i);
+      }
+    });
+  </script> 
 
 </body>
 </html>

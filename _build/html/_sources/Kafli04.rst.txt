@@ -53,6 +53,27 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
 
   því einingarnar styttast út.
 
+-----------------------
+
+.. eqt:: daemi-hradi1
+
+  **Æfingadæmi 1** Hversu langt kemst maður sem gengur á hraðanum :math:`v=3 \text{ m/s}` á einni mínútu?
+
+  A) :eqt:`I` 300 metra
+
+  #) :eqt:`I` 3 metra
+
+  #) :eqt:`C` 180 metra
+
+  #) :eqt:`I` Ekkert af ofangreindu
+
+  .. eqt-solution::
+    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
+
+    .. math::
+      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
+
+-----------------------
 
 
 Hröðun
@@ -83,6 +104,27 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
   .. math::
     a=\frac{v_2-v_1}{t_2-t_1} =\frac{11200 \text{m/s}-0 \text{m/s}}{600 \text{s}-0\text{s}}=\frac{11200 \text{m/s}}{600\text{s}}=18.67 \text{m/s}^2
 
+-----------------------
+
+.. eqt:: daemi-hrodun
+
+  **Æfingadæmi 2** Hver er hraði eldflaugar sem byrjar með hraðann :math:`v_i=3\text{ m/s}` og hægir á sér
+
+  A) :eqt:`C` 300 metra
+
+  #) :eqt:`I` 3 metra
+
+  #) :eqt:`I` 180 metra
+
+  #) :eqt:`I` Ekkert af ofangreindu
+
+  .. eqt-solution::
+    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
+
+    .. math::
+      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
+
+-----------------------
 
 Myndræn túlkun
 --------------
@@ -168,7 +210,7 @@ Sömuleiðis er *augnablikshröðun* hlutar afleiða hraðans m.t.t. tíma:
 ----------------------------------------------------
 
 .. begin-toggle::
-  :label: Sýna útleiðslu
+  :label: Sýna útleiðslu á hreyfijöfnum
   :starthidden: True
 
 Hröðun er afleiða hraðans og því má lýsa sem afleiðujöfnu:
@@ -234,6 +276,19 @@ Afstæður hraði
 
 Engar áhyggjur, hér verður ekki farið út í afstæðiskenningu Einsteins!
 
+Afstæður hraði (eða innbyrðis hraði) er hraði eins hlutar miðað við hreyfingar annars hlutar. Í raun er hraði alls afstæður, en við miðum langoftast við jörðina þegar við tölum um hraða okkar, vindsins og bílanna í kringum okkur.
+
+(jafna/jöfnur)
+
+.. tip::
+  Reiðhjól og gangandi maður eru að ferðast í sömu átt. Reiðhjólið fer á hraðanum :math:`v_h=6 \text{ m/s}` en maðurinn á :math:`v_g=1 \text{ m/s}`. Hver er hraði hjólsins miðað við manninn?
+
+  **Lausn**
+
+
+
+.. tip::
+  Anna situr í strætó sem fer á :math:`30 \text{ m/s}` hraða miðað við jörðina. Hver er hraði Önnu miðað við strætóinn? Hver er hraði hennar miðað við jörðina?
 
 Hraði ljóss og hljóðs
 ---------------------
@@ -256,7 +311,7 @@ Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með þ
 
 	c = 3.00\cdot 10^8 \text{m/s}
 
-Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki) það líka.
+Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki, Wi-Fi) það líka.
 
 .. tip::
   Sýnidæmi um þrumur og eldingar.
@@ -425,3 +480,35 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
   .. image:: ./myndir/hradi/flokid.svg
     :width: 75 %
     :align: center
+
+--------------
+
+.. eqt:: daemi-gravity
+
+  **Æfingadæmi** Jón kastar bolta beint upp í loftið með hraðann :math:`v= 3` Hvenær grípur hann boltann aftur?
+
+  A) :eqt:`I` 300 metra
+
+  #) :eqt:`I` 3 metra
+
+  #) :eqt:`I` 180 metra
+
+  #) :eqt:`C`
+
+  .. eqt-solution::
+    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
+
+    .. math::
+      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
+
+--------------
+
+.. raw:: html
+
+  <style>
+
+  .expl {
+   display:none;
+  }
+
+  </style>

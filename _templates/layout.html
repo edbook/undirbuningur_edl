@@ -40,6 +40,9 @@
   {% endfor %}
 
   {%- block linktags %}
+    {%- if hasdoc('search') %}
+        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
+    {%- endif %}
     {%- if hasdoc('about') %}
         <link rel="author" title="{{ _('About these documents') }}"
               href="{{ pathto('about') }}"/>
@@ -47,9 +50,6 @@
     {%- if hasdoc('genindex') %}
         <link rel="index" title="{{ _('Index') }}"
               href="{{ pathto('genindex') }}"/>
-    {%- endif %}
-    {%- if hasdoc('search') %}
-        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
     {%- endif %}
     {%- if hasdoc('copyright') %}
         <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
@@ -64,8 +64,6 @@
     {%- if prev %}
         <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}"/>
     {%- endif %}
-    <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-    <script>ggbAppletId = []; </script>
   {%- endblock %}
   {%- block extrahead %} {% endblock %}
 
@@ -97,6 +95,10 @@
 
   {% endif %}
 
+
+  <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+  <script>ggbAppletId = []; </script>
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -105,24 +107,38 @@
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-nav-search logobgn">
-        <a href="{{ pathto(master_doc) }}" class="fa fa-home"> {{ project }}</a>
-      </div>
-      {% if iguide %}
-        <div class="instructor-guide">Instructor Guide</div>
-      {% endif %}
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
-        {% if toctree %}
-            {{ toctree }}
-        {% else %}
-            <!-- Local TOC -->
-            <div class="local-toc">{{ toc }}</div>
-        {% endif %}
-      </div>
       <div class="wy-side-nav-search">
-      {% include "searchbox.html" %}
+        {% block sidebartitle %}
+
+        {% if logo and theme_logo_only %}
+          <a href="{{ pathto(master_doc) }}">
+        {% else %}
+          <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+        {% endif %}
+
+        {% if logo %}
+          {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
+          <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" />
+        {% endif %}
+        </a>
+
+        {% include "searchbox.html" %}
+
+        {% endblock %}
       </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        {% block menu %}
+          {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=True) %}
+          {% if toctree %}
+              {{ toctree }}
+          {% else %}
+              <!-- Local TOC -->
+              <div class="local-toc">{{ toc }}</div>
+          {% endif %}
+        {% endblock %}
+      </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -163,12 +179,12 @@
   </script>
   {% endif %}
   <script>
-      window.addEventListener("load", function(){
-        for(var i in ggbAppletId){
-            ggbAppletId[i].inject(i);
-        }
-      });
-          </script>
+    window.addEventListener("load", function(){
+      for(var i in ggbAppletId){
+        ggbAppletId[i].inject(i);
+      }
+    });
+  </script>
 
   {%- block footer %} {% endblock %}
 

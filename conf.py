@@ -40,11 +40,12 @@ extensions = [
     # other extensions causing non-proper rendering of LaTeX math code.
     # To avoid these errors we use the extension pngmath.
     # For the document to render properly dvipng must be uninstalled from your system
-    'sphinx.ext.mathjax',
+    # 'sphinx.ext.mathjax',
     # 'sphinxcontrib.katex',
     # 'hieroglyph',
     #  hieroglyph is used to generate html slides, needs to be installed for use,
     #  see https://github.com/nyergler/hieroglyph
+    'katex.katex',
     'ggbextension.ggb',
     #  Extension for embedding geogebra applets, see README.txt in ggbextension folder
     'toggleblock.toggleBlock',
@@ -85,9 +86,13 @@ numfig_format['section'] = '%s'
 
 # The mathjax path needs to be set to https in order to work on notendur.hi.is, it can be changed here to suit other needs
 # (http://sphinx-doc.org/latest/ext/math.html#confval-mathjax_path)
-mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+# mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 #mathjax_path = "MathJax.js"
 
+katex_path = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js'
+katex_render = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js'
+render_math = 'rendermath.js'
+katex_css = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

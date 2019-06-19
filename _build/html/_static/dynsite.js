@@ -246,10 +246,10 @@ function grade() {
     // If answer is correct, insert text in button and visualize icon
     if (answer == '1') {
 	buttons_el.find(".correct_icon").css('opacity', '1');
-	buttons_el.find(".reauthoring-embedded-answer").text('Correct');
+	buttons_el.find(".reauthoring-embedded-answer").text(' Rétt!');
     } else {
 	buttons_el.find(".incorrect_icon").css('opacity', '1');
-	buttons_el.find(".reauthoring-embedded-answer").text('Incorrect');
+	buttons_el.find(".reauthoring-embedded-answer").text(' Ekki rétt, reyndu aftur');
     }
 
     // Send the "embedded-question-grade" event
@@ -261,14 +261,14 @@ function grade() {
     /* Change the visibility of the buttons */
     buttons_el.find(".reauthoring-grade").css('display', 'none');
     buttons_el.find(".reauthoring-again").css('display', 'inline');
-    buttons_el.find(".reauthoring-solution").css('display', 'inline');
+    buttons_el.find(".reauthoring-solution").css('display', 'none');
 
     // Show all explanations if answer is correct.
     // Only show checked field explanations if answer is incorrect
     if (answer == '1') {
         div_el.find(".tip.expl").show();
     } else {
-        div_el.find("form > ol.eqt-answer-list > li input:checked").parent().find('.tip.expl').show();
+        div_el.find("form > ol.eqt-answer-list > li > input:checked").parent().find('.tip.expl').show();
     }
 };
 

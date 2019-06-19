@@ -15,10 +15,18 @@ Einingin fyrir hröðun eru metrar á sekúndu í öðru veldi, :math:`\text{m/s
 
 *Eðlismassi* (e. density) er hlutfall massa hlutar og rúmmálsins sem hann tekur. Einingin fyrir eðlismassa er kílógramm á rúmmetra, :math:`\text{kg/m}^3`.
 
-*Skriðþungi* (e. momentum) er margfeldi hraða hlutar og massa hans. Eining skriðþunga er kílógramm metri á sekúndu, :math:`\text{kgm/s}`.
+*Skriðþungi* (e. momentum) er margfeldi hraða hlutar og massa hans. Eining skriðþunga er kílógramm metri á sekúndu, :math:`\text{kg m/s}`.
 
 *Kraftur* (e. force) er víxlverkun sem veldur hröðun hluta. Kraftar eru vigrar (hafa bæði stærð og stefnu) og eining þeirra er Newton, :math:`1 \text{N} = 1 \frac{\text{kg m}}{\text{s}^2}`.
 
-*Vægi (vogarafl, tork)* (e. torque) er margfeldi krafts og vegalengdar. Eining vægis er Newton metri, :math:`\text{N m}`.
+*Vægi (vogarafl, tork)* (e. torque) er margfeldi krafts og lengdar armsins sem hann verkar um. Eining vægis er Newton metri, :math:`\text{N m}`.
 
 *Orka* kerfis segir til um hve mikið þarf til þess að breyta ástandi þess. Orku er hvorki hægt að búa til né eyða, en hún getur breytt um form. Eining orku er Joule, :math:`1\text{J}= 1 \text{N m} = 1\frac{\text{kg m}^2}{\text{s}^2}`.
+
+*Vinna* er margfeldi (innfeldi) krafts og vegalengdar sem hann flytur hlut. Vinna hefur sömu einginar og orka.
+
+*Afl* er breyting vinnu með tilliti til tíma. Afl hefur einginguna Watt, sem er orka á tímaeininingu, :math:`1\text{W}= 1 \frac{\text{J}}{\text{s}}`
+
+*Hreyfiorka* er orka hlutar sem er á hreyfingu. Hreyfiorka hefur sömu einginar og orka.
+
+*Stöðuorka* hlutar í þyngdarsviði er orka sem hlutur býr yfir vegna nálægðar við yfirborð hnattar. Stöðuorka hefur sömu einingar og orka.

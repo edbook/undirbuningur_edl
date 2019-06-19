@@ -1,4 +1,6 @@
-#!/usr/bin/env pythona
+# virkar betur
+
+# !/usr/bin/env pythona
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2014 The University of Sydney
@@ -70,9 +72,9 @@ def visit_eqt_answer_type_node(self, node):
         if hasattr(self.builder.config, 'iguide') and \
                 self.builder.config.iguide:
             if node["content"] == 'C':
-                self.body.append('<strong>[Correct]</strong>')
+                self.body.append('<strong>[Rétt!]</strong>')
             else:
-                self.body.append('<strong>[Incorrect]</strong>')
+                self.body.append('<strong>[Rangt]</strong>')
         return
 
     if node['type'] == 'eqt-fib':
@@ -320,7 +322,7 @@ class ESolutionDirective(BaseAdmonition):
         title = nodes.title(title_text, '', *textnodes)
         admonition_node += title
         admonition_node += messages
-        admonition_node['classes'] += ['tip', 'expl']
+        admonition_node['classes'] += ['expl', 'tip']
         self.state.nested_parse(self.content, self.content_offset,
                                 admonition_node)
         return [admonition_node]
@@ -330,7 +332,7 @@ def visit_explanation_node(self, node):
     """
     Function executed when the node representing the :expl:`XXX` is visited
     """
-    self.body.append('<div class="tip expl admonition" style="display:none;">'
+    self.body.append('<div class="tip expl admonition">'
                      '%s</div>' % node["content"])
     return
 
