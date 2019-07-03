@@ -1,4 +1,4 @@
-PWD /Users/gudnyh/Seafile/edlisfraedi/myndir/kraftar
+PWD /Users/gudnyh/sumar/undirbuningur_edl/myndir/kraftar
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./skaplanhnit.tex
 OUTPUT skaplanhnit.log

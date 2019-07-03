@@ -87,7 +87,7 @@ numfig_format['section'] = '%s'
 # The mathjax path needs to be set to https in order to work on notendur.hi.is, it can be changed here to suit other needs
 # (http://sphinx-doc.org/latest/ext/math.html#confval-mathjax_path)
 # mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-#mathjax_path = "MathJax.js"
+# mathjax_path = "MathJax.js"
 
 katex_path = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js'
 katex_render = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js'

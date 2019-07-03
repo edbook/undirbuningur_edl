@@ -1,3 +1,5 @@
+.. _s.verklegt:
+
 Verklegar tilraunir
 ===================
 
@@ -36,7 +38,7 @@ Verklegar æfingar
 -----------------
 Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.
 Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma. Í kennslustofum ætluðum verklegum tilraunum eru strangari reglur um umgengni, t.d. um neyslu matar og drykkja, sem öllum ber að kynna sér og fylgja.
-Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir.
+Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir. Að tilrauninni lokinni þarf hópurinn að klára vinnubókina áður en henni er síðan skilað til yfirferðar hjá kennara.
 
 `Þetta skjal <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ fjallar um meðferð og úrvinnslu gagna og er þess virði að lesa.
 Á heimasvæði `Martins Swift <https://notendur.hi.is/~martin/e0/>`_ má nálgast allskonar ítarefni um verklegar tilraunir.
@@ -60,59 +62,12 @@ Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé ve
 
 `Meira um verkbækur <https://notendur.hi.is/~martin/e0/verkbok/>`_ af síðu Martins.
 
-Markverðir stafir
------------------
-Ef þú myndir mæla þykkt kennslubókarinnar í *Eðlisfræði 1* með venjulegri reglustriku myndirðu geta sagt að hún væri 2.7 cm á þykkt.
-Þú mættir ekki segja að hún væri 2.70 cm þykk, því reglustrikan er ekki nógu nákvæm, bókin gæti allt eins verið 2.68 cm eða 2.73 cm án þess að þú sæir það í mælingunni.
-Ef þú myndir síðan mæla þykktina aftur en nú með `skíðmáli <https://is.wikipedia.org/wiki/Sk%C3%ADðmál>`_ myndirðu komast að því að hún væri 2.723 cm þykk.
-Munurinn sem væri á mælingunum tveimur væri sá að *óvissa* (e. uncertainty) eða *skekkja* (e. error) skíðmálsins er minni en óvissa reglustrikunnar.
-
-Við táknum *nákvæmni* (e. accuracy) mældrar stærðar með tákninu :math:`\pm` (plús-mínus).
-Mæling reglustrikunnar á þykkt bókarinnar myndum við tákna með :math:`2.7 \pm 0.1` cm, en mælinguna með skíðmálinu með :math:`2.723 \pm 0.001` cm.
-Reglustrikan myndi gefa þykkt bókarinnar með tveimur markverðum stöfum, en skíðmálið með fjórum.
-
-Þegar stærðir eru margfaldaðar saman þá má útkoman ekki hafa fleiri markverða stafi en sú tala sem hafði fæsta markverða stafi.
-
-.. tip::
-  .. math::
-    \frac{0.745\cdot 2.2}{3.885} = 0.42
-
-  Sú tala sem hefur fæsta stafi í þessu dæmi er 2.2, sem hefur 2 markverða stafi.
-  Því er rétt að gefa svarið með 2 markverðum stöfum, 0.42, þó að flestar reiknivélar myndu gefa svarið :math:`0.4218790219`.
-
-
-Þegar stærðir eru lagðar saman þá má útkoman ekki hafa minni óvissu en sú sem hafði mesta óvissu.
-Markverðir stafir í samlagningu fer því eftir aukastöfum stærðanna, en ekki óvissu þeirra.
-
-.. tip::
-	.. math::
-		27.153 + 138.2-11.74=153.6
-
-	Hér hefur talan 138.2 mesta óvissu (fæsta aukastafi aftan við kommu) svo gefa þarf svarið með jafn mikilli óvissu, þ.e. einum aukastaf á eftir kommu. Flestar reiknivélar myndu gefa svarið 153.613 en í vísindalegum útreikningum getum við ekki tekið mark á síðustu tveimur tölunum.
-
-Reglur þessar um meðferð markverðra stafa eiga við um alla útreikninga í eðlisfræði, bæði verklegum og fræðilegum.
-
-Staðalform
-----------
-
-Staðalform (e. `scientific notation <https://en.wikipedia.org/wiki/Scientific_notation>`_) er gjarnan til þess að lýsa stærðum í eðlisfræði.
-Þá er komman færð fram um :math:`n` bil og talan margfölduð með :math:`10^n` .
-Þetta skýrist best með dæmum:
-
-.. tip::
-	Ljóshraðinn, með níu markverðum stöfum, er :math:`c=299792458` m/s. Á staðalformi er ljóshraðinn skrifaður :math:`c=2.99792458\cdot10^8` m/s, en þá er komman færð áfram um 8 sæti.
-
-	Í langflestum tilvikum er nógu nákvæmt að vinna með þrjá markverða stafi: :math:`c=3.00\cdot10^8` m/s og er það yfirleitt gert.
-
-	.. math::
-		\begin{aligned}
-			11.2 &= 1.12\cdot 10^1  & \text{þrír markverðir stafir}\\
-			0.0000045&=4.5\cdot 10^{-6} & \text{tveir markverðir stafir}
-		\end{aligned}
-
-
 Óvissureikningar
 ----------------
+
+Allar mælingar hafa endanlega nákvæmni, svo hverri mælingu þurfa að fylgja upplýsingar um nákvæmni hennar. Mæling er birt sem (máltala :math:`\pm` óvissa) [eining].
+
+Óvissa er ekki galli heldur eðlilegur hluti af mælingu. Óvissu þarf mælandi að meta og hefur stundum ekki annað en skynsemina til þess. Óvissumatið verður alltaf á ábyrgð mælingamanns.
 
 Látum :math:`A \pm \Delta A` og :math:`B \pm \Delta B` vera mælistærðir með óvissum og látum :math:`k` vera fasta.
 

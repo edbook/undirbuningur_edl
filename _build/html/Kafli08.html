@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli01.html#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
@@ -168,11 +183,12 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
@@ -183,9 +199,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -252,6 +266,10 @@
 <div class="math">
 \[\overline{p}=m\overline{v}\]</div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Athugasemd</p>
+<p>Þar sem skriðþungi er margfeldi vigurs (hraðans) og skalarstærðar (massans) þá sjáum við að <em>skriðþungi er vigur</em>. Eining skriðþunga er <span class="math">\(\text{kg}\cdot\text{m/s}\)</span> sem er það sama og <span class="math">\(\text{N}\cdot\text{s}\)</span></p>
+</div>
 <p>Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan massalitlir hlutir á hægri hreyfingu mjög lítinn.</p>
 <p>Því gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem verður á skriðþunga hlutarins.</p>
 <div style="text-align: center;">
@@ -262,11 +280,11 @@
 Hugsaðu þér að þú sért að versla í innkaupakerru. Í upphafi ferðarinnar er kerran tóm og hún lætur auðveldlega að stjórn. Eftir því sem vörurnar safnast í hana, þyngist hún og það verður sífellt erfiðara (krefst meiri krafts) að koma henni af stað. Að sama skapi er erfitt að stoppa hana sé hún komin á skrið.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
-<p><span class="math">\(m=1600\)</span> kg bíll keyrir áfram á <span class="math">\(v=5\)</span> m/s.
-Skriðþungi hans er <span class="math">\(P=mv= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}\)</span>.
+<p><span class="math">\(m=1600\)</span> kg bíll keyrir áfram á <span class="math">\(|\overline{v}|=5\)</span> m/s.
+Skriðþungi hans er <span class="math">\(|\overline{p}|=m|\overline{v}|= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}\)</span>.
 Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.</p>
-<p>Byssukúla hefur hraðann <span class="math">\(v=965\)</span> m/s og hefur massann <span class="math">\(4.2\)</span> g <span class="math">\(=0.0042\)</span> kg.
-Skriðþungi hennar er þá  <span class="math">\(P=mv =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}\)</span>. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.</p>
+<p>Byssukúla hefur hraðann <span class="math">\(|\overline{v}|=965\)</span> m/s og hefur massann <span class="math">\(4.2\)</span> g <span class="math">\(=0.0042\)</span> kg.
+Skriðþungi hennar er þá  <span class="math">\(|\overline{p}|=m|\overline{v}| =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}\)</span>. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.</p>
 </div>
 <div class="section" id="atlag">
 <h2>8.1. Atlag<a class="headerlink" href="#atlag" title="Varanlegur hlekkur á titilinn">¶</a></h2>
@@ -299,24 +317,54 @@ F &amp;= \frac{p_2-p_1}{\Delta t} \\
 <p>Krafturinn fær neikvætt gildi því hann bendir á móti hreyfingunni.</p>
 </div>
 </div>
-<div class="section" id="varveisla">
-<h2>8.2. Varðveisla<a class="headerlink" href="#varveisla" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="varveisla-i-einni-vidd">
+<h2>8.2. Varðveisla í einni vídd<a class="headerlink" href="#varveisla-i-einni-vidd" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Ef summa allra kraftanna sem verka á kerfi er núll, þá er breyting heildarskriðþunga kerfis með tilliti til tíma líka jafnt núll. Það merkir að heildarskriðþungi kerfis breytist ekki, en skriðþungar hlutanna innan kerfisins geta breyst, en summa þeirra er alltaf sú sama.</p>
+<p>Ef við táknum skriðþunga kerfis fyrir einhvern atburð með <span class="math">\(p_i\)</span> (<span class="math">\(i\)</span> fyrir initial í ensku) og skriðþunga kerfisins eftir atburðinn með <span class="math">\(p_f\)</span> (<span class="math">\(f\)</span> fyrir final í ensku) þá getum við sett fram skriðþungavarðveislu fyrir kerfið með:</p>
+<div style="text-align: center;">
+<div class="math">
+\[p_i=p_f\]</div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Skriðþungi er varðveittur ef engir kraftar koma utan frá.</p>
 </div>
-<p>Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa ekki endilega sama massann en önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann <span class="math">\(v_0\)</span>. Þá er heildarskriðþungi kerfisins <span class="math">\(m_1v_0\)</span>. Hvað gerist þegar þær rekast saman?</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<p>Skytta heldur laust á riffli þannig að þegar hún hleypir af skoti getur hann hreyfst afturfyrir sig. Riffillinn hefur massann <span class="math">\(m_r=3.00\text{ kg}\)</span> og kúla sem hann skýtur hefur massann <span class="math">\(m_k=5.00\text{ g} = 5.00\cdot 10^{-3}\text{ kg}\)</span>. Ef kúlan fer á hraðanum <span class="math">\(v_k = 300 \text{ m/s}\)</span> til hægri, hve hratt kastast riffillinn til vinstri við skotið?</p>
+<p><strong>Lausn</strong></p>
+<p>Hér getum við gert ráð fyrir að engir utanaðkomandi kraftar séu að verki, þar sem skyttan heldur laust á rifflinum (þ.e. er ekki að ýta á móti hreyfingunni). Vegna þess að allar hreyfingarnar í þessu dæmi gerast eftir sömu línunni (kúlan í aðra átt og riffillinn í hina) þá þarf lítið að velta því fyrir sér að skriðþungi er vigur. Það er einfaldara að hugsa að kúlan hafi jákvæðan hraða (fari áfram) en að riffillinn hafi neikvæðan (fari afturábak). Skriðþunginn fyrir skotið er núll, af því bæði byssan og kúlan eru kyrrstæðar (hafa hraðann <span class="math">\(v_i=0\)</span>), þ.e. <span class="math">\(p_{k,i} = 0\)</span>, <span class="math">\(p_{r,i}=0\)</span>.</p>
+<p>Heildarskriðþunginn fyrir skotið er:</p>
+<div style="text-align: center;">
+<div class="math">
+\[p_i=p_{k,i} +p_{r,i} = 0 \text{ kg m/s}\]</div>
+</div>
+<p>Þar sem skriðþunginn er varðveittur þarf hann líka að vera núll eftir skotið, þó báðir hlutirnir séu á hreyfingu, þ.e. <span class="math">\(p_i=p_f\)</span></p>
+<p>Byssukúlan er massalítil en fer hratt og hefur skriðþungann:</p>
+<div style="text-align: center;">
+<div class="math">
+\[p_{k,f} = m_k v_k = 5.00\cdot 10^{-3}\text{ kg} \cdot 300 \text{ m/s} = 1.50 \text{N s}\]</div>
+</div>
+<p>Heildarskriðþunginn eftir skotið er:</p>
+<div style="text-align: center;">
+<div class="math">
+\[p_f=p_{k,f} + p_{r,f}\]</div>
+</div>
+<p>Skriðþungavarðveisla gefur okkur að <span class="math">\(p_f =0 \text{ kg m/s}\)</span> og því er <span class="math">\(p_{r,f} =- p_{k,f}\)</span>
+Þar sem við vitum bæði hraðann og skriðþungann er lítið mál að finna hraða riffilsins:</p>
+<div style="text-align: center;">
+<div class="math">
+\[v_{r,f} = \frac{p_{r,f}}{m_{r}} = \frac{-1.5 \text{ kg m/s}}{3.00 \text{kg}} = -0.5 \text{m/s}\]</div>
+</div>
+</div>
+<p>Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa massa <span class="math">\(m_1\)</span> og <span class="math">\(m_2\)</span> og önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann <span class="math">\(v_0\)</span>. Þá er heildarskriðþungi kerfisins fyrir árekstruinn <span class="math">\(m_1v_0\)</span>. Við skulum kalla hraða kúlu 1 eftir áreksturinn <span class="math">\(v_1\)</span> en hraða kúlu 2 <span class="math">\(v_2\)</span>. Hvað gerist þegar þær rekast saman?</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skrth1.svg"><img alt="_images/skrth1.svg" src="_images/skrth1.svg" width="60%" /></a>
 </div>
 <div class="section" id="fullkomlega-fjarandi-arekstur">
 <h3>8.2.1. Fullkomlega fjaðrandi árekstur<a class="headerlink" href="#fullkomlega-fjarandi-arekstur" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p>Áður en kúlurnar skella saman þá er heildarskriðþungi kerfisins margfeldi <span class="math">\(v_0\)</span> við massa kúlu 1. Við áreksturinn varðveitist skriðþunginn, svo við vitum að skriðþunginn eftir áreksturinn er sá sami og fyrir. Þegar seinni kúlan tekur við öllum skriðþunganum og fær hraðann <span class="math">\(v_2\)</span> á meðan hin stöðvast þá er talað um <em>fullkomlega fjaðrandi árekstur</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Athugasemd</p>
-<p>Í fjaðrandi árekstrum er bæði skriðþungi og hreyfiorka kerfisins varðveitt.</p>
-</div>
+<p>Kúlurnar gætu verið þannig gerðar að þær skelli harkalega saman. Það er kallað <em>fullkomlega fjarðandi árekstur</em> þegar kúla 2 rekur við öllum skriðþunganum sem kúla 1 hafði. Þá stendur kúla 1 eftir kyrr (<span class="math">\(v_1=0\)</span>) en kúla 2 ferðast áfram með einhvern hraða <span class="math">\(v_2\)</span>.</p>
+<p>Í fullkomlega fjaðrandi árekstrum er <em>hreyfiorkan varðveitt</em>.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skrth2.svg"><img alt="_images/skrth2.svg" src="_images/skrth2.svg" width="60%" /></a>
 </div>
@@ -335,10 +383,7 @@ F &amp;= \frac{p_2-p_1}{\Delta t} \\
 <div class="section" id="fullkomlega-ofjarandi-arekstur">
 <h3>8.2.2. Fullkomlega ófjaðrandi árekstur<a class="headerlink" href="#fullkomlega-ofjarandi-arekstur" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>En hvað ef kúlurnar eru þannig gerðar að þær klístrist saman við áreksturinn? Þá er talað um <em>fullkomlega ófjaðrandi árekstur</em> og kúlurnar myndu ferðast áfram, klesstar saman, en með annan hraða en fyrir árekstur.</p>
-<div class="admonition note">
-<p class="admonition-title">Athugasemd</p>
-<p>Í ófjaðrandi árekstrum er skriðþungi kerfisins varðveittur, en hreyfiorkan <em>ekki</em>.</p>
-</div>
+<p>Í ófjaðrandi árekstrum er <em>hreyfiorkan ekki varðveitt</em>.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skrth3.svg"><img alt="_images/skrth3.svg" src="_images/skrth3.svg" width="60%" /></a>
 </div>
@@ -356,30 +401,20 @@ F &amp;= \frac{p_2-p_1}{\Delta t} \\
 </div>
 <div class="section" id="onnur-tilvik">
 <h3>8.2.3. Önnur tilvik<a class="headerlink" href="#onnur-tilvik" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p>Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan er ekki varðveitt og hlutirnir ferðast ekki á sama hraða eftir árekstur.</p>
+<p>Langflestir árekstrar hluta í raunveruleikanum eru hvorki fullkomlega fjaðrandi né fullkomlega ófjaðrandi.
+Skriðþunginn á engu að síður að vera varðveittur.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skrth5.svg"><img alt="_images/skrth5.svg" src="_images/skrth5.svg" width="45%" /></a>
 </div>
-<p>Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram. Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:</p>
+<p>Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram líka (en hægar). Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:</p>
 <div style="text-align: center;">
 <div class="math">
 \[m_1v_0 = m_1v_1+m_2v_2\]</div>
 </div>
-<p>Þetta er jafna með tvær óþekktar stærðir, <span class="math">\(v_1\)</span> og <span class="math">\(v_2\)</span>. Því eru til <em>óendanlega margar</em> lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar, t.d. að önnur kúlan endi á að fara þrefalt hraðar en hin (<span class="math">\(v_2 = 3v_1\)</span>) . Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna.</p>
+<p>Þetta er jafna með tvær óþekktar stærðir, <span class="math">\(v_1\)</span> og <span class="math">\(v_2\)</span>. Því eru til <em>óendanlega margar</em> lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar til að leysa það. Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna, hvort þau eru hörð eða mjúk. Ein lausn er að önnur kúlan endi á að fara þrefalt hraðar en hin (<span class="math">\(v_2 = 3v_1\)</span>) .</p>
 <p>Það eru líka til lausnir þar sem fyrri kúlan fær hraða í gagnstæða átt og skoppar til baka. Þá er <span class="math">\(v_1&lt;0\)</span></p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skrth4.svg"><img alt="_images/skrth4.svg" src="_images/skrth4.svg" width="60%" /></a>
-</div>
-<hr class="docutils" />
-<div style="text-align: center;">
-<div class="math">
-\[\begin{aligned}\begin{array}{| c | c |}
- \hline
-\text{Fullkomlega fjaðrandi árekstur} &amp; \text{Hreyfiorkan er varðveitt} \\ \hline
-\text{Fullkomlega ófjaðrandi árekstur} &amp; \text{Hlutirnir klessast saman og} \\
-&amp;                           \text{ferðast áfram með sama hraða}   \\ \hline
-\text{Ófjaðrandi árekstur} &amp; \text{Hreyfiorkan er ekki varðveitt} \\ \hline
-\end{array}\end{aligned}\]</div>
 </div>
 </div>
 </div>

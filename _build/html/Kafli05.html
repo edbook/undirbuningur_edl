@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli01.html#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
@@ -168,24 +183,24 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -239,55 +254,63 @@
 <h1>5. Hreyfing í tveimur víddum<a class="headerlink" href="#hreyfing-i-tveimur-viddum" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <p>Hingað til hefur verið fjallað um einvíða hreyfingu, þar sem staðsetning, hraði og hröðun eru öll eftir sömu beinu línunni.
 Í eðlisfræði er hins vegar nauðsynlegt að geta lýst hreyfingu í tveimur og jafnvel þremur víddum.</p>
-<div class="admonition tip">
-<p class="admonition-title">Dæmi</p>
-<p>Flugvél setur stefnuna beint norður á við og flýgur á hraðanum <span class="math">\(v_f= 20 \text{ m/s}\)</span>. Það er hvöss vestanátt, <span class="math">\(v_v =15\text{ m/s}\)</span>, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/flugvel.svg"><img alt="_images/flugvel.svg" src="_images/flugvel.svg" width="40%" /></a>
-</div>
-<p>Hér notum við vigursamlagningu. Hreyflar vélarinnar gefa henni hraða <span class="math">\(v_f\)</span> í stefnu norður (stefnu <span class="math">\(y\)</span> - áss). Þá er:</p>
+<p>Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.</p>
+<p>Hraði hlutarins er snertill við feril hlutarins og
+hröðun hans bendir alltaf inn í kúpta hluta ferilsins.</p>
+<p>Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn í átt að ferlinum.</p>
+<p>Hröðunarvigurinn segir til um hvernig hraðinn og stefna hans eru að breytast.</p>
+<a class="reference internal image-reference" href="_images/hrodun.svg"><div align="center" class="align-center"><img alt="_images/hrodun.svg" src="_images/hrodun.svg" width="40%" /></div>
+</a>
+<div class="section" id="afstaeur-hrai">
+<h2>5.1. Afstæður hraði<a class="headerlink" href="#afstaeur-hrai" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum við vigra:</p>
 <div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}\overline{v}_f = \begin{pmatrix} 0 \\ 20 \end{pmatrix}\end{aligned}\]</div>
+\[\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A}\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<p>Flugvél setur stefnuna beint norður á við og flýgur á hraðanum <span class="math">\(v_f= 20 \text{ m/s}\)</span> (miðað við loftið). Loftið flæðir til austurs með stífri vestanátt, <span class="math">\(v_v =15\text{ m/s}\)</span>, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?</p>
+<p><strong>Lausn</strong></p>
+<p>Köllum nú flugvélina <span class="math">\(P\)</span>, vindinn <span class="math">\(B\)</span> og jörðina <span class="math">\(A\)</span>.
+Hér notum við vigursamlagningu. Hreyflar vélarinnar gefa henni hraða <span class="math">\(v_f\)</span> í stefnu norður (stefnu <span class="math">\(y\)</span> - áss). Þá er:</p>
+<div style="text-align: center;">
+<div class="math">
+\[\begin{aligned}\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix}\end{aligned}\]</div>
 </div>
 <p>Vindurinn blæs frá vestri til austurs, til hægri (í stefnu <span class="math">\(x\)</span> - áss). Því er:</p>
 <div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}\overline{v}_v = \begin{pmatrix} 15 \\ 0 \end{pmatrix}\end{aligned}\]</div>
+\[\begin{aligned}\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix}\end{aligned}\]</div>
 </div>
 <p>Leggjum nú saman vigrana <span class="math">\(\overline{v}_f\)</span> og <span class="math">\(\overline{v}_v\)</span>:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    \overline{v} &amp;= \overline{v}_f + \overline{v}_v \\
-&amp;= \begin{pmatrix} 0 \\ 20 \end{pmatrix} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \\
+    \overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A} \\
+&amp;= \begin{pmatrix} 0  \\ 20 \end{pmatrix} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \\
 &amp;= \begin{pmatrix} 15 \\ 20 \end{pmatrix}
 \end{aligned}\]</div>
 </div>
-<p>Hraði flugvélarinnar miðað við jörðina er því lengdin á <span class="math">\(\overline{v}\)</span>:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/flugvel.svg"><img alt="_images/flugvel.svg" src="_images/flugvel.svg" width="35%" /></a>
+</div>
+<p>Hraði flugvélarinnar miðað við jörðina er því lengdin á <span class="math">\(\overline{v}_{P/A}\)</span>:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    |\overline{v}| &amp;= \sqrt{15^2+20^2} \\
+    |\overline{v}_{P/A}| &amp;= \sqrt{15^2+20^2} \\
 &amp;=\sqrt{625} \\
 &amp;= 25
 \end{aligned}\]</div>
 </div>
 <p>Vélin er því að fara á <span class="math">\(25\)</span> m/s, en stefna hraðans er í norðaustur.</p>
 </div>
-<p>Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.
-Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn.</p>
-<p>Hraði hlutarins er snertill við feril hlutarins og
-hröðun hans bendir alltaf inn í kúpta hluta ferilsins.</p>
-<p>Hröðunarvigurinn hefur stefnu óháð staðsetningu og hraða hlutar, en segir til um hvernig hraðinn og stefna hans eru að breytast.</p>
-<a class="reference internal image-reference" href="_images/hrodun.svg"><div align="center" class="align-center"><img alt="_images/hrodun.svg" src="_images/hrodun.svg" width="40%" /></div>
-</a>
-<p><em>Kasthreyfingar</em> og <em>hringhreyfingar</em> eru algengar tvívíðar hreyfingar.</p>
+</div>
 <div class="section" id="kasthreyfing">
-<h2>5.1. Kasthreyfing<a class="headerlink" href="#kasthreyfing" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Kasthreyfing (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
-Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin,
-svo allir <em>kastferlar</em> (e. trajectories) verða hluti af fleygboga.</p>
+<h2>5.2. Kasthreyfing<a class="headerlink" href="#kasthreyfing" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p><em>Kasthreyfing</em> (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði, fær upphafshraða í tiltekna stefnu og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
+Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir <em>kastferlar</em> (e. trajectories) hluti af fleygboga.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Tveir eins boltar eru látnir falla til jarðar úr sömu hæð, bolta 1 er sleppt úr kyrrstöðu en bolta 2 er kastað lárétt áfram.
@@ -296,7 +319,7 @@ Hvor boltanna lendir á undan?</p>
 <p><strong>Lausn</strong></p>
 <p>Á báða boltana verkar sama þyngdarafl, svo þeir fá sömu hröðun niður sem nemur þyngdarhröðuninni og fá báðir sívaxandi hraða niður á við.</p>
 <p>Bolti 1 mun því hreyfast lóðrétt niður á við.
-Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (fyrsta lögmál Newtons).
+Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (þetta er afleiðing <a class="reference internal" href="Kafli06.html#s-newton"><span class="std std-ref">fyrsta lögmáls Newtons</span></a>).
 Hröðunin sem bolti 2 verður fyrir lóðrétt hefur engin áhrif á lárétta hreyfingu hans (og lárétta hreyfingin hefur engin áhrif á lóðrétta hröðun).</p>
 <p>Boltarnir tveir byrjuðu báðir með sama lóðrétta hraðann (engan) og verða fyrir sömu lóðréttu hröðuninni.
 Þeir ferðast því samtímis niður á við og lenda því <em>á sama tíma</em>.</p>
@@ -306,14 +329,15 @@ Hröðunin sem bolti 2 verður fyrir lóðrétt hefur engin áhrif á lárétta 
 </div>
 <p>Við lausn dæma um kasthreyfingar eru <a class="reference internal" href="Kafli04.html#s-hreyfijofnur"><span class="std std-ref">hraðajöfnurnar</span></a> notaðar.
 Það borgar sig að teikna mynd til að átta sig á dæminu.
-Þá þarf að ákveða hnitakerfi, en venjan er að hafa x-ás láréttan og y- (eða z-) ás lóðréttan upp þannig á þyngdarhröðun bendi niður.
-Upphafspunkt hreyfingarinnar er þægilegast að setja í miðju hnitakerfisins, enda geta hnitin <span class="math">\((x_0,y_0)=(0,0)\)</span> einfaldað reikning töluvert.
-Hafið svo í huga að þar sem þyngdarhröðunin er einungis í <span class="math">\(y\)</span>-stefnuna eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:</p>
+Þá þarf að ákveða hnitakerfi, en venjan er að hafa <span class="math">\(x\)</span>-ás láréttan og <span class="math">\(y\)</span>-ás lóðréttan þannig á þyngdarhröðun bendi niður.
+Upphafspunkt hnitakerfisins er þægilegast að setja í upphaf kastins, enda geta hnitin <span class="math">\((x_0,y_0)=(0,0)\)</span> einfaldað reikning töluvert.
+Eina hröðunin sem er í þessu kerfi er þyngdarhröðunin og því er <span class="math">\(a_x=0\)</span> og <span class="math">\(a_y=-g\)</span>
+Þá eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
   x &amp;= x_0 + v_{0,x} \cdot t \\
-  y &amp;= y_0 + v_{0,y} \cdot t + \frac{1}{2} g \cdot t^2
+  y &amp;= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
 \end{aligned}\]</div>
 </div>
 <div class="admonition tip">
@@ -324,39 +348,24 @@ Ef upphafshraði fallbyssukúlu er <span class="math">\(\overline{v} = (v_x, v_y
 <p>Byrjum á að teikna mynd.
 Stillum hnitakerfinu upp þannig að fallbyssan sé í <span class="math">\((x_0,y_0) = (0,0)\)</span>, x-ásinn liggi út frá ánni í skotstefnuna og y-ásinn er upp.
 Gerum ráð fyrir að hæð lendingarstaðarins sé jöfn hæð fallbyssunnar, þ.e. <span class="math">\(y_1=0\)</span> .
-Takið eftir að <span class="math">\(y\)</span>-ásinn er skilgreindur upp en þá er  þannig að þyngdarhröðunin er neikvæð (<span class="math">\(g=-9.8\)</span> m/s).</p>
+Takið eftir að <span class="math">\(y\)</span>-ásinn er skilgreindur upp en þá er þyngdarhröðunin neikvæð (<span class="math">\(a=-g=-9.8 \text{m/s}^2\)</span>).</p>
 <a class="reference internal image-reference" href="_images/gambia.svg"><div align="center" class="align-center"><img alt="_images/gambia.svg" src="_images/gambia.svg" width="60%" /></div>
 </a>
-<p>Við vitum að kúlan muni lenda á jörðinni, þannig að lokahnit kúlunnar eru <span class="math">\((x_1,y_1) = (x_1,0)\)</span>.
-Rifjum upp hreyfijöfnurnar og notum þá sem gefur staðsetningu sem fall af tíma.
-Viljum finna tímann <span class="math">\(t_1\)</span> þegar <span class="math">\(y_1=0\)</span> .</p>
+<p>Köllum lokahnit kúlunnar þegar hún lendir <span class="math">\((x_1,y_1)\)</span> en þar sem við vitum að hún endar á yfirborði jarðarinnar þá er <span class="math">\(y_1=0\)</span>, þ.a. lokahnit kúlunnar eru <span class="math">\((x_1,y_1) = (x_1,0)\)</span>.
+Finnum hve lengi kúlan er í loftinu með því að finna tímann <span class="math">\(t_1\)</span> þegar <span class="math">\(y_1=0\)</span> .</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  y_1 &amp;= y_0 + v_{0,y} \cdot t + \frac{1}{2} a \cdot t^2 \\
-  0 &amp;= 0 + v_{0,y} \cdot t + \frac{1}{2} g \cdot t^2
+  y_1 &amp;= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2 \\
+  0 &amp;= 0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
 \end{aligned}\]</div>
 </div>
-<p>Þetta er annars stigs margliða með óþekkta stærð <span class="math">\(t\)</span> sem við leysum:</p>
+<p>Þetta er annars stigs margliða sem hefur tvær lausnir. Önnur lausnin er að <span class="math">\(t=0\)</span> en við höfum ekki áhuga á þeirri lausn af því hún er bara upphaf kasthreyfingarinnar. Hin lausnin er</p>
 <div style="text-align: center;">
 <div class="math">
-\[ \begin{aligned}\begin{aligned}
-  &amp; a \cdot t^2 + b \cdot t + c = 0 \\
-  &amp; a= \frac{1}{2} \text{g} \\
-  &amp; b= v_{0,y} = 42 m/s \\
-  &amp; c=0 \\
-\end{aligned}\\\begin{aligned}
-  \Rightarrow t &amp;= \frac{-b \pm \sqrt{b^2-4\text{a}c}}{2\text{a}} \\
-  &amp;= \frac{-v_{0,y} \pm \sqrt{v_{0,y}^2-4 \cdot \frac{1}{2} g}}{2 \cdot \frac{1}{2} g} \\
-  &amp;= \frac{-42 \pm \sqrt{42^2-2 \cdot (-9.8)}}{-9.8} \\
-  &amp;= \begin{cases} 0 \text{ s} = t_0\\
-                  8.58 \text{ s} = t_1
-              \end{cases}
-\end{aligned}\end{aligned} \]</div>
+\[t_1=\frac{v_{0,y}}{\frac{1}{2} g} = \frac{42\text{m/s}}{\frac{1}{2}\cdot 9.8\text{m/s}^2} = 8.58\text{s}\]</div>
 </div>
-<p>Það eru tvær lausnir á jöfnunni því <span class="math">\(y\)</span>-hnitið er 0 bæði í upphafi og enda ferils kúlunnar.
-Nú getum við notað sömu hreyfijöfnu, í þetta skipti fyrir <span class="math">\(x\)</span>-hnitin, til að finna hversu langt fallbyssan drífur.
-Athugið að þyngdarhröðunin er lóðrétt svo hún hefur ekki áhrif á lárétta <span class="math">\(x\)</span>-þátt hraðans.</p>
+<p>Nú getum við notað sömu hreyfijöfnu, í þetta skipti fyrir <span class="math">\(x\)</span>-hnitin, til að finna hversu langt fallbyssan drífur.</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
@@ -368,8 +377,8 @@ Athugið að þyngdarhröðunin er lóðrétt svo hún hefur ekki áhrif á lár
 <p>Fallbyssukúlan lendir því 429 metrum frá ánni og breidd Gambíu er tvöföld sú lengd: 858 m.</p>
 </div>
 <p>Finnum nú jöfnu fyrir ferlinum sem hlutur ferðast eftir í loftinu og sannfærum okkur um að hann sé fleygbogi.
-Skoðum hlut sem hefur upphafshraða <span class="math">\(v_0\)</span> í stefnu hornsins <span class="math">\(\alpha_0\)</span> og upphafsstaðsetningu <span class="math">\((0,0)\)</span> .</p>
-<p>Byrjum á því að liða <span class="math">\(v_0\)</span> í <span class="math">\(x\)</span> - og <span class="math">\(y\)</span> - stefnu.</p>
+Skoðum hlut sem hefur upphafshraða <span class="math">\(\overline{v}_0\)</span> í stefnu hornsins <span class="math">\(\alpha_0\)</span> og upphafsstaðsetningu <span class="math">\((x_0,y_0)=(0,0)\)</span> .</p>
+<p>Byrjum á því að liða <span class="math">\(\overline{v}_0\)</span> í <span class="math">\(x\)</span> - og <span class="math">\(y\)</span> - stefnu.</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
@@ -386,26 +395,26 @@ Hröðunin í <span class="math">\(x\)</span> - stefnu er núll svo staðsetning
 <div class="math">
 \[x=v_{0x} t = v_0\cos(\alpha_0)t\]</div>
 </div>
-<p>Hröðunin í <span class="math">\(y\)</span> - stefnu er <span class="math">\(g\)</span> og bendir niður á við (<span class="math">\(g&lt;0\)</span>) svo staðsetningin í <span class="math">\(y-\)</span> stefnu er:</p>
+<p>Hröðunin í <span class="math">\(y\)</span> - stefnu er <span class="math">\(a_y=-g\)</span> svo staðsetningin í <span class="math">\(y-\)</span> stefnu er:</p>
 <div style="text-align: center;">
 <div class="math">
-\[y=v_{0y} t + \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t+ \frac{1}{2}gt^2\]</div>
+\[y=v_{0y} t - \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t- \frac{1}{2}gt^2\]</div>
 </div>
 <p>Einangrum <span class="math">\(t\)</span> út frá jöfnunni fyrir <span class="math">\(x\)</span>, <span class="math">\(t=x/(v_0\cos(\alpha_0))\)</span> og setjum inn í jöfnuna fyrir <span class="math">\(y\)</span> . Þá fæst</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  y&amp; =v_0\sin(\alpha_0)t + \frac{1}{2}gt^2 \\
-  y&amp;= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} + \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
-  y&amp;= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x + \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
-  y&amp;=\tan(\alpha_0) x + \frac{g}{2v_0\cos^2(\alpha_0)}x^2
+  y&amp; =v_0\sin(\alpha_0)t - \frac{1}{2}gt^2 \\
+  y&amp;= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} - \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
+  y&amp;= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x - \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
+  y&amp;=\tan(\alpha_0) x - \frac{g}{2v_0\cos^2(\alpha_0)}x^2
 \end{aligned}\]</div>
 </div>
 <p>Ferill hlutar í kasthreyfingu hefur því lögun fleygboga <span class="math">\(y=ax^2+bx+c\)</span> þar sem</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  a&amp;=\frac{g}{2v_0\cos^2(\alpha_0)}\\
+  a&amp;=-\frac{g}{2v_0\cos^2(\alpha_0)}\\
   b&amp;=\tan(\alpha_0) \\
   c&amp;=0
 \end{aligned}\]</div>
@@ -414,14 +423,14 @@ Hröðunin í <span class="math">\(x\)</span> - stefnu er núll svo staðsetning
 <a class="reference internal image-reference" href="_images/kasthr.svg"><img alt="_images/kasthr.svg" src="_images/kasthr.svg" width="80%" /></a>
 </div>
 <hr class="docutils" />
-<p>Út frá jöfnunni er meðal annars hægt að sjá hvar hluturinn lendir.
-Þá finnum við fyrir hvaða <span class="math">\(x\)</span> hæð boltans <span class="math">\(y\)</span> er núll, sem er þegar <span class="math">\(x=0\)</span> (upphaf) og þegar</p>
+<p>Út frá jöfnunni fyrir ferlinum er meðal annars hægt að sjá hvar hluturinn lendir.
+Þá finnum við fyrir hvaða <span class="math">\(x\)</span> hæð boltans <span class="math">\(y\)</span> er núll, sem gerist tvisvar: í upphafi (<span class="math">\(x=0\)</span>) og þegar</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  x&amp;=\frac{-2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
-  &amp;=\frac{-2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
-  &amp;= \frac{-\sin(2\alpha_0)v_0^2}{g} \\
+  x&amp;=\frac{2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
+  &amp;=\frac{2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
+  &amp;= \frac{\sin(2\alpha_0)v_0^2}{g} \\
 \end{aligned}\]</div>
 </div>
 <p>því <span class="math">\(\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)\)</span> .</p>
@@ -431,20 +440,20 @@ Hröðunin í <span class="math">\(x\)</span> - stefnu er núll svo staðsetning
 <p>Afleiðan er</p>
 <div style="text-align: center;">
 <div class="math">
-\[y'=\tan(\alpha_0)+\frac{g}{v_0^2\cos^2(\alpha_0)}x\]</div>
+\[y'=\tan(\alpha_0)-\frac{g}{v_0^2\cos^2(\alpha_0)}x\]</div>
 </div>
 <p>Hápunktur fleygbogans er því þegar <span class="math">\(y'=0\)</span> eða:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  x&amp;=\frac{-\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
-  &amp;= \frac{-\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
-  &amp;= \frac{-\sin(2\alpha_0)v_0^2}{2g}
+  x&amp;=\frac{\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
+  &amp;= \frac{\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
+  &amp;= \frac{\sin(2\alpha_0)v_0^2}{2g}
 \end{aligned}\]</div>
 </div>
-<div id="ujL0UYtffWW" style="display: inline-block;"></div>
+<div id="BP0qJTmcfNM" style="display: inline-block;"></div>
 <script>
-var ggbApp_ujL0UYtffWW = new GGBApplet({
+var ggbApp_BP0qJTmcfNM = new GGBApplet({
 "appName": "graphing", 
 "width": 700, 
 "height": 400, 
@@ -453,21 +462,21 @@ var ggbApp_ujL0UYtffWW = new GGBApplet({
 "showResetIcon": true, 
 "enableShiftDragZoom": false 
 }, true);
-ggbAppletId["ujL0UYtffWW"] = ggbApp_ujL0UYtffWW;
+ggbAppletId["BP0qJTmcfNM"] = ggbApp_BP0qJTmcfNM;
 </script><div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Munið að eðlisfræði gengur ekki út á að muna jöfnur, heldur að kunna hvernig og hvenær á að nota þær.
 Til dæmis er ástæðulaust að leggja mikla vinnu í að muna þessar formúlur, þegar það er lítið mál að leiða þær út frá hreyfijöfnunum eða að fletta þeim upp.
-Við lausn bæði heimavekefna og prófdæma þá muniði alltaf hafa aðgang að formúlublaði.</p>
+Við lausn bæði heimavekefna og prófdæma þá munið þið alltaf hafa aðgang að formúlublaði.</p>
 </div>
 </div>
 <div class="section" id="hringhreyfing">
-<h2>5.2. Hringhreyfing<a class="headerlink" href="#hringhreyfing" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2>5.3. Hringhreyfing<a class="headerlink" href="#hringhreyfing" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Hröðunarvigurinn <span class="math">\(\overline{a}\)</span> hefur stefnu sem er óháð stefnu hraðavigursins <span class="math">\(\overline{v}\)</span>, en segir til um hvernig hraðavigurinn er að breytast.
 Þægilegt er að vinna með hröðunarvigurinn <span class="math">\(\overline{a}\)</span> í tveimur hlutum, annars vegar þáttinn samsíða hraðavigrinum (<span class="math">\(a_\parallel\)</span>)
 og hins vegar hornrétta þáttinn (<span class="math">\(a_\perp\)</span>) en þættir hröðunarvigursins hafa mismunandi áhrif á hraðavigurinn.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/tvividd.svg"><img alt="_images/tvividd.svg" src="_images/tvividd.svg" width="60%" /></a>
+<a class="reference internal image-reference" href="_images/tvividd.svg"><img alt="_images/tvividd.svg" src="_images/tvividd.svg" width="50%" /></a>
 </div>
 <p><span class="math">\(a_\parallel\)</span> hefur bara áhrif á lengd hraðavigursins, sem oft er kölluð <em>ferð</em> hlutarins (e. speed).</p>
 <p><span class="math">\(a_\perp\)</span> hefur bara áhrif á stefnu hraðavigursins, þ.e. segir til um hvernig hluturinn er að beygja.</p>
@@ -479,7 +488,7 @@ Barn á hringekjunni hefur hraðavigur sem er snertill við hringinn í staðset
 Þar sem snúningshraðinn er jafn er ferð barnsins fasti, en hraðavigurinn er samt sem áður stöðugt að breytast.
 Stefnan er það eina sem breytist svo barnið hlýtur að hafa hröðun sem er hornrétt á hraðann, þ.e. beint inn að miðjunni.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/hringekja.svg"><img alt="_images/hringekja.svg" src="_images/hringekja.svg" width="60%" /></a>
+<a class="reference internal image-reference" href="_images/hringekja.svg"><img alt="_images/hringekja.svg" src="_images/hringekja.svg" width="40%" /></a>
 </div>
 <p>Þessi hröðun kallast <em>miðsóknarhröðun</em> (e.centripetal acceleration).</p>
 </div>

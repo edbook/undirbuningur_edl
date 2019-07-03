@@ -7,7 +7,7 @@ Hraði
 *Hraði* (e. velocity) hlutar á hreyfingu er skilgreindur sem breyting á staðsetningu á tímaeiningu.
 Algengast er að nota metra á sekúndu (m/s) í útreikningum, en í daglegu tali er oft talað um kílómetra á klukkustund.
 
-Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðsetningu við tímann :math:`t_2` með :math:`x_2` þá reiknum við hraðann með
+Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðsetningu við tímann :math:`t_2` með :math:`x_2` þá reiknum við meðalhraðann með
 
 .. math::
   v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
@@ -16,7 +16,7 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
   Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði og stærðfræði til að tákna mismun og breytingar.
 
 .. note::
-  Hraði er hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
+  Hraði hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
   Hraði getur verið í allar stefnur :math:`(x,y,z)` svo hraðavigurinn er yfirleitt táknaður með :math:`\overline{v}=(v_x, v_y, v_z)` .
   Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, þ.e. aðeins einn þáttur hraðavigursins er ekki núll.
 
@@ -57,7 +57,7 @@ Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðs
 
 .. eqt:: daemi-hradi1
 
-  **Æfingadæmi 1** Hversu langt kemst maður sem gengur á hraðanum :math:`v=3 \text{ m/s}` á einni mínútu?
+  **Æfingadæmi** Hversu langt kemst maður sem gengur á hraðanum :math:`v=3 \text{ m/s}` á einni mínútu?
 
   A) :eqt:`I` 300 metra
 
@@ -108,45 +108,61 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
 
 .. eqt:: daemi-hrodun
 
-  **Æfingadæmi 2** Hver er hraði eldflaugar sem byrjar með hraðann :math:`v_i=3\text{ m/s}` og hægir á sér
+  **Æfingadæmi** Hver er hraði eldflaugar eftir tvær sekúndur ef hún byrjar með hraðann :math:`v_i=3\text{ m/s}` og fær neikvæða hröðun :math:`a=1 \text{ m/s}^2`?
 
-  A) :eqt:`C` 300 metra
+  A) :eqt:`C` :math:`v_f=1\text{m/s}`
 
-  #) :eqt:`I` 3 metra
+  #) :eqt:`I` :math:`v_f=-1\text{m/s}`
 
-  #) :eqt:`I` 180 metra
+  #) :eqt:`I` :math:`v_f=2\text{m/s}`
 
   #) :eqt:`I` Ekkert af ofangreindu
 
   .. eqt-solution::
-    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
+    Hröðun er breyting á hraða á tímaeiningu, þ.e.
 
     .. math::
-      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
+
+    	a=\frac{\Delta v}{\Delta t}
+
+    Umritum þessa jöfnu og fáum
+
+    .. math::
+
+      \Delta v= a\Delta t = 1\frac{\text{m}}{\text{s}^2}\cdot 2\text{s} = 2\frac{\text{m}}{\text{s}}
+
+    Þar sem :math:`\Delta v = v_i-v_f` þá sést að :math:`v_f = v_i-\Delta v = 3\text{ m/s}-2\text{ m/s}=1\text{ m/s}`
+
 
 -----------------------
 
 Myndræn túlkun
 --------------
 
-Sé *staðsetning* hlutar teiknuð upp sem fall af tíma þá táknar hallatala grafsins *hraða* hlutarins. Hér er það gert fyrir fyrra dæmið:
+Sé *staðsetning* hlutar (:math:`x`) teiknuð upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hraða* hlutarins, enda er :math:`v=\frac{\Delta x}{\Delta t}`. Hér er það gert fyrir fyrra dæmið:
 
 .. image:: ./myndir/hradi/hlauparar.svg
-  :width: 75 %
+  :width: 70 %
   :align: center
+
+Gröf sem sýna staðsetningu sem fall af tíma eru oft kölluð :math:`x-t` gröf.
 
 -----------------
 
-Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala grafsins *hröðun* hlutarins. Hér er það gert fyrir seinna dæmið:
+Sé *hraði* hlutar (:math:`v`) teiknaður upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hröðun* hlutarins, enda er :math:`a=\frac{\Delta v}{\Delta t}`. Hér er það gert fyrir seinna dæmið:
 
 .. image:: ./myndir/hradi/eldflaug.svg
-  :width: 75 %
+  :width: 70 %
   :align: center
+
+Gröf sem sýna hraða sem fall af tíma eru oft kölluð :math:`v-t` gröf.
 
 ----------------
 
 .. note::
-  Láréttur ferill á :math:`v-t` grafi (hraði sem fall af tíma grafi) þýðir að hraði hlutarins sé fastur, þ.e. að hröðunin sé núll ( :math:`a=0` ).  Þá er ferillinn á :math:`x-t` grafi (staðsetning sem fall af tíma grafi) líka bein lína með fasta hallatölu.
+  Á :math:`x-t` grafi þýðir lárétt lína að *staðsetning hlutarins sé föst*, þ.e. að staðsetning hans sé ekki að breytast. Þá hlýtur hraði hlutarins að vera núll (:math:`v=0`) því hallatala línunnar er núll.
+
+  Á :math:`v-t` grafi þýðir lárétt lína að *hraði hlutarins sé fastur*, þ.e. að hraði hans sé ekki að breytast. Þá hlýtur hröðun hlutarins að vera núll (:math:`a=0`) því hallatala línunnar er núll.
 
 .. tip::
   Blettatígur sér antílópu í 35 m fjarlægð og hleypur af stað.
@@ -171,8 +187,7 @@ Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala graf
   Því myndi það taka blettatígurinn :math:`\frac{7.5\text{ m}}{5 \text{m/s}}=1.5 \text{ s}` að loka bilinu og ná antílópunni.
   Blettatígurinn nær antílópunni **2.5 sekúndum** eftir að hann hleypur af stað.
 
-  Svona dæmi er oft þægilegt að leysa myndrænt. Hér er staðsetning dýranna teiknuð sem fall af tíma og þá er auðvelt að sjá að blettatígurinn nær antílópunni þegar ferlarnir skerast.
-  Hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn :math:`t=3.6363` m/s er merktur inn því það er tíminn sem það tæki blettatígurinn að hlaupa sinn 100 metra sprett.
+  Svona dæmi er oft þægilegt að leysa myndrænt. Hér er staðsetning dýranna teiknuð sem fall af tíma, en blái ferillinn táknar antílópuna og rauða blettatígurinn. Sjá má að hallatala rauða ferilsins er meiri en bláa, vegna þess að blettatígurinn hleypur hraðar en antílópan. Þar sem hallatölur línanna er ekki sú sama hljóta línurnar að skerast, ef blettatígurinn getur hlaupið nógu lengi. Blettatígurinn nær antílópunni þegar ferlarnir skerast en hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn :math:`t=3.6363` m/s er merktur inn því það er tíminn sem það tæki blettatígurinn að verða örmagna eftir sinn 100 metra sprett.
 
   .. figure:: ./myndir/hradi/antilopa.svg
     :align: center
@@ -183,8 +198,8 @@ Sé *hraði* hlutar teiknaður upp sem fall af tíma þá táknar hallatala graf
 Augnablikshraði og augnablikshröðun
 -----------------------------------
 
-Sé hraði hlutar ekki jafn allan tímann, þ.e. ef :math:`v` er ekki fasti þarf að reikna *augnablikshraða*.
-Þá er hraðinn reiknaður með að skoða staðsetninguna með afar stuttu millibili, við tímann :math:`t \text{ og } t+h` þar sem :math:`h` er mjög lítil tala.
+Ef það er hröðun í kerfinu þá er hraði hlutar ekki jafn allan tímann, en þarf að reikna *augnablikshraða* hlutarins.
+Þá er hraðinn reiknaður með að skoða staðsetninguna með afar stuttu millibili, við tímann :math:`t` og :math:`t+h` þar sem :math:`h` er mjög lítil tala.
 Það er það sama og að reikna *afleiðu* (diffra, deilda, e. differentiate) staðsetningarinnar m.t.t. tíma:
 
 .. math::
@@ -257,7 +272,7 @@ Tímaóháðu jöfnuna má leiða út með því að setja saman þessar tvær j
 .. end-toggle::
 
 .. tip::
-  Bíll bíður á rauðu ljósi. Þegar ljósið verður grænt fær bíllinn hröðunina :math:`6 \frac{\text{ m}}{\text{ s}^2}` . Hve hratt fer hann eftir 5 sekúndur og hve langt í burtu er hann?
+  Bíll bíður á rauðu ljósi. Þegar ljósið verður grænt fær bíllinn samstundis hröðunina :math:`6 \frac{\text{ m}}{\text{ s}^2}` . Hve hratt fer hann eftir 5 sekúndur og hve langt í burtu er hann?
 
   **Lausn**
 
@@ -274,21 +289,37 @@ Tímaóháðu jöfnuna má leiða út með því að setja saman þessar tvær j
 Afstæður hraði
 --------------
 
-Engar áhyggjur, hér verður ekki farið út í afstæðiskenningu Einsteins!
+*Afstæður hraði* (eða innbyrðis hraði, e. relative velocity) er hraði eins hlutar miðað við hreyfingar annars hlutar. Í raun er hraði alls afstæður, en við miðum langoftast við yfirborð jarðar þegar við tölum um hraða okkar, vindsins og bílanna í kringum okkur.
 
-Afstæður hraði (eða innbyrðis hraði) er hraði eins hlutar miðað við hreyfingar annars hlutar. Í raun er hraði alls afstæður, en við miðum langoftast við jörðina þegar við tölum um hraða okkar, vindsins og bílanna í kringum okkur.
+Þegar þú ekur eftir vegi virðast bílarnir sem fara hraðar en þú fara áfram en þeir sem fara hægar virðast vera að bakka, þó að einhver sem stendur í vegkantinum sér að allir bílarnir eru að keyra í sömu átt. Þegar tveir athugendur mæla hraða bíls sem er á hreyfingu munu þeir fá sömu niðurstöðu ef þeir eru sjálfir á hreyfingu, t.d. gangandi eða á hjóli, vegna þess að þeir væru að mæla hraða bílsins *miðað við sjálfa sig*. Athugendur mynda í kringum sig það sem við köllum *viðmiðunarkerfi* þar sem þeir geta mælt hraða og staðsetningu bílsins miðað við sjálfa sig.
 
-(jafna/jöfnur)
+Ef fyrirbærið :math:`P` er á hreyfingu miðað við viðmiðunarkerfi :math:`B` og :math:`B` er að hreyfast miðað við viðmiðunarkerfið :math:`A` þá er hraði fyrirbærisins :math:`P` miðað við :math:`A`:
+
+.. math::
+
+	v_{P/A} = v_{P/B} + v_{B/A}
+
+þar sem :math:`v_{x/y}` er hraði :math:`x` miðað við kerfið :math:`y`.
 
 .. tip::
-  Reiðhjól og gangandi maður eru að ferðast í sömu átt. Reiðhjólið fer á hraðanum :math:`v_h=6 \text{ m/s}` en maðurinn á :math:`v_g=1 \text{ m/s}`. Hver er hraði hjólsins miðað við manninn?
+  Reiðhjól og gangandi maður eru að ferðast í sömu átt. Reiðhjólið fer á hraðanum :math:`v_h=6 \text{ m/s}` (miðað við jörðina) en maðurinn á :math:`v_g=1 \text{ m/s}` (líka miðað við jörðina). Hver er hraði hjólsins miðað við manninn?
 
   **Lausn**
 
+  Köllum nú jörðina :math:`A`, manninn :math:`B` og reiðhjólið :math:`P`. Þá er :math:`v_h=v_{P/A}` og :math:`v_g=v_{B/A}`.
 
+  Við erum að leita að hraða :math:`P` miðað við :math:`B`, :math:`v_{P/B}`. Umritum jöfnuna :math:`v_{P/A} = v_{P/B} + v_{B/A}` og fáum
 
-.. tip::
-  Anna situr í strætó sem fer á :math:`30 \text{ m/s}` hraða miðað við jörðina. Hver er hraði Önnu miðað við strætóinn? Hver er hraði hennar miðað við jörðina?
+  .. math::
+
+  	v_{P/B} = v_{P/A}-v_{B/A}
+
+  Þannig að hraði hjólsins miðað við manninn er
+
+  .. math::
+
+  	v_{P/B} = v_{P/A}-v_{B/A} = 6 \text{ m/s} - 1 \text{ m/s} = 5 \text{ m/s}
+
 
 Hraði ljóss og hljóðs
 ---------------------
@@ -299,13 +330,13 @@ Hljóð berst frá uppsprettu sinni til eyrna okkar með því að hrista efnið
 
 	v_{loft} = 344 \text{m/s}
 
-en hraði ljóss í vatni við 20°C er:
+en hraði hljóðs í vatni við 20°C er meira en fjórfalt hraðari:
 
 .. math::
 
-	v_{vatn} = 1482 \text{m/s}
+	v_{vatn} = 1480 \text{m/s}
 
-Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:
+Ljós er *rafsegulbylgjur* (e. electromagnetic waves) sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:
 
 .. math::
 
@@ -313,8 +344,39 @@ Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með þ
 
 Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki, Wi-Fi) það líka.
 
-.. tip::
-  Sýnidæmi um þrumur og eldingar.
+--------------
+
+.. eqt:: daemi-ljos
+
+  **Æfingadæmi** Ef það eru :math:`1.496\cdot10^{11}\text{m}` til sólarinnar, hve langan tími líður milli þess að ljósið fer frá sólinni þar til það berst til okkar?
+
+  A) :eqt:`I` 600 sekúndur
+
+  #) :eqt:`I` :math:`4.5 \cdot 10^{11}\text{s}`
+
+  #) :eqt:`C` 8.3 mínútur
+
+  .. eqt-solution::
+    Hraði er breyting á staðsetningu á tímabili, þ.e.
+
+    .. math::
+
+      v=\frac{\Delta x}{\Delta t}
+
+    Umritum þessa jöfnu og fáum
+
+    .. math::
+
+      \Delta t=\frac{\Delta x}{v} =\frac{1.496\cdot10^{11}\text{m}}{3.00\cdot 10^8 \text{m/s}} = 498.7 \text{s}
+
+    Breytum nú sekúndum í mínútur:
+
+    .. math::
+
+    	498.7\text{s} \cdot \frac{1 \text{mín}}{60 \text{s}} = 8.3 \text{mín}
+
+
+------------------
 
 Þyngdarhröðun
 -------------
@@ -322,8 +384,8 @@ Ljós er rafsegulbylgjur sem berast fra uppsprettu sinni til augna okkar með þ
 Allt sem er nálægt yfirborði jarðarinnar verður fyrir sömu hröðun í átt að miðju jarðarinnar (í daglegu tali köllum við þessa átt *niður*).
 Við táknum þessa tilteknu hröðun, *þyngdarhröðun*, með :math:`g`.
 
-:math:`g` er vigur sem bendir í átt að miðju jarðar.
-Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir miðju jarðar (lækkandi með hæð) og því á hvaða breiddargráðu mælt er (lægra við miðbaug en hærra við pólana) en á Íslandi er gildið við sjávarmál
+Þyngdarhröðunin :math:`g` bendir alltaf í átt að miðju jarðar.
+Stærð :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir miðju jarðar (lækkandi með hæð) og því á hvaða breiddargráðu mælt er (lægra við miðbaug en hærra við pólana) en á Íslandi er gildið við sjávarmál
 
 .. math::
   g=9.82\frac{\text{ m}}{\text{ s}^2}
@@ -337,7 +399,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
   (Gera má ráð fyrir að síminn byrji í kyrrstöðu og að engin loftmótstaða sé).
 
   .. figure:: ./myndir/hradi/goldenuna.svg
-    :width: 60%
+    :width: 40%
     :align: center
 
   **Lausn**
@@ -361,7 +423,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
     \end{aligned}
 
   .. figure:: ./myndir/hradi/unasimi.svg
-    :width: 30%
+    :width: 20%
     :align: center
 
 .. tip::
@@ -387,7 +449,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
     \end{aligned}
 
   .. figure:: ./myndir/hradi/asakarfa.svg
-    :width: 30%
+    :width: 20%
     :align: center
 
 .. tip::
@@ -428,7 +490,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
 
   .. figure:: ./myndir/hradi/flokid2.svg
     :align: center
-    :width: 60%
+    :width: 50%
 
   Þegar vélarnar bila er flaugin í :math:`1009 \text{ m}` hæð yfir yfirborði, ferðast upp á við með hraðanum :math:`201.8 \text{ m/s}` og verður fyrir þyngdarhröðuninni :math:`g= 9.82 \text{ m/s}` *niður á við*.
   Reiknum nú hvenær hraði flaugarinnar er orðinn :math:`v_2=0 \text{ m/s}` .
@@ -452,7 +514,7 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
 
   .. figure:: ./myndir/hradi/flokid3.svg
     :align: center
-    :width: 60%
+    :width: 45%
 
   Nú byrjar hún að falla til jarðarinnar úr þessari hæð.
   Hún hefur enn hröðunina :math:`g=9.82\text{ m/s}^2` niður á við. Notum tímaóháðu jöfnuna:
@@ -478,37 +540,26 @@ Gildi :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir 
   Þessi misheppnaða svaðilför eldflaugarinnar tekur hana því :math:`t_1+t_2+t_3=55.5 \text{s}` .
 
   .. image:: ./myndir/hradi/flokid.svg
-    :width: 75 %
+    :width: 60 %
     :align: center
 
 --------------
 
 .. eqt:: daemi-gravity
 
-  **Æfingadæmi** Jón kastar bolta beint upp í loftið með hraðann :math:`v= 3` Hvenær grípur hann boltann aftur?
+  **Æfingadæmi** Jón kastar bolta beint upp í loftið með hraðann :math:`v_i`. Hver er hraði boltans þegar Jón grípur hann aftur? (Gerum ráð fyrir engri loftmótsstöðu)
 
-  A) :eqt:`I` 300 metra
+  A) :eqt:`C` Hraðinn við lendingu er sá sami, :math:`v_f=v_i`
 
-  #) :eqt:`I` 3 metra
+  #) :eqt:`I` Boltinn fer hraðar þegar hann lendir, :math:`v_f>v_i`
 
-  #) :eqt:`I` 180 metra
+  #) :eqt:`I` Boltinn fer hægar þegar hann lendir, :math:`v_f<v_i`
 
-  #) :eqt:`C`
+  #) :eqt:`I` Jón mun aldrei grípa boltann
 
   .. eqt-solution::
-    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
+    Þegar boltanum er kastað þá hefur hann upphafshraðann :math:`v` en þyngdarhröðunin :math:`g` hægir á honum þar til hann stoppar í tiltekinni hæð. Þá snýr boltinn við og byrjar að falla til jarðar. Á tímanum sem það tekur boltann að falla niður sömu vegalengd þá eykur þyngdarhröðunin :math:`g` hraða boltans jafn mikið og hún hægði á boltanum á leiðinni upp. Þess vegna er hraði boltans sá sami í upphafi og í lokin, þó :math:`v_i` og :math:`v_f` bendi í gagnstæðar stefnur.
 
-    .. math::
-      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
-
---------------
-
-.. raw:: html
-
-  <style>
-
-  .expl {
-   display:none;
-  }
-
-  </style>
+    .. figure:: ./myndir/hradi/bolti.svg
+      :width: 75 %
+      :align: center

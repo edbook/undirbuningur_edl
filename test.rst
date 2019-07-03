@@ -1,7 +1,7 @@
 Fjölvalsspurningar í Sphinx
 ===========================
 
-Hér hefur mér loksins tekist að setja inn embedded fjölvalsspurningar.
+Hér hefur mér loksins tekist að setja inn embedded fjölvalsspurningar (og embedded myndbönd!).
 
 Í extension-inu eqt.py er hægt að setja inn fjölvalsspurningar (og opnar spurningar).
 Það er hægt að gera það þannig að sé rangt svar sett inn kemur útskýringar á því hvers vegna valkosturinn er réttur eða rangur eftir að spurningunni hefur verið svarað rétt. Það væri auðvitað flottara ef sú útskýring ranga möguleikans birtist þegar hann er valinn, en það virkar ekki alveg. Mér sýnist það vera einhver smávilla í ``dynsite.js`` skránni.  Meira bil er á milli svarmöguleikanna þegar þessi fítus er nýttur svo e.t.v. er fallegra að sleppa því alfarið að nota hann (tekið eftir mun á dæmum 1 og 2).

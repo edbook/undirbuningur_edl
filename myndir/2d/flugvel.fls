@@ -1,4 +1,4 @@
-PWD /Users/gudnyh/Seafile/edlisfraedi/myndir/2d
+PWD /Users/gudnyh/sumar/undirbuningur_edl/myndir/2d
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./flugvel.tex
 OUTPUT flugvel.log
@@ -204,4 +204,3 @@ OUTPUT flugvel.pdf
 INPUT ./flugvel.aux
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

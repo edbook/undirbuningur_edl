@@ -5,7 +5,7 @@ Vigrar
 .. math::
   \begin{aligned}
     \bar{a} &= \begin{pmatrix} a_x \\ a_y \\ a_z \end{pmatrix} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k} \qquad & \text{Mismunandi táknmál}\\
-    |\bar{a}| = a &= \sqrt{a_x^2 + a_y^2 + a_z^2} \qquad & \text{Lengd vigurs}\\
+    |\bar{a}| &= a = \sqrt{a_x^2 + a_y^2 + a_z^2} \qquad & \text{Lengd vigurs}\\
     \bar{a} + \bar{b} &= \begin{pmatrix}a_x+b_x \\ a_y+b_y \\ a_z+b_z \end{pmatrix} \qquad & \text{Samlagning vigra}\\
     c \cdot \bar{v} &= \begin{pmatrix}c \cdot v_x\\ c \cdot v_y \\ c \cdot v_z \end{pmatrix} \qquad & \text{Margföldun með fasta}\\
     \bar{a} \cdot \bar{b} &= a_x b_x + a_y b_y \\
@@ -46,8 +46,8 @@ Tvívíð hreyfing
 ---------------
 .. math::
   \begin{aligned}
-    y&=\tan(\alpha_0) x + \frac{g}{2v_0\cos^2(\alpha_0)}x^2 \qquad & \text{Ferill kasthreyfingar} \\
-    |\overline{a}| &= \frac{v^2}{R} = \frac{4 \pi^2 R}{T^2} \qquad & \text{Jöfn hringhreyfing}
+    y&=\tan(\alpha_0) x - \frac{g}{2v_0\cos^2(\alpha_0)}x^2 \qquad & \text{Ferill kasthreyfingar} \\
+    a &= \frac{v^2}{R} = \frac{4 \pi^2 R}{T^2} \qquad & \text{Jöfn hringhreyfing}
   \end{aligned}
 
 Kraftar

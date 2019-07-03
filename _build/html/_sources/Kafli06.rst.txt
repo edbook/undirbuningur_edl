@@ -23,7 +23,7 @@ Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu 
 
   .. figure:: ./myndir/kraftar/reipitog.svg
     :align: center
-    :width: 80%
+    :width: 70%
 
   Kraftvigur Ingu bendir til vinstri, þ.a. :math:`x` hnit hans er neikvætt.
 
@@ -39,12 +39,14 @@ Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu 
 
   .. math::
     \begin{aligned}
-    \overline{F_{net}} &= \overline{F}_I + \overline{F}_G \\
+    \overline{F}_{net} &= \overline{F}_I + \overline{F}_G \\
     &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix} \\
     &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}
     \end{aligned}
 
   Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
+
+.. _s.newton:
 
 Lögmál Newtons
 --------------
@@ -57,7 +59,7 @@ Fyrsta lögmál Newtons
 Þetta lögmál er oft nefnt **tregðulögmálið** og segir m.a. að bolti muni liggja kyrr á jörðinni þangað til einhver sparkar í hann og að boltinn muni halda áfram að rúlla endalaust, nema núningur hans við grasflötina hægi á honum.
 
 Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
-Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
+Hröðun er afleiða hraðans, svo ef hröðunin er núll þá er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
 
 .. _s.lnII:
 
@@ -69,7 +71,7 @@ Annað lögmál Newtons
    \overline{F} = m \overline{a}
 
 Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
-Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hlutar.
+Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hans.
 
 Þriðja lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~~
@@ -92,13 +94,19 @@ Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
   :align: center
   :width: 60%
 
-Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá.
+Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá. Nafnið kemur einmitt þaðan, en *normalvigur* er vigur sem er hornréttur á annan, líka kallað þvervigur. Á hallandi yfirborði er normalkrafturinn minni en á láréttu yfirborði, en þetta verður skoðað nánar með dæmi síðar.
 
 Núningskraftur
 --------------
 Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
 Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
 Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.
+
+Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, :math:`\mu_k` :
+
+.. math::
+
+	f_{nún} = \mu_k f_n
 
 .. tip::
   **(a)** Ásta ætlar að toga þungan kassa eftir steypugólfi og beitir til þess krafti :math:`F_{tog}` á kassann.
@@ -137,7 +145,7 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
 
 .. tip::
   Hokkípökkur með massa :math:`m = 0.15` kg rennur á svelli með hraðanum :math:`\overline{v}_0 = 5 \text{m/s}`  .
-  Núningskrafturinn milli hokkípökksins og svellsins er :math:`\overline{f}_{nún} = 0.3 \text{N}` og verkar á þann hátt að hann hægir á pökknum.
+  Núningskrafturinn milli hokkípökksins og svellsins er :math:`\overline{f}_{nún} = 0.3 \text{N}`.
 
   Hvaða kraftar verka á pökkinn?
   Hversu langt rennur pökkurinn áður en hann stöðvast?
@@ -150,7 +158,7 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
     :width: 70%
     :align: center
 
-  Pökkurinn verður fyrir þyndarkrafti :math:`f_g` og normalkrafti :math:`f_n` vegna hans, auk núningskraftsins :math:`f_{nún}`.
+  Pökkurinn verður fyrir þyndarkrafti :math:`f_g` og normalkrafti :math:`f_n` vegna hans, auk núningskraftsins :math:`f_{nún}` sem bendir gegn hreyfingunni af því hann er að reyna að hægja á pökknum.
 
   Upphafshraðinn :math:`v_0` er merktur inn rauður.
 
@@ -179,8 +187,8 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
 
 
 .. tip::
-  5 kg kassi liggur kyrrstæður á skáplani með hallann :math:`\theta = 30°` .
-  Hver er núningskrafturinn á milli kassans og skáplansins :math:`f_{nún}`?
+  :math:`5.00\text{kg}` kassi liggur kyrrstæður á skáplani með hallann :math:`\theta = 30°` .
+  Hver þarf núningskrafturinn á milli kassans og skáplansins (:math:`f_{nún}`) að vera til þess að kassinn haldist kyrr?
 
   **Lausn**
 
@@ -190,37 +198,59 @@ Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur
     :width: 70%
     :align: center
 
-  Þar sem kassinn er kyrrstæður er heildarkrafturinn núll.
-  Núningskrafturinn :math:`f_{nún}` liggur samsíða skáplaninu upp eftir því.
-  Á kassann verkar þyngdarkraftur :math:`f_g` beint niður.
+  Á kassann verkar þyngdarkraftur :math:`F_g` beint niður.
   Normalkrafturinn :math:`f_n` ýtir á kassann, hornrétt af yfirborði skáplansins.
+  Núningskrafturinn :math:`f_{nún}` liggur samsíða skáplaninu, upp eftir því.
+  Við teiknum alla kraftana út frá miðju kassans.
 
-  Skilgreinum hnitakerfið þannig að x-ásinn sé samsíða skáplaninu og y-ásinn hornrétt á hann.
+  Nú er komið að því að við veljum okkur hnitakerfi en þar eru tveir góðir kostir. Við getum annað hvort búið til hnitakerfi "eins og venjulega", þ.e. þannig að :math:`x`-ás hnitakerfisins sé láréttur og :math:`y`-ásinn sé samsíða þyngdarhröðuninni, svona:
+
+  .. figure:: ./myndir/kraftar/skaplanhornrett.svg
+    :width: 70%
+    :align: center
+
+  Hér er þyngdarkrafturinn samsíða :math:`y` - ásnum en normal- og núningskraftarnir eru hvorki samsíða :math:`x`- né :math:`y`- ásnum.
+  Hinn valmöguleikinn er að snúa hnitakerfinu þannig að :math:`x`-ásinn sé samsíða skápaninu og :math:`y`-ásinn hornrétt á hann, svona:
 
   .. figure:: ./myndir/kraftar/skaplanhnit.svg
     :width: 70%
     :align: center
 
-  Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, :math:`f_{g,x}` og þann sem er hornrétt á það, :math:`f_{g,y}`
+  Hér er normalkrafturinn :math:`f_n` samsíða :math:`y`- ásnum og núningskrafturinn samsíða :math:`x`-ásnum en þyngdarkrafturinn samsíða hvorugum.
 
-  .. figure:: ./myndir/kraftar/lidunkrafta2.svg
-    :width: 30%
+  Markmið okkar í þessu dæmi er að skoða hvernig kraftarnir verka á hlutinn og við viljum að það sé enginn nettókraftur á kassann. Það þýðir að við viljum að þegar við leggjum saman kraftavigrana þá sé niðurstaðan núll, þ.e. að þættir vigranna í hverja stefnu hnitakerfisins styttist út. Við veljum að hafa hnitakerfið á ská, því þá þurfum við bara að liða þyngdarkraftinn í stað þess að liða bæði núningskraftinn og normalkraftinn.
+
+  Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, :math:`F_{g,x}` og þann sem er hornrétt á það, :math:`F_{g,y}`.
+
+  .. figure:: ./myndir/kraftar/skaplanhnit2.svg
+    :width: 70%
     :align: center
 
+
   Til þess að kassinn haldist kyrr þurfa samanlagðir kraftar í hvora stefnu, :math:`x` - og :math:`y`, að vera núll.
-  Því þarf normalkrafturinn að vera jafnstór :math:`y` - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór :math:`x` þættinum.
+  Því þarf normalkrafturinn að vera jafnstór :math:`y` - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór :math:`x` - þættinum.
 
-  Þyngdarkrafturinn er
-
-  .. math::
-    F_g = m \cdot g = 5 \text{kg} \cdot 9.8 \text{m/s} = 49 \text{N}
-
-  Þá er þáttur hans samsíða skáplaninu
+  Þyngdarkrafturinn er:
 
   .. math::
-    F_{g,x} = F_g \sin{\theta} = 49 \text{N} \cdot \sin{30°} = 24.5 \text{N}
+    F_g = m \cdot g = 5.00 \text{kg} \cdot 9.80 \text{m/s} = 49.0 \text{N}
+
+  Þá er þáttur hans samsíða skáplaninu:
+
+  .. math::
+    F_{g,x} = F_g \sin{\theta} = 49.0 \text{N} \cdot \sin{30°} = 24.5 \text{N}
 
   Þar með hlýtur núningskrafturinn að vera :math:`f_{nún} = F_{g,x}= 24.5 \text{N}` .
+
+  Að sama skapi er normalkrafturinn jafnstór :math:`y` - þætti þyngdarkraftsins:
+
+  .. math::
+
+  	f_n = F_{g,y} = F_g \cos{\theta} 49.0 \text{N} \cdot \cos(30°) = 42.4 \text{N}
+
+.. note::
+  Þyngdarkrafturinn bendir *alltaf* beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.
+
 
 Vægi
 ----
@@ -238,7 +268,7 @@ Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.
   :align: center
   :width: 60%
 
-Hér má sjá tvo jafnstóra krafta, :math:`F_1` og :math:`F_2` verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
+Hér má sjá tvo jafnstóra krafta, :math:`F_1` og :math:`F_2`, verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
 Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægið frá :math:`F_2` er meira vegna þess að armurinn er lengri, :math:`r_2>r_1`. Heildarvægið um veltipunktinn er þá summan:
 
 .. math::
@@ -265,3 +295,9 @@ Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægi�
 
   .. math::
     F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}
+
+
+Normalkraftur í lyftu
+---------------------
+
+(Áhugavert en kannski óþarfi?)

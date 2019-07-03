@@ -27,8 +27,10 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
   Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
   Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
 
-  Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í formi *efnaorku*.
+  Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í efnatengjum atóma sem *efnaorka*.
 
+.. note::
+  Orka er skalarstærð, *ekki vigur*. Lokað eðlisfræðilegt kerfi býr yfir fastri orku, sem getur breytt um form en getur aldrei horfið eða aukist, en orkan bendir ekki í neina sérstaka átt.
 
 Vinna
 -----
@@ -111,10 +113,12 @@ Hlutur sem hefur massann :math:`m`  og fer á hraðanum :math:`v` hefur hreyfior
 .. math::
   K= \frac{1}{2}mv^2
 
-Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni.
+Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt vinnu-hreyfiorkusetningunni:
 
 .. math::
   W=\Delta K=K_2-K_1 = \frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2
+
+Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans :math:`m` ekki vigur heldur skalarstærð. Hreyfiorkan er bara háð stærð hraðans, :math:`v=|\overline{v}|` en ekki stefnu hans.
 
 .. tip::
   Sleði með massann :math:`m=20` kg rennur eftir sléttum, láréttum snjó.
@@ -145,6 +149,7 @@ Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytin
   Vinnan er neikvæð því krafturinn vinnur gegn hreyfingunni.
 
 
+
 Stöðuorka
 ---------
 Þegar hlutir eru í *þyngdarsviði*, þ.e. nálægt yfirborði miklu stærri hlutar (eins og jarðarinnar) hafa þeir *þyngdarstöðuorku* (e. gravitational potential energy) :math:`U` :
@@ -157,7 +162,7 @@ Stöðuorka
 
 Orkuvarðveisla
 --------------
-Orka er einn eðliseiginleika sem er *varðveittur*, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
+Orka er einn eðliseiginleika kerfis sem er *varðveittur*, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
 Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.
 
 Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst. Sé ekki núningur er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:
@@ -195,8 +200,8 @@ Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyf
     :align: center
     :width: 40%
 
-
+Orka í gormum
+-------------
 
 
 .. fjalla um gorma?
-.. spurs með heildaframsetningu vinnu, of snemma?

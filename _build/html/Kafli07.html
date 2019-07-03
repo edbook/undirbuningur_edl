@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli01.html#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">7. Orka</a><ul>
@@ -168,24 +183,24 @@
 <li class="toctree-l2"><a class="reference internal" href="#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -260,7 +275,11 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.</
 <p><strong>Orka breytir um form.</strong></p>
 <p>Bolti sem fellur til jarðar hefur <em>stöðuorku</em> vegna þyngdarsviðs jarðar, en hún breytist í <em>hreyfiorku</em> á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem <em>hreyfiorka</em> loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
 Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.</p>
-<p>Þegar sprengja springur losnar mikil <em>hreyfiorka</em>, <em>varmaorka</em> og <em>rafsegulorka</em> (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í formi <em>efnaorku</em>.</p>
+<p>Þegar sprengja springur losnar mikil <em>hreyfiorka</em>, <em>varmaorka</em> og <em>rafsegulorka</em> (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í efnatengjum atóma sem <em>efnaorka</em>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Athugasemd</p>
+<p>Orka er skalarstærð, <em>ekki vigur</em>. Lokað eðlisfræðilegt kerfi býr yfir fastri orku, sem getur breytt um form en getur aldrei horfið eða aukist, en orkan bendir ekki í neina sérstaka átt.</p>
 </div>
 <div class="section" id="vinna">
 <h2>7.1. Vinna<a class="headerlink" href="#vinna" title="Varanlegur hlekkur á titilinn">¶</a></h2>
@@ -347,11 +366,12 @@ Vinna er þá innfeldi kraftavigursins og færsluvigursins:</p>
 <div class="math">
 \[K= \frac{1}{2}mv^2\]</div>
 </div>
-<p>Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni.</p>
+<p>Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt vinnu-hreyfiorkusetningunni:</p>
 <div style="text-align: center;">
 <div class="math">
 \[W=\Delta K=K_2-K_1 = \frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2\]</div>
 </div>
+<p>Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans <span class="math">\(m\)</span> ekki vigur heldur skalarstærð. Hreyfiorkan er bara háð stærð hraðans, <span class="math">\(v=|\overline{v}|\)</span> en ekki stefnu hans.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Sleði með massann <span class="math">\(m=20\)</span> kg rennur eftir sléttum, láréttum snjó.
@@ -391,7 +411,7 @@ Hreyfiorkan í upphafi er</p>
 </div>
 <div class="section" id="orkuvarveisla">
 <h2>7.5. Orkuvarðveisla<a class="headerlink" href="#orkuvarveisla" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Orka er einn eðliseiginleika sem er <em>varðveittur</em>, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
+<p>Orka er einn eðliseiginleika kerfis sem er <em>varðveittur</em>, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
 Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.</p>
 <p>Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst. Sé ekki núningur er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:</p>
 <div style="text-align: center;">
@@ -426,6 +446,9 @@ v&amp;=\sqrt{2\cdot98\text{ J} /20\text{ kg}} = 3.13 \text{m/s}
 <a class="reference internal image-reference" href="_images/steinn.svg"><img alt="_images/steinn.svg" src="_images/steinn.svg" width="40%" /></a>
 </div>
 </div>
+</div>
+<div class="section" id="orka-i-gormum">
+<h2>7.6. Orka í gormum<a class="headerlink" href="#orka-i-gormum" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 </div>
 </div>
 

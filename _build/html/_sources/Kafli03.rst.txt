@@ -139,8 +139,8 @@ Eins og við höfum séð er lítið mál að breyta á milli.
 
 Einingarvigrar
 --------------
-Einingarvigrar eru vigrar sem hafa lengdina 1.
-Vigrarnir
+Einingarvigrar eru vigrar sem hafa lengdina 1, en þeir eru oft merktir með höttum (:math:`\hat{e}`) í staðinn fyrir yfirstrikum eða örvum (:math:`\overline{e}, \vec{e}`).
+Einingavigrarnir
 
 .. math::
   \begin{aligned}
@@ -153,9 +153,7 @@ liggja samsíða :math:`x` - , :math:`y` - og  :math:`z` -  ásunum í rétthyrn
 Þeir eru líka táknaðir:
 
 .. math::
-  \begin{gather}
-  \hat{e}_x, \quad \hat{e}_y, \quad \hat{e}_z
-  \end{gather}
+   \hat{e}_x, \quad \hat{e}_y, \quad \hat{e}_z
 
 .. figure:: ./myndir/vigrar/einingarvigrar.svg
    :width: 60%
@@ -218,23 +216,23 @@ Um samlagningu vigra gilda eftirfarandi reglur:
 
   .. math::
     \begin{aligned}
-    A&=(x_1,y_1)=(1,2) \\
-    B&=(x_2,y_2)=(4,5) \\
-    C&=(x_3,y_3)=(3,-1)
+      A&=(x_1,y_1)=(1,2) \\
+      B&=(x_2,y_2)=(4,5) \\
+      C&=(x_3,y_3)=(3,-1) \\
     \end{aligned}
 
-  Reiknum vigrana :math:`\bar{AB}, \bar{AC} \text{ og } \bar{BC}` :
+  Reiknum nú vigrana á milli punktanna: :math:`\overline{AB}, \overline{AC} \text{ og } \overline{BC}`
 
   .. math::
     \begin{aligned}
-      \bar{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
-      &=\begin{pmatrix} 4-1 \\5-2\end{pmatrix} =\begin{pmatrix} 3 \\3\end{pmatrix} \\
-      & \\
-      \bar{AC} &= \begin{pmatrix}x_3-x_1\\ y_3-y_1 \end{pmatrix}\\
-      &=\begin{pmatrix} 3-1 \\(-1)-2\end{pmatrix} =\begin{pmatrix} 2 \\-3\end{pmatrix} \\
-      & \\
-      \bar{BC} &= \begin{pmatrix}x_3-x_2\\ y_3-y_2 \end{pmatrix}\\
-      &=\begin{pmatrix} 3-4 \\(-1)-5\end{pmatrix} =\begin{pmatrix} -1 \\-6\end{pmatrix} \\
+      \overline{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
+      &=\begin{pmatrix} 4-1 \\ 5-2\end{pmatrix} =\begin{pmatrix} 3 \\3\end{pmatrix} \\
+      &\\
+      \overline{AC} &= \begin{pmatrix}x_3-x_1 \\ y_3-y_1 \end{pmatrix}\\
+      &=\begin{pmatrix} 3 - 1 \\ (-1)-2 \end{pmatrix} =\begin{pmatrix} 2 \\ -3\end{pmatrix} \\
+      &\\
+      \overline{BC} &= \begin{pmatrix} x_3-x_2 \\ y_3-y_2 \end{pmatrix}\\
+      &=\begin{pmatrix} 3 - 4 \\ (-1) -5 \end{pmatrix} = \begin{pmatrix} -1 \\ -6 \end{pmatrix} \\
     \end{aligned}
 
   .. figure:: ./myndir/vigrar/innskots.svg
@@ -246,7 +244,7 @@ Um samlagningu vigra gilda eftirfarandi reglur:
 Af þessu dæmi má sjá *innskotsregluna* :
 
 .. math::
-  \bar{AC} = \bar{AB} + \bar{BC}
+  \overline{AC} = \overline{AB} + \overline{BC}
 
 
 Margföldun vigra
@@ -325,7 +323,7 @@ Ef vigrarnir eru gefnir með lengd og stefnuhorni er innfeldi þeirra:
 Krossfeldi
 ~~~~~~~~~~
 
-**Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\bar{c} = \bar{a} \times \bar{b}` .
+**Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\bar{c} = \bar{a} \times \bar{b}` . Krossfeldi koma mikið fyrir í eðlisfræði, sérstaklega í tengslum við rafsegulkrafta.
 Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu :math:`\bar{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}` .
 
 .. math::
@@ -369,3 +367,28 @@ Lengd krossfeldis :math:`\bar{a} \text{ og } \bar{b}` má reikna úr frá lengdu
         &= -3 \hat{\imath} +6 \hat{\jmath} - 3\hat{k}\\
         &= (-3,6,-3)
       \end{aligned}
+
+.. tip::
+  Reiknum hornið milli vigranna :math:`\bar{a}=(1,2,3)` og :math:`\bar{b}=(4,5,6)`.
+
+  **Lausn**
+
+  Notum nú regluna :math:`|\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)` og byrjum á því að reikna lengd vigranna:
+
+  .. math::
+    \begin{aligned}
+      |\bar{a}| &=\sqrt{1^2+2^2+3^2} = \sqrt{14} \\
+      |\bar{b}| &=\sqrt{4^2+5^2+6^2} = \sqrt{77} \\
+      |\bar{a} \times \bar{b}| &= \sqrt{(-3)^2+6^2+(-3)^2}=\sqrt{54}
+    \end{aligned}
+
+  Þá fáum við:
+
+  .. math::
+    \begin{aligned}
+  	  \sin(\phi) &= \frac{|\bar{a} \times \bar{b}| }{|\bar{a}| |\bar{b}|} \\
+      &=\frac{\sqrt{54}}{\sqrt{14}\sqrt{77}} \\
+      &=\sqrt{\frac{54}{1078}}\\
+      \phi&\approx0.226 \text{ Rad} \\
+      \phi&\approx 13°
+    \end{aligned}

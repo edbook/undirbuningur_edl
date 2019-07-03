@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  19 JUL 2018 10:38
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  25 JUN 2019 14:52
  restricted system commands enabled.
 **flugvel.tex
 (./flugvel.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.112 seconds
+luaotfload | main : initialization completed in 0.324 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
@@ -493,21 +493,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Here is how much of LuaTeX's memory you used:
  12184 strings out of 494413
  100000,319454 words of node,token memory allocated
- 1692 words of node memory still in use:
-   33 hlist, 4 vlist, 1 rule, 6 math, 46 glue, 3 kern, 8 glyph, 105 attribute, 4
-5 glue_spec, 105 attribute_list, 1 write, 62 pdf_literal, 4 pdf_colorstack nodes
-
-   avail lists: 2:25,3:64,4:9,5:25,6:1,7:71,8:3,9:42
+ 1793 words of node memory still in use:
+   31 hlist, 4 vlist, 4 rule, 6 math, 46 glue, 14 kern, 12 glyph, 108 attribute,
+ 45 glue_spec, 108 attribute_list, 1 write, 62 pdf_literal, 4 pdf_colorstack nod
+es
+   avail lists: 2:25,3:64,4:9,5:36,6:1,7:75,8:4,9:40
  15861 multiletter control sequences out of 65536+600000
  25 fonts using 1344807 bytes
  55i,7n,56p,403b,564s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on flugvel.pdf (1 page, 23026 bytes).
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+Output written on flugvel.pdf (1 page, 16445 bytes).
 
-PDF statistics: 23 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+PDF statistics: 19 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

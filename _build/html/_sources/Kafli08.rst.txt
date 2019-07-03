@@ -14,7 +14,12 @@ Hugsum okkur hlut sem hefur fastan massa :math:`m`. Nú verður þessi hlutur fy
 Við skilgreinum *skriðþunga* (e. momentum) hlutar á hreyfingu sem margfeldi massans og hraðans sem hann er á.
 
 .. math::
+
   \overline{p}=m\overline{v}
+
+.. note::
+
+	Þar sem skriðþungi er margfeldi vigurs (hraðans) og skalarstærðar (massans) þá sjáum við að *skriðþungi er vigur*. Eining skriðþunga er :math:`\text{kg}\cdot\text{m/s}` sem er það sama og :math:`\text{N}\cdot\text{s}`
 
 Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan massalitlir hlutir á hægri hreyfingu mjög lítinn.
 
@@ -27,12 +32,12 @@ Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan ma
 Hugsaðu þér að þú sért að versla í innkaupakerru. Í upphafi ferðarinnar er kerran tóm og hún lætur auðveldlega að stjórn. Eftir því sem vörurnar safnast í hana, þyngist hún og það verður sífellt erfiðara (krefst meiri krafts) að koma henni af stað. Að sama skapi er erfitt að stoppa hana sé hún komin á skrið.
 
 .. tip::
-  :math:`m=1600` kg bíll keyrir áfram á :math:`v=5` m/s.
-  Skriðþungi hans er :math:`P=mv= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
+  :math:`m=1600` kg bíll keyrir áfram á :math:`|\overline{v}|=5` m/s.
+  Skriðþungi hans er :math:`|\overline{p}|=m|\overline{v}|= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
   Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.
 
-  Byssukúla hefur hraðann :math:`v=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
-  Skriðþungi hennar er þá  :math:`P=mv =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.
+  Byssukúla hefur hraðann :math:`|\overline{v}|=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
+  Skriðþungi hennar er þá  :math:`|\overline{p}|=m|\overline{v}| =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.
 
 
 Atlag
@@ -67,15 +72,59 @@ Ef hluturinn verður fyrir sama kraftinum allt tímabilið þá er atlagið jafn
   Krafturinn fær neikvætt gildi því hann bendir á móti hreyfingunni.
 
 
+Varðveisla í einni vídd
+-----------------------
 
-Varðveisla
-----------
 Ef summa allra kraftanna sem verka á kerfi er núll, þá er breyting heildarskriðþunga kerfis með tilliti til tíma líka jafnt núll. Það merkir að heildarskriðþungi kerfis breytist ekki, en skriðþungar hlutanna innan kerfisins geta breyst, en summa þeirra er alltaf sú sama.
+
+Ef við táknum skriðþunga kerfis fyrir einhvern atburð með :math:`p_i` (:math:`i` fyrir initial í ensku) og skriðþunga kerfisins eftir atburðinn með :math:`p_f` (:math:`f` fyrir final í ensku) þá getum við sett fram skriðþungavarðveislu fyrir kerfið með:
+
+.. math::
+
+	p_i=p_f
 
 .. note::
   Skriðþungi er varðveittur ef engir kraftar koma utan frá.
 
-Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa ekki endilega sama massann en önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`v_0`. Þá er heildarskriðþungi kerfisins :math:`m_1v_0`. Hvað gerist þegar þær rekast saman?
+.. tip::
+
+  Skytta heldur laust á riffli þannig að þegar hún hleypir af skoti getur hann hreyfst afturfyrir sig. Riffillinn hefur massann :math:`m_r=3.00\text{ kg}` og kúla sem hann skýtur hefur massann :math:`m_k=5.00\text{ g} = 5.00\cdot 10^{-3}\text{ kg}`. Ef kúlan fer á hraðanum :math:`v_k = 300 \text{ m/s}` til hægri, hve hratt kastast riffillinn til vinstri við skotið?
+
+  **Lausn**
+
+  Hér getum við gert ráð fyrir að engir utanaðkomandi kraftar séu að verki, þar sem skyttan heldur laust á rifflinum (þ.e. er ekki að ýta á móti hreyfingunni). Vegna þess að allar hreyfingarnar í þessu dæmi gerast eftir sömu línunni (kúlan í aðra átt og riffillinn í hina) þá þarf lítið að velta því fyrir sér að skriðþungi er vigur. Það er einfaldara að hugsa að kúlan hafi jákvæðan hraða (fari áfram) en að riffillinn hafi neikvæðan (fari afturábak). Skriðþunginn fyrir skotið er núll, af því bæði byssan og kúlan eru kyrrstæðar (hafa hraðann :math:`v_i=0`), þ.e. :math:`p_{k,i} = 0`, :math:`p_{r,i}=0`.
+
+  Heildarskriðþunginn fyrir skotið er:
+
+  .. math::
+
+  	p_i=p_{k,i} +p_{r,i} = 0 \text{ kg m/s}
+
+  Þar sem skriðþunginn er varðveittur þarf hann líka að vera núll eftir skotið, þó báðir hlutirnir séu á hreyfingu, þ.e. :math:`p_i=p_f`
+
+  Byssukúlan er massalítil en fer hratt og hefur skriðþungann:
+
+  .. math::
+
+  	p_{k,f} = m_k v_k = 5.00\cdot 10^{-3}\text{ kg} \cdot 300 \text{ m/s} = 1.50 \text{N s}
+
+  Heildarskriðþunginn eftir skotið er:
+
+  .. math::
+
+  	p_f=p_{k,f} + p_{r,f}
+
+  Skriðþungavarðveisla gefur okkur að :math:`p_f =0 \text{ kg m/s}` og því er :math:`p_{r,f} =- p_{k,f}`
+  Þar sem við vitum bæði hraðann og skriðþungann er lítið mál að finna hraða riffilsins:
+
+  .. math::
+
+  	v_{r,f} = \frac{p_{r,f}}{m_{r}} = \frac{-1.5 \text{ kg m/s}}{3.00 \text{kg}} = -0.5 \text{m/s}
+
+
+
+
+Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa massa :math:`m_1` og :math:`m_2` og önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`v_0`. Þá er heildarskriðþungi kerfisins fyrir árekstruinn :math:`m_1v_0`. Við skulum kalla hraða kúlu 1 eftir áreksturinn :math:`v_1` en hraða kúlu 2 :math:`v_2`. Hvað gerist þegar þær rekast saman?
 
 .. figure:: ./myndir/skrth/skrth1.svg
   :align: center
@@ -84,10 +133,9 @@ Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núnin
 Fullkomlega fjaðrandi árekstur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Áður en kúlurnar skella saman þá er heildarskriðþungi kerfisins margfeldi :math:`v_0` við massa kúlu 1. Við áreksturinn varðveitist skriðþunginn, svo við vitum að skriðþunginn eftir áreksturinn er sá sami og fyrir. Þegar seinni kúlan tekur við öllum skriðþunganum og fær hraðann :math:`v_2` á meðan hin stöðvast þá er talað um *fullkomlega fjaðrandi árekstur*.
+Kúlurnar gætu verið þannig gerðar að þær skelli harkalega saman. Það er kallað *fullkomlega fjarðandi árekstur* þegar kúla 2 rekur við öllum skriðþunganum sem kúla 1 hafði. Þá stendur kúla 1 eftir kyrr (:math:`v_1=0`) en kúla 2 ferðast áfram með einhvern hraða :math:`v_2`.
 
-.. note::
-  Í fjaðrandi árekstrum er bæði skriðþungi og hreyfiorka kerfisins varðveitt.
+Í fullkomlega fjaðrandi árekstrum er *hreyfiorkan varðveitt*.
 
 .. figure:: ./myndir/skrth/skrth2.svg
   :align: center
@@ -110,8 +158,7 @@ Fullkomlega ófjaðrandi árekstur
 
 En hvað ef kúlurnar eru þannig gerðar að þær klístrist saman við áreksturinn? Þá er talað um *fullkomlega ófjaðrandi árekstur* og kúlurnar myndu ferðast áfram, klesstar saman, en með annan hraða en fyrir árekstur.
 
-.. note::
-  Í ófjaðrandi árekstrum er skriðþungi kerfisins varðveittur, en hreyfiorkan *ekki*.
+Í ófjaðrandi árekstrum er *hreyfiorkan ekki varðveitt*.
 
 .. figure:: ./myndir/skrth/skrth3.svg
   :align: center
@@ -132,18 +179,19 @@ Ef kúlurnar hafa sama massann :math:`m_1=m_2` þá er hraðinn sem kúlurnar fe
 Önnur tilvik
 ~~~~~~~~~~~~
 
-Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan er ekki varðveitt og hlutirnir ferðast ekki á sama hraða eftir árekstur.
+Langflestir árekstrar hluta í raunveruleikanum eru hvorki fullkomlega fjaðrandi né fullkomlega ófjaðrandi.
+Skriðþunginn á engu að síður að vera varðveittur.
 
 .. figure:: ./myndir/skrth/skrth5.svg
   :align: center
   :width: 45%
 
-Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram. Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:
+Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram líka (en hægar). Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:
 
 .. math::
   m_1v_0 = m_1v_1+m_2v_2
 
-Þetta er jafna með tvær óþekktar stærðir, :math:`v_1` og :math:`v_2`. Því eru til *óendanlega margar* lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar, t.d. að önnur kúlan endi á að fara þrefalt hraðar en hin (:math:`v_2 = 3v_1`) . Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna.
+Þetta er jafna með tvær óþekktar stærðir, :math:`v_1` og :math:`v_2`. Því eru til *óendanlega margar* lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar til að leysa það. Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna, hvort þau eru hörð eða mjúk. Ein lausn er að önnur kúlan endi á að fara þrefalt hraðar en hin (:math:`v_2 = 3v_1`) .
 
 Það eru líka til lausnir þar sem fyrri kúlan fær hraða í gagnstæða átt og skoppar til baka. Þá er :math:`v_1<0`
 
@@ -151,14 +199,3 @@ Til er millistig af þessu tvennu: ófjaðrandi árekstur þar sem hreyfiorkan e
 .. figure:: ./myndir/skrth/skrth4.svg
   :align: center
   :width: 60%
-
-----------------------
-
-.. math::
-  \begin{array}{| c | c |}
-   \hline
-  \text{Fullkomlega fjaðrandi árekstur} & \text{Hreyfiorkan er varðveitt} \\ \hline
-  \text{Fullkomlega ófjaðrandi árekstur} & \text{Hlutirnir klessast saman og} \\
-  &                           \text{ferðast áfram með sama hraða}   \\ \hline
-  \text{Ófjaðrandi árekstur} & \text{Hreyfiorkan er ekki varðveitt} \\ \hline
-  \end{array}

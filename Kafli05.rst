@@ -3,66 +3,77 @@ Hreyfing í tveimur víddum
 Hingað til hefur verið fjallað um einvíða hreyfingu, þar sem staðsetning, hraði og hröðun eru öll eftir sömu beinu línunni.
 Í eðlisfræði er hins vegar nauðsynlegt að geta lýst hreyfingu í tveimur og jafnvel þremur víddum.
 
-.. tip::
-  Flugvél setur stefnuna beint norður á við og flýgur á hraðanum :math:`v_f= 20 \text{ m/s}`. Það er hvöss vestanátt, :math:`v_v =15\text{ m/s}`, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?
+Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.
 
-  .. figure:: ./myndir/2d/flugvel.svg
+Hraði hlutarins er snertill við feril hlutarins og
+hröðun hans bendir alltaf inn í kúpta hluta ferilsins.
+
+Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn í átt að ferlinum.
+
+Hröðunarvigurinn segir til um hvernig hraðinn og stefna hans eru að breytast.
+
+.. image:: ./myndir/2d/hrodun.svg
     :align: center
     :width: 40%
 
+
+Afstæður hraði
+--------------
+
+Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum við vigra:
+
+.. math::
+
+	\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A}
+
+.. tip::
+  Flugvél setur stefnuna beint norður á við og flýgur á hraðanum :math:`v_f= 20 \text{ m/s}` (miðað við loftið). Loftið flæðir til austurs með stífri vestanátt, :math:`v_v =15\text{ m/s}`, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?
+
+  **Lausn**
+
+  Köllum nú flugvélina :math:`P`, vindinn :math:`B` og jörðina :math:`A`.
   Hér notum við vigursamlagningu. Hreyflar vélarinnar gefa henni hraða :math:`v_f` í stefnu norður (stefnu :math:`y` - áss). Þá er:
 
   .. math::
 
-  	\overline{v}_f = \begin{pmatrix} 0 \\ 20 \end{pmatrix}
+  	\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix}
 
   Vindurinn blæs frá vestri til austurs, til hægri (í stefnu :math:`x` - áss). Því er:
 
   .. math::
 
-  	\overline{v}_v = \begin{pmatrix} 15 \\ 0 \end{pmatrix}
+  	\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix}
 
   Leggjum nú saman vigrana :math:`\overline{v}_f` og :math:`\overline{v}_v`:
 
   .. math::
     \begin{aligned}
-  	\overline{v} &= \overline{v}_f + \overline{v}_v \\
-    &= \begin{pmatrix} 0 \\ 20 \end{pmatrix} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \\
+  	\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A} \\
+    &= \begin{pmatrix} 0  \\ 20 \end{pmatrix} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \\
     &= \begin{pmatrix} 15 \\ 20 \end{pmatrix}
     \end{aligned}
 
-  Hraði flugvélarinnar miðað við jörðina er því lengdin á :math:`\overline{v}`:
+  .. figure:: ./myndir/2d/flugvel.svg
+    :align: center
+    :width: 35%
+
+  Hraði flugvélarinnar miðað við jörðina er því lengdin á :math:`\overline{v}_{P/A}`:
 
   .. math::
     \begin{aligned}
-  	|\overline{v}| &= \sqrt{15^2+20^2} \\
+  	|\overline{v}_{P/A}| &= \sqrt{15^2+20^2} \\
     &=\sqrt{625} \\
     &= 25
     \end{aligned}
 
   Vélin er því að fara á :math:`25` m/s, en stefna hraðans er í norðaustur.
 
-Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.
-Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn.
-
-Hraði hlutarins er snertill við feril hlutarins og
-hröðun hans bendir alltaf inn í kúpta hluta ferilsins.
-
-Hröðunarvigurinn hefur stefnu óháð staðsetningu og hraða hlutar, en segir til um hvernig hraðinn og stefna hans eru að breytast.
-
-.. image:: ./myndir/2d/hrodun.svg
-    :align: center
-    :width: 40%
-
-*Kasthreyfingar* og *hringhreyfingar* eru algengar tvívíðar hreyfingar.
-
-
 
 Kasthreyfing
 ------------
-Kasthreyfing (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
-Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin,
-svo allir *kastferlar* (e. trajectories) verða hluti af fleygboga.
+
+*Kasthreyfing* (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði, fær upphafshraða í tiltekna stefnu og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
+Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir *kastferlar* (e. trajectories) hluti af fleygboga.
 
 .. tip::
   Tveir eins boltar eru látnir falla til jarðar úr sömu hæð, bolta 1 er sleppt úr kyrrstöðu en bolta 2 er kastað lárétt áfram.
@@ -74,7 +85,7 @@ svo allir *kastferlar* (e. trajectories) verða hluti af fleygboga.
   Á báða boltana verkar sama þyngdarafl, svo þeir fá sömu hröðun niður sem nemur þyngdarhröðuninni og fá báðir sívaxandi hraða niður á við.
 
   Bolti 1 mun því hreyfast lóðrétt niður á við.
-  Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (fyrsta lögmál Newtons).
+  Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (þetta er afleiðing :ref:`fyrsta lögmáls Newtons <s.newton>`).
   Hröðunin sem bolti 2 verður fyrir lóðrétt hefur engin áhrif á lárétta hreyfingu hans (og lárétta hreyfingin hefur engin áhrif á lóðrétta hröðun).
 
   Boltarnir tveir byrjuðu báðir með sama lóðrétta hraðann (engan) og verða fyrir sömu lóðréttu hröðuninni.
@@ -88,14 +99,15 @@ svo allir *kastferlar* (e. trajectories) verða hluti af fleygboga.
 
 Við lausn dæma um kasthreyfingar eru :ref:`hraðajöfnurnar<s.hreyfijofnur>` notaðar.
 Það borgar sig að teikna mynd til að átta sig á dæminu.
-Þá þarf að ákveða hnitakerfi, en venjan er að hafa x-ás láréttan og y- (eða z-) ás lóðréttan upp þannig á þyngdarhröðun bendi niður.
-Upphafspunkt hreyfingarinnar er þægilegast að setja í miðju hnitakerfisins, enda geta hnitin :math:`(x_0,y_0)=(0,0)` einfaldað reikning töluvert.
-Hafið svo í huga að þar sem þyngdarhröðunin er einungis í :math:`y`-stefnuna eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:
+Þá þarf að ákveða hnitakerfi, en venjan er að hafa :math:`x`-ás láréttan og :math:`y`-ás lóðréttan þannig á þyngdarhröðun bendi niður.
+Upphafspunkt hnitakerfisins er þægilegast að setja í upphaf kastins, enda geta hnitin :math:`(x_0,y_0)=(0,0)` einfaldað reikning töluvert.
+Eina hröðunin sem er í þessu kerfi er þyngdarhröðunin og því er :math:`a_x=0` og :math:`a_y=-g`
+Þá eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:
 
 .. math::
   \begin{aligned}
     x &= x_0 + v_{0,x} \cdot t \\
-    y &= y_0 + v_{0,y} \cdot t + \frac{1}{2} g \cdot t^2
+    y &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
   \end{aligned}
 
 .. tip::
@@ -107,44 +119,28 @@ Hafið svo í huga að þar sem þyngdarhröðunin er einungis í :math:`y`-stef
   Byrjum á að teikna mynd.
   Stillum hnitakerfinu upp þannig að fallbyssan sé í :math:`(x_0,y_0) = (0,0)`, x-ásinn liggi út frá ánni í skotstefnuna og y-ásinn er upp.
   Gerum ráð fyrir að hæð lendingarstaðarins sé jöfn hæð fallbyssunnar, þ.e. :math:`y_1=0` .
-  Takið eftir að :math:`y`-ásinn er skilgreindur upp en þá er  þannig að þyngdarhröðunin er neikvæð (:math:`g=-9.8` m/s).
+  Takið eftir að :math:`y`-ásinn er skilgreindur upp en þá er þyngdarhröðunin neikvæð (:math:`a=-g=-9.8 \text{m/s}^2`).
 
   .. image:: ./myndir/2d/gambia.svg
     :align: center
     :width: 60%
 
-  Við vitum að kúlan muni lenda á jörðinni, þannig að lokahnit kúlunnar eru :math:`(x_1,y_1) = (x_1,0)`.
-  Rifjum upp hreyfijöfnurnar og notum þá sem gefur staðsetningu sem fall af tíma.
-  Viljum finna tímann :math:`t_1` þegar :math:`y_1=0` .
+  Köllum lokahnit kúlunnar þegar hún lendir :math:`(x_1,y_1)` en þar sem við vitum að hún endar á yfirborði jarðarinnar þá er :math:`y_1=0`, þ.a. lokahnit kúlunnar eru :math:`(x_1,y_1) = (x_1,0)`.
+  Finnum hve lengi kúlan er í loftinu með því að finna tímann :math:`t_1` þegar :math:`y_1=0` .
 
   .. math::
     \begin{aligned}
-      y_1 &= y_0 + v_{0,y} \cdot t + \frac{1}{2} a \cdot t^2 \\
-      0 &= 0 + v_{0,y} \cdot t + \frac{1}{2} g \cdot t^2
+      y_1 &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2 \\
+      0 &= 0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
     \end{aligned}
 
-  Þetta er annars stigs margliða með óþekkta stærð :math:`t` sem við leysum:
+  Þetta er annars stigs margliða sem hefur tvær lausnir. Önnur lausnin er að :math:`t=0` en við höfum ekki áhuga á þeirri lausn af því hún er bara upphaf kasthreyfingarinnar. Hin lausnin er
 
   .. math::
-    \begin{aligned}
-      & a \cdot t^2 + b \cdot t + c = 0 \\
-      & a= \frac{1}{2} \text{g} \\
-      & b= v_{0,y} = 42 m/s \\
-      & c=0 \\
-    \end{aligned}
 
-    \begin{aligned}
-      \Rightarrow t &= \frac{-b \pm \sqrt{b^2-4\text{a}c}}{2\text{a}} \\
-      &= \frac{-v_{0,y} \pm \sqrt{v_{0,y}^2-4 \cdot \frac{1}{2} g}}{2 \cdot \frac{1}{2} g} \\
-      &= \frac{-42 \pm \sqrt{42^2-2 \cdot (-9.8)}}{-9.8} \\
-      &= \begin{cases} 0 \text{ s} = t_0\\
-                      8.58 \text{ s} = t_1
-                  \end{cases}
-    \end{aligned}
+  	t_1=\frac{v_{0,y}}{\frac{1}{2} g} = \frac{42\text{m/s}}{\frac{1}{2}\cdot 9.8\text{m/s}^2} = 8.58\text{s}
 
-  Það eru tvær lausnir á jöfnunni því :math:`y`-hnitið er 0 bæði í upphafi og enda ferils kúlunnar.
   Nú getum við notað sömu hreyfijöfnu, í þetta skipti fyrir :math:`x`-hnitin, til að finna hversu langt fallbyssan drífur.
-  Athugið að þyngdarhröðunin er lóðrétt svo hún hefur ekki áhrif á lárétta :math:`x`-þátt hraðans.
 
   .. math::
     \begin{aligned}
@@ -157,9 +153,9 @@ Hafið svo í huga að þar sem þyngdarhröðunin er einungis í :math:`y`-stef
 
 
 Finnum nú jöfnu fyrir ferlinum sem hlutur ferðast eftir í loftinu og sannfærum okkur um að hann sé fleygbogi.
-Skoðum hlut sem hefur upphafshraða :math:`v_0` í stefnu hornsins :math:`\alpha_0` og upphafsstaðsetningu :math:`(0,0)` .
+Skoðum hlut sem hefur upphafshraða :math:`\overline{v}_0` í stefnu hornsins :math:`\alpha_0` og upphafsstaðsetningu :math:`(x_0,y_0)=(0,0)` .
 
-Byrjum á því að liða :math:`v_0` í :math:`x` - og :math:`y` - stefnu.
+Byrjum á því að liða :math:`\overline{v}_0` í :math:`x` - og :math:`y` - stefnu.
 
 .. math::
   \begin{aligned}
@@ -177,26 +173,26 @@ Hröðunin í :math:`x` - stefnu er núll svo staðsetningin í :math:`x` - stef
 .. math::
   x=v_{0x} t = v_0\cos(\alpha_0)t
 
-Hröðunin í :math:`y` - stefnu er :math:`g` og bendir niður á við (:math:`g<0`) svo staðsetningin í :math:`y-` stefnu er:
+Hröðunin í :math:`y` - stefnu er :math:`a_y=-g` svo staðsetningin í :math:`y-` stefnu er:
 
 .. math::
-  y=v_{0y} t + \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t+ \frac{1}{2}gt^2
+  y=v_{0y} t - \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t- \frac{1}{2}gt^2
 
 Einangrum :math:`t` út frá jöfnunni fyrir :math:`x`, :math:`t=x/(v_0\cos(\alpha_0))` og setjum inn í jöfnuna fyrir :math:`y` . Þá fæst
 
 .. math::
   \begin{aligned}
-    y& =v_0\sin(\alpha_0)t + \frac{1}{2}gt^2 \\
-    y&= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} + \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
-    y&= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x + \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
-    y&=\tan(\alpha_0) x + \frac{g}{2v_0\cos^2(\alpha_0)}x^2
+    y& =v_0\sin(\alpha_0)t - \frac{1}{2}gt^2 \\
+    y&= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} - \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
+    y&= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x - \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
+    y&=\tan(\alpha_0) x - \frac{g}{2v_0\cos^2(\alpha_0)}x^2
   \end{aligned}
 
 Ferill hlutar í kasthreyfingu hefur því lögun fleygboga :math:`y=ax^2+bx+c` þar sem
 
 .. math::
   \begin{aligned}
-    a&=\frac{g}{2v_0\cos^2(\alpha_0)}\\
+    a&=-\frac{g}{2v_0\cos^2(\alpha_0)}\\
     b&=\tan(\alpha_0) \\
     c&=0
   \end{aligned}
@@ -207,14 +203,14 @@ Ferill hlutar í kasthreyfingu hefur því lögun fleygboga :math:`y=ax^2+bx+c` 
 
 ------------------------
 
-Út frá jöfnunni er meðal annars hægt að sjá hvar hluturinn lendir.
-Þá finnum við fyrir hvaða :math:`x` hæð boltans :math:`y` er núll, sem er þegar :math:`x=0` (upphaf) og þegar
+Út frá jöfnunni fyrir ferlinum er meðal annars hægt að sjá hvar hluturinn lendir.
+Þá finnum við fyrir hvaða :math:`x` hæð boltans :math:`y` er núll, sem gerist tvisvar: í upphafi (:math:`x=0`) og þegar
 
 .. math::
   \begin{aligned}
-    x&=\frac{-2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
-    &=\frac{-2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
-    &= \frac{-\sin(2\alpha_0)v_0^2}{g} \\
+    x&=\frac{2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
+    &=\frac{2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
+    &= \frac{\sin(2\alpha_0)v_0^2}{g} \\
   \end{aligned}
 
 því :math:`\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)` .
@@ -227,15 +223,15 @@ Ferill hlutar í kasthreyfingu hefur því lögun fleygboga :math:`y=ax^2+bx+c` 
 Afleiðan er
 
 .. math::
-  y'=\tan(\alpha_0)+\frac{g}{v_0^2\cos^2(\alpha_0)}x
+  y'=\tan(\alpha_0)-\frac{g}{v_0^2\cos^2(\alpha_0)}x
 
 Hápunktur fleygbogans er því þegar :math:`y'=0` eða:
 
 .. math::
   \begin{aligned}
-    x&=\frac{-\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
-    &= \frac{-\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
-    &= \frac{-\sin(2\alpha_0)v_0^2}{2g}
+    x&=\frac{\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
+    &= \frac{\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
+    &= \frac{\sin(2\alpha_0)v_0^2}{2g}
   \end{aligned}
 
 .. ggb:: mkyudgwh
@@ -243,7 +239,7 @@ Hápunktur fleygbogans er því þegar :math:`y'=0` eða:
 .. note::
   Munið að eðlisfræði gengur ekki út á að muna jöfnur, heldur að kunna hvernig og hvenær á að nota þær.
   Til dæmis er ástæðulaust að leggja mikla vinnu í að muna þessar formúlur, þegar það er lítið mál að leiða þær út frá hreyfijöfnunum eða að fletta þeim upp.
-  Við lausn bæði heimavekefna og prófdæma þá muniði alltaf hafa aðgang að formúlublaði.
+  Við lausn bæði heimavekefna og prófdæma þá munið þið alltaf hafa aðgang að formúlublaði.
 
 Hringhreyfing
 -------------
@@ -253,7 +249,7 @@ Hröðunarvigurinn :math:`\overline{a}` hefur stefnu sem er óháð stefnu hrað
 og hins vegar hornrétta þáttinn (:math:`a_\perp`) en þættir hröðunarvigursins hafa mismunandi áhrif á hraðavigurinn.
 
 .. figure:: ./myndir/2d/tvividd.svg
-  :width: 60%
+  :width: 50%
   :align: center
 
 :math:`a_\parallel` hefur bara áhrif á lengd hraðavigursins, sem oft er kölluð *ferð* hlutarins (e. speed).
@@ -271,7 +267,7 @@ Ef hlutur hefur bara hröðun sem er hornrétt á hraðavigurinn (:math:`a_\para
 
   .. figure:: ./myndir/2d/hringekja.svg
     :align: center
-    :width: 60%
+    :width: 40%
 
   Þessi hröðun kallast *miðsóknarhröðun* (e.centripetal acceleration).
 

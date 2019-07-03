@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  9 JUL 2018 14:08
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.16)  3 JUL 2019 11:26
  restricted system commands enabled.
 **skaplanhnit.tex
 (./skaplanhnit.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.110 seconds
+luaotfload | main : initialization completed in 0.123 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
@@ -510,7 +510,7 @@ ral, 10 pdf_colorstack nodes
  55i,9n,56p,391b,672s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on skaplanhnit.pdf (1 page, 17809 bytes).
+Output written on skaplanhnit.pdf (1 page, 17793 bytes).
 
 PDF statistics: 19 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

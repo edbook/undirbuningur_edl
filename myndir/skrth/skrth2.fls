@@ -1,4 +1,4 @@
-PWD /Users/gudnyh/Seafile/edlisfraedi/myndir
+PWD /Users/gudnyh/sumar/undirbuningur_edl/myndir/skrth
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./skrth2.tex
 OUTPUT skrth2.log

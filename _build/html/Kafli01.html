@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
@@ -168,24 +183,24 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -242,25 +257,28 @@
 <p>Í námskeiðunum  <em>Eðlisfræði 1V</em>, <em>Eðlisfræði 1R</em> og <em>Eðlisfræði B</em> má reikna með að farið verði hratt yfir mörg atriðanna sem fram koma á þessari síðu.</p>
 <div class="section" id="heilraei">
 <h2>1.1. Heilræði<a class="headerlink" href="#heilraei" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<div id="embedded-video-0" class="embedded-video"><script type="text/javascript">
-        array_video_embed['embedded-video-0'] = {height: '390', width: '100%', 
-        videoId: 'yWMKYID5fr8', playerVars: {rel: 0},
-        events: {'onStateChange': onPlayerStateChange}};</script></div><p>Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna öll dæmin sem sett eru fyrir (og jafnvel fleiri) til þess að ná góðum tökum á efninu. Nemendum stendur til boða alls konar aðstoð:</p>
+<p>Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna þau dæmi sem sett eru fyrir til þess að ná góðum tökum á efninu. Skipulag námskeiða í HÍ er jafnan þannig að nemendum stendur til boða alls konar aðstoð:</p>
 <ul class="simple">
-<li><p>Í fyrirlestrum mun umsjónarkennari námskeiðsins fara yfir námsefnið fyrir alla nemendur námskeiðsins og þá borgar sig að mæta tímanlega og fylgjast vel með. Takið niður glósur ef það er námstækni sem hentar ykkur.</p></li>
-<li><p>Í dæmatímum er nemendahópnum skipt í fleiri minni hópa og reiknuð eru dæmi uppi á töflu. Þar gefst gott tækifæri til þess að spyrja kennarann út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er alltaf að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.</p></li>
-<li><p>Í verklegum æfingum er mikilvægt að lesa verkseðilinn áður en tilraunin hefst og að mæta tímanlega. Hér á síðunni má finna ítarlegri leiðbeiningar fyrir framkvæmd verklegra æfinga.</p></li>
+<li><p>Í fyrirlestrum mun umsjónarkennari námskeiðsins fara yfir námsefnið fyrir alla nemendur námskeiðsins. Þá borgar sig að mæta tímanlega, fylgjast vel með og taka niður glósur (ef það er námstækni sem hentar ykkur).</p></li>
+<li><p>Í dæmatímum er nemendahópnum skipt í fleiri minni hópa (oft eftir námsleiðum) og aðstoðarkennari reiknar dæmi uppi á töflu. Þar gefst gott tækifæri til þess að spyrja út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er <em>alltaf</em> að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.</p></li>
+<li><p>Í verklegum æfingum munuð þið spreyta ykkur á framkvæmd eðlisfræðilegra tilrauna. Þá er mikilvægt að lesa verkseðilinn áður en tilraunin hefst og að mæta tímanlega. <a class="reference internal" href="Kafli09.html#s-verklegt"><span class="std std-ref">Hér á síðunni</span></a> má finna ítarlegri leiðbeiningar fyrir framkvæmd verklegra æfinga.</p></li>
 </ul>
 <p>Nánari upplýsingar um kennslufyrirkomulag, skiptingu í hópa og heimaverkefni munu koma fram í upphafi kennslumisserisins.</p>
-<p>Það getur borgað sig að reikna heimadæmin með öðrum sem sitja námskeiðið, ræða þau upphátt og hjálpast að.</p>
+<p>Sumum finnst betra að reikna heimadæmin með öðrum sem sitja námskeiðið, ræða þau upphátt og hjálpast að. Munið samt að þið lærið mjög lítið á því að afrita lausnir annarra!</p>
 <p>Ef ykkur vantar einhvern tímann ráðleggingar um námið ykkar er best að leita til Nemendaþjónustu VoN í Tæknigarði, námsráðgjafa eða stjórnanda námsleiðarinnar ykkar.</p>
+<p>Ef stærðfræðin hérna reynist ykkur torskilin þá má finna undirbúningsefni í stærðfræði <a class="reference external" href="http://edbook.hi.is/undirbuningur_stae/">hér.</a></p>
 </div>
 <div class="section" id="hva-er-elisfraei">
 <h2>1.2. Hvað er eðlisfræði?<a class="headerlink" href="#hva-er-elisfraei" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Eðlisfræði er grein raunvísindanna þar sem skoðað er samhengi efnis, orku, tíma og rúms og því lýst á máli stærðfræðinnar.</p>
-<p>Meginmarkmið eðlisfræðinnar er að skilja hegðun alheimsins en rannsóknir á sviðum hennar eru gerðar til þess að þróa greinina áfram, án tilliti til hagnýtinga.
-Hagnýtingar blasa hinsvegar oft við þegar miklar uppgötvanir verða og því er góður skilningur á eðlisfræði nauðsynlegur öllum þeim sem vilja að finna upp nýjar og sniðugar lausnir, t.d. verkfræðingum og efnafræðingum.</p>
-<p>Eðlisfræðin varð að afmarkaðri grein vísindanna á 17. öld, þegar eðlisfræðingar tóku að beita <a class="reference external" href="https://is.wikipedia.org/wiki/V%C3%ADsindaleg_aðferð">vísindalegum aðferðum</a> til þess að rannsaka <em>eðlisfræðileg lögmál</em> (e. laws of physics).
+<div id="embedded-video-0" class="embedded-video"><script type="text/javascript">
+        array_video_embed['embedded-video-0'] = {height: '390', width: '100%', 
+        videoId: 'yWMKYID5fr8', playerVars: {rel: 0},
+        events: {'onStateChange': onPlayerStateChange}};</script></div><p>Eðlisfræði er grein raunvísindanna þar sem skoðað er samhengi efnis, orku, tíma og rúms og því lýst á máli stærðfræðinnar.</p>
+<p>Meginmarkmið eðlisfræðinga er að skilja hegðun alheimsins og setja hana fram á máli stærðfræðinnar. Við eðlisfræðirannsóknir hefur margt komið í ljós sem hefur nýst mannkyninu í tækniþróun, en að sama skapi hefur framþróun tækninnar gert eðlisfræðingum kleift að kafa enn dýpra. Góður skilningur á eðlisfræði nauðsynlegur öllum þeim sem vilja að finna upp nýjar og sniðugar lausnir, t.d. verkfræðingum og efnafræðingum.</p>
+<p><strong>Rannsóknir og uppgvötanir í eðlisfræði eru grundvöllur fyrir allri tækni nútímans og framtíðarinnar.</strong></p>
+<div class="section" id="saga-elisfraeinnar">
+<h3>1.2.1. Saga eðlisfræðinnar<a class="headerlink" href="#saga-elisfraeinnar" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Eðlisfræði varð að afmarkaðri grein vísindanna á 17. öld, þegar eðlisfræðingar tóku að beita <a class="reference external" href="https://is.wikipedia.org/wiki/V%C3%ADsindaleg_aðferð">vísindalegum aðferðum</a> til þess að rannsaka <em>eðlisfræðileg lögmál</em> (e. laws of physics).
 Eftir framþróun í ljósfræðum tóku menn að þróa betri linsur og í kjölfarið komu fram stjörnusjónaukar.
 Þá komust <a class="reference external" href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Kópernikus</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Kepler">Kepler</a> og <a class="reference external" href="https://en.wikipedia.org/wiki/Galileo_Galilei">Galíleó</a> að því að jörðin færi í kringum sólina (en ekki sólin í kringum jörðina eins og áður var talið) og settu fram jöfnur sem lýstu hreyfingum hnatta í sólkerfinu.
 <a class="reference external" href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">Leibniz</a> og <a class="reference external" href="https://en.wikipedia.org/wiki/Isaac_Newton">Newton</a> settu báðir fram stærðfræðigreiningu (e. calculus), eitt sterkasta stærðfræðitól eðlisfræðinga, en Newton setti líka fram lögmál um krafta, þyngdarsvið og ljós.
@@ -284,6 +302,7 @@ Hefð er fyrir því að kenningar, jöfnur og fastar heiti eftir upphafsmanni s
 Af þeim 29 sem mættu á ráðstefnuna fengu 17 Nóbelsverðlaun en Curie var sú eina sem fékk Nóbelsverðlaun í fleiri en einni grein (eðlisfræði og efnafræði).</p>
 <p>Nú á dögum er helsta áskorun eðlisfræðinga að útbúa kenningu sem sameinar allt það sem þekkt er fyrir og brúar bilið milli almennu afstæðiskenningarinnar og skammtafræði, oft kölluð <em>kenning um allt</em> (e. <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_everything">Theory of Everything</a>).</p>
 <p>Námskeiðin <em>Eðlisfræði 1V</em>, <em>Eðlisfræði 1R</em> og <em>Eðlisfræði B</em> fara aðallega í klassíska aflfræði.</p>
+</div>
 </div>
 </div>
 

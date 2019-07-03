@@ -10,29 +10,35 @@ Farið er yfir helstu grunnatriði í eðlisfræði sem gott er að hafa góð t
 Heilræði
 --------
 
-.. embedded-video:: yWMKYID5fr8
+Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna þau dæmi sem sett eru fyrir til þess að ná góðum tökum á efninu. Skipulag námskeiða í HÍ er jafnan þannig að nemendum stendur til boða alls konar aðstoð:
 
-Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna öll dæmin sem sett eru fyrir (og jafnvel fleiri) til þess að ná góðum tökum á efninu. Nemendum stendur til boða alls konar aðstoð:
-
-- Í fyrirlestrum mun umsjónarkennari námskeiðsins fara yfir námsefnið fyrir alla nemendur námskeiðsins og þá borgar sig að mæta tímanlega og fylgjast vel með. Takið niður glósur ef það er námstækni sem hentar ykkur.
-- Í dæmatímum er nemendahópnum skipt í fleiri minni hópa og reiknuð eru dæmi uppi á töflu. Þar gefst gott tækifæri til þess að spyrja kennarann út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er alltaf að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.
-- Í verklegum æfingum er mikilvægt að lesa verkseðilinn áður en tilraunin hefst og að mæta tímanlega. Hér á síðunni má finna ítarlegri leiðbeiningar fyrir framkvæmd verklegra æfinga.
+- Í fyrirlestrum mun umsjónarkennari námskeiðsins fara yfir námsefnið fyrir alla nemendur námskeiðsins. Þá borgar sig að mæta tímanlega, fylgjast vel með og taka niður glósur (ef það er námstækni sem hentar ykkur).
+- Í dæmatímum er nemendahópnum skipt í fleiri minni hópa (oft eftir námsleiðum) og aðstoðarkennari reiknar dæmi uppi á töflu. Þar gefst gott tækifæri til þess að spyrja út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er *alltaf* að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.
+- Í verklegum æfingum munuð þið spreyta ykkur á framkvæmd eðlisfræðilegra tilrauna. Þá er mikilvægt að lesa verkseðilinn áður en tilraunin hefst og að mæta tímanlega. :ref:`Hér á síðunni <s.verklegt>` má finna ítarlegri leiðbeiningar fyrir framkvæmd verklegra æfinga.
 
 Nánari upplýsingar um kennslufyrirkomulag, skiptingu í hópa og heimaverkefni munu koma fram í upphafi kennslumisserisins.
 
-Það getur borgað sig að reikna heimadæmin með öðrum sem sitja námskeiðið, ræða þau upphátt og hjálpast að.
+Sumum finnst betra að reikna heimadæmin með öðrum sem sitja námskeiðið, ræða þau upphátt og hjálpast að. Munið samt að þið lærið mjög lítið á því að afrita lausnir annarra!
 
 Ef ykkur vantar einhvern tímann ráðleggingar um námið ykkar er best að leita til Nemendaþjónustu VoN í Tæknigarði, námsráðgjafa eða stjórnanda námsleiðarinnar ykkar.
+
+Ef stærðfræðin hérna reynist ykkur torskilin þá má finna undirbúningsefni í stærðfræði `hér. <http://edbook.hi.is/undirbuningur_stae/>`_
 
 Hvað er eðlisfræði?
 -------------------
 
+.. embedded-video:: yWMKYID5fr8
+
 Eðlisfræði er grein raunvísindanna þar sem skoðað er samhengi efnis, orku, tíma og rúms og því lýst á máli stærðfræðinnar.
 
-Meginmarkmið eðlisfræðinnar er að skilja hegðun alheimsins en rannsóknir á sviðum hennar eru gerðar til þess að þróa greinina áfram, án tilliti til hagnýtinga.
-Hagnýtingar blasa hinsvegar oft við þegar miklar uppgötvanir verða og því er góður skilningur á eðlisfræði nauðsynlegur öllum þeim sem vilja að finna upp nýjar og sniðugar lausnir, t.d. verkfræðingum og efnafræðingum.
+Meginmarkmið eðlisfræðinga er að skilja hegðun alheimsins og setja hana fram á máli stærðfræðinnar. Við eðlisfræðirannsóknir hefur margt komið í ljós sem hefur nýst mannkyninu í tækniþróun, en að sama skapi hefur framþróun tækninnar gert eðlisfræðingum kleift að kafa enn dýpra. Góður skilningur á eðlisfræði nauðsynlegur öllum þeim sem vilja að finna upp nýjar og sniðugar lausnir, t.d. verkfræðingum og efnafræðingum.
 
-Eðlisfræðin varð að afmarkaðri grein vísindanna á 17. öld, þegar eðlisfræðingar tóku að beita `vísindalegum aðferðum <https://is.wikipedia.org/wiki/V%C3%ADsindaleg_aðferð>`_ til þess að rannsaka *eðlisfræðileg lögmál* (e. laws of physics).
+**Rannsóknir og uppgvötanir í eðlisfræði eru grundvöllur fyrir allri tækni nútímans og framtíðarinnar.**
+
+Saga eðlisfræðinnar
+~~~~~~~~~~~~~~~~~~~
+
+Eðlisfræði varð að afmarkaðri grein vísindanna á 17. öld, þegar eðlisfræðingar tóku að beita `vísindalegum aðferðum <https://is.wikipedia.org/wiki/V%C3%ADsindaleg_aðferð>`_ til þess að rannsaka *eðlisfræðileg lögmál* (e. laws of physics).
 Eftir framþróun í ljósfræðum tóku menn að þróa betri linsur og í kjölfarið komu fram stjörnusjónaukar.
 Þá komust `Kópernikus <https://en.wikipedia.org/wiki/Nicolaus_Copernicus>`_, `Kepler <https://en.wikipedia.org/wiki/Johannes_Kepler>`_ og `Galíleó <https://en.wikipedia.org/wiki/Galileo_Galilei>`_ að því að jörðin færi í kringum sólina (en ekki sólin í kringum jörðina eins og áður var talið) og settu fram jöfnur sem lýstu hreyfingum hnatta í sólkerfinu.
 `Leibniz <https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz>`_ og `Newton <https://en.wikipedia.org/wiki/Isaac_Newton>`_ settu báðir fram stærðfræðigreiningu (e. calculus), eitt sterkasta stærðfræðitól eðlisfræðinga, en Newton setti líka fram lögmál um krafta, þyngdarsvið og ljós.

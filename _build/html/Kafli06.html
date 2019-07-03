@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli01.html#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli02.html">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli02.html#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli02.html#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
@@ -168,24 +183,24 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -254,7 +269,7 @@ Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kra
 <p><strong>Lausn</strong>
 Þar sem krafar Ingu og Gunnu eru vigrar notum við vigursamlagningu til þess að skoða hver heildarkrafturinn er á reipið.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/reipitog.svg"><img alt="_images/reipitog.svg" src="_images/reipitog.svg" width="80%" /></a>
+<a class="reference internal image-reference" href="_images/reipitog.svg"><img alt="_images/reipitog.svg" src="_images/reipitog.svg" width="70%" /></a>
 </div>
 <p>Kraftvigur Ingu bendir til vinstri, þ.a. <span class="math">\(x\)</span> hnit hans er neikvætt.</p>
 <div style="text-align: center;">
@@ -270,7 +285,7 @@ Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kra
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-\overline{F_{net}} &amp;= \overline{F}_I + \overline{F}_G \\
+\overline{F}_{net} &amp;= \overline{F}_I + \overline{F}_G \\
 &amp;= \begin{pmatrix} -1000 \\ 0 \end{pmatrix} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix} \\
 &amp;= \begin{pmatrix} 200 \\ 0 \end{pmatrix}
 \end{aligned}\]</div>
@@ -278,14 +293,14 @@ Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kra
 <p>Samanlagður krafturinn sem verkar á reipið er því <span class="math">\(F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix}\)</span>. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.</p>
 </div>
 <div class="section" id="logmal-newtons">
-<h2>6.1. Lögmál Newtons<a class="headerlink" href="#logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<span id="s-newton"></span><h2>6.1. Lögmál Newtons<a class="headerlink" href="#logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Enski eðlisfræðingurinn <a class="reference external" href="https://is.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> setti fram þrjú lögmál um krafta á 17. öld, en þau mynda grunn þess hluta eðlisfræðinnar sem er kölluð aflfræði (e. classical mechanics).</p>
 <div class="section" id="fyrsta-logmal-newtons">
 <h3>6.1.1. Fyrsta lögmál Newtons<a class="headerlink" href="#fyrsta-logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>„Hlutur sem enginn kraftur verkar á helst kyrr eða ferðast áfram á jöfnum hraða.“</p>
 <p>Þetta lögmál er oft nefnt <strong>tregðulögmálið</strong> og segir m.a. að bolti muni liggja kyrr á jörðinni þangað til einhver sparkar í hann og að boltinn muni halda áfram að rúlla endalaust, nema núningur hans við grasflötina hægi á honum.</p>
 <p>Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
-Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn <span class="math">\(\overline{v}\)</span> er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.</p>
+Hröðun er afleiða hraðans, svo ef hröðunin er núll þá er hraðinn <span class="math">\(\overline{v}\)</span> er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.</p>
 </div>
 <div class="section" id="anna-logmal-newtons">
 <span id="s-lnii"></span><h3>6.1.2. Annað lögmál Newtons<a class="headerlink" href="#anna-logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h3>
@@ -295,7 +310,7 @@ Hröðun er afleiða hraðans, svo ef hröðunin er núll er hraðinn <span clas
 \[\overline{F} = m \overline{a}\]</div>
 </div>
 <p>Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
-Þannig má túlka massa sem <em>tregðustuðul</em>, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hlutar.</p>
+Þannig má túlka massa sem <em>tregðustuðul</em>, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hans.</p>
 </div>
 <div class="section" id="rija-logmal-newtons">
 <h3>6.1.3. Þriðja lögmál Newtons<a class="headerlink" href="#rija-logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h3>
@@ -317,13 +332,18 @@ Sá kraftur er kallaður normalkraftur, oft táknaður <span class="math">\(f_{n
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/normal.svg"><img alt="_images/normal.svg" src="_images/normal.svg" width="60%" /></a>
 </div>
-<p>Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá.</p>
+<p>Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá. Nafnið kemur einmitt þaðan, en <em>normalvigur</em> er vigur sem er hornréttur á annan, líka kallað þvervigur. Á hallandi yfirborði er normalkrafturinn minni en á láréttu yfirborði, en þetta verður skoðað nánar með dæmi síðar.</p>
 </div>
 <div class="section" id="nuningskraftur">
 <h2>6.3. Núningskraftur<a class="headerlink" href="#nuningskraftur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
 Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
 Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.</p>
+<p>Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, <span class="math">\(\mu_k\)</span> :</p>
+<div style="text-align: center;">
+<div class="math">
+\[f_{nún} = \mu_k f_n\]</div>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p><strong>(a)</strong> Ásta ætlar að toga þungan kassa eftir steypugólfi og beitir til þess krafti <span class="math">\(F_{tog}\)</span> á kassann.
@@ -354,7 +374,7 @@ Auk þess, auðvitað, verða bæði Ásta og kassinn fyrir þyngdarkrafti og no
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Hokkípökkur með massa <span class="math">\(m = 0.15\)</span> kg rennur á svelli með hraðanum <span class="math">\(\overline{v}_0 = 5 \text{m/s}\)</span>  .
-Núningskrafturinn milli hokkípökksins og svellsins er <span class="math">\(\overline{f}_{nún} = 0.3 \text{N}\)</span> og verkar á þann hátt að hann hægir á pökknum.</p>
+Núningskrafturinn milli hokkípökksins og svellsins er <span class="math">\(\overline{f}_{nún} = 0.3 \text{N}\)</span>.</p>
 <p>Hvaða kraftar verka á pökkinn?
 Hversu langt rennur pökkurinn áður en hann stöðvast?</p>
 <p><strong>Lausn</strong></p>
@@ -362,7 +382,7 @@ Hversu langt rennur pökkurinn áður en hann stöðvast?</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/hockey.svg"><img alt="_images/hockey.svg" src="_images/hockey.svg" width="70%" /></a>
 </div>
-<p>Pökkurinn verður fyrir þyndarkrafti <span class="math">\(f_g\)</span> og normalkrafti <span class="math">\(f_n\)</span> vegna hans, auk núningskraftsins <span class="math">\(f_{nún}\)</span>.</p>
+<p>Pökkurinn verður fyrir þyndarkrafti <span class="math">\(f_g\)</span> og normalkrafti <span class="math">\(f_n\)</span> vegna hans, auk núningskraftsins <span class="math">\(f_{nún}\)</span> sem bendir gegn hreyfingunni af því hann er að reyna að hægja á pökknum.</p>
 <p>Upphafshraðinn <span class="math">\(v_0\)</span> er merktur inn rauður.</p>
 <p>Þyngdarkrafturinn og normalkrafturinn eru jafnstórir og gagnstefna og stytta því hvorn annan út.
 Það er því engin hreyfing í <span class="math">\(y\)</span> stefnu og við megum gera ráð fyrir að það muni vera þannig áfram.</p>
@@ -387,38 +407,54 @@ Notum nú eina af <a class="reference internal" href="Kafli04.html#s-hreyfijofnu
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
-<p>5 kg kassi liggur kyrrstæður á skáplani með hallann <span class="math">\(\theta = 30°\)</span> .
-Hver er núningskrafturinn á milli kassans og skáplansins <span class="math">\(f_{nún}\)</span>?</p>
+<p><span class="math">\(5.00\text{kg}\)</span> kassi liggur kyrrstæður á skáplani með hallann <span class="math">\(\theta = 30°\)</span> .
+Hver þarf núningskrafturinn á milli kassans og skáplansins (<span class="math">\(f_{nún}\)</span>) að vera til þess að kassinn haldist kyrr?</p>
 <p><strong>Lausn</strong></p>
 <p>Byrjum á að teikna kraftamynd.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skaplan.svg"><img alt="_images/skaplan.svg" src="_images/skaplan.svg" width="70%" /></a>
 </div>
-<p>Þar sem kassinn er kyrrstæður er heildarkrafturinn núll.
-Núningskrafturinn <span class="math">\(f_{nún}\)</span> liggur samsíða skáplaninu upp eftir því.
-Á kassann verkar þyngdarkraftur <span class="math">\(f_g\)</span> beint niður.
-Normalkrafturinn <span class="math">\(f_n\)</span> ýtir á kassann, hornrétt af yfirborði skáplansins.</p>
-<p>Skilgreinum hnitakerfið þannig að x-ásinn sé samsíða skáplaninu og y-ásinn hornrétt á hann.</p>
+<p>Á kassann verkar þyngdarkraftur <span class="math">\(F_g\)</span> beint niður.
+Normalkrafturinn <span class="math">\(f_n\)</span> ýtir á kassann, hornrétt af yfirborði skáplansins.
+Núningskrafturinn <span class="math">\(f_{nún}\)</span> liggur samsíða skáplaninu, upp eftir því.
+Við teiknum alla kraftana út frá miðju kassans.</p>
+<p>Nú er komið að því að við veljum okkur hnitakerfi en þar eru tveir góðir kostir. Við getum annað hvort búið til hnitakerfi „eins og venjulega“, þ.e. þannig að <span class="math">\(x\)</span>-ás hnitakerfisins sé láréttur og <span class="math">\(y\)</span>-ásinn sé samsíða þyngdarhröðuninni, svona:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/skaplanhornrett.svg"><img alt="_images/skaplanhornrett.svg" src="_images/skaplanhornrett.svg" width="70%" /></a>
+</div>
+<p>Hér er þyngdarkrafturinn samsíða <span class="math">\(y\)</span> - ásnum en normal- og núningskraftarnir eru hvorki samsíða <span class="math">\(x\)</span>- né <span class="math">\(y\)</span>- ásnum.
+Hinn valmöguleikinn er að snúa hnitakerfinu þannig að <span class="math">\(x\)</span>-ásinn sé samsíða skápaninu og <span class="math">\(y\)</span>-ásinn hornrétt á hann, svona:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/skaplanhnit.svg"><img alt="_images/skaplanhnit.svg" src="_images/skaplanhnit.svg" width="70%" /></a>
 </div>
-<p>Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, <span class="math">\(f_{g,x}\)</span> og þann sem er hornrétt á það, <span class="math">\(f_{g,y}\)</span></p>
+<p>Hér er normalkrafturinn <span class="math">\(f_n\)</span> samsíða <span class="math">\(y\)</span>- ásnum og núningskrafturinn samsíða <span class="math">\(x\)</span>-ásnum en þyngdarkrafturinn samsíða hvorugum.</p>
+<p>Markmið okkar í þessu dæmi er að skoða hvernig kraftarnir verka á hlutinn og við viljum að það sé enginn nettókraftur á kassann. Það þýðir að við viljum að þegar við leggjum saman kraftavigrana þá sé niðurstaðan núll, þ.e. að þættir vigranna í hverja stefnu hnitakerfisins styttist út. Við veljum að hafa hnitakerfið á ská, því þá þurfum við bara að liða þyngdarkraftinn í stað þess að liða bæði núningskraftinn og normalkraftinn.</p>
+<p>Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, <span class="math">\(F_{g,x}\)</span> og þann sem er hornrétt á það, <span class="math">\(F_{g,y}\)</span>.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/lidunkrafta2.svg"><img alt="_images/lidunkrafta2.svg" src="_images/lidunkrafta2.svg" width="30%" /></a>
+<a class="reference internal image-reference" href="_images/skaplanhnit2.svg"><img alt="_images/skaplanhnit2.svg" src="_images/skaplanhnit2.svg" width="70%" /></a>
 </div>
 <p>Til þess að kassinn haldist kyrr þurfa samanlagðir kraftar í hvora stefnu, <span class="math">\(x\)</span> - og <span class="math">\(y\)</span>, að vera núll.
-Því þarf normalkrafturinn að vera jafnstór <span class="math">\(y\)</span> - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór <span class="math">\(x\)</span> þættinum.</p>
-<p>Þyngdarkrafturinn er</p>
+Því þarf normalkrafturinn að vera jafnstór <span class="math">\(y\)</span> - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór <span class="math">\(x\)</span> - þættinum.</p>
+<p>Þyngdarkrafturinn er:</p>
 <div style="text-align: center;">
 <div class="math">
-\[F_g = m \cdot g = 5 \text{kg} \cdot 9.8 \text{m/s} = 49 \text{N}\]</div>
+\[F_g = m \cdot g = 5.00 \text{kg} \cdot 9.80 \text{m/s} = 49.0 \text{N}\]</div>
 </div>
-<p>Þá er þáttur hans samsíða skáplaninu</p>
+<p>Þá er þáttur hans samsíða skáplaninu:</p>
 <div style="text-align: center;">
 <div class="math">
-\[F_{g,x} = F_g \sin{\theta} = 49 \text{N} \cdot \sin{30°} = 24.5 \text{N}\]</div>
+\[F_{g,x} = F_g \sin{\theta} = 49.0 \text{N} \cdot \sin{30°} = 24.5 \text{N}\]</div>
 </div>
 <p>Þar með hlýtur núningskrafturinn að vera <span class="math">\(f_{nún} = F_{g,x}= 24.5 \text{N}\)</span> .</p>
+<p>Að sama skapi er normalkrafturinn jafnstór <span class="math">\(y\)</span> - þætti þyngdarkraftsins:</p>
+<div style="text-align: center;">
+<div class="math">
+\[f_n = F_{g,y} = F_g \cos{\theta} 49.0 \text{N} \cdot \cos(30°) = 42.4 \text{N}\]</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Athugasemd</p>
+<p>Þyngdarkrafturinn bendir <em>alltaf</em> beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.</p>
 </div>
 </div>
 <div class="section" id="vaegi">
@@ -433,7 +469,7 @@ Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/vaegiskilgr.svg"><img alt="_images/vaegiskilgr.svg" src="_images/vaegiskilgr.svg" width="60%" /></a>
 </div>
-<p>Hér má sjá tvo jafnstóra krafta, <span class="math">\(F_1\)</span> og <span class="math">\(F_2\)</span> verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
+<p>Hér má sjá tvo jafnstóra krafta, <span class="math">\(F_1\)</span> og <span class="math">\(F_2\)</span>, verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
 Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægið frá <span class="math">\(F_2\)</span> er meira vegna þess að armurinn er lengri, <span class="math">\(r_2&gt;r_1\)</span>. Heildarvægið um veltipunktinn er þá summan:</p>
 <div style="text-align: center;">
 <div class="math">
@@ -458,6 +494,10 @@ Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægi�
 \[F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}\]</div>
 </div>
 </div>
+</div>
+<div class="section" id="normalkraftur-i-lyftu">
+<h2>6.5. Normalkraftur í lyftu<a class="headerlink" href="#normalkraftur-i-lyftu" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>(Áhugavert en kannski óþarfi?)</p>
 </div>
 </div>
 

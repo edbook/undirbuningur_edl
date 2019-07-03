@@ -77,6 +77,14 @@
 
 <body class="wy-body-for-nav" role="document">
 
+  <style>
+
+    .expl {
+    display:none;
+    }
+
+  </style>
+
   <div class="wy-grid-for-nav">
 
     
@@ -112,7 +120,10 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Um námsefnið</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#heilraei">1.1. Heilræði</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli01.html#hva-er-elisfraei">1.2. Hvað er eðlisfræði?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli01.html#saga-elisfraeinnar">1.2.1. Saga eðlisfræðinnar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. Mælieiningar</a><ul>
@@ -121,6 +132,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#onnur-maelikerfi">2.2. Önnur mælikerfi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#staalform">2.3. Staðalform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#markverir-stafir">2.4. Markverðir stafir</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
@@ -146,8 +159,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli05.html">5. Hreyfing í tveimur víddum</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.1. Kasthreyfing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.2. Hringhreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#afstaeur-hrai">5.1. Afstæður hraði</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#kasthreyfing">5.2. Kasthreyfing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli05.html#hringhreyfing">5.3. Hringhreyfing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli06.html">6. Kraftar</a><ul>
@@ -160,6 +174,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
@@ -168,24 +183,24 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verklegar-aefingar">9.1. Verklegar æfingar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli09.html#verkbaekur">9.2. Verkbækur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#markverir-stafir">9.3. Markverðir stafir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#staalform">9.4. Staðalform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.5. Óvissureikningar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli09.html#ovissureikningar">9.3. Óvissureikningar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="formulublad.html">10. Formúlublað</a><ul>
@@ -239,7 +254,7 @@
 <h1>2. Mælieiningar<a class="headerlink" href="#maelieiningar" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <div class="section" id="si-einingakerfi">
 <h2>2.1. SI-einingakerfið<a class="headerlink" href="#si-einingakerfi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Í nær öllum löndum heims er notað samræmt mælikerfi, SI einingakerfið, þar sem einkennandi stærðir heimsins hafa eigin grunneiningar.
+<p>Í (næstum) öllum löndum heims er notað samræmt mælikerfi, SI einingakerfið, þar sem einkennandi stærðir heimsins hafa eigin grunneiningar.
 Lengd hefur þar grunneininguna metri og tími grunneininguna sekúnda.</p>
 <p>SI-grunneiningarnar eru sjö:</p>
 <div style="text-align: center;">
@@ -259,9 +274,56 @@ Lengd hefur þar grunneininguna metri og tími grunneininguna sekúnda.</p>
 Hraði, breyting á staðsetningu yfir eitthvert tímabil, hefur eininguna metrar á sekúndu (m/s).</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
-<p>Maður sem gengur 20 metra á 10 sekúndum hefur hraðann <span class="math">\(20 \text{ m}/ 10 \text{ s} = 2 \text{ m/s}\)</span> .
-Það þýðir að á hverri sekúndu sem maðurinn gengur fer hann tvo metra.</p>
+<p><strong>Að breyta á milli eininga</strong></p>
+<p>Í daglegu tali notum við oft eininguna kílómetrar á klukkustund fyrir hraða. Skoðum hvernig við breytum á milli þessara eininga.</p>
+<p>Við vitum að ein klukkustund hefur 3600 sekúndur (af því það eru 60 mínútur í hverri klukkustund og 60 sekúndur í hverri mínútu: <span class="math">\(60\cdot 60 = 3600\)</span>) og að einn kílómetri eru 1000 metrar. Þar sem <span class="math">\(1 \text{ klst} = 3600 \text{ s}\)</span> þá er hlutfallið 1, þ.e.</p>
+<div style="text-align: center;">
+<div class="math">
+\[\frac{1\text{ klst}}{3600\text{ s}}=1\]</div>
 </div>
+<p>og eins fyrir lengdareininguna:</p>
+<div style="text-align: center;">
+<div class="math">
+\[\frac{1000\text{ m}}{1\text{ km}} =1\]</div>
+</div>
+<p>Þar sem það breytir ekki stærð að margfalda hana með einum þá getum við breytt kílómetrum á klukkustund yfir í metra á sekúndu svona:</p>
+<div style="text-align: center;">
+<div class="math">
+\[1 \frac{\text{km}}{\text{klst}} = 1\frac{\text{km}}{\text{klst}}\cdot \frac{1\text{ klst}}{3600\text{ s}} \cdot \frac{1000\text{ m}}{1\text{ km}}\]</div>
+</div>
+<p>Svo styttast einingarnar út:</p>
+<div style="text-align: center;">
+<div class="math">
+\[1 \frac{\text{km}}{\text{klst}} = \frac{1000}{3600}\frac{\sout{\text{km}}}{\sout{\text{klst}}}\cdot \frac{\sout{\text{ klst}}}{\text{ s}} \cdot \frac{\text{ m}}{\sout{\text{ km}}} = \frac{1}{3.6} \frac{\text{ m}}{\text{ s}}\]</div>
+</div>
+<p>Þessa aðferð má</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Athugasemd</p>
+<p>Í jöfnum þurfa einingarnar að passa saman, en allir liðir hverrar jöfnu þurfa að hafa sömu einingar. Það er til dæmis alveg merkingarlaust að leggja saman hraða og staðsetningu eða hitastig og massa. Ef leggja á saman eina stærð sem mæld er í metrum og aðra sem er mæld í millímetrum þá þarf að breyta öðru hvoru í hitt:</p>
+<div style="text-align: center;">
+<div class="math">
+\[1 \text{ m} + 3\text{ mm} = 1000 \text{ mm} + 3\text{ mm} = 1003 \text{ mm} = 1.003 \text{m}\]</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<p>Skoðum eina af <a class="reference internal" href="Kafli04.html#s-hreyfijofnur"><span class="std std-ref">hreyfijöfnunum</span></a> sem lýsir staðsetningu hlutar (<span class="math">\(x\)</span>) sem falli af upphafsstaðsetningu (<span class="math">\(x_0\)</span>), upphafshraða hans (<span class="math">\(v_0\)</span>), hröðuninni sem hann hefur (<span class="math">\(a\)</span>) og tíma (<span class="math">\(t\)</span>):</p>
+<div style="text-align: center;">
+<div class="math">
+\[x=x_0 + v_0t + \frac12 at^2\]</div>
+</div>
+<p>Allir liðir þessarar jöfnu þurfa að hafa einguna fyrir staðsetningu, metra. Athugum hvort þetta passi ekki örugglega.</p>
+<ul class="simple">
+<li><p><span class="math">\(x_0\)</span> hefur eininguna metri, svo fyrsti liður jöfnunnar er í lagi.</p></li>
+<li><p>Í öðrum liðnum kemur fyrir margfeldi hraða og tíma, en þá verður einingin líka metri: <span class="math">\(1 \frac{\text{m}}{\text{s}}\cdot \text{s} = 1 \text{ m}\)</span></p></li>
+<li><p>Þriðji liðurinn er líka í lagi af því að hröðun hefur eininguna metri á sekúndu í öðru veldi og svo er margfaldað við tíma í öðru veldi: <span class="math">\(1 \frac{\text{m}}{\text{s}^2} \cdot \text{s}^2 = 1 \text{ m}\)</span></p></li>
+</ul>
+</div>
+<p><em>Rúmmál</em> (e. volume) hefur SI-eininguna rúmmetri (<span class="math">\(\text{m}^3\)</span>) en í daglegu tali notum við oft lítra (L), en í einum rúmmetra eru þúsund lítrar.</p>
+<p><em>Eðlismassi</em> (e. density) einhvers er hlutfall massa þess og rúmmálsins sem það tekur, oft táknað með gríska stafnum ró (<span class="math">\(\rho\)</span>). SI-eining eðlismassa er kílógramm á rúmmetra (<span class="math">\(\text{kg/m}^3\)</span>) en einingarnar gramm á rúmsentímetra (<span class="math">\(\text{g/cm}^3\)</span>) og kílógramm á líter <span class="math">\(\text{kg/L}\)</span> eru líka stundum notaðar.</p>
+<p>Ferskvatn hefur eðlismassa sem er í kringum <span class="math">\(\rho_{vatn}=1000 \text{kg/m}^3\)</span>. Saltvatn er aðeins þyngra, <span class="math">\(\rho_{sjór}=1030 \text{kg/m}^3\)</span>. Járn hefur háan eðlismassa <span class="math">\(\rho_{jarn}=7850\text{kg/m}^3\)</span> en loft lágan <span class="math">\(\rho_{loft} =1.2 \text{kg/m}^3\)</span>.</p>
+<p>Hlutir sem hafa hærri eðlismassa sökkva í efnum sem hafa lægri eðlismassa. Þannig sekkur járn til sjávarbotns og helíumblöðrur reyna að flýja eigendur sína á 17. júní.</p>
 <div class="section" id="forskeyti-si-kerfisins">
 <h3>2.1.1. Forskeyti SI-kerfisins<a class="headerlink" href="#forskeyti-si-kerfisins" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Þegar fengist er við stærri mælistærðir, svo sem langar vegalengdir, er unnið með marga metra.
@@ -360,11 +422,21 @@ Ritum þetta með mismunandi einingum.</p>
 <a class="reference internal image-reference" href="_images/hektari.svg"><img alt="_images/hektari.svg" src="_images/hektari.svg" width="60%" /></a>
 </div>
 </div>
+<hr class="docutils" />
+<div class="reauthoring_embedded_quiz" id="daemi-edlismassi"><form class="reauthoring_embedded_quiz_questions"><p><strong>Æfingadæmi</strong> Eðlismassi kvikasilfurs (Hg) er <span class="math">\(\rho_{Hg}=13.5 \text{g/cm}^3\)</span>. Hver er eðlismassinn í SI-einingum?</p>
+<ol class="upperalpha eqt-answer-list simple">
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(\rho_{Hg}=13.5 \text{ kg/L}\)</span></p></li>
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(\rho_{Hg}=13500 \text{ kg/L}\)</span></p></li>
+<li><p><input type="radio" name="question" value="C" />  <img class="result_icon" style="display: none;"       src="_static/Correct_20x20.png"></img> <span class="math">\(\rho_{Hg}=13500\text{ kg/m}^3\)</span></p></li>
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(\rho_{Hg}=13.5\text{ kg/m}^3\)</span></p></li>
+</ol>
+</form><div class="reauthoring_embedded_quiz_buttons"><input class="reauthoring_quiz_button reauthoring-grade"        style="display:none;"        type="button" value="Athuga svar" /><input class="reauthoring_quiz_button reauthoring-again"        style="display:none;"        type="button" value="Reyna aftur" /><input class="reauthoring_quiz_button reauthoring-solution"        style="display:none;"        type="button" value="Sýna svör" />  <img class="correct_icon" style="opacity: 0;"       src="_static/Correct_20x20.png"></img>  <img class="incorrect_icon" style="opacity: 0;"       src="_static/Incorrect_20x20.png"></img><span class="reauthoring-embedded-answer"></span></div></div></div>
 </div>
-</div>
+<hr class="docutils" />
 <div class="section" id="onnur-maelikerfi">
 <h2>2.2. Önnur mælikerfi<a class="headerlink" href="#onnur-maelikerfi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Í Bandaríkjunum er SI-einingakerfið yfirleitt ekki notað. Þar eru lengdir mældar í  eftirfarandi einingum:</p>
+<p>Í Bandaríkjunum er SI-einingakerfið ekki alltaf notað. Við notum þær aldrei hér en það er ágætt að þekkja þær engu að síður.
+Þar eru lengdir mældar í  eftirfarandi einingum:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}\begin{array}{c | c | c  }
@@ -390,20 +462,92 @@ Ritum þetta með mismunandi einingum.</p>
 </div>
 <p>12 ferkílómetrar eru því 4.635 fermílur.</p>
 </div>
-<p>Þar er hitastig líka mælt á Fahrenheit-kvarða, sem breyta má í Celcius með eftirfarandi formúlu:</p>
+<p>Massi er þar mældur í pundum (e. pound) en <span class="math">\(1 \text{ pund} = 0.4536 \text{ kg}\)</span>.</p>
+<p>Þar er hitastig líka mælt á Fahrenheit-kvarða, sem breyta má í Celcius (sem við notum) með eftirfarandi formúlu:</p>
 <div style="text-align: center;">
 <div class="math">
 \[T_{°C}=\frac{5}{9}(T_{°F}-32)\]</div>
 </div>
-<p>SI- einingin fyrir hitastig er hvorki Celcius-kvarðinn né Fahrenheit-kvarðinn, heldur Kelvin.
+<p>SI- einingin fyrir hitastig er aftur á móti hvorki Celcius-kvarðinn né Fahrenheit-kvarðinn, heldur <em>Kelvin</em>.
 Svona má breyta Celcius í Kelvin:</p>
 <div style="text-align: center;">
 <div class="math">
 \[T_{K}=T_{°C}-273.15\]</div>
 </div>
 <p>Kelvin-kvarðinn er svipaður Celcius-kvarðanum að því leyti að aukning í hita um 1 K er jafnt aukningu í hita um 1 °C.
-Munurinn er sá að Celcius setur 0 °C við frostmark vatns þá setur Kelvin 0 við <em>alkul</em>, lægsta mögulega hitastig efnisheimsins (-273.15 °C= 0 K).
+Munurinn er sá að Celcius setur 0 °C við frostmark vatns þá setur Kelvin 0 við <em>alkul</em>, lægsta mögulega hitastig efnisheimsins (-273.15 °C= 0 K) en þá verða atóm alveg kyrr.
 Það eru því ekki til neikvæð hitastig á Kelvin-kvarðanum!</p>
+</div>
+<div class="section" id="staalform">
+<h2>2.3. Staðalform<a class="headerlink" href="#staalform" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Staðalform (e. <a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_notation">scientific notation</a>) er gjarnan til þess að lýsa stærðum í eðlisfræði.
+Þá er komman færð fram um <span class="math">\(n\)</span> bil og talan margfölduð með <span class="math">\(10^n\)</span> .
+Þetta skýrist best með dæmum:</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<p>Ljóshraðinn, með níu markverðum stöfum, er <span class="math">\(c=299792458\)</span> m/s. Á staðalformi er ljóshraðinn skrifaður <span class="math">\(c=2.99792458\cdot10^8\)</span> m/s, en þá er komman færð áfram um 8 sæti.</p>
+<p>Í langflestum tilvikum er nógu nákvæmt að vinna með <span class="math">\(c=3.00\cdot10^8\)</span> m/s og er það yfirleitt gert.</p>
+</div>
+<p>Notkun staðalforms auðveldar eðlisfræðingum að átta sig á <em>stærðargráðu</em> þess sem þau erum að skoða. Í öllum útreikningum þá getur maður metið um það bil hversu stóra tölu við búumst við í niðurstöðunni. Ef við erum að reikna hversu hratt bíll keyrir eftir götu þá sést að útreikningarnir hljóta að vera rangir ef svarið er af of stórri stærðargráðu:</p>
+<div style="text-align: center;">
+<div class="math">
+\[v=1\cdot 10^4 \text{ m/s}= 10000\text{ m/s}\]</div>
+</div>
+<p>eða of lítilli:</p>
+<div style="text-align: center;">
+<div class="math">
+\[v=1\cdot 10^{-5}\text{ m/s}=0.00001\text{ m/s}\]</div>
+</div>
+<hr class="docutils" />
+<div class="reauthoring_embedded_quiz" id="daemi-stadalform"><form class="reauthoring_embedded_quiz_questions"><p><strong>Æfingadæmi</strong> Hvernig er hraðinn <span class="math">\(0.002\text{ m/s}\)</span>  skrifaður á staðalformi?</p>
+<ol class="upperalpha eqt-answer-list simple">
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(0.002\text{ m/s}\)</span></p></li>
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(2\cdot 10^3 \text{ m/s}\)</span></p></li>
+<li><p><input type="radio" name="question" value="C" />  <img class="result_icon" style="display: none;"       src="_static/Correct_20x20.png"></img> <span class="math">\(2\cdot 10^{-3}\text{ m/s}\)</span></p></li>
+</ol>
+</form><div class="reauthoring_embedded_quiz_buttons"><input class="reauthoring_quiz_button reauthoring-grade"        style="display:none;"        type="button" value="Athuga svar" /><input class="reauthoring_quiz_button reauthoring-again"        style="display:none;"        type="button" value="Reyna aftur" /><input class="reauthoring_quiz_button reauthoring-solution"        style="display:none;"        type="button" value="Sýna svör" />  <img class="correct_icon" style="opacity: 0;"       src="_static/Correct_20x20.png"></img>  <img class="incorrect_icon" style="opacity: 0;"       src="_static/Incorrect_20x20.png"></img><span class="reauthoring-embedded-answer"></span></div></div></div>
+<hr class="docutils" />
+<div class="section" id="markverir-stafir">
+<h2>2.4. Markverðir stafir<a class="headerlink" href="#markverir-stafir" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Ef þú myndir mæla þykkt kennslubókarinnar í <em>Eðlisfræði 1</em> með venjulegri reglustriku myndirðu geta sagt að hún væri 2.7 cm á þykkt.
+Þú mættir ekki segja að hún væri 2.70 cm þykk af því reglustrikur eru ekki sérlega nákvæmar, bókin gæti allt eins verið 2.68 cm eða 2.73 cm án þess að þú sæir það í mælingunni.
+Ef þú myndir síðan mæla þykktina aftur en nú með <a class="reference external" href="https://is.wikipedia.org/wiki/Sk%C3%ADðmál">skíðmáli</a> myndirðu komast að því að hún væri 2.723 cm þykk.
+Munurinn sem væri á mælingunum tveimur væri sá að <em>óvissa</em> (e. uncertainty) eða <em>skekkja</em> (e. error) skíðmálsins er minni en óvissa reglustrikunnar.</p>
+<p>Við táknum <em>nákvæmni</em> (e. accuracy) mældrar stærðar með tákninu <span class="math">\(\pm\)</span> (plús-mínus).
+Mæling reglustrikunnar á þykkt bókarinnar myndum við tákna með <span class="math">\(2.7 \pm 0.1\)</span> cm, en mælinguna með skíðmálinu með <span class="math">\(2.723 \pm 0.001\)</span> cm.
+Reglustrikan myndi gefa þykkt bókarinnar með tveimur markverðum stöfum, en skíðmálið með fjórum.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<div style="text-align: center;">
+<div class="math">
+\[\begin{aligned}
+  11.2 &amp;= 1.12\cdot 10^1  &amp; \text{þrír markverðir stafir}\\
+  0.0000045&amp;=4.5\cdot 10^{-6} &amp; \text{tveir markverðir stafir}
+\end{aligned}\]</div>
+</div>
+</div>
+<hr class="docutils" />
+<p>Þegar stærðir eru margfaldaðar saman þá má útkoman ekki hafa fleiri markverða stafi en sú tala sem hafði fæsta markverða stafi.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<div style="text-align: center;">
+<div class="math">
+\[\frac{0.745\cdot 2.2}{3.885} = 0.42\]</div>
+</div>
+<p>Sú tala sem hefur fæsta stafi í þessu dæmi er 2.2, sem hefur 2 markverða stafi.
+Því er rétt að gefa svarið með 2 markverðum stöfum, 0.42, þó að flestar reiknivélar myndu gefa svarið <span class="math">\(0.4218790219\)</span>.</p>
+</div>
+<p>Þegar stærðir eru lagðar saman þá má útkoman ekki hafa minni óvissu en sú sem hafði mesta óvissu.
+Markverðir stafir í samlagningu fer því eftir aukastöfum stærðanna, en ekki óvissu þeirra.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dæmi</p>
+<div style="text-align: center;">
+<div class="math">
+\[27.153 + 138.2-11.74=153.6\]</div>
+</div>
+<p>Hér hefur talan 138.2 mesta óvissu (fæsta aukastafi aftan við kommu) svo gefa þarf svarið með jafn mikilli óvissu, þ.e. einum aukastaf á eftir kommu. Flestar reiknivélar myndu gefa svarið 153.613 en í vísindalegum útreikningum getum við ekki tekið mark á síðustu tveimur tölunum.</p>
+</div>
+<p>Reglur þessar um meðferð markverðra stafa eiga við um alla útreikninga í eðlisfræði, bæði verklegum og fræðilegum.</p>
 </div>
 </div>
 
