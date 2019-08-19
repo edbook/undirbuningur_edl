@@ -36,21 +36,21 @@ Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum v
 
   .. math::
 
-  	\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix}
+  	\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix} \text{m/s}
 
   Vindurinn blæs frá vestri til austurs, til hægri (í stefnu :math:`x` - áss). Því er:
 
   .. math::
 
-  	\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix}
+  	\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s}
 
   Leggjum nú saman vigrana :math:`\overline{v}_f` og :math:`\overline{v}_v`:
 
   .. math::
     \begin{aligned}
-  	\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A} \\
-    &= \begin{pmatrix} 0  \\ 20 \end{pmatrix} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \\
-    &= \begin{pmatrix} 15 \\ 20 \end{pmatrix}
+  	\overline{v}_{P/A} &= \overline{v}_{P/B} + \overline{v}_{B/A} \\
+    &= \begin{pmatrix} 0  \\ 20 \end{pmatrix} \text{m/s} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s} \\
+    &= \begin{pmatrix} 15 \\ 20 \end{pmatrix} \text{m/s}
     \end{aligned}
 
   .. figure:: ./myndir/2d/flugvel.svg
@@ -61,19 +61,19 @@ Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum v
 
   .. math::
     \begin{aligned}
-  	|\overline{v}_{P/A}| &= \sqrt{15^2+20^2} \\
-    &=\sqrt{625} \\
-    &= 25
+  	|\overline{v}_{P/A}| &= \sqrt{(15\text{ m/s})^2+(20\text{ m/s})^2} \\
+    &=\sqrt{625 (\text{m/s}})^2 \\
+    &= 25 \text{ m/s}
     \end{aligned}
 
-  Vélin er því að fara á :math:`25` m/s, en stefna hraðans er í norðaustur.
+  Vélin er því að fara á :math:`25\text{ m/s}`, en stefna hraðans er í norðaustur.
 
 
 Kasthreyfing
 ------------
 
 *Kasthreyfing* (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði, fær upphafshraða í tiltekna stefnu og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
-Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir *kastferlar* (e. trajectories) hluti af fleygboga.
+Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir *kastferlar* (e. trajectories) hluti af fleygboga, eins og við munum leiða út á eftir.
 
 .. tip::
   Tveir eins boltar eru látnir falla til jarðar úr sömu hæð, bolta 1 er sleppt úr kyrrstöðu en bolta 2 er kastað lárétt áfram.
@@ -178,7 +178,7 @@ Hröðunin í :math:`y` - stefnu er :math:`a_y=-g` svo staðsetningin í :math:`
 .. math::
   y=v_{0y} t - \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t- \frac{1}{2}gt^2
 
-Einangrum :math:`t` út frá jöfnunni fyrir :math:`x`, :math:`t=x/(v_0\cos(\alpha_0))` og setjum inn í jöfnuna fyrir :math:`y` . Þá fæst
+Einangrum :math:`t` út frá jöfnunni fyrir :math:`x`: :math:`t=x/(v_0\cos(\alpha_0))` og setjum inn í jöfnuna fyrir :math:`y` . Þá fæst
 
 .. math::
   \begin{aligned}
@@ -241,6 +241,42 @@ Hápunktur fleygbogans er því þegar :math:`y'=0` eða:
   Til dæmis er ástæðulaust að leggja mikla vinnu í að muna þessar formúlur, þegar það er lítið mál að leiða þær út frá hreyfijöfnunum eða að fletta þeim upp.
   Við lausn bæði heimavekefna og prófdæma þá munið þið alltaf hafa aðgang að formúlublaði.
 
+-------------------
+
+.. eqt:: daemi-kast
+
+  **Æfingadæmi** Hvað þarf kasthornið :math:`\alpha_0` að vera til þess að kasta sem lengst fyrir fastan upphafshraða :math:`v_0`?
+
+  A) :eqt:`I` :math:`60^{\circ}`
+
+  #) :eqt:`C` :math:`45^{\circ}`
+
+  #) :eqt:`I` :math:`30^{\circ}`
+
+  #) :eqt:`I` Ekkert af ofangreindu
+
+  .. eqt-solution::
+    Við höfum leitt út jöfnu fyrir lengd kasts:
+
+    .. math::
+      x= \frac{\sin(2\alpha_0)v_0^2}{g}
+
+    Til þess að finna fyrir hvaða horn :math:`x` verður sem stærst þá diffrum við jöfnuna m.t.t. :math:`\alpha_0` og finnum fyrir hvaða :math:`\alpha_0` niðurstaðan er núll:
+
+    .. math::
+
+    	\frac{dx}{d\alpha_0} = \frac{v_0^2}{g} \cos(2\alpha_0) \cdot 2
+
+    Þá vitum við að :math:`\frac{dx}{d\alpha_0}=0` ef :math:`\cos(2\alpha_0)=0` (af því allar hinar stærðirnar eru fastar, óháðar :math:`\alpha_0`).
+
+    :math:`\cos(\theta)=0` ef :math:`\theta=90 ^{\circ}+ h\cdot 180 ^{\circ}` þar sem :math:`h` er heiltala. Hjá okkur er :math:`\theta=2\alpha_0` svo kastlengdin er mest þegar :math:`\alpha_0=45^{\circ} + h\cdot 90 ^{\circ}`. Við sjáum að lausnin :math:`\alpha_0=45^{\circ}` (þ.e. :math:`h=0`) er eina lausnin sem kemur til þar sem hinar kasta í allt aðrar áttir en þá sem við erum að skoða.
+
+    Þið gætuð líka hafa fundið út úr þessu með því að prófa mismunandi horn í smáforritinu hér að ofan.
+
+
+
+-------------------
+
 Hringhreyfing
 -------------
 
@@ -281,6 +317,30 @@ Um jafna hringhreyfingu gilda eftirfarandi jöfnur:
   \end{aligned}
 
 Þar sem :math:`R` er radíus hringferilsins og :math:`T` er umferðartíminn (tíminn sem það tekur að fara einn hring).
+
+------------------------
+
+.. eqt:: daemi-hring
+
+  **Æfingadæmi** Hvaða miðsóknarhröðun finnur barn fyrir á hringekju sem fer nákvæmlega 7 hringi á mínútu ef það situr 2.00 metra frá snúningsásnum?
+
+  A) :eqt:`C` :math:`1.07 \text{ m/s}^2`
+
+  #) :eqt:`I` :math:`9.21 \text{ m/s}^2`
+
+  #) :eqt:`I` :math:`2.15 \text{ m/s}`
+
+  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
+
+  .. eqt-solution::
+
+    Notum jöfnu fyrir jafna hringhreyfingu: :math:`|\overline{a}|= \frac{4 \pi^2 R}{T^2}`. Finnum umferðartímann :math:`T` sem segir okkur hve margar sekúndur það tekur hringekjuna að fara einn hring. Við vitum að hringekjan fer :math:`7` hringi á einni mínútu, þ.e. 60 sekúndum. Það tekur því :math:`T= 60/7 \text{s}` að fara einn hring. Þá fáum við:
+
+    .. math::
+
+    	|\overline{a}|= \frac{4 \pi^2 R}{T^2} = \frac{4\pi^2 \cdot (2\text{ m})}{(\frac{60 \text{ s}}{7})^2} = 1.07 \text{ m/s}^2
+
+
 
 ------------------------
 

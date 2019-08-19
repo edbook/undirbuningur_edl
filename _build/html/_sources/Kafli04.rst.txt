@@ -5,7 +5,7 @@ Hraði
 -----
 
 *Hraði* (e. velocity) hlutar á hreyfingu er skilgreindur sem breyting á staðsetningu á tímaeiningu.
-Algengast er að nota metra á sekúndu (m/s) í útreikningum, en í daglegu tali er oft talað um kílómetra á klukkustund.
+Algengast er að nota metra á sekúndu (m/s) í útreikningum, enda er það úr SI-einingakerfinu, en í daglegu tali er oft talað um kílómetra á klukkustund.
 
 Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðsetningu við tímann :math:`t_2` með :math:`x_2` þá reiknum við meðalhraðann með
 
@@ -108,7 +108,7 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
 
 .. eqt:: daemi-hrodun
 
-  **Æfingadæmi** Hver er hraði eldflaugar eftir tvær sekúndur ef hún byrjar með hraðann :math:`v_i=3\text{ m/s}` og fær neikvæða hröðun :math:`a=1 \text{ m/s}^2`?
+  **Æfingadæmi** Hver er hraði eldflaugar eftir tvær sekúndur ef hún byrjar með hraðann :math:`v_i=3\text{ m/s}` og hægir á sér með hröðuninni :math:`a=-1 \text{ m/s}^2`?
 
   A) :eqt:`C` :math:`v_f=1\text{m/s}`
 
@@ -129,9 +129,9 @@ Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tíman
 
     .. math::
 
-      \Delta v= a\Delta t = 1\frac{\text{m}}{\text{s}^2}\cdot 2\text{s} = 2\frac{\text{m}}{\text{s}}
+      \Delta v= a\Delta t = -1\frac{\text{m}}{\text{s}^2}\cdot 2\text{s} = -2\frac{\text{m}}{\text{s}}
 
-    Þar sem :math:`\Delta v = v_i-v_f` þá sést að :math:`v_f = v_i-\Delta v = 3\text{ m/s}-2\text{ m/s}=1\text{ m/s}`
+    Þar sem :math:`\Delta v = v_f-v_i` þá sést að :math:`v_f = v_i+\Delta v = 3\text{ m/s}-2\text{ m/s}=1\text{ m/s}`
 
 
 -----------------------

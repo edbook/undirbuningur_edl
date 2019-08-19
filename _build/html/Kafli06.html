@@ -14,10 +14,10 @@
   
     <link rel="shortcut icon" href="_static/favicon_2.ico"/>
   
-
+  <!--
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
+  -->
   
   
     
@@ -57,7 +57,8 @@
             DATA_CAPTURE_CONTEXT_NAME: ''
         };
     </script>
-    
+
+    <script type="text/javascript" src="_static/embedded_video.js"></script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
@@ -65,7 +66,6 @@
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
       <script type="text/javascript" src="_static/rendermath.js"></script>
-      <script type="text/javascript" src="_static/embedded_video.js"></script>
 
   
 
@@ -75,8 +75,8 @@
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
+<body class="wy-body-for-nav">
+  <!-- style klausan breytti þannig að lausnir birtast ekki með dæmunum strax -->
   <style>
 
     .expl {
@@ -104,7 +104,7 @@
 
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Leita í bók" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -137,7 +137,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#skilgreining">3.1. Skilgreining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#taknmal">3.1. Táknmál</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#lengd-vigurs">3.1.1. Lengd vigurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#vigrar-milli-punkta">3.1.2. Vigrar milli punkta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#hallatala-vigurs">3.1.3. Hallatala vigurs</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#samlagning-vigra">3.4. Samlagning vigra</a></li>
@@ -173,22 +178,28 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nuningskraftur">6.3. Núningskraftur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vaegi">6.4. Vægi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gormkraftur">6.4. Gormkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vaegi">6.5. Vægi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#vinna">7.1. Vinna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#afl">7.2. Afl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#yngdarstouorka">7.4.1. Þyngdarstöðuorka</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#gormstouorka">7.4.2. Gormstöðuorka</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#vinnu-hreyfiorkusetningin">7.5.1. Vinnu-hreyfiorkusetningin</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
@@ -214,7 +225,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">12. Fjölvalsspurningar í Sphinx</a></li>
 </ul>
 
           
@@ -237,7 +247,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
+    <li><a href="index.html">Yfirlit</a> &raquo;</li>
       
     <li>6. Kraftar</li>
       <li class="wy-breadcrumbs-aside">
@@ -257,7 +267,7 @@ SI- einingin fyrir krafta er <em>Newton</em>, táknað <span class="math">\(\tex
 Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem <span class="math">\(1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}\)</span> .</p>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
-<p>Athugið að í eðlisfræði er <em>massi</em> (e. mass) ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.</p>
+<p>Athugið að í eðlisfræði er <em>massi</em> ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.</p>
 <p><em>Massi</em> (e. mass) hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.</p>
 <p><em>Þyngd</em> (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, þ.e. margfeldi massans við þyngdarhröðunina <span class="math">\(g\)</span>. SI-eining þyngdar er Newton.</p>
 </div>
@@ -274,23 +284,23 @@ Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kra
 <p>Kraftvigur Ingu bendir til vinstri, þ.a. <span class="math">\(x\)</span> hnit hans er neikvætt.</p>
 <div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}\overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix}\end{aligned}\]</div>
+\[\begin{aligned}\overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix} \text{N}\end{aligned}\]</div>
 </div>
 <p>Kraftvigur Gunnu bendir til hægri, þ.a. <span class="math">\(x\)</span> hnit hans er jákvætt.</p>
 <div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}\overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}\end{aligned}\]</div>
+\[\begin{aligned}\overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N}\end{aligned}\]</div>
 </div>
 <p>Leggjum nú saman vigrana:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
 \overline{F}_{net} &amp;= \overline{F}_I + \overline{F}_G \\
-&amp;= \begin{pmatrix} -1000 \\ 0 \end{pmatrix} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix} \\
-&amp;= \begin{pmatrix} 200 \\ 0 \end{pmatrix}
+&amp;= \begin{pmatrix} -1000 \\ 0 \end{pmatrix}  \text{N} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N} \\
+&amp;= \begin{pmatrix} 200 \\ 0 \end{pmatrix}  \text{N}
 \end{aligned}\]</div>
 </div>
-<p>Samanlagður krafturinn sem verkar á reipið er því <span class="math">\(F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix}\)</span>. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.</p>
+<p>Samanlagður krafturinn sem verkar á reipið er því <span class="math">\(F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix} \text{N}\)</span>. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.</p>
 </div>
 <div class="section" id="logmal-newtons">
 <span id="s-newton"></span><h2>6.1. Lögmál Newtons<a class="headerlink" href="#logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h2>
@@ -314,7 +324,7 @@ Hröðun er afleiða hraðans, svo ef hröðunin er núll þá er hraðinn <span
 </div>
 <div class="section" id="rija-logmal-newtons">
 <h3>6.1.3. Þriðja lögmál Newtons<a class="headerlink" href="#rija-logmal-newtons" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p>„Sérhvert átak á sér gagnátak.“</p>
+<p>„Sérhvert átak á sér gagnátak.“ Það þýðir að alltaf þegar kraftur verkar frá einum hlut til annars þá ýtir sá síðari á móti.</p>
 <div style="text-align: center;">
 <div class="math">
 \[\overline{F}_{AB} = -\overline{F}_{BA}\]</div>
@@ -325,7 +335,7 @@ Kraftarnir eru jafnstórir en stefna gegn hvorum öðrum.</p>
 </div>
 <div class="section" id="normalkraftur">
 <h2>6.2. Normalkraftur<a class="headerlink" href="#normalkraftur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Hlutur sem liggur kyrrstæður á borði hlýtur að vera í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
+<p>Hlutur sem liggur kyrrstæður á borði er í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
 Þó að hluturinn se kyrrstæður þýðir það samt ekki að engir kraftar verki á hann.
 Þyngdarkrafturinn togar hann niður að borðinu og samkvæmt þriðja lögmálinu er jafnstór kraftur frá borðinu sem ýtir hlutnum upp.
 Sá kraftur er kallaður normalkraftur, oft táknaður <span class="math">\(f_{n}\)</span> .</p>
@@ -339,6 +349,7 @@ Sá kraftur er kallaður normalkraftur, oft táknaður <span class="math">\(f_{n
 <p>Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
 Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
 Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.</p>
+<p>Núningur kemur frá því að yfirborð hluta eru ekki alveg slétt, þó okkur sýnist þau vera það.</p>
 <p>Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, <span class="math">\(\mu_k\)</span> :</p>
 <div style="text-align: center;">
 <div class="math">
@@ -457,14 +468,51 @@ Hinn valmöguleikinn er að snúa hnitakerfinu þannig að <span class="math">\(
 <p>Þyngdarkrafturinn bendir <em>alltaf</em> beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.</p>
 </div>
 </div>
+<div class="section" id="gormkraftur">
+<h2>6.4. Gormkraftur<a class="headerlink" href="#gormkraftur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Gormar, eða aðrir teygjanlegir hlutir, koma gjarnan fyrir í eðlisfræðilegum kerfum. Hver gormur á sér einkennandi <em>gormstuðul</em> (e. spring constant) <span class="math">\(k\)</span> sem segir til um hve erfitt það er að teygja gorminn umfram náttúrulega lengd sína. Til þess að teygja gorm með gormstuðul <span class="math">\(k\)</span> um vegalengdina <span class="math">\(x\)</span> þarf kraftinn:</p>
+<div style="text-align: center;">
+<div class="math">
+\[F_x=kx\]</div>
+</div>
+<p>Við getum séð frá jöfnunni að einingin fyrir <span class="math">\(k\)</span> er <span class="math">\(\text{N/m}\)</span>. Þessi jafna er oft kölluð <em>Lögmál Hookes</em> og hún gildir fyrir flesta gorma, svo lengi sem við erum ekki að teygja þá of mikið.</p>
+<div class="admonition note">
+<p class="admonition-title">Athugasemd</p>
+<p>Lögmál Hookes gildir fyrir gorma, hvort sem verið er að þjappa þá eða teygja.</p>
+</div>
+<hr class="docutils" />
+<div class="reauthoring_embedded_quiz" id="daemi-kragorm"><form class="reauthoring_embedded_quiz_questions"><p><strong>Æfingadæmi</strong> Hversu mikið lengist gormur með gormstuðul <span class="math">\(k=100 \text{ N/m}\)</span> saman þegar massinn <span class="math">\(m=2.00\text{ kg}\)</span> er hengdur í hann?</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/gormur.svg"><img alt="_images/gormur.svg" src="_images/gormur.svg" width="45%" /></a>
+</div>
+<ol class="arabic eqt-answer-list simple">
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(20.4\text{ m}\)</span></p></li>
+<li><p><input type="radio" name="question" value="I" />  <img class="result_icon" style="display: none;"       src="_static/Incorrect_20x20.png"></img> <span class="math">\(5.10 \text{ m}\)</span></p></li>
+<li><p><input type="radio" name="question" value="C" />  <img class="result_icon" style="display: none;"       src="_static/Correct_20x20.png"></img> <span class="math">\(0.196 \text{m}\)</span></p></li>
+</ol>
+<div class="expl tip admonition">
+<p class="admonition-title">Lausn</p>
+<p>Þyngdarhröðun jarðar dregur í massann <span class="math">\(m\)</span> með krafti <span class="math">\(F_g=mg\)</span>. Þá lengist gormurinn um <span class="math">\(x\)</span> og togar í massann í hina áttina með krafti <span class="math">\(F_x=kx\)</span>. Nú er massinn í kraftajafnvægi (fyrst hann er kyrr) og því er <span class="math">\(F_g=F_x\)</span>:</p>
+<div style="text-align: center;">
+<div class="math">
+\[\begin{aligned}
+  F_g&amp;=F_x\\
+  mg&amp;=kx \\
+  x&amp;=\frac{mg}{k} =\frac{2.00\text{kg}\cdot 9.80 \text{m/s}^2}{100\text{N/m}} \\
+  x&amp;= 0.196 \text{m}
+\end{aligned}\]</div>
+</div>
+</div>
+</form><div class="reauthoring_embedded_quiz_buttons"><input class="reauthoring_quiz_button reauthoring-grade"        style="display:none;"        type="button" value="Athuga svar" /><input class="reauthoring_quiz_button reauthoring-again"        style="display:none;"        type="button" value="Reyna aftur" /><input class="reauthoring_quiz_button reauthoring-solution"        style="display:none;"        type="button" value="Sýna svör" />  <img class="correct_icon" style="opacity: 0;"       src="_static/Correct_20x20.png"></img>  <img class="incorrect_icon" style="opacity: 0;"       src="_static/Incorrect_20x20.png"></img><span class="reauthoring-embedded-answer"></span></div></div></div>
+<hr class="docutils" />
 <div class="section" id="vaegi">
-<h2>6.4. Vægi<a class="headerlink" href="#vaegi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2>6.5. Vægi<a class="headerlink" href="#vaegi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p><em>Vægi</em> (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með <span class="math">\(M\)</span> eða gríska stafnum <span class="math">\(\tau\)</span> (tá) og einingarnar eru Newton metrar <span class="math">\(1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}\)</span>.</p>
 <div style="text-align: center;">
 <div class="math">
 \[M=F\cdot r \qquad  \qquad  M_{tot} = \sum_i M_i= \sum_i F_i\cdot r_i\]</div>
 </div>
-<p>Þar sem <span class="math">\(r\)</span> er fjarlægð kraftsins <span class="math">\(F\)</span> frá punktinum sem reikna á vægið um.
+<p>Þar sem <span class="math">\(r\)</span> er fjarlægð kraftsins <span class="math">\(F\)</span> frá tilteknum punkt, sem reikna á vægið um.
 Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/vaegiskilgr.svg"><img alt="_images/vaegiskilgr.svg" src="_images/vaegiskilgr.svg" width="60%" /></a>
@@ -494,10 +542,6 @@ Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægi�
 \[F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}\]</div>
 </div>
 </div>
-</div>
-<div class="section" id="normalkraftur-i-lyftu">
-<h2>6.5. Normalkraftur í lyftu<a class="headerlink" href="#normalkraftur-i-lyftu" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>(Áhugavert en kannski óþarfi?)</p>
 </div>
 </div>
 

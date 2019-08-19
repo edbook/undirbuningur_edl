@@ -13,7 +13,7 @@ Heilræði
 Eins og í öllu háskólanámi þá er mikilvægt að leggja sig fram við eðlisfræðinámið og að sinna því vel. Það er nauðsynlegt að lesa námsefnið og reikna þau dæmi sem sett eru fyrir til þess að ná góðum tökum á efninu. Skipulag námskeiða í HÍ er jafnan þannig að nemendum stendur til boða alls konar aðstoð:
 
 - Í fyrirlestrum mun umsjónarkennari námskeiðsins fara yfir námsefnið fyrir alla nemendur námskeiðsins. Þá borgar sig að mæta tímanlega, fylgjast vel með og taka niður glósur (ef það er námstækni sem hentar ykkur).
-- Í dæmatímum er nemendahópnum skipt í fleiri minni hópa (oft eftir námsleiðum) og aðstoðarkennari reiknar dæmi uppi á töflu. Þar gefst gott tækifæri til þess að spyrja út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er *alltaf* að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.
+- Í dæmatímum er nemendahópnum skipt í minni hópa (oft eftir námsleiðum) og aðstoðarkennari útskýrir dæmi. Þar gefst gott tækifæri til þess að spyrja út í þau atriði námsefnisins eða dæmanna sem þér þykja torskilin. Munið að markmið kennara er *alltaf* að nemendur skilji námsefnið í lok námskeiðsins og þeir munu yfirleitt taka spurningum vel.
 - Í verklegum æfingum munuð þið spreyta ykkur á framkvæmd eðlisfræðilegra tilrauna. Þá er mikilvægt að lesa verkseðilinn áður en tilraunin hefst og að mæta tímanlega. :ref:`Hér á síðunni <s.verklegt>` má finna ítarlegri leiðbeiningar fyrir framkvæmd verklegra æfinga.
 
 Nánari upplýsingar um kennslufyrirkomulag, skiptingu í hópa og heimaverkefni munu koma fram í upphafi kennslumisserisins.

@@ -65,7 +65,7 @@ Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé ve
 Óvissureikningar
 ----------------
 
-Allar mælingar hafa endanlega nákvæmni, svo hverri mælingu þurfa að fylgja upplýsingar um nákvæmni hennar. Mæling er birt sem (máltala :math:`\pm` óvissa) [eining].
+Allar mælingar hafa endanlega nákvæmni, svo hverri mælingu þurfa að fylgja upplýsingar um nákvæmni hennar. Mæling er birt sem (máltala :math:`\pm` óvissa) [eining].
 
 Óvissa er ekki galli heldur eðlilegur hluti af mælingu. Óvissu þarf mælandi að meta og hefur stundum ekki annað en skynsemina til þess. Óvissumatið verður alltaf á ábyrgð mælingamanns.
 

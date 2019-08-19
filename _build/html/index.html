@@ -14,10 +14,10 @@
   
     <link rel="shortcut icon" href="_static/favicon_2.ico"/>
   
-
+  <!--
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
+  -->
   
   
     
@@ -56,7 +56,8 @@
             DATA_CAPTURE_CONTEXT_NAME: ''
         };
     </script>
-    
+
+    <script type="text/javascript" src="_static/embedded_video.js"></script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
@@ -64,7 +65,6 @@
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
       <script type="text/javascript" src="_static/rendermath.js"></script>
-      <script type="text/javascript" src="_static/embedded_video.js"></script>
 
   
 
@@ -74,8 +74,8 @@
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
+<body class="wy-body-for-nav">
+  <!-- style klausan breytti þannig að lausnir birtast ekki með dæmunum strax -->
   <style>
 
     .expl {
@@ -103,7 +103,7 @@
 
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Leita í bók" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -136,7 +136,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#skilgreining">3.1. Skilgreining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#taknmal">3.1. Táknmál</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#lengd-vigurs">3.1.1. Lengd vigurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#vigrar-milli-punkta">3.1.2. Vigrar milli punkta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#hallatala-vigurs">3.1.3. Hallatala vigurs</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#samlagning-vigra">3.4. Samlagning vigra</a></li>
@@ -172,27 +177,34 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#gormkraftur">6.4. Gormkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.5. Vægi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#vinna">7.1. Vinna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#afl">7.2. Afl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#yngdarstouorka">7.4.1. Þyngdarstöðuorka</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#gormstouorka">7.4.2. Gormstöðuorka</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#vinnu-hreyfiorkusetningin">7.5.1. Vinnu-hreyfiorkusetningin</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
@@ -212,7 +224,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">12. Fjölvalsspurningar í Sphinx</a></li>
 </ul>
 
           
@@ -235,7 +246,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="#">Yfirlit</a> &raquo;</li>
       
     <li>Undirbúningur í eðlisfræði, Háskóli Íslands, 2019</li>
       <li class="wy-breadcrumbs-aside">
@@ -271,7 +282,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli03.html">3. Vigrar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#skilgreining">3.1. Skilgreining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli03.html#taknmal">3.1. Táknmál</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#lengd-vigurs">3.1.1. Lengd vigurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#vigrar-milli-punkta">3.1.2. Vigrar milli punkta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli03.html#hallatala-vigurs">3.1.3. Hallatala vigurs</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli03.html#samlagning-vigra">3.4. Samlagning vigra</a></li>
@@ -307,27 +323,34 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur">6.2. Normalkraftur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli06.html#nuningskraftur">6.3. Núningskraftur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.4. Vægi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#normalkraftur-i-lyftu">6.5. Normalkraftur í lyftu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#gormkraftur">6.4. Gormkraftur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli06.html#vaegi">6.5. Vægi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli07.html">7. Orka</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#vinna">7.1. Vinna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#afl">7.2. Afl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hreyfiorka">7.3. Hreyfiorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orka-i-gormum">7.6. Orka í gormum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#stouorka">7.4. Stöðuorka</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#yngdarstouorka">7.4.1. Þyngdarstöðuorka</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#gormstouorka">7.4.2. Gormstöðuorka</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#orkuvarveisla">7.5. Orkuvarðveisla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#vinnu-hreyfiorkusetningin">7.5.1. Vinnu-hreyfiorkusetningin</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli08.html">8. Skriðþungi</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli08.html#atlag">8.1. Atlag</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-einni-vidd">8.2. Varðveisla í einni vídd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla">8.2. Varðveisla</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-fjarandi-arekstur">8.2.1. Fullkomlega fjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#fullkomlega-ofjarandi-arekstur">8.2.2. Fullkomlega ófjaðrandi árekstur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Kafli08.html#onnur-tilvik">8.2.3. Önnur tilvik</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli08.html#varveisla-i-tveimur-viddum">8.3. Varðveisla í tveimur víddum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Kafli09.html">9. Verklegar tilraunir</a><ul>
@@ -347,7 +370,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hugtok.html">11. Hugtakalisti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">12. Fjölvalsspurningar í Sphinx</a></li>
 </ul>
 </div>
 </div>

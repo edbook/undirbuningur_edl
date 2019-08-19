@@ -6,33 +6,9 @@ Hér hefur mér loksins tekist að setja inn embedded fjölvalsspurningar (og em
 Í extension-inu eqt.py er hægt að setja inn fjölvalsspurningar (og opnar spurningar).
 Það er hægt að gera það þannig að sé rangt svar sett inn kemur útskýringar á því hvers vegna valkosturinn er réttur eða rangur eftir að spurningunni hefur verið svarað rétt. Það væri auðvitað flottara ef sú útskýring ranga möguleikans birtist þegar hann er valinn, en það virkar ekki alveg. Mér sýnist það vera einhver smávilla í ``dynsite.js`` skránni.  Meira bil er á milli svarmöguleikanna þegar þessi fítus er nýttur svo e.t.v. er fallegra að sleppa því alfarið að nota hann (tekið eftir mun á dæmum 1 og 2).
 
-Það er líka hægt að setja inn lausn að dæminu sem birtist þegar rétt svar hefur verið sett inn. Til þess að það virki þarf eftirfarandi klausa að birtast einhvers staðar í ``.rst`` skrá hvers kafla. ::
-
-  .. raw:: html
-
-    <style>
-
-    .expl {
-      display:none;
-    }
-
-    </style>
-
-Það er líka hægt að bæta við takkanum "Sýna lausn" sem birtir hvert rétta svarið er. Það er gert með því að breyta 'none' í 'inline' í línu 264 í ``dynsite.js``.
-
+Það er líka hægt að bæta við takkanum "Sýna lausn" sem birtir hvert rétta svarið er þegar sóst er eftir því. Það er gert með því að breyta 'none' í 'inline' í línu 264 í ``dynsite.js``.
 
 Til þess að virkja eqt pakkann þurfti að gera hitt og þetta, m.a. að uppfæra Sphinx og uppfæra nokkrar skriptur úr Python2 í Python3 og bæta við nokkrum línum í ``layout.html`` (sjá readme fyrir viðbæturnar). Meðal afleiðinga þessa fikts var að toggleblock og geogebra hættu að virka tímabundið, en það er komið í lag.
-
-.. raw:: html
-
-  <style>
-
-  .expl {
-   display:none;
-  }
-
-  </style>
-
 
 ----------------
 

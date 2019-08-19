@@ -7,9 +7,10 @@ from sphinx.errors import ExtensionError
 from sphinx.ext.mathbase import setup_math as mathbase_setup
 from sphinx.ext.mathbase import get_node_equation_number
 
+
 def get_latex(node):
     if 'latex' in node.attributes:
-        return node['latex'] 
+        return node['latex']
     else:
         return node.astext()
 
@@ -24,7 +25,7 @@ def html_visit_math(self, node):
 
 def html_visit_displaymath(self, node):
     self.body.append('<div style="text-align: center;">\n')
-    
+
     if node['number']:
         self.body.append(self.starttag(node, 'div', CLASS='math', STYLE='display:inline-block;'))
     else:
@@ -34,7 +35,6 @@ def html_visit_displaymath(self, node):
         self.body.append(self.encode(get_latex(node)))
         self.body.append('</div>')
         raise nodes.SkipNode
-
 
     self.body.append(self.builder.config.katex_display[0])
     latex = get_latex(node)
@@ -68,11 +68,13 @@ def html_visit_displaymath(self, node):
     self.body.append('</div>\n')
     raise nodes.SkipNode
 
+
 try:
     basestring
 except:
     basestring = str
-    
+
+
 def builder_inited(app):
     katexpath = app.config.katex_path
     renderpath = app.config.katex_render
@@ -83,26 +85,26 @@ def builder_inited(app):
                              'katex extension to work')
     elif not renderpath:
         raise ExtensionError('katex_render config value must be set for the '
-                             'katex extension to work')    
+                             'katex extension to work')
     elif not mathpath:
         raise ExtensionError('render_math config value must be set for the '
-                             'katex extension to work')                        
+                             'katex extension to work')
 
     if katexpath and renderpath and mathpath:
         app.add_javascript(katexpath)
         app.add_javascript(renderpath)
         app.add_javascript(mathpath)
-    
+
     if app.config.katex_css:
         app.add_stylesheet(app.config.katex_css)
 
-      
+
 def setup(app):
     try:
+        #        app.add_html_math_renderer('katex.py', html_visit_math, html_visit_displaymath)
         mathbase_setup(app, (html_visit_math, None), (html_visit_displaymath, None))
     except ExtensionError:
         raise ExtensionError('katex.katex: other math package is already loaded')
-
 
     app.add_config_value('katex_path', None, False)
     app.add_config_value('katex_render', None, False)

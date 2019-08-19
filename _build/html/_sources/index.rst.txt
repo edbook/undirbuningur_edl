@@ -14,7 +14,6 @@ Undirbúningur í eðlisfræði, Háskóli Íslands, 2019
    Kafli*
    formulublad
    hugtok
-   test
 
 .. Indices and tables
 .. ==================

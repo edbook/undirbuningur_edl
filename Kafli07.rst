@@ -9,10 +9,10 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 
 *Mættisorka* (e. potential energy) er geymd á einhvern máta:
 
+- þyngdarstöðuorka (t.d. vegna þyngdarsviði jarðar)
+- gormstöðuorka eða spennuorka (t.d. í teygðum og þjöppuðum gormum)
 - efnaorka (í efnatengjum sameinda)
 - kjarnorka (í kjörnum atóma)
-- stöðuorka (t.d. vegna þyngdarsviði jarðar)
-- spennuorka (t.d. í teygðum og þjöppuðum gormum)
 
 *Hreyfiorka* (e. kinetic energy) er þar sem hlutir eða eindir eru á hreyfingu:
 
@@ -31,6 +31,8 @@ Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 
 .. note::
   Orka er skalarstærð, *ekki vigur*. Lokað eðlisfræðilegt kerfi býr yfir fastri orku, sem getur breytt um form en getur aldrei horfið eða aukist, en orkan bendir ekki í neina sérstaka átt.
+
+Hér munum við einbeita okkur að
 
 Vinna
 -----
@@ -104,21 +106,28 @@ Einingin fyrir afl er Watt, táknað W.
   1 W=\frac{1 \text{ J}}{1\text{ s}}
 
 .. note::
-  Passið ykkur á því að ruglast ekki á einingunni Watt fyrir afl og tákninu :math:`W` sem er notuð fyrir orku! Það er yfirleitt skýrt af samhenginu hvort er um að ræða.
+  Passið ykkur á því að ruglast ekki á einingunni Watt fyrir afl og tákninu :math:`W` sem er oft er notað fyrir orku! Það er yfirleitt skýrt af samhenginu hvort er um að ræða.
 
 Hreyfiorka
 ----------
-Hlutur sem hefur massann :math:`m`  og fer á hraðanum :math:`v` hefur hreyfiorku (e. kinetic energy) :math:`K` :
+Hlutur sem hefur massann :math:`m` og fer á hraðanum :math:`v` hefur hreyfiorku (e. kinetic energy) :math:`K` :
 
 .. math::
   K= \frac{1}{2}mv^2
 
-Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt vinnu-hreyfiorkusetningunni:
+.. note::
+  Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans skalarstærð. Hreyfiorkan er bara háð stærð hraðans, :math:`v=|\overline{v}|` en ekki stefnu hans.
+
+Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt *vinnu-hreyfiorkusetningunni*:
 
 .. math::
   W=\Delta K=K_2-K_1 = \frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2
 
-Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans :math:`m` ekki vigur heldur skalarstærð. Hreyfiorkan er bara háð stærð hraðans, :math:`v=|\overline{v}|` en ekki stefnu hans.
+* Þegar vinnan er jákvæð þá er hreyfiorkan að aukast.
+* Þegar vinnan er neikvæð þá er hreyfiorkan að minnka.
+* Þegar vinnan er núll þá er hreyfiorkan ekki að breytast.
+
+Hreyfiorka segir til um vinnuna sem þarf til þess að að koma massa :math:`m` úr kyrrstöðu í hraðann :math:`v`.
 
 .. tip::
   Sleði með massann :math:`m=20` kg rennur eftir sléttum, láréttum snjó.
@@ -146,44 +155,59 @@ Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytin
       W&= -750 \text{ J}
     \end{aligned}
 
-  Vinnan er neikvæð því krafturinn vinnur gegn hreyfingunni.
-
-
+  Vinnan er neikvæð því krafturinn vinnur gegn hreyfingunni og hreyfiorkan er að minnka.
 
 Stöðuorka
 ---------
-Þegar hlutir eru í *þyngdarsviði*, þ.e. nálægt yfirborði miklu stærri hlutar (eins og jarðarinnar) hafa þeir *þyngdarstöðuorku* (e. gravitational potential energy) :math:`U` :
+Hér ætlum við að fjalla um þær tegundir stöðuorku sem koma oftast fyrir í klassískri eðlisfræði, þyngarstöðuorku og gormstöðuorku. Hinar tegundirnar, efnaorka og kjarnorka eru engu að síður mikilvægar og áhugaverðar.
+
+Þyngdarstöðuorka
+~~~~~~~~~~~~~~~~
+
+Þegar hlutir eru í *þyngdarsviði*, þ.e. nálægt yfirborði miklu stærri hlutar (eins og jarðarinnar) hafa þeir *þyngdarstöðuorku* (e. gravitational potential energy) :math:`U_{grav}` :
 
 .. math::
-  U = mgy
+  U_{grav} = mgy
 
 þar sem :math:`y` er hæð massans yfir einhverjum tilteknum viðmiðunarpunkti, sem er oft yfirborð jarðarinnar.
 
+Gormstöðuorka
+~~~~~~~~~~~~~
+Þegar orka er geymd í hlut sem getur afmyndast, eins og t.d. gormum og gúmmíteygjum, þá köllum við það *gormstöðuorku* (e. elastic potential energy). Fyrir gorm með gormstuðul :math:`k` sem teygður er (eða þjappaður) um vegalengdina :math:`x` þá er gormstöðuorkan :math:`U_{el}`:
+
+.. math::
+
+	U_{el} = \frac{1}{2}kx^2
 
 Orkuvarðveisla
 --------------
 Orka er einn eðliseiginleika kerfis sem er *varðveittur*, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
-Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.
 
-Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst. Sé ekki núningur er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:
+Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.
+Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst.
+
+Séu allir kraftarnir í kerfinu geymnir, þ.e. ef það er enginn núningur eða annað viðnám, þá er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:
 
 .. math::
   K_1+U_1 = K_2+U_2
 
+Þar sem :math:`U` táknar alla stöðuorku sem kerfið gæti búið yfir, bæði gorm- og þyngdarstöðuorku, og :math:`K` táknar hreyfiorku þess.
+Lágvísirinn, eins og oft áður, segir til um *hvenær* við erum að skoða orku kerfisins. :math:`_1` táknar þá fyrir einhvern atburð, við tímann :math:`t_1` og :math:`_2` táknar eftir einhvern atburð, við tímann :math:`t_2`.
+
 .. tip::
-  0.5 kg steinn fellur úr kyrrstöðu í 20 metra hæð til jarðar.
+  :math:`0.5\text{ kg}` steinn fellur úr kyrrstöðu í 20 metra hæð til jarðar.
   Hver er hraði hans rétt áður en hann skellur á yfirborði jarðarinnar?
 
-  *Lausn*
+  **Lausn**
 
-  Gerum ráð fyrir að loftmótsstaðan hafi engin áhrif, þ.e. að það verði ekki núningur milli steinsins og loftsins sem umlykur hann.
+  Gerum ráð fyrir að loftmótsstaðan hafi engin áhrif, þ.e. að núningurinn á milli steinsins og loftsins sé ekki að vinna neina vinnu.
 
-  Í upphafi er hreyfiorka steinsins núll (:math:`K_1=0`), fyrst hann fellur úr kyrrstöðu, en stöðuorka hans er:
+  Í upphafi er hreyfiorka steinsins núll (:math:`K_1=0`), fyrst hann fellur úr kyrrstöðu, en þyngdarstöðuorka hans er:
 
   .. math::
-    U_1=mgy=0.5 \text{ kg}\cdot  9.8 \text{m/s}^2\cdot 20 \text{ m} = 98 \text{ J}
+    U_{grav,1} = mgy=0.5 \text{ kg}\cdot  9.8 \text{m/s}^2\cdot 20 \text{ m} = 98 \text{ J}
 
-  Rétt áður en steinninn skellur á yfirborði jarðarinnar í 0 metra hæð er stöðuorkan orðin að núlli (:math:`U_2=0`), en steinninn er á fleygiferð.
+  Rétt áður en steinninn skellur á yfirborði jarðarinnar í :math:`0` metra hæð er stöðuorkan orðin að núlli (:math:`U_{grav,2}=0`), en steinninn er á fleygiferð.
   Öll stöðuorka steinsins í upphafi er nú orðin að hreyfiorku.
   Því er:
 
@@ -200,8 +224,45 @@ Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyf
     :align: center
     :width: 40%
 
-Orka í gormum
--------------
+Vinnu-hreyfiorkusetningin
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ef einhver kraftanna í kerfinu er ógeyminn, t.d. ef það er núningur eða annað viðnám, þá er orkan ekki varðveitt. Þá verður orkutap í kerfinu sem nemur vinnu ógeymna kraftsins, líkt og í vinnu-hreyfiorkusetningunni.
+
+.. tip::
+  Þegar krakki hoppar á trampólíni kemur margskonar orka fyrir. Þegar krakkinn er í loftinu býr hann yfir þyngdarstöðuorku, sem breytist í hreyfiorku þegar hann fellur í átt að trampólíninu. Þegar hann lendir á dúknum tognar á honum og kerfið býr yfir gormstöðuorku, sem aftur breytist í hreyfiorku þegar krakkinn skýst aftur upp í loft.
+
+  Núningur í trampólíninu og loftmótstaða veldur því að þessar þrjár orkutegundir eru ekki alveg varðveittar, heldur vinnur núningurinn vinnu. Samkvæmt vinnu-hreyfiorkusetningunni mun hreyfiorka krakkans minnka, þ.e. hraði hans á leiðinni upp í loftið mun minnka og þar af leiðandi mun hann ekki komast jafn hátt (þyngdarstöðuorkan verður ekki jafn mikil og í fyrra hoppi). Að lokum mun krakkinn hætta að skoppa, nema hann láti fæturna vinna vinnu sem vegur á móti vinnu núningsins.
+
+---------------------
+
+.. eqt:: daemi-orkuvard
+
+  **Æfingadæmi** Massinn :math:`m=2.00\text{ kg}` hvílir á (núningslausu) borði fyrir framan gorm sem hefur gormstuðulinn :math:`k=100\text{ N/m}`. Það er búið að þjappa gorminn saman um :math:`x=30.0 \text{ cm}`. Hver verður upphafshraði massans þegar gormurinn þenst aftur út?
+
+  .. figure:: ./myndir/vinna/gormorka.svg
+    :align: center
+    :width: 40%
 
 
-.. fjalla um gorma?
+  A) :eqt:`I` :math:`1.07 \text{ m/s}^2`
+
+  #) :eqt:`C` :math:`2.12 \text{ m/s}`
+
+  #) :eqt:`I` :math:`212 \text{ m/s}`
+
+  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
+
+  .. eqt-solution::
+
+    Þegar gorminum var þjappað saman þurfti til þess orkuna :math:`U_{el}= \frac{1}{2}kx^2` en þegar hann þenst út aftur losnar sú orka aftur. Orkan ferður að hreyfiorku massans: :math:`K=\frac{1}{2}mv^2` og því fæst:
+
+    .. math::
+      \begin{aligned}
+        K&=U_{el} \\
+        \frac{1}{2}mv^2 &= \frac{1}{2}kx^2 \\
+        v^2 &= \frac{kx^2}{m} \\
+        v &=\sqrt{ \frac{kx^2}{m}} = 2.12 \text{m/s}
+      \end{aligned}
+
+    Munið að breyta :math:`\text{cm}` í metra í útreikningunum!

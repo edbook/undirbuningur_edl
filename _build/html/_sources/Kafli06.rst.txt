@@ -6,7 +6,7 @@ SI- einingin fyrir krafta er *Newton*, táknað :math:`\text{N}`. Eitt Newton er
 Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
 
 .. note::
-  Athugið að í eðlisfræði er *massi* (e. mass) ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.
+  Athugið að í eðlisfræði er *massi* ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.
 
   *Massi* (e. mass) hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
 
@@ -28,23 +28,23 @@ Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu 
   Kraftvigur Ingu bendir til vinstri, þ.a. :math:`x` hnit hans er neikvætt.
 
   .. math::
-    \overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix}
+    \overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix} \text{N}
 
   Kraftvigur Gunnu bendir til hægri, þ.a. :math:`x` hnit hans er jákvætt.
 
   .. math::
-    \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}
+    \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N}
 
   Leggjum nú saman vigrana:
 
   .. math::
     \begin{aligned}
     \overline{F}_{net} &= \overline{F}_I + \overline{F}_G \\
-    &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix} \\
-    &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}
+    &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix}  \text{N} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N} \\
+    &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}  \text{N}
     \end{aligned}
 
-  Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
+  Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix} \text{N}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
 
 .. _s.newton:
 
@@ -75,7 +75,7 @@ Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutf
 
 Þriðja lögmál Newtons
 ~~~~~~~~~~~~~~~~~~~~~
-"Sérhvert átak á sér gagnátak."
+"Sérhvert átak á sér gagnátak." Það þýðir að alltaf þegar kraftur verkar frá einum hlut til annars þá ýtir sá síðari á móti.
 
 .. math::
    \overline{F}_{AB} = -\overline{F}_{BA}
@@ -85,7 +85,7 @@ Kraftarnir eru jafnstórir en stefna gegn hvorum öðrum.
 
 Normalkraftur
 -------------
-Hlutur sem liggur kyrrstæður á borði hlýtur að vera í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
+Hlutur sem liggur kyrrstæður á borði er í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
 Þó að hluturinn se kyrrstæður þýðir það samt ekki að engir kraftar verki á hann.
 Þyngdarkrafturinn togar hann niður að borðinu og samkvæmt þriðja lögmálinu er jafnstór kraftur frá borðinu sem ýtir hlutnum upp.
 Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
@@ -101,6 +101,8 @@ Núningskraftur
 Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
 Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
 Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.
+
+Núningur kemur frá því að yfirborð hluta eru ekki alveg slétt, þó okkur sýnist þau vera það.
 
 Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, :math:`\mu_k` :
 
@@ -251,6 +253,49 @@ Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er ka
 .. note::
   Þyngdarkrafturinn bendir *alltaf* beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.
 
+Gormkraftur
+-----------
+
+Gormar, eða aðrir teygjanlegir hlutir, koma gjarnan fyrir í eðlisfræðilegum kerfum. Hver gormur á sér einkennandi *gormstuðul* (e. spring constant) :math:`k` sem segir til um hve erfitt það er að teygja gorminn umfram náttúrulega lengd sína. Til þess að teygja gorm með gormstuðul :math:`k` um vegalengdina :math:`x` þarf kraftinn:
+
+.. math::
+
+	F_x=kx
+
+Við getum séð frá jöfnunni að einingin fyrir :math:`k` er :math:`\text{N/m}`. Þessi jafna er oft kölluð *Lögmál Hookes* og hún gildir fyrir flesta gorma, svo lengi sem við erum ekki að teygja þá of mikið.
+
+.. note::
+  Lögmál Hookes gildir fyrir gorma, hvort sem verið er að þjappa þá eða teygja.
+
+-------------------
+
+.. eqt:: daemi-kragorm
+
+  **Æfingadæmi** Hversu mikið lengist gormur með gormstuðul :math:`k=100 \text{ N/m}` saman þegar massinn :math:`m=2.00\text{ kg}` er hengdur í hann?
+
+  .. figure:: ./myndir/kraftar/gormur.svg
+    :width: 45%
+    :align: center
+
+  #) :eqt:`I` :math:`20.4\text{ m}`
+
+  #) :eqt:`I` :math:`5.10 \text{ m}`
+
+  #) :eqt:`C` :math:`0.196 \text{m}`
+
+  .. eqt-solution::
+
+    Þyngdarhröðun jarðar dregur í massann :math:`m` með krafti :math:`F_g=mg`. Þá lengist gormurinn um :math:`x` og togar í massann í hina áttina með krafti :math:`F_x=kx`. Nú er massinn í kraftajafnvægi (fyrst hann er kyrr) og því er :math:`F_g=F_x`:
+
+    .. math::
+      \begin{aligned}
+        F_g&=F_x\\
+        mg&=kx \\
+        x&=\frac{mg}{k} =\frac{2.00\text{kg}\cdot 9.80 \text{m/s}^2}{100\text{N/m}} \\
+        x&= 0.196 \text{m}
+      \end{aligned}
+
+-------------------
 
 Vægi
 ----
@@ -261,7 +306,7 @@ Vægi
 
 	M=F\cdot r \qquad  \qquad  M_{tot} = \sum_i M_i= \sum_i F_i\cdot r_i
 
-Þar sem :math:`r` er fjarlægð kraftsins :math:`F` frá punktinum sem reikna á vægið um.
+Þar sem :math:`r` er fjarlægð kraftsins :math:`F` frá tilteknum punkt, sem reikna á vægið um.
 Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.
 
 .. figure:: ./myndir/kraftar/vaegiskilgr.svg
@@ -295,9 +340,3 @@ Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægi�
 
   .. math::
     F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}
-
-
-Normalkraftur í lyftu
----------------------
-
-(Áhugavert en kannski óþarfi?)

@@ -292,11 +292,11 @@ var Search = {
       // search finished, update title and status message
       else {
         Search.stopPulse();
-        Search.title.text(_('Search Results'));
+        Search.title.text(_('Leitarniðurstöður'));
         if (!resultCount)
-          Search.status.text(_('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve selected enough categories.'));
+          Search.status.text(_('Leit þín bar engan árangur. Gættu þess að þú hafir skrifað leitarorðin rétt.'));
         else
-            Search.status.text(_('Search finished, found %s page(s) matching the search query.').replace('%s', resultCount));
+            Search.status.text(_('Leit lokið, niðurstöður fundust í %s köflum.').replace('%s', resultCount));
         Search.status.fadeIn(500);
       }
     }
