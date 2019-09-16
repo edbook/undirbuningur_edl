@@ -146,7 +146,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#a-lia-vigra">3.2. Að liða vigra</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#einingarvigrar">3.3. Einingarvigrar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#samlagning-vigra">3.4. Samlagning vigra</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#margfoldun-vigra">3.5. Margföldun vigra</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#innfeldi-og-krossfeldi">3.5. Innfeldi og krossfeldi</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#innfeldi">3.5.1. Innfeldi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#krossfeldi">3.5.2. Krossfeldi</a></li>
 </ul>
@@ -584,8 +584,8 @@ a + b = \sqrt{4^2+3^2} + \sqrt{1^2+3^2} \approx 8,2\end{aligned}\]</div>
 \[\overline{AC} = \overline{AB} + \overline{BC}\]</div>
 </div>
 </div>
-<div class="section" id="margfoldun-vigra">
-<h2>3.5. Margföldun vigra<a class="headerlink" href="#margfoldun-vigra" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="innfeldi-og-krossfeldi">
+<h2>3.5. Innfeldi og krossfeldi<a class="headerlink" href="#innfeldi-og-krossfeldi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Þegar vigur <span class="math">\(\bar{v}\)</span> er margfaldaður með tölu <span class="math">\(s\)</span> er hver þáttur vigursins margfaldaður með tölunni:</p>
 <div style="text-align: center;">
 <div class="math">
@@ -601,7 +601,9 @@ a + b = \sqrt{4^2+3^2} + \sqrt{1^2+3^2} \approx 8,2\end{aligned}\]</div>
 Ef þættir vigranna eru þekktir er innfeldið reiknað:</p>
 <div style="text-align: center;">
 <div class="math">
-\[\bar{a} \cdot \bar{b} = a_x b_x + a_y b_y\]</div>
+\[\boxed{
+\bar{a} \cdot \bar{b} = a_x b_x + a_y b_y
+}\]</div>
 </div>
 <p>eða, ef vigrarnir eru þrívíðir:</p>
 <div style="text-align: center;">
@@ -662,19 +664,63 @@ Lengdirnar eru:</p>
 <div class="section" id="krossfeldi">
 <h3>3.5.2. Krossfeldi<a class="headerlink" href="#krossfeldi" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><strong>Krossfeldi</strong> (e. cross product) er táknað með krossi og útkoman er <em>vigur</em>: <span class="math">\(\bar{c} = \bar{a} \times \bar{b}\)</span> . Krossfeldi koma mikið fyrir í eðlisfræði, sérstaklega í tengslum við rafsegulkrafta.
-Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu <span class="math">\(\bar{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}\)</span> .</p>
+Krossfeldi tveggja vigra <span class="math">\(\bar{a}=(a_x,a_y,a_z)\)</span> og <span class="math">\(\bar{b}=(b_x,b_y,b_z)\)</span> er:</p>
+<div style="text-align: center;">
+<div class="math">
+\[\boxed{
+  \bar{c}=\bar{a} \times \bar{b} =(a_y b_z - a_z b_y, \quad a_z b_x - a_x b_z, \quad a_x b_y - a_y b_x)
+  }\]</div>
+</div>
+<p>Þetta er löng runa til að muna utan að, en hér eftir kemur aðferð til að reikna krossfeldi.</p>
+<hr class="docutils" />
+<p>Skrifum vigrana upp í tvær línur:</p>
 <div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  \bar{a} \times \bar{b} &amp;= (a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}) \times (b_x \hat{\imath} + b_y \hat{\jmath} + b_z \hat{k}) \\
-  &amp;= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
+  \bar{a} \quad &amp;\rightarrow \quad &amp; a_x \quad a_y \quad a_z \\
+  \bar{b} \quad &amp;\rightarrow \quad &amp; b_x \quad b_y \quad b_z
 \end{aligned}\]</div>
 </div>
+<p>Fyrsta stak krossfeldisins fæst með því að „fela“ fyrsta dálkinn (<span class="math">\(a_x\)</span> og <span class="math">\(b_x\)</span>) og margfalda hin stökin í kross og finna mismun. Þetta skýrist best grafískt:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/kr-utskyring1.svg"><img alt="_images/kr-utskyring1.svg" src="_images/kr-utskyring1.svg" width="50%" /></a>
+</div>
+<p>Til að finna fyrsta stakið hunsum við fyrsta dálkinn, margföldum saman hornalínuna <span class="math">\(\searrow\)</span> og drögum síðan frá margfeldið af hornalínunni <span class="math">\(\swarrow\)</span>.
+Fyrsta stak krossfeldisins er því</p>
+<div style="text-align: center;">
+<div class="math">
+\[c_x=a_yb_z - a_zb_y\]</div>
+</div>
+<hr class="docutils" />
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/kr-utskyring2.svg"><img alt="_images/kr-utskyring2.svg" src="_images/kr-utskyring2.svg" width="60%" /></a>
+</div>
+<p>Til að finna annað stakið bætum við fyrsta dálkinum aftur við aftast, hunsum annan dálkinn, margföldum í kross yfir þriðja og fjórða dálkinn; fyrst <span class="math">\(\searrow\)</span> og  drögum síðan <span class="math">\(\swarrow\)</span> frá.
+Annað stak krossfeldisins er því</p>
+<div style="text-align: center;">
+<div class="math">
+\[c_y=a_zb_x - a_xb_z\]</div>
+</div>
+<hr class="docutils" />
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/kr-utskyring3.svg"><img alt="_images/kr-utskyring3.svg" src="_images/kr-utskyring3.svg" width="50%" /></a>
+</div>
+<p>Við finnum þriðja stak krossfeldisins með því að hunsa þriðja dálkinn og margfalda í kross yfir fyrsta og annan dálkinn. Fáum</p>
+<div style="text-align: center;">
+<div class="math">
+\[c_z=a_xb_y-a_yb_x\]</div>
+</div>
+<hr class="docutils" />
+<p>Þannig sjáum við að krossfeldi vigranna <span class="math">\(\bar{a} = (a_x,a_y,a_z)\)</span> og <span class="math">\(\bar{b} = (b_x,b_y,b_z)\)</span> er:</p>
+<div style="text-align: center;">
+<div class="math">
+\[\bar{c}=\bar{a} \times \bar{b} = (a_yb_z - a_zb_y,a_xb_z - a_zb_x,a_xb_y-a_yb_x)\]</div>
+</div>
+<hr class="docutils" />
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/krossfeldi.svg"><img alt="_images/krossfeldi.svg" src="_images/krossfeldi.svg" width="60%" /></a>
 </div>
-<p>Útkoma krossfeldisins er vigur sem er hornréttur á bæði <span class="math">\(\bar{a}\)</span> og <span class="math">\(\bar{b}\)</span>.
-Stefna hans ákvarðast af <strong>hægri</strong> handar reglunni:</p>
+<p>Útkoma krossfeldisins er vigur sem er hornréttur á bæði <span class="math">\(\bar{a}\)</span> og <span class="math">\(\bar{b}\)</span>. Hér er <span class="math">\(\bar{c} =\bar{a} \times \bar{b}\)</span>. Stefna <span class="math">\(\bar{c}\)</span> ákvarðast af <strong>hægri</strong> handar reglunni:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/hhr.svg"><img alt="_images/hhr.svg" src="_images/hhr.svg" width="60%" /></a>
 </div>

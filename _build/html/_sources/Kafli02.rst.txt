@@ -247,7 +247,7 @@ SI- einingin fyrir hitastig er aftur á móti hvorki Celcius-kvarðinn né Fahre
 Svona má breyta Celcius í Kelvin:
 
 .. math::
-  T_{K}=T_{°C}-273.15
+  T_{K}=T_{°C}+273.15
 
 Kelvin-kvarðinn er svipaður Celcius-kvarðanum að því leyti að aukning í hita um 1 K er jafnt aukningu í hita um 1 °C.
 Munurinn er sá að Celcius setur 0 °C við frostmark vatns þá setur Kelvin 0 við *alkul*, lægsta mögulega hitastig efnisheimsins (:math:`-273.15^{\circ}\text{C} = 0\text{ K}`) en þá verða atóm alveg kyrr.

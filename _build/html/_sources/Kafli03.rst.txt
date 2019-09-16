@@ -351,8 +351,8 @@ Af þessu dæmi má sjá *innskotsregluna* :
   \overline{AC} = \overline{AB} + \overline{BC}
 
 
-Margföldun vigra
-----------------
+Innfeldi og krossfeldi
+----------------------
 
 Þegar vigur :math:`\bar{v}` er margfaldaður með tölu :math:`s` er hver þáttur vigursins margfaldaður með tölunni:
 
@@ -371,7 +371,9 @@ Innfeldi
 Ef þættir vigranna eru þekktir er innfeldið reiknað:
 
 .. math::
+  \boxed{
   \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y
+  }
 
 eða, ef vigrarnir eru þrívíðir:
 
@@ -434,20 +436,78 @@ Krossfeldi
 ~~~~~~~~~~
 
 **Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\bar{c} = \bar{a} \times \bar{b}` . Krossfeldi koma mikið fyrir í eðlisfræði, sérstaklega í tengslum við rafsegulkrafta.
-Krossfeldi eru reiknuð með þáttum vigranna, þ.e. vigrum gefnum á forminu :math:`\bar{a} = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}` .
+Krossfeldi tveggja vigra :math:`\bar{a}=(a_x,a_y,a_z)` og :math:`\bar{b}=(b_x,b_y,b_z)` er:
+
+.. math::
+  \boxed{
+    \bar{c}=\bar{a} \times \bar{b} =(a_y b_z - a_z b_y, \quad a_z b_x - a_x b_z, \quad a_x b_y - a_y b_x)
+    }
+
+Þetta er löng runa til að muna utan að, en hér eftir kemur aðferð til að reikna krossfeldi.
+
+--------------
+
+Skrifum vigrana upp í tvær línur:
 
 .. math::
   \begin{aligned}
-    \bar{a} \times \bar{b} &= (a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}) \times (b_x \hat{\imath} + b_y \hat{\jmath} + b_z \hat{k}) \\
-    &= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
+    \bar{a} \quad &\rightarrow \quad & a_x \quad a_y \quad a_z \\
+    \bar{b} \quad &\rightarrow \quad & b_x \quad b_y \quad b_z
   \end{aligned}
+
+Fyrsta stak krossfeldisins fæst með því að "fela" fyrsta dálkinn (:math:`a_x` og :math:`b_x`) og margfalda hin stökin í kross og finna mismun. Þetta skýrist best grafískt:
+
+.. figure:: ./myndir/vigrar/kr-utskyring1.svg
+  :width: 50%
+  :align: center
+
+Til að finna fyrsta stakið hunsum við fyrsta dálkinn, margföldum saman hornalínuna :math:`\searrow` og drögum síðan frá margfeldið af hornalínunni :math:`\swarrow`.
+Fyrsta stak krossfeldisins er því
+
+.. math::
+
+  c_x=a_yb_z - a_zb_y
+
+------------------
+
+.. figure:: ./myndir/vigrar/kr-utskyring2.svg
+  :width: 60%
+  :align: center
+
+Til að finna annað stakið bætum við fyrsta dálkinum aftur við aftast, hunsum annan dálkinn, margföldum í kross yfir þriðja og fjórða dálkinn; fyrst :math:`\searrow` og  drögum síðan :math:`\swarrow` frá.
+Annað stak krossfeldisins er því
+
+.. math::
+
+	c_y=a_zb_x - a_xb_z
+
+-----------------
+
+.. figure:: ./myndir/vigrar/kr-utskyring3.svg
+  :width: 50%
+  :align: center
+
+Við finnum þriðja stak krossfeldisins með því að hunsa þriðja dálkinn og margfalda í kross yfir fyrsta og annan dálkinn. Fáum
+
+.. math::
+
+	c_z=a_xb_y-a_yb_x
+
+----------------
+
+Þannig sjáum við að krossfeldi vigranna :math:`\bar{a} = (a_x,a_y,a_z)` og :math:`\bar{b} = (b_x,b_y,b_z)` er:
+
+.. math::
+  \bar{c}=\bar{a} \times \bar{b} = (a_yb_z - a_zb_y,a_xb_z - a_zb_x,a_xb_y-a_yb_x)
+
+
+----------------
 
 .. figure:: ./myndir/vigrar/krossfeldi.svg
    :width: 60%
    :align: center
 
-Útkoma krossfeldisins er vigur sem er hornréttur á bæði :math:`\bar{a}` og :math:`\bar{b}`.
-Stefna hans ákvarðast af **hægri** handar reglunni:
+Útkoma krossfeldisins er vigur sem er hornréttur á bæði :math:`\bar{a}` og :math:`\bar{b}`. Hér er :math:`\bar{c} =\bar{a} \times \bar{b}`. Stefna :math:`\bar{c}` ákvarðast af **hægri** handar reglunni:
 
 .. figure:: ./myndir/vigrar/hhr.svg
     :width: 60%
