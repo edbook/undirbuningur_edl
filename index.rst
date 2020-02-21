@@ -3,11 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Undirbúningur í eðlisfræði, Háskóli Íslands, 2019
-=================================================
+Undirbúningur í eðlisfræði, Háskóli Íslands
+===========================================
+
+Hér er námsefni í eðlisfræði þar sem farið er yfir helstu grunnhugtök greinarinnar.
+Einnig er til sambærileg yfirlit um stærðfræði og efnafræði.
+
+.. button::
+  :text: Undirbúningur í stærðfræði
+  :link: http://edbook.hi.is/undirbuningur_stae/
+
+.. button::
+  :text: Undirbúningur í eðlisfræði
+  :link: http://edbook.hi.is/undirbuningur_efn/
 
 .. toctree::
-   :maxdepth: 3
+  formali
+
+Efnisyfirlit
+------------
+
+.. toctree::
+   :maxdepth: 2
    :numbered:
    :glob:
 

@@ -1,363 +1,342 @@
-Hreyfing í tveimur víddum
-=========================
-Hingað til hefur verið fjallað um einvíða hreyfingu, þar sem staðsetning, hraði og hröðun eru öll eftir sömu beinu línunni.
-Í eðlisfræði er hins vegar nauðsynlegt að geta lýst hreyfingu í tveimur og jafnvel þremur víddum.
+Kraftar
+=======
 
-Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.
+*Kraftur* (e. force) er orð sem við notum um samspil hluta sem veldur breytingu á hreyfingu þeirra, þ.e. valda því að hlutirnir fá hröðun. Kraftar eru :ref:`vigrar <s.vigrar>`, sem þýðir að þeir hafa  *bæði stærð og stefnu*.
+SI- einingin fyrir krafta er *Newton*, táknað :math:`\text{N}`. Eitt Newton er sá kraftur sem þarf til þess að gefa :math:`1 \text{ kg}` massa hröðunina :math:`1 \frac{\text{m}}{\text{s}^2}` .
+Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
 
-Hraði hlutarins er snertill við feril hlutarins og
-hröðun hans bendir alltaf inn í kúpta hluta ferilsins.
+.. note::
+  Athugið að í eðlisfræði er *massi* ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.
 
-Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn í átt að ferlinum.
+  *Massi* (e. mass) hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
 
-Hröðunarvigurinn segir til um hvernig hraðinn og stefna hans eru að breytast.
+  *Þyngd* (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, þ.e. margfeldi massans við þyngdarhröðunina :math:`g`. SI-eining þyngdar er Newton.
 
-.. image:: ./myndir/2d/hrodun.svg
+Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu *force*. :math:`F` er þá táknið fyrir þyngdarkraft og aðra krafta sem beitt er á hluti en :math:`f` táknar viðbragðskrafta eins og t.d. núning.
+
+.. tip::
+  Skoðum samlagningu kraftvigra.
+  Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kraftinum :math:`F_I=1000 \text{N}` en Gunna beint til hægri með kraftinum :math:`F_G = 1200 \text{N}`. Í hvaða átt hreyfist reipið?
+
+  **Lausn**
+  Þar sem krafar Ingu og Gunnu eru vigrar notum við vigursamlagningu til þess að skoða hver heildarkrafturinn er á reipið.
+
+  .. figure:: ./myndir/kraftar/reipitog.svg
     :align: center
-    :width: 40%
+    :width: 70%
 
+  Kraftvigur Ingu bendir til vinstri, þ.a. :math:`x` hnit hans er neikvætt.
 
-Afstæður hraði
+  .. math::
+    \overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix} \text{N}
+
+  Kraftvigur Gunnu bendir til hægri, þ.a. :math:`x` hnit hans er jákvætt.
+
+  .. math::
+    \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N}
+
+  Leggjum nú saman vigrana:
+
+  .. math::
+    \begin{aligned}
+    \overline{F}_{net} &= \overline{F}_I + \overline{F}_G \\
+    &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix}  \text{N} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N} \\
+    &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}  \text{N}
+    \end{aligned}
+
+  Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix} \text{N}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
+
+.. _s.newton:
+
+Lögmál Newtons
 --------------
+Enski eðlisfræðingurinn `Isaac Newton <https://is.wikipedia.org/wiki/Isaac_Newton>`_ setti fram þrjú lögmál um krafta á 17. öld, en þau mynda grunn þess hluta eðlisfræðinnar sem er kölluð aflfræði (e. classical mechanics).
 
-Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum við vigra:
+Fyrsta lögmál Newtons
+~~~~~~~~~~~~~~~~~~~~~
+"Hlutur sem enginn kraftur verkar á helst kyrr eða ferðast áfram á jöfnum hraða."
+
+Þetta lögmál er oft nefnt **tregðulögmálið** og segir m.a. að bolti muni liggja kyrr á jörðinni þangað til einhver sparkar í hann og að boltinn muni halda áfram að rúlla endalaust, nema núningur hans við grasflötina hægi á honum.
+
+Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
+Hröðun er afleiða hraðans, svo ef hröðunin er núll þá er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
+
+.. _s.lnII:
+
+Annað lögmál Newtons
+~~~~~~~~~~~~~~~~~~~~
+"Kraftur sem verkar á hlut er margfeldi massa hlutarins og hröðunar sem hann verður fyrir."
+
+.. math::
+   \overline{F} = m \overline{a}
+
+Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
+Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hans.
+
+Þriðja lögmál Newtons
+~~~~~~~~~~~~~~~~~~~~~
+"Sérhvert átak á sér gagnátak." Það þýðir að alltaf þegar kraftur verkar frá einum hlut til annars þá ýtir sá síðari á móti.
+
+.. math::
+   \overline{F}_{AB} = -\overline{F}_{BA}
+
+:math:`F_{AB}` er kraftur sem hlutur A veldur á B og :math:`F_{BA}` er verkun B á A.
+Kraftarnir eru jafnstórir en stefna gegn hvorum öðrum.
+
+Normalkraftur
+-------------
+Hlutur sem liggur kyrrstæður á borði er í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
+Þó að hluturinn se kyrrstæður þýðir það samt ekki að engir kraftar verki á hann.
+Þyngdarkrafturinn togar hann niður að borðinu og samkvæmt þriðja lögmálinu er jafnstór kraftur frá borðinu sem ýtir hlutnum upp.
+Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
+
+.. figure:: ./myndir/kraftar/normal.svg
+  :align: center
+  :width: 60%
+
+Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá. Nafnið kemur einmitt þaðan, en *normalvigur* er vigur sem er hornréttur á annan, líka kallað þvervigur. Á hallandi yfirborði er normalkrafturinn minni en á láréttu yfirborði, en þetta verður skoðað nánar með dæmi síðar.
+
+Núningskraftur
+--------------
+Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
+Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
+Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.
+
+Núningur kemur frá því að yfirborð hluta eru ekki alveg slétt, þó okkur sýnist þau vera það.
+
+Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, :math:`\mu_k` :
 
 .. math::
 
-	\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A}
+	f_{nún} = \mu_k f_n
 
 .. tip::
-  Flugvél setur stefnuna beint norður á við og flýgur á hraðanum :math:`v_f= 20 \text{ m/s}` (miðað við loftið). Loftið flæðir til austurs með stífri vestanátt, :math:`v_v =15\text{ m/s}`, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?
+  **(a)** Ásta ætlar að toga þungan kassa eftir steypugólfi og beitir til þess krafti :math:`F_{tog}` á kassann.
+  Kassinn hreyfist ekki. Af hverju ekki?
+
+  **(b)** Ásta togar fastar og kassinn fær hröðun í átt til hennar. Hvaða kraftar verka á kassann og Ástu?
 
   **Lausn**
 
-  Köllum nú flugvélina :math:`P`, vindinn :math:`B` og jörðina :math:`A`.
-  Hér notum við vigursamlagningu. Hreyflar vélarinnar gefa henni hraða :math:`v_f` í stefnu norður (stefnu :math:`y` - áss). Þá er:
+  **(a)** Fyrst kassinn hreyfist ekki er hraði hans fasti (í núlli) og því hlýtur heildarkrafturinn sem verkar á hann að vera núll.
+  Skoðum kraftana betur:
 
-  .. math::
+  Kassinn verður fyrir þyngdarkrafti :math:`F_g` og gólfið ýtir á móti með jafnstórum en gagnstefna normalkrafti :math:`f_n`.
+  Kraftarnir tveir stytta hvorn annan út og það helst óbreytt þó Ásta togi í kassann.
 
-  	\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix} \text{m/s}
+  Fyrst kassinn hreyfist ekki þýðir það að summa kraftanna sem verka á hann er núll.
+  Því hlýtur að vera núningskraftur sem er að toga á móti þegar Ásta togar í kassann.
+  Á meðan kassinn hreyfist ekki er núningskrafturinn jafnstór togkraftinum sem Ásta beitir.
 
-  Vindurinn blæs frá vestri til austurs, til hægri (í stefnu :math:`x` - áss). Því er:
-
-  .. math::
-
-  	\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s}
-
-  Leggjum nú saman vigrana :math:`\overline{v}_f` og :math:`\overline{v}_v`:
-
-  .. math::
-    \begin{aligned}
-  	\overline{v}_{P/A} &= \overline{v}_{P/B} + \overline{v}_{B/A} \\
-    &= \begin{pmatrix} 0  \\ 20 \end{pmatrix} \text{m/s} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s} \\
-    &= \begin{pmatrix} 15 \\ 20 \end{pmatrix} \text{m/s}
-    \end{aligned}
-
-  .. figure:: ./myndir/2d/flugvel.svg
-    :align: center
-    :width: 35%
-
-  Hraði flugvélarinnar miðað við jörðina er því lengdin á :math:`\overline{v}_{P/A}`:
-
-  .. math::
-    \begin{aligned}
-  	|\overline{v}_{P/A}| &= \sqrt{(15\text{ m/s})^2+(20\text{ m/s})^2} \\
-    &=\sqrt{625 (\text{m/s}})^2 \\
-    &= 25 \text{ m/s}
-    \end{aligned}
-
-  Vélin er því að fara á :math:`25\text{ m/s}`, en stefna hraðans er í norðaustur.
-
-
-Kasthreyfing
-------------
-
-*Kasthreyfing* (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði, fær upphafshraða í tiltekna stefnu og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
-Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir *kastferlar* (e. trajectories) hluti af fleygboga, eins og við munum leiða út á eftir.
-
-.. tip::
-  Tveir eins boltar eru látnir falla til jarðar úr sömu hæð, bolta 1 er sleppt úr kyrrstöðu en bolta 2 er kastað lárétt áfram.
-  Gerum ráð fyrir engri loftmótstöðu.
-  Hvor boltanna lendir á undan?
-
-  **Lausn**
-
-  Á báða boltana verkar sama þyngdarafl, svo þeir fá sömu hröðun niður sem nemur þyngdarhröðuninni og fá báðir sívaxandi hraða niður á við.
-
-  Bolti 1 mun því hreyfast lóðrétt niður á við.
-  Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (þetta er afleiðing :ref:`fyrsta lögmáls Newtons <s.newton>`).
-  Hröðunin sem bolti 2 verður fyrir lóðrétt hefur engin áhrif á lárétta hreyfingu hans (og lárétta hreyfingin hefur engin áhrif á lóðrétta hröðun).
-
-  Boltarnir tveir byrjuðu báðir með sama lóðrétta hraðann (engan) og verða fyrir sömu lóðréttu hröðuninni.
-  Þeir ferðast því samtímis niður á við og lenda því *á sama tíma*.
-
-  .. image:: ./myndir/2d/tveirboltar.svg
-    :align: center
-    :width: 40%
-
-  Ferill bolta 1 er lóðrétt strik en ferill bolta 2 er fleygbogi, því hann hefur hreyfingu í tvær stefnur.
-
-Við lausn dæma um kasthreyfingar eru :ref:`hraðajöfnurnar<s.hreyfijofnur>` notaðar.
-Það borgar sig að teikna mynd til að átta sig á dæminu.
-Þá þarf að ákveða hnitakerfi, en venjan er að hafa :math:`x`-ás láréttan og :math:`y`-ás lóðréttan þannig á þyngdarhröðun bendi niður.
-Upphafspunkt hnitakerfisins er þægilegast að setja í upphaf kastins, enda geta hnitin :math:`(x_0,y_0)=(0,0)` einfaldað reikning töluvert.
-Eina hröðunin sem er í þessu kerfi er þyngdarhröðunin og því er :math:`a_x=0` og :math:`a_y=-g`
-Þá eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:
-
-.. math::
-  \begin{aligned}
-    x &= x_0 + v_{0,x} \cdot t \\
-    y &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
-  \end{aligned}
-
-.. tip::
-  Sagan segir að landið Gambía á vesturströnd Afríku hafi orðið til þegar breski flotinn sigldi upp Gambíuána, skaut úr fallbyssum sínum á báða borða og eignuðu sér landið innan færis fallbyssanna.
-  Ef upphafshraði fallbyssukúlu er :math:`\overline{v} = (v_x, v_y) = (50,42)` m/s, hversu breið yrði Gambía?
-
-  **Lausn**
-
-  Byrjum á að teikna mynd.
-  Stillum hnitakerfinu upp þannig að fallbyssan sé í :math:`(x_0,y_0) = (0,0)`, x-ásinn liggi út frá ánni í skotstefnuna og y-ásinn er upp.
-  Gerum ráð fyrir að hæð lendingarstaðarins sé jöfn hæð fallbyssunnar, þ.e. :math:`y_1=0` .
-  Takið eftir að :math:`y`-ásinn er skilgreindur upp en þá er þyngdarhröðunin neikvæð (:math:`a=-g=-9.8 \text{m/s}^2`).
-
-  .. image:: ./myndir/2d/gambia.svg
+  .. figure:: ./myndir/kraftar/asta.svg
     :align: center
     :width: 60%
 
-  Köllum lokahnit kúlunnar þegar hún lendir :math:`(x_1,y_1)` en þar sem við vitum að hún endar á yfirborði jarðarinnar þá er :math:`y_1=0`, þ.a. lokahnit kúlunnar eru :math:`(x_1,y_1) = (x_1,0)`.
-  Finnum hve lengi kúlan er í loftinu með því að finna tímann :math:`t_1` þegar :math:`y_1=0` .
+  **(b)** Þar sem kassinn fær hröðun er heildarkrafturinn á hann ekki lengur núll.
+  Togkraftur Ástu er núna meiri en núningskrafturinn.
+  Þetta eru þó ekki allir kraftarnir sem verka í þessum aðstæðum. Samkvæmt 3. lögmáli Newtons koma kraftar í pörum jafnsstórra og andstæðra krafta.
+  Þegar Ásta togar í kassann verður því líka til kraftur jafnstór togkraftinum sem verkar á hana.
+  Ef hún stæði á sleipu gólfi myndi hún fá hröðun í átt að kassanum (og sennilega detta á hausinn), því núningskraftur hennar við gólfið yrði ekki nægur til að vega á móti togkraftinum.
+
+  Því eru fjórir kraftar sem verka á Ásta og kassann: togkraftapar á milli þeirra og núningskraftur undir þeim báðum.
+  Auk þess, auðvitað, verða bæði Ásta og kassinn fyrir þyngdarkrafti og normalkrafti frá gólfinu.
+
+  .. figure:: ./myndir/kraftar/asta2.svg
+    :align: center
+    :width: 60%
+
+.. tip::
+  Hokkípökkur með massa :math:`m = 0.15` kg rennur á svelli með hraðanum :math:`\overline{v}_0 = 5 \text{m/s}`  .
+  Núningskrafturinn milli hokkípökksins og svellsins er :math:`\overline{f}_{nún} = 0.3 \text{N}`.
+
+  Hvaða kraftar verka á pökkinn?
+  Hversu langt rennur pökkurinn áður en hann stöðvast?
+
+  **Lausn**
+
+  Byrjum á að teikna kraftamynd.
+
+  .. figure:: ./myndir/kraftar/hockey.svg
+    :width: 70%
+    :align: center
+
+  Pökkurinn verður fyrir þyndarkrafti :math:`f_g` og normalkrafti :math:`f_n` vegna hans, auk núningskraftsins :math:`f_{nún}` sem bendir gegn hreyfingunni af því hann er að reyna að hægja á pökknum.
+
+  Upphafshraðinn :math:`v_0` er merktur inn rauður.
+
+  Þyngdarkrafturinn og normalkrafturinn eru jafnstórir og gagnstefna og stytta því hvorn annan út.
+  Það er því engin hreyfing í :math:`y` stefnu og við megum gera ráð fyrir að það muni vera þannig áfram.
+
+  Það er því bara hreyfing í eina stefnu, eftir x-ásnum, svo við getum sleppt hinum víddum kraftanna.
+  Þá þarf ekki að pæla í stefnu vigranna, þeir sem benda í eina átt fá jákvætt gildi, en þeir sem benda í hina fá neikvætt gildi.
+  Höfum því hraðann jákvæðan og núningskrafturinn neikvæðan.
+
+  Látum pökkinn byrja í miðju hnitakerfisins, svo :math:`x_0 = 0` .
+  Notum annað lögmál Newtons til að finna hröðunina sem núningskrafturinn gefur pökknum, þ.e. hve mikið hann hægir á honum.
 
   .. math::
-    \begin{aligned}
-      y_1 &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2 \\
-      0 &= 0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
-    \end{aligned}
+    f_{nún} = m a \Rightarrow a = \frac{f_{nún}}{m} = \frac{-0.3 \text{N}}{0.15 \text{kg}} = -2 \text{m/s}^2
 
-  Þetta er annars stigs margliða sem hefur tvær lausnir. Önnur lausnin er að :math:`t=0` en við höfum ekki áhuga á þeirri lausn af því hún er bara upphaf kasthreyfingarinnar. Hin lausnin er
+  Takið eftir að hröðunin er neikvæð eins og krafturinn.
+  Notum nú eina af :ref:`hreyfijöfnunum <s.hreyfijofnur>` til að finna lokastaðsetninguna:
+
+  .. math::
+    v^2 - v_0^2 &= 2 a (x - x_0) \\
+    (0 \text{m/s})^2 - (5 \text{m/s})^2 &= 2(-2\text{m/s}^2)(x-0\text{m}) \\
+    \Rightarrow x &= \frac{25 \text{m}^2\text{/s}^2}{4\text{m/s}^2}   = 6.25 \text{m}
+
+  Pökkurinn rennur því  :math:`6.25` m á svellinu áður en hann stöðvast vegna núningskraftsins.
+
+
+.. tip::
+  :math:`5.00\text{kg}` kassi liggur kyrrstæður á skáplani með hallann :math:`\theta = 30°` .
+  Hver þarf núningskrafturinn á milli kassans og skáplansins (:math:`f_{nún}`) að vera til þess að kassinn haldist kyrr?
+
+  **Lausn**
+
+  Byrjum á að teikna kraftamynd.
+
+  .. figure:: ./myndir/kraftar/skaplan.svg
+    :width: 70%
+    :align: center
+
+  Á kassann verkar þyngdarkraftur :math:`F_g` beint niður.
+  Normalkrafturinn :math:`f_n` ýtir á kassann, hornrétt af yfirborði skáplansins.
+  Núningskrafturinn :math:`f_{nún}` liggur samsíða skáplaninu, upp eftir því.
+  Við teiknum alla kraftana út frá miðju kassans.
+
+  Nú er komið að því að við veljum okkur hnitakerfi en þar eru tveir góðir kostir. Við getum annað hvort búið til hnitakerfi "eins og venjulega", þ.e. þannig að :math:`x`-ás hnitakerfisins sé láréttur og :math:`y`-ásinn sé samsíða þyngdarhröðuninni, svona:
+
+  .. figure:: ./myndir/kraftar/skaplanhornrett.svg
+    :width: 70%
+    :align: center
+
+  Hér er þyngdarkrafturinn samsíða :math:`y` - ásnum en normal- og núningskraftarnir eru hvorki samsíða :math:`x`- né :math:`y`- ásnum.
+  Hinn valmöguleikinn er að snúa hnitakerfinu þannig að :math:`x`-ásinn sé samsíða skápaninu og :math:`y`-ásinn hornrétt á hann, svona:
+
+  .. figure:: ./myndir/kraftar/skaplanhnit.svg
+    :width: 70%
+    :align: center
+
+  Hér er normalkrafturinn :math:`f_n` samsíða :math:`y`- ásnum og núningskrafturinn samsíða :math:`x`-ásnum en þyngdarkrafturinn samsíða hvorugum.
+
+  Markmið okkar í þessu dæmi er að skoða hvernig kraftarnir verka á hlutinn og við viljum að það sé enginn nettókraftur á kassann. Það þýðir að við viljum að þegar við leggjum saman kraftavigrana þá sé niðurstaðan núll, þ.e. að þættir vigranna í hverja stefnu hnitakerfisins styttist út. Við veljum að hafa hnitakerfið á ská, því þá þurfum við bara að liða þyngdarkraftinn í stað þess að liða bæði núningskraftinn og normalkraftinn.
+
+  Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, :math:`F_{g,x}` og þann sem er hornrétt á það, :math:`F_{g,y}`.
+
+  .. figure:: ./myndir/kraftar/skaplanhnit2.svg
+    :width: 70%
+    :align: center
+
+
+  Til þess að kassinn haldist kyrr þurfa samanlagðir kraftar í hvora stefnu, :math:`x` - og :math:`y`, að vera núll.
+  Því þarf normalkrafturinn að vera jafnstór :math:`y` - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór :math:`x` - þættinum.
+
+  Þyngdarkrafturinn er:
+
+  .. math::
+    F_g = m \cdot g = 5.00 \text{kg} \cdot 9.80 \text{m/s} = 49.0 \text{N}
+
+  Þá er þáttur hans samsíða skáplaninu:
+
+  .. math::
+    F_{g,x} = F_g \sin{\theta} = 49.0 \text{N} \cdot \sin{30°} = 24.5 \text{N}
+
+  Þar með hlýtur núningskrafturinn að vera :math:`f_{nún} = F_{g,x}= 24.5 \text{N}` .
+
+  Að sama skapi er normalkrafturinn jafnstór :math:`y` - þætti þyngdarkraftsins:
 
   .. math::
 
-  	t_1=\frac{v_{0,y}}{\frac{1}{2} g} = \frac{42\text{m/s}}{\frac{1}{2}\cdot 9.8\text{m/s}^2} = 8.58\text{s}
-
-  Nú getum við notað sömu hreyfijöfnu, í þetta skipti fyrir :math:`x`-hnitin, til að finna hversu langt fallbyssan drífur.
-
-  .. math::
-    \begin{aligned}
-      x_1 &= x_0 + v_0 \cdot t_1\\
-      &= 0 + 50 \cdot 8.58  \\
-      &= 429 \text{ m}
-    \end{aligned}
-
-  Fallbyssukúlan lendir því 429 metrum frá ánni og breidd Gambíu er tvöföld sú lengd: 858 m.
-
-
-Finnum nú jöfnu fyrir ferlinum sem hlutur ferðast eftir í loftinu og sannfærum okkur um að hann sé fleygbogi.
-Skoðum hlut sem hefur upphafshraða :math:`\overline{v}_0` í stefnu hornsins :math:`\alpha_0` og upphafsstaðsetningu :math:`(x_0,y_0)=(0,0)` .
-
-Byrjum á því að liða :math:`\overline{v}_0` í :math:`x` - og :math:`y` - stefnu.
-
-.. math::
-  \begin{aligned}
-    v_{0x} &= v_0\cos(\alpha_0) \\
-    v_{0y} &= v_0\sin(\alpha_0)
-  \end{aligned}
-
-.. figure:: ./myndir/2d/v0split.svg
-  :align: center
-  :width: 50%
-
-Því næst notum við :ref:`hreyfijöfnurnar <s.hreyfijofnur>`.
-Hröðunin í :math:`x` - stefnu er núll svo staðsetningin í :math:`x` - stefnu er
-
-.. math::
-  x=v_{0x} t = v_0\cos(\alpha_0)t
-
-Hröðunin í :math:`y` - stefnu er :math:`a_y=-g` svo staðsetningin í :math:`y-` stefnu er:
-
-.. math::
-  y=v_{0y} t - \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t- \frac{1}{2}gt^2
-
-Einangrum :math:`t` út frá jöfnunni fyrir :math:`x`: :math:`t=x/(v_0\cos(\alpha_0))` og setjum inn í jöfnuna fyrir :math:`y` . Þá fæst
-
-.. math::
-  \begin{aligned}
-    y& =v_0\sin(\alpha_0)t - \frac{1}{2}gt^2 \\
-    y&= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} - \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
-    y&= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x - \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
-    y&=\tan(\alpha_0) x - \frac{g}{2v_0\cos^2(\alpha_0)}x^2
-  \end{aligned}
-
-Ferill hlutar í kasthreyfingu hefur því lögun fleygboga :math:`y=ax^2+bx+c` þar sem
-
-.. math::
-  \begin{aligned}
-    a&=-\frac{g}{2v_0\cos^2(\alpha_0)}\\
-    b&=\tan(\alpha_0) \\
-    c&=0
-  \end{aligned}
-
-.. figure:: ./myndir/2d/kasthr.svg
-  :align: center
-  :width: 80%
-
-------------------------
-
-Út frá jöfnunni fyrir ferlinum er meðal annars hægt að sjá hvar hluturinn lendir.
-Þá finnum við fyrir hvaða :math:`x` hæð boltans :math:`y` er núll, sem gerist tvisvar: í upphafi (:math:`x=0`) og þegar
-
-.. math::
-  \begin{aligned}
-    x&=\frac{2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
-    &=\frac{2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
-    &= \frac{\sin(2\alpha_0)v_0^2}{g} \\
-  \end{aligned}
-
-því :math:`\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)` .
-
-------------------------
-
-Það er líka hægt að finna hámarkshæð hlutar í kasthreyfingu með því að finna hágildi þessarrar jöfnu.
-Þá finnum við hvar afleiða fallsins með tilliti til :math:`x` er núll.
-
-Afleiðan er
-
-.. math::
-  y'=\tan(\alpha_0)-\frac{g}{v_0^2\cos^2(\alpha_0)}x
-
-Hápunktur fleygbogans er því þegar :math:`y'=0` eða:
-
-.. math::
-  \begin{aligned}
-    x&=\frac{\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
-    &= \frac{\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
-    &= \frac{\sin(2\alpha_0)v_0^2}{2g}
-  \end{aligned}
-
-.. ggb:: mkyudgwh
+  	f_n = F_{g,y} = F_g \cos{\theta} 49.0 \text{N} \cdot \cos(30°) = 42.4 \text{N}
 
 .. note::
-  Munið að eðlisfræði gengur ekki út á að muna jöfnur, heldur að kunna hvernig og hvenær á að nota þær.
-  Til dæmis er ástæðulaust að leggja mikla vinnu í að muna þessar formúlur, þegar það er lítið mál að leiða þær út frá hreyfijöfnunum eða að fletta þeim upp.
-  Við lausn bæði heimavekefna og prófdæma þá munið þið alltaf hafa aðgang að formúlublaði.
+  Þyngdarkrafturinn bendir *alltaf* beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.
 
--------------------
+Gormkraftur
+-----------
 
-.. eqt:: daemi-kast
-
-  **Æfingadæmi** Hvað þarf kasthornið :math:`\alpha_0` að vera til þess að kasta sem lengst fyrir fastan upphafshraða :math:`v_0`?
-
-  A) :eqt:`I` :math:`60^{\circ}`
-
-  #) :eqt:`C` :math:`45^{\circ}`
-
-  #) :eqt:`I` :math:`30^{\circ}`
-
-  #) :eqt:`I` Ekkert af ofangreindu
-
-  .. eqt-solution::
-    Við höfum leitt út jöfnu fyrir lengd kasts:
-
-    .. math::
-      x= \frac{\sin(2\alpha_0)v_0^2}{g}
-
-    Til þess að finna fyrir hvaða horn :math:`x` verður sem stærst þá diffrum við jöfnuna m.t.t. :math:`\alpha_0` og finnum fyrir hvaða :math:`\alpha_0` niðurstaðan er núll:
-
-    .. math::
-
-    	\frac{dx}{d\alpha_0} = \frac{v_0^2}{g} \cos(2\alpha_0) \cdot 2
-
-    Þá vitum við að :math:`\frac{dx}{d\alpha_0}=0` ef :math:`\cos(2\alpha_0)=0` (af því allar hinar stærðirnar eru fastar, óháðar :math:`\alpha_0`).
-
-    :math:`\cos(\theta)=0` ef :math:`\theta=90 ^{\circ}+ h\cdot 180 ^{\circ}` þar sem :math:`h` er heiltala. Hjá okkur er :math:`\theta=2\alpha_0` svo kastlengdin er mest þegar :math:`\alpha_0=45^{\circ} + h\cdot 90 ^{\circ}`. Við sjáum að lausnin :math:`\alpha_0=45^{\circ}` (þ.e. :math:`h=0`) er eina lausnin sem kemur til þar sem hinar kasta í allt aðrar áttir en þá sem við erum að skoða.
-
-    Þið gætuð líka hafa fundið út úr þessu með því að prófa mismunandi horn í smáforritinu hér að ofan.
-
-
-
--------------------
-
-Hringhreyfing
--------------
-
-Hröðunarvigurinn :math:`\overline{a}` hefur stefnu sem er óháð stefnu hraðavigursins :math:`\overline{v}`, en segir til um hvernig hraðavigurinn er að breytast.
-Þægilegt er að vinna með hröðunarvigurinn :math:`\overline{a}` í tveimur hlutum, annars vegar þáttinn samsíða hraðavigrinum (:math:`a_\parallel`)
-og hins vegar hornrétta þáttinn (:math:`a_\perp`) en þættir hröðunarvigursins hafa mismunandi áhrif á hraðavigurinn.
-
-.. figure:: ./myndir/2d/tvividd.svg
-  :width: 50%
-  :align: center
-
-:math:`a_\parallel` hefur bara áhrif á lengd hraðavigursins, sem oft er kölluð *ferð* hlutarins (e. speed).
-
-:math:`a_\perp` hefur bara áhrif á stefnu hraðavigursins, þ.e. segir til um hvernig hluturinn er að beygja.
-
-Ef hlutur hefur bara hröðun sem er hornrétt á hraðavigurinn (:math:`a_\parallel =0`) þá beygir hluturinn endalaust í sömu áttina en lengd hraðavigursins er föst, þ.e. *ferð* hlutarins er fasti. Úr verður *jöfn hringhreyfing* (e.uniform circular motion).
-
-.. tip::
-
-  Hringekja snýst með jöfnum hraða.
-  Barn á hringekjunni hefur hraðavigur sem er snertill við hringinn í staðsetningu barnsins.
-  Þar sem snúningshraðinn er jafn er ferð barnsins fasti, en hraðavigurinn er samt sem áður stöðugt að breytast.
-  Stefnan er það eina sem breytist svo barnið hlýtur að hafa hröðun sem er hornrétt á hraðann, þ.e. beint inn að miðjunni.
-
-  .. figure:: ./myndir/2d/hringekja.svg
-    :align: center
-    :width: 40%
-
-  Þessi hröðun kallast *miðsóknarhröðun* (e.centripetal acceleration).
-
-Um jafna hringhreyfingu gilda eftirfarandi jöfnur:
+Gormar, eða aðrir teygjanlegir hlutir, koma gjarnan fyrir í eðlisfræðilegum kerfum. Hver gormur á sér einkennandi *gormstuðul* (e. spring constant) :math:`k` sem segir til um hve erfitt það er að teygja gorminn umfram náttúrulega lengd sína. Til þess að teygja gorm með gormstuðul :math:`k` um vegalengdina :math:`x` þarf kraftinn:
 
 .. math::
-  \begin{aligned}
-    v &= \frac{2 \pi R}{T} \\
-    |\overline{a}|= a_\perp &= \frac{v^2}{R}\\
-    &= \frac{4 \pi^2 R}{T^2}
-  \end{aligned}
 
-Þar sem :math:`R` er radíus hringferilsins og :math:`T` er umferðartíminn (tíminn sem það tekur að fara einn hring).
+	F_x=kx
 
-------------------------
+Við getum séð frá jöfnunni að einingin fyrir :math:`k` er :math:`\text{N/m}`. Þessi jafna er oft kölluð *Lögmál Hookes* og hún gildir fyrir flesta gorma, svo lengi sem við erum ekki að teygja þá of mikið.
 
-.. eqt:: daemi-hring
+.. note::
+  Lögmál Hookes gildir fyrir gorma, hvort sem verið er að þjappa þá eða teygja.
 
-  **Æfingadæmi** Hvaða miðsóknarhröðun finnur barn fyrir á hringekju sem fer nákvæmlega 7 hringi á mínútu ef það situr 2.00 metra frá snúningsásnum?
+-------------------
 
-  A) :eqt:`C` :math:`1.07 \text{ m/s}^2`
+.. eqt:: daemi-kragorm
 
-  #) :eqt:`I` :math:`9.21 \text{ m/s}^2`
+  **Æfingadæmi** Hversu mikið lengist gormur með gormstuðul :math:`k=100 \text{ N/m}` saman þegar massinn :math:`m=2.00\text{ kg}` er hengdur í hann?
 
-  #) :eqt:`I` :math:`2.15 \text{ m/s}`
+  .. figure:: ./myndir/kraftar/gormur.svg
+    :width: 45%
+    :align: center
 
-  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
+  #) :eqt:`I` :math:`20.4\text{ m}`
+
+  #) :eqt:`I` :math:`5.10 \text{ m}`
+
+  #) :eqt:`C` :math:`0.196 \text{m}`
 
   .. eqt-solution::
 
-    Notum jöfnu fyrir jafna hringhreyfingu: :math:`|\overline{a}|= \frac{4 \pi^2 R}{T^2}`. Finnum umferðartímann :math:`T` sem segir okkur hve margar sekúndur það tekur hringekjuna að fara einn hring. Við vitum að hringekjan fer :math:`7` hringi á einni mínútu, þ.e. 60 sekúndum. Það tekur því :math:`T= 60/7 \text{s}` að fara einn hring. Þá fáum við:
+    Þyngdarhröðun jarðar dregur í massann :math:`m` með krafti :math:`F_g=mg`. Þá lengist gormurinn um :math:`x` og togar í massann í hina áttina með krafti :math:`F_x=kx`. Nú er massinn í kraftajafnvægi (fyrst hann er kyrr) og því er :math:`F_g=F_x`:
 
     .. math::
+      \begin{aligned}
+        F_g&=F_x\\
+        mg&=kx \\
+        x&=\frac{mg}{k} =\frac{2.00\text{kg}\cdot 9.80 \text{m/s}^2}{100\text{N/m}} \\
+        x&= 0.196 \text{m}
+      \end{aligned}
 
-    	|\overline{a}|= \frac{4 \pi^2 R}{T^2} = \frac{4\pi^2 \cdot (2\text{ m})}{(\frac{60 \text{ s}}{7})^2} = 1.07 \text{ m/s}^2
+-------------------
 
+Vægi
+----
 
+*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`.
 
-------------------------
+.. math::
 
-Þegar hlutur í hringhreyfingu hefur ekki fasta ferð er talað um *ójafna hringhreyfingu* (e.nonuniform circular motion).
-Þá er hröðunarvigurinn ekki hornréttur á hraðann og lengd hraðavigursins breytileg með tíma.
+	M=F\cdot r \qquad  \qquad  M_{tot} = \sum_i M_i= \sum_i F_i\cdot r_i
 
-Takið eftir að stærðirnar :math:`\frac{d |\overline{v}|}{dt}` og :math:`\Bigl|\frac{d \overline{v}}{dt}\Bigr|` eru ekki endilega jafnar.
-Sú fyrri, afleiða ferðarinnar :math:`|\overline{v}|`, er sá þáttur hröðunarinnar sem er samsíða hraðanum, :math:`a_{\parallel}`.
-Hún er núll í jafnri hringhreyfingu þar sem ferðin er fasti.
-Sú seinni er stærð afleiðu hraðans sem er stærð hröðunarvigursins.
-Hún er aðeins núll þegar hraðavigurinn er fasti, þ.e. þegar engin hröðun er. Þá ferðast hluturinn í beina línu með föstum hraða.
+Þar sem :math:`r` er fjarlægð kraftsins :math:`F` frá tilteknum punkt, sem reikna á vægið um.
+Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.
+
+.. figure:: ./myndir/kraftar/vaegiskilgr.svg
+  :align: center
+  :width: 60%
+
+Hér má sjá tvo jafnstóra krafta, :math:`F_1` og :math:`F_2`, verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
+Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægið frá :math:`F_2` er meira vegna þess að armurinn er lengri, :math:`r_2>r_1`. Heildarvægið um veltipunktinn er þá summan:
+
+.. math::
+
+	M_{tot} = \sum_i M_i = M_1 + M_2 = F_1r_1+F_2r_2
 
 .. tip::
-  Lykkja á rússíbana er dæmi um ójafna hringhreyfingu.
-  Ferð rússíbanavagnsins er ekki fasti á meðan hann ferðast eftir lykkjunni, heldur er mest neðst og minnst efst.
-  Takið eftir hvernig hröðunavigurinn breytist og reynið að sjá fyrir ykkur þætti hans á mismunandi stöðum í lykkjunni.
+  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til halda kassanum kyrrum?
 
-  .. figure:: ./myndir/vinna/nonuniform.svg
-    :width: 40%
+  .. figure:: ./myndir/kraftar/vog.svg
     :align: center
+    :width: 60%
+
+  **Lausn**
+
+  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er jafn stórt og vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera núll.
+
+  Reiknum nú heildarvægið um punktinn :math:`A` :
+
+  .. math::
+    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 500 \text{N m}-F\cdot 5\text{ m}
+
+  Heildarvægið er núll ef :math:`500 \text{N m}=F \cdot 5\text{ m}` þ.e.
+
+  .. math::
+    F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}

@@ -1,223 +1,143 @@
-Skriðþungi
-==========
+.. _s.verklegt:
 
-Hugsum okkur hlut sem hefur fastan massa :math:`m`. Nú verður þessi hlutur fyrir einhverjum kröftum, en skv. fyrsta lögmáli Newtons getum við skrifað:
+Verklegar tilraunir
+===================
 
-.. math::
-  \sum \overline{F} = m\overline{a}
+	*The principle of science, the definition, almost, is the following:
+	The test of all knowledge is experiment. Experiment is the sole judge of scientific "truth".
+	But what is the source of knowledge? Where do the laws that are to be tested come from?
+	Experiment, itself, helps to produce those laws, in the sense that it gives us hints.
+	But also needed is imagination to create from these hints the great generalizations
+	- to guess at the wonderful, simple, but very strange patterns beneath them all,
+	and then to experiment to check again whether we have made the right guess.*
+	(Richard Feynman)
 
-þar sem :math:`\overline{a}` er hröðunin sem hluturinn fær vegna kraftanna. Þar sem hröðun er tímaafleiða hraða, :math:`\overline{a} = \frac{d\overline{v}}{dt}`, þá getum við skrifað:
+Til er saga af ítalska vísindamanninum Galileo Galilei frá um 1590.
+Hann var þá stærðfræðiprófessor við háskólann í Pisa.
+Á þessum tíma var viðtekin kenning Aristótelesar um þyngdaraflið, að hlutir féllu til jarðar með hraða sem færi eftir massa hlutarins.
+Galileo var ósammála þessu og vildi meina að fallhraði væri óháður massa.
+Til þess að komast til botns í þessu segir sagan að hann hafi tekið sér stöðu efst í hinum fræga skakka turni í Pisa með tvo eins en misþunga bolta.
+Ef þeim væri sleppt á sama tíma myndu þeir, samkvæmt kenningu Galileos, lenda á sama tíma, sem var einmitt það sem gerðist þegar hann lét þá gossa niður af turninum.
+Þar með hafði Galileo tekist að afsanna þyngdaraflskenningu Aristótelesar.
 
-.. math::
-  \sum \overline{F} = m \frac{d\overline{v}}{dt}
+Sagan er líklega ekki alveg sönn, en góð er hún engu að síður því hún sýnir hversu mikilvægar tilraunir eru eðlisfræði.
+Eina leiðin til að komast að vísindalegum sannleik er að prófa hann með tilraunum.
+Ef tilraunir fella kenningu er hægt að þurrka hana af borðinu og hefja leit að nýrri og betri.
 
-Við skilgreinum *skriðþunga* (e. momentum) hlutar á hreyfingu sem margfeldi massans og hraðans sem hann er á.
+.. Hægt er að búa til ýmis flókin stærðfræðileg líkön sem líta út fyrir að lýsa raunveruleikanum, en eina leiðin til að sýna fram á að þau séu ekki bara hugarórar er að prófa þau.
+.. Þá eru smíðaðar tilraunir til að skoða einhverja sértæka hegðun raunheimsins og niðurstöður bornar saman við líkanið.
 
-.. math::
+---------------
 
-  \overline{p}=m\overline{v}
+Ein tilraunanna sem framkvæmd er verklega hluta Eðlisfræði 1 snýst um einfalda pendúla og hreyfingu þeirra.
+Það er vel þekkt fyrirbæri og hefur verið rannsakað í þaula.
+Með mörgum tilraunum og úrvinnslu gagnanna var hægt að smíða líkan sem lýsir raunveruleikanum svo vel að hægt er að tala um vísindalegan sannleik.
+Þið fáið svo tækifæri til að spreyta ykkur á prófun þessa líkans og í leiðinni æfa ykkur í vísindalegum aðferðum við tilraunir.
 
-.. note::
+Verklegar æfingar
+-----------------
+Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.
+Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma. Í kennslustofum ætluðum verklegum tilraunum eru strangari reglur um umgengni, t.d. um neyslu matar og drykkja, sem öllum ber að kynna sér og fylgja.
+Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir. Að tilrauninni lokinni þarf hópurinn að klára vinnubókina áður en henni er síðan skilað til yfirferðar hjá kennara.
 
-	Þar sem skriðþungi er margfeldi vigurs (hraðans) og skalarstærðar (massans) þá sjáum við að *skriðþungi er vigur*. Eining skriðþunga er :math:`\text{kg}\cdot\text{m/s}` sem er það sama og :math:`\text{N}\cdot\text{s}`
+`Þetta skjal <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ fjallar um meðferð og úrvinnslu gagna og er þess virði að lesa.
+Á heimasvæði `Martins Swift <https://notendur.hi.is/~martin/e0/>`_ má nálgast allskonar ítarefni um verklegar tilraunir.
 
-Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan massalitlir hlutir á hægri hreyfingu mjög lítinn.
+Verkbækur
+---------
+Hver hópur þarf að halda vinnubók yfir allar tilraunirnar, þar skal safna saman öllu sem við kemur tilraununum.
+Rúðustrikuð stílabók, A4 eða A5, hentar vel í verkið.
+Gögn sem eru skráð á laus blöð skal hefta eða líma inn í bókina.
 
-Því gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem verður á skriðþunga hlutarins.
+Helstu efnisatriði vinnubókar fyrir hverja tilraun eru:
 
-.. math::
-  \sum \overline{F} = \frac{d\overline{p}}{dt}
+* Skilgreining á tilraun og aðstæðum ásamt rissmynd af uppstillingu
+* Skilgreining og algebraisk nöfn á allar mældar og afleiddar stærðir
+* Frumgögn
+* Gagnavinnsla, grafisk framsetning gagna og túlkun
+* Samanburður við líkön ef við á og ályktun um samræmi/misræmi mælinga og líkans.
+* Slóðin frá frumgögnum til ályktana þarf alltaf að vera skýr og óslitin.
 
-Þetta þýðir því að það ef koma á massamiklum hlut á mikla hreyfingu úr kyrrstöðu þarf mikinn kraft.
-Hugsaðu þér að þú sért að versla í innkaupakerru. Í upphafi ferðarinnar er kerran tóm og hún lætur auðveldlega að stjórn. Eftir því sem vörurnar safnast í hana, þyngist hún og það verður sífellt erfiðara (krefst meiri krafts) að koma henni af stað. Að sama skapi er erfitt að stoppa hana sé hún komin á skrið.
+Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé vel unnin og skýr.
 
-.. tip::
-  :math:`m=1600` kg bíll keyrir áfram á :math:`|\overline{v}|=5` m/s.
-  Skriðþungi hans er :math:`|\overline{p}|=m|\overline{v}|= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
-  Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.
+`Meira um verkbækur <https://notendur.hi.is/~martin/e0/verkbok/>`_ af síðu Martins.
 
-  Byssukúla hefur hraðann :math:`|\overline{v}|=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
-  Skriðþungi hennar er þá  :math:`|\overline{p}|=m|\overline{v}| =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.
+Óvissureikningar
+----------------
 
+Allar mælingar hafa endanlega nákvæmni, svo hverri mælingu þurfa að fylgja upplýsingar um nákvæmni hennar. Mæling er birt sem (máltala :math:`\pm` óvissa) [eining].
 
-Atlag
------
-Hugsum okkur hlut sem verður fyrir kröftum (sem hafa summuna :math:`\sum \overline{F}`) frá tímanum :math:`t_1` til tímans :math:`t_2`. Þá er *atlag* (e. impulse) kraftsins margfeldi kraftanna við lengd tímabilsins:
+Óvissa er ekki galli heldur eðlilegur hluti af mælingu. Óvissu þarf mælandi að meta og hefur stundum ekki annað en skynsemina til þess. Óvissumatið verður alltaf á ábyrgð mælingamanns.
 
-.. math::
-  \overline{J} = \sum \overline{F}(t_2-t_1) = \sum \overline{F} \Delta t
+Látum :math:`A \pm \Delta A` og :math:`B \pm \Delta B` vera mælistærðir með óvissum og látum :math:`k` vera fasta.
 
-Ef hluturinn verður fyrir sama kraftinum allt tímabilið þá er atlagið jafnt breytingunni á skriðþungnanum:
+---------------
 
-.. math::
-  \overline{J} = \overline{p_2} - \overline{p_1} = \Delta \overline{p}
-
-.. tip::
-  Hvað þarf að beita miklum (jöfnum) krafti til þess að stöðva 50 kg innkaupakerru sem fer á 6 m/s, ef það þarf að takast á 3 sekúndum?
-
-  .. figure:: ./myndir/skrth/kerra.svg
-    :align: center
-    :width: 60%
-
-  Skriðþunginn í upphafi er :math:`p_1 = mv_1 = 50 \text{ kg} \cdot 6 \text{m/s} = 300 \text{kg m/s}` . Skriðþunginn í lokin er :math:`p_2 = 0` því :math:`v_2=0`. Við gerum ráð fyrir að aðeins einn kraftur verki, :math:`\overline{F}`, svo :math:`\sum \overline{F} = \overline{F}` . Þar sem krafturinn verkar bara í einni vídd þá dugar að hugsa bara um stærð vigursins, :math:`F`. Hér er :math:`\Delta t = 3 \text{ s}`
-
-  .. math::
-    \begin{aligned}
-    J=F\Delta t &= \Delta p  = p_2-p_1\\
-    F &= \frac{p_2-p_1}{\Delta t} \\
-     &= \frac{0-300 \text{kg m/s}}{3 \text{ s}} \\
-     &= -100 \text{ N}
-    \end{aligned}
-
-  Krafturinn fær neikvætt gildi því hann bendir á móti hreyfingunni.
-
-
-Varðveisla
-----------
-
-Varðveisla, líkt og orka, er varðveitt stærð í lokuðu eðlisfræðilegu kerfi. Skriðþungi kerfis er varðveittur *ef summa allra kraftanna sem verka á kerfið er núll*.
-
-Skriðþungi einstakra hluta innan kerfisins getur vel breyst, t.d. í árekstrum, en heildarskriðþunginn er varðveittur.
-
-Ef við táknum skriðþunga kerfis fyrir einhvern atburð með :math:`p_i` (:math:`i` fyrir initial í ensku) og skriðþunga kerfisins eftir atburðinn með :math:`p_f` (:math:`f` fyrir final í ensku) þá getum við sett fram skriðþungavarðveislu fyrir kerfið með:
+Þegar :math:`A \pm \Delta A` er margfölduð með fastanum
+:math:`k` þá fæst að
 
 .. math::
+	k \cdot \left( A \pm \Delta A  \right)= kA \pm k\Delta A
 
-	\overline{p}_i=\overline{p}_f
+---------------
 
-.. note::
-  Skriðþungi er varðveittur ef engir kraftar koma utan frá.
-
-.. tip::
-
-  Skytta heldur laust á riffli þannig að þegar hún hleypir af skoti getur hann hreyfst afturfyrir sig. Riffillinn hefur massann :math:`m_r=3.00\text{ kg}` og kúla sem hann skýtur hefur massann :math:`m_k=5.00\text{ g} = 5.00\cdot 10^{-3}\text{ kg}`. Ef kúlan fer á hraðanum :math:`|\overline{v}_k| = 300 \text{ m/s}` til hægri, hve hratt kastast riffillinn til vinstri við skotið?
-
-  **Lausn**
-
-  Hér getum við gert ráð fyrir að engir utanaðkomandi kraftar séu að verki, þar sem skyttan heldur laust á rifflinum (þ.e. er ekki að ýta á móti hreyfingunni). Vegna þess að allar hreyfingarnar í þessu dæmi gerast eftir sömu línunni (kúlan ferðast í aðra áttina en riffillinn í hina) þá þarf lítið að velta því fyrir sér að skriðþungi er vigur. Það er einfaldara að hugsa að kúlan hafi jákvæðan hraða (fari áfram) en að riffillinn hafi neikvæðan (fari afturábak).
-
-  Skriðþunginn fyrir skotið er núll, af því bæði byssan og kúlan eru kyrrstæðar (hafa hraðann :math:`v_i=0`), þ.e. :math:`p_{k,i} = 0`, :math:`p_{r,i}=0`.
-
-  Heildarskriðþunginn fyrir skotið er:
-
-  .. math::
-
-  	p_i=p_{k,i} +p_{r,i} = 0 \text{ kg m/s}
-
-  Þar sem skriðþunginn er varðveittur þarf hann líka að vera núll eftir skotið, þó báðir hlutirnir séu á hreyfingu, þ.e. :math:`p_i=p_f`
-
-  Byssukúlan er massalítil en fer hratt og hefur skriðþungann:
-
-  .. math::
-
-  	p_{k,f} = m_k v_k = 5.00\cdot 10^{-3}\text{ kg} \cdot 300 \text{ m/s} = 1.50 \text{N s}
-
-  Heildarskriðþunginn eftir skotið er:
-
-  .. math::
-
-  	p_f=p_{k,f} + p_{r,f}
-
-  Skriðþungavarðveisla gefur okkur að :math:`p_f =0 \text{ kg m/s}` og því er :math:`p_{r,f} =- p_{k,f}`
-  Þar sem við vitum bæði hraðann og skriðþungann er lítið mál að finna hraða riffilsins:
-
-  .. math::
-
-  	v_{r,f} = \frac{p_{r,f}}{m_{r}} = \frac{-1.5 \text{ kg m/s}}{3.00 \text{kg}} = -0.5 \text{m/s}
-
-
-
-
-Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa massa :math:`m_1` og :math:`m_2` og önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`{v}_0`.
-
-Hér erum við að fjalla um hraða eftir beinni línu og því getum við hunsað það tímabundið að skriðþungi sé vigur.
-
-Þá er heildarskriðþungi kerfisins fyrir áreksturinn :math:`{p}_i=m_1\overline{v}_0`.
-Við skulum kalla hraða kúlu 1 eftir áreksturinn :math:`{v}_1` en hraða kúlu 2 :math:`{v}_2`. Hvað gerist þegar þær rekast saman?
-
-.. figure:: ./myndir/skrth/skrth1.svg
-  :align: center
-  :width: 60%
-
-Fullkomlega fjaðrandi árekstur
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-Kúlurnar gætu verið þannig gerðar að þær skelli harkalega saman. Það er kallað *fullkomlega fjarðandi árekstur* þegar kúla 2 rekur við öllum skriðþunganum sem kúla 1 hafði. Þá stendur kúla 1 eftir kyrr (:math:`v_1=0`) en kúla 2 ferðast áfram með einhvern hraða :math:`v_2`. Heildarskriðþunginn eftir áreksturinn er því :math:`p_f=m_2v_2`
-
-.. figure:: ./myndir/skrth/skrth2.svg
-  :align: center
-  :width: 60%
-
-Fyrst skriðþunginn er varðveittur þá er:
+Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru lagðar saman fáum við:
 
 .. math::
-  \begin{aligned}
-    p_i&=p_f \\
-    m_1 v_0 &= m_2 v_2
-  \end{aligned}
+	\left( A \pm \Delta A \right) + \left( B \pm \Delta B \right) = \left( A + B \right) \pm \left( \Delta A + \Delta B \right)
 
-þ.a. hraði seinni kúlunnar eftir áreksturinn er:
+---------------
 
-.. math::
-  v_2 = \frac{m_1 v_0}{m_2}
-
-Ef kúlurnar tvær hafa sama massann :math:`m_1=m_2` þá mun seinni kúlan fara áfram með hraðanum :math:`v_2=v_0`
-
-Fullkomlega ófjaðrandi árekstur
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-En hvað ef kúlurnar eru þannig gerðar að þær klístrist saman við áreksturinn? Þá er talað um *fullkomlega ófjaðrandi árekstur* og kúlurnar myndu ferðast áfram, klesstar saman, en með annan hraða en fyrir árekstur. Heildarskriðþunginn eftir áreksturinn er þá skriðþungi kúlu 1 auk skriðþunga kúlu 2:
+Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru dregnar frá hvor annarri fáum við:
 
 .. math::
-  \begin{aligned}
-    p_f&=p_1+p_2 \\
-    &= m_1v_1 +m_2v_2
-  \end{aligned}
+	\left( A \pm \Delta A \right) - \left( B \pm \Delta B \right) = \left( A - B \right) \pm \left( \Delta A + \Delta B \right)
 
-.. figure:: ./myndir/skrth/skrth3.svg
-  :align: center
-  :width: 60%
+---------------
 
-Hér er skriðþunginn líka varðveittur, svo:
+Þegar :math:`A \pm \Delta A` og :math:`B \pm \Delta B` eru margfaldaðar saman fáum við:
 
 .. math::
-  \begin{aligned}
-    p_i&=p_f \\
-    m_1 v_0 &= m_1v_1 +m_2v_2 \\
-    m_1 v_0 &= (m_1+m_2)v_2
-  \end{aligned}
+	\left( A \pm \Delta A \right) \cdot \left( B \pm \Delta B \right) = AB \pm \Delta A B \pm A \Delta B \pm \Delta A \Delta B
 
-því þær fara á sama hraða eftir áreksturinn :math:`v_1=v_2`. Því er hraðinn sem þær fara á:
+en þar sem :math:`\Delta A` og :math:`\Delta B` eru yfirleitt litlar stærðir í samanburði við :math:`A` og :math:`B` leyfum við okkur að
+sleppa :math:`\Delta A \Delta B` liðnum. Þá höfum við fengið að:
 
 .. math::
-  v_1=v_2 = \frac{m_1v_0}{m_1+m_2}
+	\left( A \pm \Delta A \right) \cdot \left( B \pm \Delta B \right) = AB \pm B \Delta A  \pm A \Delta B
 
-Ef kúlurnar hafa sama massann :math:`m_1=m_2` þá er hraðinn sem kúlurnar ferðast saman á hálfur upprunalegi hraðinn: :math:`v_1=v_2=\frac12 v_0`.
-
-Önnur tilvik
-~~~~~~~~~~~~
-
-Langflestir árekstrar hluta í raunveruleikanum eru hvorki fullkomlega fjaðrandi né fullkomlega ófjaðrandi.
-Skriðþunginn á engu að síður að vera varðveittur.
-
-.. figure:: ./myndir/skrth/skrth5.svg
-  :align: center
-  :width: 45%
-
-Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram líka (en hægar). Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:
+Svona má reikna óvissuna á margfeldi mældra stærða. Oft getur þó verið gagnlegra að koma henni á eftirfarandi form (með því að taka :math:`AB` út fyrir sviga):
 
 .. math::
-  m_1v_0 = m_1v_1+m_2v_2
+	\left( A \pm \Delta A \right) \cdot \left( B \pm \Delta B \right) = AB \left( 1 \pm \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right) \right)
 
-Þetta er jafna með tvær óþekktar stærðir, :math:`v_1` og :math:`v_2`. Því eru til *óendanlega margar* lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar til að leysa það. Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna, hvort þau eru hörð eða mjúk. Ein lausn er að önnur kúlan endi á að fara þrefalt hraðar en hin (:math:`v_2 = 3v_1`) .
+---------------
 
-Það eru líka til lausnir þar sem fyrri kúlan fær hraða í gagnstæða átt og skoppar til baka. Þá er :math:`v_1<0`
+Fyrir deilingu tveggja mældra stærða :math:`A \pm \Delta A` og :math:`B \pm \Delta B` fáum við:
 
+.. math::
+	\frac{\left( A \pm \Delta A \right)}{\left( B \pm \Delta B \right)} =
+	\frac{A}{B}\left( 1 \pm \left( \frac{\Delta A}{A} + \frac{\Delta B}{B} \right) \right)
 
-.. figure:: ./myndir/skrth/skrth4.svg
-  :align: center
-  :width: 60%
+---------------
 
-Varðveisla í tveimur víddum
----------------------------
+Gerum loks ráð fyrir að við höfum stærð :math:`x \pm \Delta x` og fall :math:`f(x)`. Óvissuna í :math:`f(x)` má reikna með eftirfarandi hætti (Taylor-liðun):
+
+.. math::
+	f(x \pm \Delta x) = f(x) \pm f'(x)\Delta x
+
+þar sem að :math:`f'(x)` er gildi afleiðu :math:`f` í :math:`x`.
+
+--------------
+
+Á eftirfarandi slóðum má finna nokkur dæmi um óvissureikninga;
+
+.. Goodshit Guðný - þetta er haxbert
+
+`Skjal um meðferð gagna <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ af síðu Ara Ólafssonar
+
+`Almennt um óvissur <https://notendur.hi.is/~martin/e0/ovissur_maelistaerda/>`_ af síðu Martins Swifts.
+
+`Afleiddar óvissur <https://notendur.hi.is/~martin/e0/ovissur_afleiddra_staerda/>`_ af síðu Martins Swifts.
+
+`Óvissa hallatölu <https://notendur.hi.is/ario/e1/vidauk/hallatala.pdf>`_ af síðu Ara Ólafssonar.

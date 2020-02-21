@@ -1,565 +1,363 @@
-Hraði og hröðun
-===============
+Hreyfing í tveimur víddum
+=========================
+Hingað til hefur verið fjallað um einvíða hreyfingu, þar sem staðsetning, hraði og hröðun eru öll eftir sömu beinu línunni.
+Í eðlisfræði er hins vegar nauðsynlegt að geta lýst hreyfingu í tveimur og jafnvel þremur víddum.
 
-Hraði
------
+Hlutur á hreyfingu hefur breytilega staðsetningu sem táknuð má með ferli í hnitakerfi.
 
-*Hraði* (e. velocity) hlutar á hreyfingu er skilgreindur sem breyting á staðsetningu á tímaeiningu.
-Algengast er að nota metra á sekúndu (m/s) í útreikningum, enda er það úr SI-einingakerfinu, en í daglegu tali er oft talað um kílómetra á klukkustund.
+Hraði hlutarins er snertill við feril hlutarins og
+hröðun hans bendir alltaf inn í kúpta hluta ferilsins.
 
-Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðsetningu við tímann :math:`t_2` með :math:`x_2` þá reiknum við meðalhraðann með
+Ferillinn er bein lína ef hraði hlutarins hefur fasta stefnu, þ.e. hluturinn hefur enga hröðun eða ef hröðunin er samsíða hreyfingunni. Ef hröðunin er ekki samsíða hreyfingunni þá veldur hún breytingu á stefnu hraðans og þá beygir ferillinn í átt að ferlinum.
 
-.. math::
-  v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
+Hröðunarvigurinn segir til um hvernig hraðinn og stefna hans eru að breytast.
 
-.. note::
-  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði og stærðfræði til að tákna mismun og breytingar.
-
-.. note::
-  Hraði hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
-  Hraði getur verið í allar stefnur :math:`(x,y,z)` svo hraðavigurinn er yfirleitt táknaður með :math:`\overline{v}=(v_x, v_y, v_z)` .
-  Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, þ.e. aðeins einn þáttur hraðavigursins er ekki núll.
-
-.. tip::
-
-  Allra bestu hlaupararnir í 100 metra spretthlaupi klára hlaupið á um 10 sekúndum. Hver er meðalhraði hlauparanna í kílómetrum á klukkustund?
-
-  **Lausn**
-
-  Meðalhraði hlauparanna, í metrum á sekúndu, er:
-
-  .. math::
-    \frac{100\text{ m}}{10\text{ s}}=10\frac{\text{m}}{\text{s}}
-
-  Breytum kílómetrum í metra og sekúndum í klukkustundir.
-  Við vitum að :math:`1 \text{ km} = 1 \cdot 10^3 \text{ m} =1000 \text{ m}` og :math:`1 \text{ klst}=60 \text{ mínútur}=60\cdot60 \text{ sekúndur}=3600 \text{ sekúndur}`
-
-  Því gildir að:
-
-  .. math::
-    \begin{aligned}
-      \frac{1 \text{ km}}{1000 \text{ m}}&=1 \\
-      \frac{1 \text{ klst}}{3600\text{ s}}&=1
-    \end{aligned}
-
-  Það má alltaf margfalda stærð með 1 og því getum við breytt :math:`10` m/s í km/klst með því að margfalda:
-
-  .. math::
-    \begin{aligned}
-      10\frac{\text{ m}}{\text{ s}}&=10\frac{\text{ m}}{\text{ s}}\cdot \frac{1 \text{ km}}{1000 \text{ m}} \cdot \frac{3600\text{ s}}{1 \text{ klst}}\\
-      &=\frac{10\cdot 1 \cdot 3600}{1000 \cdot 1} \frac{\text{ km}}{\text{ klst}} \\
-      &=36 \frac{\text{km}}{\text{klst}}
-    \end{aligned}
-
-  því einingarnar styttast út.
-
------------------------
-
-.. eqt:: daemi-hradi1
-
-  **Æfingadæmi** Hversu langt kemst maður sem gengur á hraðanum :math:`v=3 \text{ m/s}` á einni mínútu?
-
-  A) :eqt:`I` 300 metra
-
-  #) :eqt:`I` 3 metra
-
-  #) :eqt:`C` 180 metra
-
-  #) :eqt:`I` Ekkert af ofangreindu
-
-  .. eqt-solution::
-    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
-
-    .. math::
-      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
-
------------------------
-
-
-Hröðun
-------
-*Hröðun* (e. acceleration) hlutar á hreyfingu er skilgreindur sem breyting á hraða á tímaeiningu.
-Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tímann :math:`t_2` er :math:`v_2` þá reiknum við hröðunina með:
-
-.. math::
-  a=\frac{v_2-v_1}{t_2-t_1}=\frac{\Delta v}{\Delta t}
-
-Þegar hröðunin er núll þá er hraðinn fastur, þ.e. ekki að breytast með tíma.
-
-.. note::
-  Líkt og hraði þá er hröðun líka :ref:`vigur <s.vigrar>` með stærð og stefnu.
-  Hröðunarvigurinn er yfirleitt táknaður með :math:`\vec{a}=(a_x,a_y,a_z)` .
-
-  **Hröðunarvigurinn og hraðavigurinn eru ekki endilega samstefna.**
-
-.. tip::
-  Til þess að eldflaug geti komist úr þyngdarsviði jarðarinnar þarf hún að ferðast með hraðanum :math:`11.2` km/s.
-  Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstöðu og er komin í lausnarhraðann eftir 10 mínútur?
-
-  **Lausn**
-
-  10 mínútur eru 600 sekúndur, hér er því :math:`t_2=600` s og :math:`v_2=11.2` km/s :math:`=11200` m/s. Þar sem eldflaugin byrjar í kyrrstöðu er :math:`v_1=0` m/s og :math:`t_1=0`.
-  Því þarf hröðunin að vera
-
-  .. math::
-    a=\frac{v_2-v_1}{t_2-t_1} =\frac{11200 \text{m/s}-0 \text{m/s}}{600 \text{s}-0\text{s}}=\frac{11200 \text{m/s}}{600\text{s}}=18.67 \text{m/s}^2
-
------------------------
-
-.. eqt:: daemi-hrodun
-
-  **Æfingadæmi** Hver er hraði eldflaugar eftir tvær sekúndur ef hún byrjar með hraðann :math:`v_i=3\text{ m/s}` og hægir á sér með hröðuninni :math:`a=-1 \text{ m/s}^2`?
-
-  A) :eqt:`C` :math:`v_f=1\text{m/s}`
-
-  #) :eqt:`I` :math:`v_f=-1\text{m/s}`
-
-  #) :eqt:`I` :math:`v_f=2\text{m/s}`
-
-  #) :eqt:`I` Ekkert af ofangreindu
-
-  .. eqt-solution::
-    Hröðun er breyting á hraða á tímaeiningu, þ.e.
-
-    .. math::
-
-    	a=\frac{\Delta v}{\Delta t}
-
-    Umritum þessa jöfnu og fáum
-
-    .. math::
-
-      \Delta v= a\Delta t = -1\frac{\text{m}}{\text{s}^2}\cdot 2\text{s} = -2\frac{\text{m}}{\text{s}}
-
-    Þar sem :math:`\Delta v = v_f-v_i` þá sést að :math:`v_f = v_i+\Delta v = 3\text{ m/s}-2\text{ m/s}=1\text{ m/s}`
-
-
------------------------
-
-Myndræn túlkun
---------------
-
-Sé *staðsetning* hlutar (:math:`x`) teiknuð upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hraða* hlutarins, enda er :math:`v=\frac{\Delta x}{\Delta t}`. Hér er það gert fyrir fyrra dæmið:
-
-.. image:: ./myndir/hradi/hlauparar.svg
-  :width: 70 %
-  :align: center
-
-Gröf sem sýna staðsetningu sem fall af tíma eru oft kölluð :math:`x-t` gröf.
-
------------------
-
-Sé *hraði* hlutar (:math:`v`) teiknaður upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hröðun* hlutarins, enda er :math:`a=\frac{\Delta v}{\Delta t}`. Hér er það gert fyrir seinna dæmið:
-
-.. image:: ./myndir/hradi/eldflaug.svg
-  :width: 70 %
-  :align: center
-
-Gröf sem sýna hraða sem fall af tíma eru oft kölluð :math:`v-t` gröf.
-
-----------------
-
-.. note::
-  Á :math:`x-t` grafi þýðir lárétt lína að *staðsetning hlutarins sé föst*, þ.e. að staðsetning hans sé ekki að breytast. Þá hlýtur hraði hlutarins að vera núll (:math:`v=0`) því hallatala línunnar er núll.
-
-  Á :math:`v-t` grafi þýðir lárétt lína að *hraði hlutarins sé fastur*, þ.e. að hraði hans sé ekki að breytast. Þá hlýtur hröðun hlutarins að vera núll (:math:`a=0`) því hallatala línunnar er núll.
-
-.. tip::
-  Blettatígur sér antílópu í 35 m fjarlægð og hleypur af stað.
-  Einni sekúndu síðar hefur antílópan áttað sig á hættunni og hleypur af stað.
-  Blettatígrar geta hlaupið á 99 km/klst (en aðeins í 100 metra sprettum) en antílópur geta hlaupið á hraðanum 81 km/klst og hafa þol í lengri vegalengdir.
-  Ef gert er ráð fyrir hraðabreyting dýranna taki engan tíma (e. immediate, instantaneous), mun antílópan lifa af? Ef ekki, hvenær nær blettatígurinn bráðinni?
-
-  **Lausn**
-
-  Byrjum á að breyta í SI-einingar. Fyrir blettatígurinn:
-
-  .. math::
-    99 \frac{\text{ km}}{\text{ klst}}\cdot \frac{1\text{ klst}}{3600\text{ s}} \cdot \frac{1000\text{ m}}{1 \text{ km}} = \frac{99}{3.6} \frac{\text{m}}{\text{s}} = 27.5\frac{\text{m}}{\text{s}}
-
-  Fyrir antílópuna:
-
-  .. math::
-    81 \frac{\text{ km}}{\text{ klst}} =  \frac{81}{3.6} \frac{\text{ m}}{\text{ s}} = 22.5\frac{\text{ m}}{\text{ s}}
-
-  Á þessari fyrstu sekúndu kemst blettatígurinn 27.5 metrum nær antílópunni, þá eru 7.5 metrar á milli þeirra.
-  Mismunurinn á hraða þeirra er :math:`27.5\frac{\text{ m}}{\text{ s}}-22.5\frac{\text{ m}}{\text{ s}}=5\frac{\text{ m}}{\text{ s}}` .
-  Því myndi það taka blettatígurinn :math:`\frac{7.5\text{ m}}{5 \text{m/s}}=1.5 \text{ s}` að loka bilinu og ná antílópunni.
-  Blettatígurinn nær antílópunni **2.5 sekúndum** eftir að hann hleypur af stað.
-
-  Svona dæmi er oft þægilegt að leysa myndrænt. Hér er staðsetning dýranna teiknuð sem fall af tíma, en blái ferillinn táknar antílópuna og rauða blettatígurinn. Sjá má að hallatala rauða ferilsins er meiri en bláa, vegna þess að blettatígurinn hleypur hraðar en antílópan. Þar sem hallatölur línanna er ekki sú sama hljóta línurnar að skerast, ef blettatígurinn getur hlaupið nógu lengi. Blettatígurinn nær antílópunni þegar ferlarnir skerast en hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn :math:`t=3.6363` m/s er merktur inn því það er tíminn sem það tæki blettatígurinn að verða örmagna eftir sinn 100 metra sprett.
-
-  .. figure:: ./myndir/hradi/antilopa.svg
+.. image:: ./myndir/2d/hrodun.svg
     :align: center
+    :width: 40%
 
-
-.. _s.hreyfijofnur:
-
-Augnablikshraði og augnablikshröðun
------------------------------------
-
-Ef það er hröðun í kerfinu þá er hraði hlutar ekki jafn allan tímann, en þarf að reikna *augnablikshraða* hlutarins.
-Þá er hraðinn reiknaður með að skoða staðsetninguna með afar stuttu millibili, við tímann :math:`t` og :math:`t+h` þar sem :math:`h` er mjög lítil tala.
-Það er það sama og að reikna *afleiðu* (diffra, deilda, e. differentiate) staðsetningarinnar m.t.t. tíma:
-
-.. math::
-  v=\lim_{h\to 0} \frac{x_{t+h}-x_{t}}{(t+h) - t} = \lim_{h\to 0}\frac{x_{t+h}-x_{t}}{h} = \frac{dx}{dt}
-
-Sömuleiðis er *augnablikshröðun* hlutar afleiða hraðans m.t.t. tíma:
-
-.. math::
-  a=\lim_{h\to 0} \frac{v_{t+h}-v_{t}}{(t+h) - t} = \lim_{h\to 0}\frac{v_{t+h}-v_{t}}{h} = \frac{dv}{dt}
-
-Út frá þessum skilgreiningum getum við leitt út *hreyfijöfnurnar* (e. kinematic equations) fyrir hlut sem hefur upphafsstaðsetningu :math:`x_0` , upphafshraða :math:`v_0` og fasta hröðun :math:`a`:
-
-----------------------------------------------------
-
-.. math::
-    \begin{aligned}
-      v&=v_0+a\cdot t \qquad &\text{Hraði sem fall af tíma} \\
-      x&=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 \qquad & \text{Staðsetning sem fall af tíma} \\
-      v^2 &=v_0^2+2a\cdot (x-x_0) \qquad & \text{Tímaóháða jafnan} \\
-      x-x_0 &=\frac{1}{2}(v_0 + v)\cdot t \qquad & \text{Færsla}
-    \end{aligned}
-
-----------------------------------------------------
-
-.. begin-toggle::
-  :label: Sýna útleiðslu á hreyfijöfnum
-  :starthidden: True
-
-Hröðun er afleiða hraðans og því má lýsa sem afleiðujöfnu:
-
-.. math::
-  \begin{aligned}
-    &\text{Upphaflega jafnan} &    a &=\frac{dv(t)}{dt} \\
-    &\text{Umritum} &    dv(t) &=  a\cdot dt \\
-    &\text{Heildum beggja vegna} &     \int_0^t dv &= a \cdot \int_0^t dt \\
-    &\text{ } &       v(t)-v(0) &= a\cdot (t-0) \\
-    &\text{} & v(t) &= a\cdot t +v_0
-  \end{aligned}
-
-sem er einmitt jafnan fyrir hraða sem fall af tíma.
-
-Hraði er afleiða staðsetningarinnar :math:`v(t)=\frac{dx(t)}{dt}= a\cdot t +v_0`.
-
-.. math::
-  \begin{aligned}
-    &\text{Upphaflega jafnan} & \frac{dx(t)}{dt}&= a\cdot t +v_0\\
-    &\text{Umritum}  &  dx(t) &=  (a\cdot t +v_0) dt\\
-    &\text{Heildum} & \int_0^x dx &= \int_0^t (a\cdot t +v_0) dt \\
-    &\text{ } & x(t)-x_0 &= \frac12 a\cdot t^2 + v_0 \cdot t \\
-    & \text{ } & x(t) &= x_0 + v_0 \cdot t +\frac12 a\cdot t^2
-  \end{aligned}
-
-sem er einmitt jafnan fyrir staðsetningu sem fall af tíma.
-
-Tímaóháðu jöfnuna má leiða út með því að setja saman þessar tvær jöfnur. Fyrst þarf að einangra tímann úr jöfnunni sem lýsir hraða sem fall af tíma og svo er hann settur inn fyrir tímann í jöfnunni sem lýsir staðsetningunni.
-
-.. math::
-  \begin{aligned}
-    &\text{} & v(t) &= a\cdot t +v_0 \\
-    &\text{Umritum} &  t &= \frac{v-v_0}{a} \\
-    &\text{Jafna fyrir } x(t) & x&=  x_0 + v_0 \cdot t +\frac12 a\cdot t^2 \\
-    &\text{Setjum tímann inn}  &  x&=x_0+ v_0 \cdot \frac{v-v_0}{a} +\frac12 a\cdot \left( \frac{v-v_0}{a} \right)^2\\
-    &\text{Margfalda inn í sviga} & x&=x_0+ \cdot \frac{v_0\cdot v-v_0^2}{a} +\frac{v^2+v_0^2-2v\cdot v_0}{2 a}\\
-    &\text{Margfalda með 2}a & 2a\cdot x &= 2a\cdot x_0 +2v\cdot v_0 -2v_0 +v^2 +v_0^2- 2v\cdot v_0\\ 
-    &  & 2a(x-x_0)&=v^2-v_0^2 \\
-    & & v^2&=v_0^2 + 2a\cdot (x-x_0)
-  \end{aligned}
-
-
-.. end-toggle::
-
-.. tip::
-  Bíll bíður á rauðu ljósi. Þegar ljósið verður grænt fær bíllinn samstundis hröðunina :math:`6 \frac{\text{ m}}{\text{ s}^2}` . Hve hratt fer hann eftir 5 sekúndur og hve langt í burtu er hann?
-
-  **Lausn**
-
-  Notum :ref:`hreyfijöfnurnar <s.hreyfijofnur>` :
-
-  .. math::
-    \begin{aligned}
-      v&=v_0+a\cdot t = 0\frac{\text{ m}}{\text{ s}}+6 \frac{\text{ m}}{\text{ s}^2} \cdot 5\text{ s} \\
-      v&= 30 \frac{\text{ m}}{\text{ s}}\\
-      x&=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 = 0\text{ m}+0\frac{\text{ m}}{\text{ s}}\cdot 5\text{ s} + \frac{1}{2}\cdot 6 \frac{\text{ m}}{\text{ s}^2} \cdot (5\text{ s})^2 \\
-      x&= 75\text{ m}
-    \end{aligned}
 
 Afstæður hraði
 --------------
 
-*Afstæður hraði* (eða innbyrðis hraði, e. relative velocity) er hraði eins hlutar miðað við hreyfingar annars hlutar. Í raun er hraði alls afstæður, en við miðum langoftast við yfirborð jarðar þegar við tölum um hraða okkar, vindsins og bílanna í kringum okkur.
-
-Þegar þú ekur eftir vegi virðast bílarnir sem fara hraðar en þú fara áfram en þeir sem fara hægar virðast vera að bakka, þó að einhver sem stendur í vegkantinum sér að allir bílarnir eru að keyra í sömu átt. Þegar tveir athugendur mæla hraða bíls sem er á hreyfingu munu þeir fá sömu niðurstöðu ef þeir eru sjálfir á hreyfingu, t.d. gangandi eða á hjóli, vegna þess að þeir væru að mæla hraða bílsins *miðað við sjálfa sig*. Athugendur mynda í kringum sig það sem við köllum *viðmiðunarkerfi* þar sem þeir geta mælt hraða og staðsetningu bílsins miðað við sjálfa sig.
-
-Ef fyrirbærið :math:`P` er á hreyfingu miðað við viðmiðunarkerfi :math:`B` og :math:`B` er að hreyfast miðað við viðmiðunarkerfið :math:`A` þá er hraði fyrirbærisins :math:`P` miðað við :math:`A`:
+Jafnan fyrir afstæða hreyfingu gildir líka í fleiri víddum, en þá notum við vigra:
 
 .. math::
 
-	v_{P/A} = v_{P/B} + v_{B/A}
-
-þar sem :math:`v_{x/y}` er hraði :math:`x` miðað við kerfið :math:`y`.
+	\overline{v}_{P/A} = \overline{v}_{P/B} + \overline{v}_{B/A}
 
 .. tip::
-  Reiðhjól og gangandi maður eru að ferðast í sömu átt. Reiðhjólið fer á hraðanum :math:`v_h=6 \text{ m/s}` (miðað við jörðina) en maðurinn á :math:`v_g=1 \text{ m/s}` (líka miðað við jörðina). Hver er hraði hjólsins miðað við manninn?
+  Flugvél setur stefnuna beint norður á við og flýgur á hraðanum :math:`v_f= 20 \text{ m/s}` (miðað við loftið). Loftið flæðir til austurs með stífri vestanátt, :math:`v_v =15\text{ m/s}`, sem vélin berst með. Hver er hraði flugvélarinnar og stefna hraðans miðað við jörðu?
 
   **Lausn**
 
-  Köllum nú jörðina :math:`A`, manninn :math:`B` og reiðhjólið :math:`P`. Þá er :math:`v_h=v_{P/A}` og :math:`v_g=v_{B/A}`.
-
-  Við erum að leita að hraða :math:`P` miðað við :math:`B`, :math:`v_{P/B}`. Umritum jöfnuna :math:`v_{P/A} = v_{P/B} + v_{B/A}` og fáum
-
-  .. math::
-
-  	v_{P/B} = v_{P/A}-v_{B/A}
-
-  Þannig að hraði hjólsins miðað við manninn er
+  Köllum nú flugvélina :math:`P`, vindinn :math:`B` og jörðina :math:`A`.
+  Hér notum við vigursamlagningu. Hreyflar vélarinnar gefa henni hraða :math:`v_f` í stefnu norður (stefnu :math:`y` - áss). Þá er:
 
   .. math::
 
-  	v_{P/B} = v_{P/A}-v_{B/A} = 6 \text{ m/s} - 1 \text{ m/s} = 5 \text{ m/s}
+  	\overline{v}_{P/B} = \begin{pmatrix} 0 \\ v_f \end{pmatrix} = \begin{pmatrix} 0 \\ 20  \end{pmatrix} \text{m/s}
+
+  Vindurinn blæs frá vestri til austurs, til hægri (í stefnu :math:`x` - áss). Því er:
+
+  .. math::
+
+  	\overline{v}_{B/A} = \begin{pmatrix} v_v \\ 0 \end{pmatrix} = \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s}
+
+  Leggjum nú saman vigrana :math:`\overline{v}_f` og :math:`\overline{v}_v`:
+
+  .. math::
+    \begin{aligned}
+  	\overline{v}_{P/A} &= \overline{v}_{P/B} + \overline{v}_{B/A} \\
+    &= \begin{pmatrix} 0  \\ 20 \end{pmatrix} \text{m/s} + \begin{pmatrix} 15 \\ 0 \end{pmatrix} \text{m/s} \\
+    &= \begin{pmatrix} 15 \\ 20 \end{pmatrix} \text{m/s}
+    \end{aligned}
+
+  .. figure:: ./myndir/2d/flugvel.svg
+    :align: center
+    :width: 35%
+
+  Hraði flugvélarinnar miðað við jörðina er því lengdin á :math:`\overline{v}_{P/A}`:
+
+  .. math::
+    \begin{aligned}
+  	|\overline{v}_{P/A}| &= \sqrt{(15\text{ m/s})^2+(20\text{ m/s})^2} \\
+    &=\sqrt{625 (\text{m/s}})^2 \\
+    &= 25 \text{ m/s}
+    \end{aligned}
+
+  Vélin er því að fara á :math:`25\text{ m/s}`, en stefna hraðans er í norðaustur.
 
 
-Hraði ljóss og hljóðs
----------------------
+Kasthreyfing
+------------
 
-Hljóð berst frá uppsprettu sinni til eyrna okkar með því að hrista efnið sem ber það (t.d. loft eða vatn), en hraði hljóðbylgnanna fer eftir því hvaða efni það er og hvert hitastig þess er. Hraði hljóðs í lofti við 20°C er:
+*Kasthreyfing* (e. projectile motion) er þegar hlutur er á hreyfingu í þyngdarsviði, fær upphafshraða í tiltekna stefnu og verður ekki fyrir neinni hröðun nema þyngdarhröðun.
+Í okkar einfölduðu kerfum er gerum við ráð fyrir að loftmótstaða sé engin og þá verða allir *kastferlar* (e. trajectories) hluti af fleygboga, eins og við munum leiða út á eftir.
+
+.. tip::
+  Tveir eins boltar eru látnir falla til jarðar úr sömu hæð, bolta 1 er sleppt úr kyrrstöðu en bolta 2 er kastað lárétt áfram.
+  Gerum ráð fyrir engri loftmótstöðu.
+  Hvor boltanna lendir á undan?
+
+  **Lausn**
+
+  Á báða boltana verkar sama þyngdarafl, svo þeir fá sömu hröðun niður sem nemur þyngdarhröðuninni og fá báðir sívaxandi hraða niður á við.
+
+  Bolti 1 mun því hreyfast lóðrétt niður á við.
+  Bolti 2 mun halda áfram að hreyfast lárétt því hann verður ekki fyrir neinni hröðun í lárétta stefnu (þetta er afleiðing :ref:`fyrsta lögmáls Newtons <s.newton>`).
+  Hröðunin sem bolti 2 verður fyrir lóðrétt hefur engin áhrif á lárétta hreyfingu hans (og lárétta hreyfingin hefur engin áhrif á lóðrétta hröðun).
+
+  Boltarnir tveir byrjuðu báðir með sama lóðrétta hraðann (engan) og verða fyrir sömu lóðréttu hröðuninni.
+  Þeir ferðast því samtímis niður á við og lenda því *á sama tíma*.
+
+  .. image:: ./myndir/2d/tveirboltar.svg
+    :align: center
+    :width: 40%
+
+  Ferill bolta 1 er lóðrétt strik en ferill bolta 2 er fleygbogi, því hann hefur hreyfingu í tvær stefnur.
+
+Við lausn dæma um kasthreyfingar eru :ref:`hraðajöfnurnar<s.hreyfijofnur>` notaðar.
+Það borgar sig að teikna mynd til að átta sig á dæminu.
+Þá þarf að ákveða hnitakerfi, en venjan er að hafa :math:`x`-ás láréttan og :math:`y`-ás lóðréttan þannig á þyngdarhröðun bendi niður.
+Upphafspunkt hnitakerfisins er þægilegast að setja í upphaf kastins, enda geta hnitin :math:`(x_0,y_0)=(0,0)` einfaldað reikning töluvert.
+Eina hröðunin sem er í þessu kerfi er þyngdarhröðunin og því er :math:`a_x=0` og :math:`a_y=-g`
+Þá eru jöfnurnar fyrir staðsetningu sem fall af tíma eftirfarandi:
 
 .. math::
+  \begin{aligned}
+    x &= x_0 + v_{0,x} \cdot t \\
+    y &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
+  \end{aligned}
 
-	v_{loft} = 344 \text{m/s}
+.. tip::
+  Sagan segir að landið Gambía á vesturströnd Afríku hafi orðið til þegar breski flotinn sigldi upp Gambíuána, skaut úr fallbyssum sínum á báða borða og eignuðu sér landið innan færis fallbyssanna.
+  Ef upphafshraði fallbyssukúlu er :math:`\overline{v} = (v_x, v_y) = (50,42)` m/s, hversu breið yrði Gambía?
 
-en hraði hljóðs í vatni við 20°C er meira en fjórfalt hraðari:
+  **Lausn**
+
+  Byrjum á að teikna mynd.
+  Stillum hnitakerfinu upp þannig að fallbyssan sé í :math:`(x_0,y_0) = (0,0)`, x-ásinn liggi út frá ánni í skotstefnuna og y-ásinn er upp.
+  Gerum ráð fyrir að hæð lendingarstaðarins sé jöfn hæð fallbyssunnar, þ.e. :math:`y_1=0` .
+  Takið eftir að :math:`y`-ásinn er skilgreindur upp en þá er þyngdarhröðunin neikvæð (:math:`a=-g=-9.8 \text{m/s}^2`).
+
+  .. image:: ./myndir/2d/gambia.svg
+    :align: center
+    :width: 60%
+
+  Köllum lokahnit kúlunnar þegar hún lendir :math:`(x_1,y_1)` en þar sem við vitum að hún endar á yfirborði jarðarinnar þá er :math:`y_1=0`, þ.a. lokahnit kúlunnar eru :math:`(x_1,y_1) = (x_1,0)`.
+  Finnum hve lengi kúlan er í loftinu með því að finna tímann :math:`t_1` þegar :math:`y_1=0` .
+
+  .. math::
+    \begin{aligned}
+      y_1 &= y_0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2 \\
+      0 &= 0 + v_{0,y} \cdot t - \frac{1}{2} g \cdot t^2
+    \end{aligned}
+
+  Þetta er annars stigs margliða sem hefur tvær lausnir. Önnur lausnin er að :math:`t=0` en við höfum ekki áhuga á þeirri lausn af því hún er bara upphaf kasthreyfingarinnar. Hin lausnin er
+
+  .. math::
+
+  	t_1=\frac{v_{0,y}}{\frac{1}{2} g} = \frac{42\text{m/s}}{\frac{1}{2}\cdot 9.8\text{m/s}^2} = 8.58\text{s}
+
+  Nú getum við notað sömu hreyfijöfnu, í þetta skipti fyrir :math:`x`-hnitin, til að finna hversu langt fallbyssan drífur.
+
+  .. math::
+    \begin{aligned}
+      x_1 &= x_0 + v_0 \cdot t_1\\
+      &= 0 + 50 \cdot 8.58  \\
+      &= 429 \text{ m}
+    \end{aligned}
+
+  Fallbyssukúlan lendir því 429 metrum frá ánni og breidd Gambíu er tvöföld sú lengd: 858 m.
+
+
+Finnum nú jöfnu fyrir ferlinum sem hlutur ferðast eftir í loftinu og sannfærum okkur um að hann sé fleygbogi.
+Skoðum hlut sem hefur upphafshraða :math:`\overline{v}_0` í stefnu hornsins :math:`\alpha_0` og upphafsstaðsetningu :math:`(x_0,y_0)=(0,0)` .
+
+Byrjum á því að liða :math:`\overline{v}_0` í :math:`x` - og :math:`y` - stefnu.
 
 .. math::
+  \begin{aligned}
+    v_{0x} &= v_0\cos(\alpha_0) \\
+    v_{0y} &= v_0\sin(\alpha_0)
+  \end{aligned}
 
-	v_{vatn} = 1480 \text{m/s}
+.. figure:: ./myndir/2d/v0split.svg
+  :align: center
+  :width: 50%
 
-Ljós er *rafsegulbylgjur* (e. electromagnetic waves) sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:
+Því næst notum við :ref:`hreyfijöfnurnar <s.hreyfijofnur>`.
+Hröðunin í :math:`x` - stefnu er núll svo staðsetningin í :math:`x` - stefnu er
 
 .. math::
+  x=v_{0x} t = v_0\cos(\alpha_0)t
 
-	c = 3.00\cdot 10^8 \text{m/s}
+Hröðunin í :math:`y` - stefnu er :math:`a_y=-g` svo staðsetningin í :math:`y-` stefnu er:
 
-Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki, Wi-Fi) það líka.
+.. math::
+  y=v_{0y} t - \frac{1}{2}gt^2 = v_0\sin(\alpha_0) t- \frac{1}{2}gt^2
 
---------------
+Einangrum :math:`t` út frá jöfnunni fyrir :math:`x`: :math:`t=x/(v_0\cos(\alpha_0))` og setjum inn í jöfnuna fyrir :math:`y` . Þá fæst
 
-.. eqt:: daemi-ljos
+.. math::
+  \begin{aligned}
+    y& =v_0\sin(\alpha_0)t - \frac{1}{2}gt^2 \\
+    y&= v_0\sin(\alpha_0) \cdot \frac{x}{v_0\cos(\alpha_0)} - \frac{1}{2}g  \left(\frac{x}{v_0\cos(\alpha_0)}\right)^2\\
+    y&= \frac{\sin(\alpha_0)}{\cos(\alpha_0)} x - \frac{1}{2}g \frac{x^2}{v_0^2\cos^2(\alpha)} \\
+    y&=\tan(\alpha_0) x - \frac{g}{2v_0\cos^2(\alpha_0)}x^2
+  \end{aligned}
 
-  **Æfingadæmi** Ef það eru :math:`1.496\cdot10^{11}\text{m}` til sólarinnar, hve langan tími líður milli þess að ljósið fer frá sólinni þar til það berst til okkar?
+Ferill hlutar í kasthreyfingu hefur því lögun fleygboga :math:`y=ax^2+bx+c` þar sem
 
-  A) :eqt:`I` 600 sekúndur
+.. math::
+  \begin{aligned}
+    a&=-\frac{g}{2v_0\cos^2(\alpha_0)}\\
+    b&=\tan(\alpha_0) \\
+    c&=0
+  \end{aligned}
 
-  #) :eqt:`I` :math:`4.5 \cdot 10^{11}\text{s}`
+.. figure:: ./myndir/2d/kasthr.svg
+  :align: center
+  :width: 80%
 
-  #) :eqt:`C` 8.3 mínútur
+------------------------
+
+Út frá jöfnunni fyrir ferlinum er meðal annars hægt að sjá hvar hluturinn lendir.
+Þá finnum við fyrir hvaða :math:`x` hæð boltans :math:`y` er núll, sem gerist tvisvar: í upphafi (:math:`x=0`) og þegar
+
+.. math::
+  \begin{aligned}
+    x&=\frac{2\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g}\\
+    &=\frac{2\sin(\alpha_0)\cos(\alpha_0)v_0^2}{g} \\
+    &= \frac{\sin(2\alpha_0)v_0^2}{g} \\
+  \end{aligned}
+
+því :math:`\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)` .
+
+------------------------
+
+Það er líka hægt að finna hámarkshæð hlutar í kasthreyfingu með því að finna hágildi þessarrar jöfnu.
+Þá finnum við hvar afleiða fallsins með tilliti til :math:`x` er núll.
+
+Afleiðan er
+
+.. math::
+  y'=\tan(\alpha_0)-\frac{g}{v_0^2\cos^2(\alpha_0)}x
+
+Hápunktur fleygbogans er því þegar :math:`y'=0` eða:
+
+.. math::
+  \begin{aligned}
+    x&=\frac{\tan(\alpha_0)v_0^2\cos^2(\alpha_0)}{g} \\
+    &= \frac{\sin(\alpha_0)\cos(\alpha_0) v_0^2}{g}\\
+    &= \frac{\sin(2\alpha_0)v_0^2}{2g}
+  \end{aligned}
+
+.. ggb:: mkyudgwh
+
+.. note::
+  Munið að eðlisfræði gengur ekki út á að muna jöfnur, heldur að kunna hvernig og hvenær á að nota þær.
+  Til dæmis er ástæðulaust að leggja mikla vinnu í að muna þessar formúlur, þegar það er lítið mál að leiða þær út frá hreyfijöfnunum eða að fletta þeim upp.
+  Við lausn bæði heimavekefna og prófdæma þá munið þið alltaf hafa aðgang að formúlublaði.
+
+-------------------
+
+.. eqt:: daemi-kast
+
+  **Æfingadæmi** Hvað þarf kasthornið :math:`\alpha_0` að vera til þess að kasta sem lengst fyrir fastan upphafshraða :math:`v_0`?
+
+  A) :eqt:`I` :math:`60^{\circ}`
+
+  #) :eqt:`C` :math:`45^{\circ}`
+
+  #) :eqt:`I` :math:`30^{\circ}`
+
+  #) :eqt:`I` Ekkert af ofangreindu
 
   .. eqt-solution::
-    Hraði er breyting á staðsetningu á tímabili, þ.e.
+    Við höfum leitt út jöfnu fyrir lengd kasts:
+
+    .. math::
+      x= \frac{\sin(2\alpha_0)v_0^2}{g}
+
+    Til þess að finna fyrir hvaða horn :math:`x` verður sem stærst þá diffrum við jöfnuna m.t.t. :math:`\alpha_0` og finnum fyrir hvaða :math:`\alpha_0` niðurstaðan er núll:
 
     .. math::
 
-      v=\frac{\Delta x}{\Delta t}
+    	\frac{dx}{d\alpha_0} = \frac{v_0^2}{g} \cos(2\alpha_0) \cdot 2
 
-    Umritum þessa jöfnu og fáum
+    Þá vitum við að :math:`\frac{dx}{d\alpha_0}=0` ef :math:`\cos(2\alpha_0)=0` (af því allar hinar stærðirnar eru fastar, óháðar :math:`\alpha_0`).
 
-    .. math::
+    :math:`\cos(\theta)=0` ef :math:`\theta=90 ^{\circ}+ h\cdot 180 ^{\circ}` þar sem :math:`h` er heiltala. Hjá okkur er :math:`\theta=2\alpha_0` svo kastlengdin er mest þegar :math:`\alpha_0=45^{\circ} + h\cdot 90 ^{\circ}`. Við sjáum að lausnin :math:`\alpha_0=45^{\circ}` (þ.e. :math:`h=0`) er eina lausnin sem kemur til þar sem hinar kasta í allt aðrar áttir en þá sem við erum að skoða.
 
-      \Delta t=\frac{\Delta x}{v} =\frac{1.496\cdot10^{11}\text{m}}{3.00\cdot 10^8 \text{m/s}} = 498.7 \text{s}
-
-    Breytum nú sekúndum í mínútur:
-
-    .. math::
-
-    	498.7\text{s} \cdot \frac{1 \text{mín}}{60 \text{s}} = 8.3 \text{mín}
+    Þið gætuð líka hafa fundið út úr þessu með því að prófa mismunandi horn í smáforritinu hér að ofan.
 
 
-------------------
 
-Þyngdarhröðun
+-------------------
+
+Hringhreyfing
 -------------
 
-Allt sem er nálægt yfirborði jarðarinnar verður fyrir sömu hröðun í átt að miðju jarðarinnar (í daglegu tali köllum við þessa átt *niður*).
-Við táknum þessa tilteknu hröðun, *þyngdarhröðun*, með :math:`g`.
+Hröðunarvigurinn :math:`\overline{a}` hefur stefnu sem er óháð stefnu hraðavigursins :math:`\overline{v}`, en segir til um hvernig hraðavigurinn er að breytast.
+Þægilegt er að vinna með hröðunarvigurinn :math:`\overline{a}` í tveimur hlutum, annars vegar þáttinn samsíða hraðavigrinum (:math:`a_\parallel`)
+og hins vegar hornrétta þáttinn (:math:`a_\perp`) en þættir hröðunarvigursins hafa mismunandi áhrif á hraðavigurinn.
 
-Þyngdarhröðunin :math:`g` bendir alltaf í átt að miðju jarðar.
-Stærð :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir miðju jarðar (lækkandi með hæð) og því á hvaða breiddargráðu mælt er (lægra við miðbaug en hærra við pólana) en á Íslandi er gildið við sjávarmál
+.. figure:: ./myndir/2d/tvividd.svg
+  :width: 50%
+  :align: center
+
+:math:`a_\parallel` hefur bara áhrif á lengd hraðavigursins, sem oft er kölluð *ferð* hlutarins (e. speed).
+
+:math:`a_\perp` hefur bara áhrif á stefnu hraðavigursins, þ.e. segir til um hvernig hluturinn er að beygja.
+
+Ef hlutur hefur bara hröðun sem er hornrétt á hraðavigurinn (:math:`a_\parallel =0`) þá beygir hluturinn endalaust í sömu áttina en lengd hraðavigursins er föst, þ.e. *ferð* hlutarins er fasti. Úr verður *jöfn hringhreyfing* (e.uniform circular motion).
+
+.. tip::
+
+  Hringekja snýst með jöfnum hraða.
+  Barn á hringekjunni hefur hraðavigur sem er snertill við hringinn í staðsetningu barnsins.
+  Þar sem snúningshraðinn er jafn er ferð barnsins fasti, en hraðavigurinn er samt sem áður stöðugt að breytast.
+  Stefnan er það eina sem breytist svo barnið hlýtur að hafa hröðun sem er hornrétt á hraðann, þ.e. beint inn að miðjunni.
+
+  .. figure:: ./myndir/2d/hringekja.svg
+    :align: center
+    :width: 40%
+
+  Þessi hröðun kallast *miðsóknarhröðun* (e.centripetal acceleration).
+
+Um jafna hringhreyfingu gilda eftirfarandi jöfnur:
 
 .. math::
-  g=9.82\frac{\text{ m}}{\text{ s}^2}
+  \begin{aligned}
+    v &= \frac{2 \pi R}{T} \\
+    |\overline{a}|= a_\perp &= \frac{v^2}{R}\\
+    &= \frac{4 \pi^2 R}{T^2}
+  \end{aligned}
 
+Þar sem :math:`R` er radíus hringferilsins og :math:`T` er umferðartíminn (tíminn sem það tekur að fara einn hring).
 
-.. tip::
-  Una stendur á Golden Gate brúnni í San Fransisco og ætlar að taka mynd af útsýninu. Þar er þyngdarhröðunin 9,80 m/s :math:`^2` .
-  Henni bregður og missir símann sinn yfir handriðið, síminn steypist að yfirborði sjávarins, 67 metrum neðar.
+------------------------
 
-  Hve hratt hreyfist síminn þegar hann skellur á yfirborðinu? Hve langan tíma tekur fallið?
-  (Gera má ráð fyrir að síminn byrji í kyrrstöðu og að engin loftmótstaða sé).
+.. eqt:: daemi-hring
 
-  .. figure:: ./myndir/hradi/goldenuna.svg
-    :width: 40%
-    :align: center
+  **Æfingadæmi** Hvaða miðsóknarhröðun finnur barn fyrir á hringekju sem fer nákvæmlega 7 hringi á mínútu ef það situr 2.00 metra frá snúningsásnum?
 
-  **Lausn**
+  A) :eqt:`C` :math:`1.07 \text{ m/s}^2`
 
-  Notum :ref:`hreyfijöfnurnar <s.hreyfijofnur>` , fyrst tímaóháðu jöfnuna til að reikna hraðann:
+  #) :eqt:`I` :math:`9.21 \text{ m/s}^2`
 
-  .. math::
-    \begin{aligned}
-      v^2 &= v_0^2 + 2a\cdot (x-x_0) = \left( 0\frac{\text{ m}}{\text{ s}}\right)^2+ 2\cdot g \cdot(67-0) \text{m}\\
-      v^2 &= 1313.2 \frac{\text{ m}^2}{\text{ s}^2} \\
-      v &= \sqrt{1313.2 \frac{\text{ m}^2}{\text{ s}^2}} = 36.2 \frac{\text{ m}}{\text{ s}}
-    \end{aligned}
+  #) :eqt:`I` :math:`2.15 \text{ m/s}`
 
-  Notum síðan hraðajöfnuna til að finna tímann sem fallið tekur:
-
-  .. math::
-    \begin{aligned}
-      v&=v_0+a\cdot t \\
-      t&=\frac{v-v_0}{a} = \frac{36.2 \frac{\text{ m}}{\text{ s}}}{9.80 \frac{\text{ m}}{\text{ s}^2}} \\
-      t&=3.7 \text{s}
-    \end{aligned}
-
-  .. figure:: ./myndir/hradi/unasimi.svg
-    :width: 20%
-    :align: center
-
-.. tip::
-
-  Körfubolta er kastað beint upp með hraðanum :math:`v_0=5 \frac{\text{ m}}{\text{ s}}` .
-  Hve hátt drífur boltinn?
-
-  **Lausn**
-
-  Boltinn ferðast upp á við, en þyngdarhröðunin togar í hann og hægir þannig á honum.
-  Að endingu hefur þyngdarhröðunin hægt það mikið á honum að hann stoppar í augnablik áður en hann fellur á ný til jarðar.
-
-  Höfum því upphafshraðann :math:`v_0=5 \frac{\text{ m}}{\text{ s}}`, lokahraðann :math:`v=0 \frac{\text{ m}}{\text{ s}}` og hröðun :math:`g=9.82\frac{\text{ m}}{\text{ s}^2}`.
-  Upphafleg staðsetning boltans er :math:`x_0=0`, en við leitum að hæðinni :math:`x` .
-
-  Hér þarf að fara varlega með formerki! Við vitum að hröðunin stefnir niður en upphafshraðinn upp. Því reiknum við með :math:`g` sem neikvæðri tölu.
-
-  .. math::
-    \begin{aligned}
-      v^2 &=v_0^2+2a\cdot (x-x_0)\\
-      \left(0 \frac{\text{ m}}{\text{ s}}\right) &= \left(5 \frac{\text{ m}}{\text{ s}}\right)^2+2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2}) \cdot(x-0 \text{m}) \\
-      x &= \frac{\left(5 \frac{\text{ m}}{\text{ s}}\right)^2}{-2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2})} = 1.27 \text{ m}
-    \end{aligned}
-
-  .. figure:: ./myndir/hradi/asakarfa.svg
-    :width: 20%
-    :align: center
-
-.. tip::
-  SpaceX ætlar að skjóta upp eldflaug.
-  Vélar eldflaugarinnar gefa henni hröðun :math:`a_1=30.0\text{ m/s}^2` upp á við.
-  Eftir 10 sekúndur bila vélarnar og eldflaugin verður í frjálsu falli.
-
-  * Hve langt kemst skutlan upp áður en hún tekur að falla í átt að jörðu?
-  * Hver verður hraði eldflaugarinnar þegar hún brotlendir aftur á jörðinni?
-  * Hvenær brotlendir hún á jörðinni?
-
-  **Lausn**
-
-  Munum að allir hlutir nálægt yfirborði jarðar fá hröðunina :math:`g=9.82\text{ m/s}^2` , sama hvort þeir eru á hreyfingu eða verða fyrir öðrum hröðunum.
-  Við gerum ráð fyrir að eldflaugin fari ekki mjög langt og verði þess vegna fyrir þeirri hröðun allan tímann.
-  Heildarhröðunin á eldflaugina á meðan kveikt er á vélunum er því :math:`a_1-g=30.0\text{ m/s}^s-9.8\text{ m/s}^2 = 20.2\text{ m/s}^2` .
-  Skiptum reikningum okkar upp í nokkra hluta (0 er upphafsástand, 1 er þegar vélarnar bila, 2 er þegar flaugin er í hámarkshæð og 3 þegar hún brotlendir).
-
-  Notum nú :ref:`hreyfijöfnurnar <s.hreyfijofnur>` til að reikna hve hratt flaugin fer þegar vélarnar bila.
-
-  .. math::
-    \begin{aligned}
-      v_1&=v_0+a\cdot t_1 \\
-      v_1&=v_0+(a_1-g)\cdot t_1 \\
-      v_1&= 0 \text{ m/s} + (30\text{ m/s}^s-9.82\text{ m/s}^2) \cdot 10 \text{ s} \\
-      v_1 &= 201.8 \text{ m/s} \\
-    \end{aligned}
-
-  Þá er eldflaugin í hæðinni:
-
-  .. math::
-    \begin{aligned}
-      x_1&=x_0 + v_0 \cdot t_1 + \frac{1}{2} a\cdot t_1^2 \\
-      x_1&=x_0 + v_0 \cdot t_1 + \frac{1}{2} (a_1-g)\cdot t_1^2 \\
-      x_1&= 0\text{ m} + 0 \text{ m/s} \cdot 10 \text{ s} +\frac12 (30\text{ m/s}^s-9.82\text{ m/s}^2) \cdot (10 \text{ s})^2 \\
-      x_1&=1009 \text{ m}\\
-    \end{aligned}
-
-  .. figure:: ./myndir/hradi/flokid2.svg
-    :align: center
-    :width: 50%
-
-  Þegar vélarnar bila er flaugin í :math:`1009 \text{ m}` hæð yfir yfirborði, ferðast upp á við með hraðanum :math:`201.8 \text{ m/s}` og verður fyrir þyngdarhröðuninni :math:`g= 9.82 \text{ m/s}` *niður á við*.
-  Reiknum nú hvenær hraði flaugarinnar er orðinn :math:`v_2=0 \text{ m/s}` .
-
-  .. math::
-    \begin{aligned}
-      v_2&=v_1+a\cdot t_2 \\
-      v_2&=v_1-g\cdot t_2 \\
-      t_2&=\frac{v_2-v_1}{-g} = \frac{0 \text{ m/s}-201.8 \text{ m/s}}{-9.82 \text{ m/s}^2}\\
-      t_2&=20.5 \text{ s}
-    \end{aligned}
-
-  Þá er eldflaugin í hæðinni:
-
-  .. math::
-    \begin{aligned}
-      x_2 &= x_1 + v_1 \cdot t_2 + \frac{1}{2} (-g)\cdot t_2^2 \\
-      x_2 &= 1009 \text{ m} + 201.8 \text{ m/s} \cdot 20,5 \text{ s} - \frac12 \cdot 9.82 \text{ m/s}^2 \cdot (20,5 \text{ s})^2 \\
-      x_2 &= 3082 \text{ m} \\
-    \end{aligned}
-
-  .. figure:: ./myndir/hradi/flokid3.svg
-    :align: center
-    :width: 45%
-
-  Nú byrjar hún að falla til jarðarinnar úr þessari hæð.
-  Hún hefur enn hröðunina :math:`g=9.82\text{ m/s}^2` niður á við. Notum tímaóháðu jöfnuna:
-
-  .. math::
-    \begin{aligned}
-      v_3^2 &=v_2^2+2(-g)\cdot (x_0-x_2) \\
-      v_3&= \pm \sqrt{0\text{ m/s} + 2\cdot (-9.82\text{ m/s}^2)(0\text{ m} - 3082\text{ m} )    } \\
-      v_3 &= - 246 \text{ m/s}
-    \end{aligned}
-
-  Veljum neikvætt formerki á :math:`v_3` kemur vegna þess að hraðinn stefnir niður á við.
-  Reiknum að lokum hve langan tíma fallið til jarðarinnar tekur:
-
-  .. math::
-    \begin{aligned}
-      x_0-x_2 &=\frac{1}{2}(v_2 + v_3)\cdot t_3\\
-      t_3 &= \frac{x_0-x_2}{\frac12 (v_2 + v_3)} \\
-      t_3 &= \frac{0-3082\text{ m}}{\frac12 (0 - 246 \text{ m/s})} \\
-      t_3 &= 25 \text{ s}\\
-    \end{aligned}
-
-  Þessi misheppnaða svaðilför eldflaugarinnar tekur hana því :math:`t_1+t_2+t_3=55.5 \text{s}` .
-
-  .. image:: ./myndir/hradi/flokid.svg
-    :width: 60 %
-    :align: center
-
---------------
-
-.. eqt:: daemi-gravity
-
-  **Æfingadæmi** Jón kastar bolta beint upp í loftið með hraðann :math:`v_i`. Hver er hraði boltans þegar Jón grípur hann aftur? (Gerum ráð fyrir engri loftmótsstöðu)
-
-  A) :eqt:`C` Hraðinn við lendingu er sá sami, :math:`v_f=v_i`
-
-  #) :eqt:`I` Boltinn fer hraðar þegar hann lendir, :math:`v_f>v_i`
-
-  #) :eqt:`I` Boltinn fer hægar þegar hann lendir, :math:`v_f<v_i`
-
-  #) :eqt:`I` Jón mun aldrei grípa boltann
+  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
 
   .. eqt-solution::
-    Þegar boltanum er kastað þá hefur hann upphafshraðann :math:`v` en þyngdarhröðunin :math:`g` hægir á honum þar til hann stoppar í tiltekinni hæð. Þá snýr boltinn við og byrjar að falla til jarðar. Á tímanum sem það tekur boltann að falla niður sömu vegalengd þá eykur þyngdarhröðunin :math:`g` hraða boltans jafn mikið og hún hægði á boltanum á leiðinni upp. Þess vegna er hraði boltans sá sami í upphafi og í lokin, þó :math:`v_i` og :math:`v_f` bendi í gagnstæðar stefnur.
 
-    .. figure:: ./myndir/hradi/bolti.svg
-      :width: 75 %
-      :align: center
+    Notum jöfnu fyrir jafna hringhreyfingu: :math:`|\overline{a}|= \frac{4 \pi^2 R}{T^2}`. Finnum umferðartímann :math:`T` sem segir okkur hve margar sekúndur það tekur hringekjuna að fara einn hring. Við vitum að hringekjan fer :math:`7` hringi á einni mínútu, þ.e. 60 sekúndum. Það tekur því :math:`T= 60/7 \text{s}` að fara einn hring. Þá fáum við:
+
+    .. math::
+
+    	|\overline{a}|= \frac{4 \pi^2 R}{T^2} = \frac{4\pi^2 \cdot (2\text{ m})}{(\frac{60 \text{ s}}{7})^2} = 1.07 \text{ m/s}^2
+
+
+
+------------------------
+
+Þegar hlutur í hringhreyfingu hefur ekki fasta ferð er talað um *ójafna hringhreyfingu* (e.nonuniform circular motion).
+Þá er hröðunarvigurinn ekki hornréttur á hraðann og lengd hraðavigursins breytileg með tíma.
+
+Takið eftir að stærðirnar :math:`\frac{d |\overline{v}|}{dt}` og :math:`\Bigl|\frac{d \overline{v}}{dt}\Bigr|` eru ekki endilega jafnar.
+Sú fyrri, afleiða ferðarinnar :math:`|\overline{v}|`, er sá þáttur hröðunarinnar sem er samsíða hraðanum, :math:`a_{\parallel}`.
+Hún er núll í jafnri hringhreyfingu þar sem ferðin er fasti.
+Sú seinni er stærð afleiðu hraðans sem er stærð hröðunarvigursins.
+Hún er aðeins núll þegar hraðavigurinn er fasti, þ.e. þegar engin hröðun er. Þá ferðast hluturinn í beina línu með föstum hraða.
+
+.. tip::
+  Lykkja á rússíbana er dæmi um ójafna hringhreyfingu.
+  Ferð rússíbanavagnsins er ekki fasti á meðan hann ferðast eftir lykkjunni, heldur er mest neðst og minnst efst.
+  Takið eftir hvernig hröðunavigurinn breytist og reynið að sjá fyrir ykkur þætti hans á mismunandi stöðum í lykkjunni.
+
+  .. figure:: ./myndir/vinna/nonuniform.svg
+    :width: 40%
+    :align: center

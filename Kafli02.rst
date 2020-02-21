@@ -1,336 +1,595 @@
-Mælieiningar
-============
+.. _s.vigrar:
 
-SI-einingakerfið
-----------------
+Vigrar
+======
 
-Í (næstum) öllum löndum heims er notað samræmt mælikerfi, SI einingakerfið, þar sem einkennandi stærðir heimsins hafa eigin grunneiningar.
-Lengd hefur þar grunneininguna metri og tími grunneininguna sekúnda.
+Táknmál
+-------
+*Vigur* (e. vector) er stærðfræðilegt hugtak fyrir stærð sem hefur bæði stærð og stefnu.
 
-SI-grunneiningarnar eru sjö:
+Vigrar eru oftast táknaðir með striki eða ör fyrir ofan bókstafinn, :math:`\bar{a}` , :math:`\vec{a}` , en sumir setja strikið undir, :math:`\underline{a}` .
+Í kennslubókum eru vigrar oft ekki yfirstrikaðir heldur aðeins feitletraðir, :math:`\boldsymbol{a}` .
+
+Þeir eru jafnan teiknaðir sem örvar í hnitakerfi og lýst með hnitum (e. coordinates).
+Hnit vigurs eru venjulegar tölur, líka kallaðar *skalarstærðir* (e. scalar), og lýsa staðsetningu endapunkts miðað við upphafspunkt.
+Hvert hnit er tengt einum ás í hnitakerfinu, yfirleitt rétthyrnt, sem notað er og stærð hnitsins (tölunnar) lýsir lengd vigursins í þá átt. Hnitin geta bæði verið jákvæð og neikvæð (eða núll).
+
+Vigrar geta bæði verið tvívíðir, í venjulegu :math:`xy`- hnitakerfi, eða þrívíðir, í :math:`xyz`- hnitakerfi. Vigrar eru yfirleitt ritaðir sem pör (eða þrennur) af hnitum sínum, lárétt eða lóðrétt.
+
+.. figure:: ./myndir/vigrar/vigur2.svg
+   :width: 60%
+   :align: center
+
+Ef vigurinn er tvívíður skrifum við:
 
 .. math::
- \begin{array}{c | c | c}
-	  \text{Mælistærð} & \text{Eining} & \text{Tákn} \\ \hline
-	  \text{Vegalengd} & \text{Metri} & m \\
-    \text{Tími} & \text{Sekúnda} & s \\
-    \text{Massi} & \text{Kílógramm} & kg\\
-	  \text{Rafstraumur} & \text{Amper} & A\\
-    \text{Hitastig} & \text{Kelvin} & K \\
-    \text{Ljósstyrkur} & \text{Candela} & cd \\
-    \text{Fjöldi} & \text{Mól} & n \\ \hline
-  \end{array}
 
-Einingar fyrir aðrar stærðir eru settar saman úr grunneiningum SI einingakerfisins.
-Hraði, breyting á staðsetningu yfir eitthvert tímabil, hefur eininguna metrar á sekúndu (m/s).
+	\overline{a}= (a_x,a_y) = \begin{pmatrix} a_x \\ a_y \end{pmatrix}
 
-.. tip::
-  **Að breyta á milli eininga**
+Ef vigurinn er þrívíður þá skrifum við:
 
-  Í daglegu tali notum við oft eininguna kílómetrar á klukkustund fyrir hraða, þó SI-einingin sé önnur. Skoðum hvernig við breytum á milli þessara eininga.
+.. math::
 
-  Við vitum að ein klukkustund hefur 3600 sekúndur (af því það eru 60 mínútur í hverri klukkustund og 60 sekúndur í hverri mínútu: :math:`60\cdot 60 = 3600`) og að einn kílómetri eru 1000 metrar. Þar sem :math:`1 \text{ klst} = 3600 \text{ s}` þá er hlutfallið 1, þ.e.
+		\overline{a}= (a_x,a_y,a_z) = \begin{pmatrix} a_x \\ a_y \\a_z \end{pmatrix}
 
-  .. math::
+þar sem :math:`a_x` er lengd vigursins :math:`\bar{a}` í stefnu :math:`x` - áss, :math:`a_y` er lengd vigursins :math:`\bar{a}` í stefnu :math:`y` - áss og :math:`a_z` er lengd vigursins :math:`\bar{a}` í stefnu :math:`z` - áss.
 
-  	\frac{1\text{ klst}}{3600\text{ s}}=1
+Lengd vigurs
+~~~~~~~~~~~~
 
-  og eins fyrir lengdareininguna:
+*Lengd* vigra er táknuð með lóðréttum strikum, algildismerkjum, :math:`|\bar{a}|`, eða einfaldlega bókstafnum án yfirstriksins, :math:`a`. Lengdina má reikna með jöfnu Pýþagórasar, ef vigur er tvívíður þá er heildarlengd vigurs:
 
-  .. math::
+.. math::
 
-  	\frac{1000\text{ m}}{1\text{ km}} =1
+	|\bar{a}| = a = \sqrt{a_x^2 + a_y^2}
 
-  Þar sem það breytir ekki stærð að margfalda hana með einum þá getum við breytt kílómetrum á klukkustund yfir í metra á sekúndu svona:
+En ef hann er þrívíður þá er lengdin:
 
-  .. math::
-    1 \frac{\text{km}}{\text{klst}} = 1\frac{\text{km}}{\text{klst}}\cdot \frac{1\text{ klst}}{3600\text{ s}} \cdot \frac{1000\text{ m}}{1\text{ km}}
+.. math::
 
-  Svo styttast einingarnar út:
+	|\bar{a}| = a = \sqrt{a_x^2 + a_y^2+a_z^2}
 
-  .. math::
-    1 \frac{\text{km}}{\text{klst}} = \frac{1000}{3600}\frac{\sout{\text{km}}}{\sout{\text{klst}}}\cdot \frac{\sout{\text{ klst}}}{\text{ s}} \cdot \frac{\text{ m}}{\sout{\text{ km}}} = \frac{1}{3.6} \frac{\text{ m}}{\text{ s}}
+.. figure:: ./myndir/vigrar/vigur.svg
+   :width: 60%
+   :align: center
 
-  Þessa aðferð má nota til þess að breyta á milli allra eininga.
+Vigurinn á myndinni hér að ofan hefur lengd 4 eftir :math:`x`-ásnum og 3 eftir :math:`y`-ásnum, svo hnit hans eru :math:`a_x = 4` og :math:`a_y = 3`
+og vigurinn :math:`\bar{a}` má þá rita:
+
+.. math::
+  \bar{a} = (a_x,a_y) = (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}
+
+Vigurinn á myndinni hér að ofan hefur því lengdina :math:`a = \sqrt{4^2 + 3^2} = 5` .
 
 .. note::
-  Í jöfnum þurfa einingarnar að passa saman, en allir liðir hverrar jöfnu þurfa að hafa sömu einingar. Það er til dæmis alveg merkingarlaust að leggja saman hraða og staðsetningu eða hitastig og massa. Þetta á líka við þegar mismunandi einingar eru notaðar til að lýsa sama fyrirbærinu, en ef leggja á saman eina stærð sem mæld er í metrum og aðra sem er mæld í millímetrum þá þarf að breyta öðru hvoru í hitt:
+  Stærð og stefna vigurs er óháð því hvar í hnitakerfinu hann er.
 
-  .. math::
+--------------------
 
-  	1 \text{ m} + 3\text{ mm} = 1000 \text{ mm} + 3\text{ mm} = 1003 \text{ mm} = 1.003 \text{m}
+.. eqt:: daemi-lengdvigurs
 
-.. tip::
-  Skoðum eina af :ref:`hreyfijöfnunum <s.hreyfijofnur>` sem lýsir staðsetningu hlutar (:math:`x`) sem falli af upphafsstaðsetningu (:math:`x_0`), upphafshraða hans (:math:`v_0`), hröðuninni sem hann hefur (:math:`a`) og tíma (:math:`t`):
+  **Æfingadæmi** Hver er lengd vigursins :math:`\vec{b}=\begin{pmatrix} 5 \\ -2 \end{pmatrix}` ?
 
-  .. math::
+  A) :eqt:`I` :math:`|\vec{b}| = 7`
 
-  	x=x_0 + v_0t + \frac12 at^2
+  #) :eqt:`I` :math:`|\vec{b}| = \sqrt{21}`
 
-  Allir liðir þessarar jöfnu þurfa að hafa einguna fyrir staðsetningu, metra. Athugum hvort þetta passi ekki örugglega.
+  #) :eqt:`C` :math:`|\vec{b}| = \sqrt{29}`
 
-  * :math:`x_0` hefur eininguna metri, svo fyrsti liður jöfnunnar er í lagi.
-  * Í öðrum liðnum kemur fyrir margfeldi hraða og tíma, en þá verður einingin líka metri: :math:`1 \frac{\text{m}}{\text{s}}\cdot \text{s} = 1 \text{ m}`
-  * Þriðji liðurinn er líka í lagi af því að hröðun hefur eininguna metri á sekúndu í öðru veldi og svo er margfaldað við tíma í öðru veldi: :math:`1 \frac{\text{m}}{\text{s}^2} \cdot \text{s}^2 = 1 \text{ m}`
+  .. eqt-solution::
+    Notum reglu Pýþagórasar:
 
-*Rúmmál* (e. volume) hefur SI-eininguna rúmmetri (:math:`\text{m}^3`) en í daglegu tali notum við oft lítra (L), en í einum rúmmetra eru þúsund lítrar. Einn millílíter (:math:`\text{mL}`, :math:`\frac{1}{1000}` úr lítra) er einn rúmsentímetri (:math:`\text{cm}^3`) .
+		.. math::
+			\begin{aligned}
+				|\bar{b}| &= \sqrt{b_x^2 + b_y^2} \\
+				&= \sqrt{(5)^2+(-2)^2}\\
+				&=\sqrt{25+4}\\
+				&= \sqrt{29}
+			\end{aligned}
 
-*Eðlismassi* (e. density) einhvers er hlutfall massa þess og rúmmálsins sem það tekur, oft táknað með gríska stafnum ró (:math:`\rho`). SI-eining eðlismassa er kílógramm á rúmmetra (:math:`\text{kg/m}^3`) en einingarnar gramm á rúmsentímetra (:math:`\text{g/cm}^3`) og kílógramm á líter :math:`\text{kg/L}` eru líka stundum notaðar.
+--------------------
 
-Ferskvatn hefur eðlismassa sem er í kringum :math:`\rho_{vatn}=1000 \text{kg/m}^3`. Saltvatn er aðeins þyngra, :math:`\rho_{sjór}=1030 \text{kg/m}^3`. Járn hefur háan eðlismassa :math:`\rho_{jarn}=7850\text{kg/m}^3` en loft lágan :math:`\rho_{loft} =1.2 \text{kg/m}^3`.
+Vigrar milli punkta
+~~~~~~~~~~~~~~~~~~~
 
-Hlutir sem hafa hærri eðlismassa sökkva í efnum sem hafa lægri eðlismassa. Þannig sekkur járn til sjávarbotns og helíumblöðrur reyna að flýja eigendur sína á 17. júní.
-
-
-
-Forskeyti SI-kerfisins
-~~~~~~~~~~~~~~~~~~~~~~
-
-Þegar fengist er við stærri mælistærðir, svo sem langar vegalengdir, er unnið með marga metra.
-Því hafa vísindamenn vanið sig á að kalla þúsund metra öðru nafni: einn kílómetra (:math:`1000 \text{m} = 1 \text{km}`). Þegar fengist er við litlar mælistærðir, svo sem þykkt á pappír, fást aðeins brot af heilum metrum.
-Algengt er að nota millímetra, einn þúsundasta úr metra. Þetta er tekið saman í þessari töflu,
-á milli kíló og millí eru:
+Algengt er að láta vigra liggja frá upphafspunkti hnitakerfisins (stöðu- eða staðarvigur) en það er hægt að reikna vigra á milli gefinna upphafs- og endapunkta.
+Vigurinn frá punktinum :math:`A=(x_1,y_1)` til punktsins :math:`B=(x_2,y_2)` er:
 
 .. math::
-  \begin{array}{c|c|c}
-    \text{Forskeyti} & \text{Tákn} & \text{Veldi} & \text{Margfeldi}\\ \hline
-    \text{Kíló} & \text{k} & 10^{3} & 1000\\
-    \text{Hektó} & \text{h} & 10^{2} & 100 \\
-    \text{Deka} & \text{da} & 10^{1} & 10 \\
-    \text{--} & \text{--} & 10^{0} & 1 \\
-    \text{Desi} & \text{d} & 10^{-1} & 0.1\\
-    \text{Centi} & \text{c} & 10^{-2} & 0.01\\
-    \text{Millí} & \text{m} & 10^{-3} & 0.001 \\ \hline
-  \end{array}
+  \overline{AB} = (x_2-x_1,y_2-y_1) = \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}
 
-Við getum því lýst 10 metrum sem 1 dam, 100 dm eða 1000 cm.
-Mörg hafa séð svona mynd sem nota má til að breyta á milli:
-
-.. image:: ./myndir/einingar/einingahus.svg
-  :width: 90 %
-  :align: center
-
-Í eðlisfræði er líka fengist við risastór fyrirbæri (eins og stjörnuþokur úti í geimi) og allra minnstu fyrirbærin (eins og rafeindir).
-Þá þarf enn stærri forskeyti:
+Ef við erum að skoða punkta í þrívíðu rúmi :math:`A=(x_1,y_1,z_1)` og :math:`B=(x_2,y_2,z_2)` þá er vigurinn á milli punktanna:
 
 .. math::
-  \begin{array}{c|c|c}
-    \text{Forskeyti} & \text{Tákn} & \text{Veldi} & \text{Margfeldi}\\ \hline
-    \text{Peta} & \text{P} & 10^{15} & 1 000 000 000 000 000 \\
-    \text{Tera} & \text{T} & 10^{12} & 1 000 000 000 000 \\
-    \text{Giga} & \text{G} & 10^{9} & 1 000 000 000 \\
-    \text{Mega} & \text{M} & 10^{6} & 1 000 000 \\
-    \text{Kíló} & \text{k} & 10^{3} & 1 000\\
-    \text{--} & \text{--} & 10^0 & 1\\
-    \text{Millí} & \text{m} & 10^{-3} & 0.001 \\
-    \text{Míkró} & \mu & 10^{-6} & 0.000 001 \\
-    \text{Nanó} & \text{n} & 10^{-9} & 0.000 000 001 \\
-    \text{Píkó} & \text{p} & 10^{-12} & 0.000 000 000 001 \\
-    \text{Femtó} & \text{f} & 10^{-15} & 0.000 000 000 000 001 \\ \hline
-  \end{array}
-
-.. image:: ./myndir/einingar/einingahus2.svg
-  :width: 90 %
-  :align: center
-
-.. note::
-  Athugið að þegar fengist er við massa þá er SI-einingin kílógramm en ekki gramm. Forskeyti eru sjaldan notuð þegar talað er um massa, þ.e. það er aldrei talað um mega-kílógramm því það væri mjög ruglandi. Það eru þó ein undantekning á þessu, en sagt er að þúsund kíló séu eitt *tonn*. Í öðrum vísindagreinum er gramm notað sem grunneining fyrir massa, t.d. lyf eru oftast mæld í millígrömmum (:math:`1\text{mg} = 1\cdot 10^{-3}\text{g} = 1\cdot 10^{-3}\cdot 10^{-3}\text{kg}=1\cdot 10^{-6}\text{kg}`).
+  \overline{AB} = (x_2-x_1,y_2-y_1, z_2-z_1) = \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \\z_2-z_1 \end{pmatrix}
 
 .. tip::
-  Frá jörðinni til sólarinnar eru :math:`1.496 \cdot 10^{11}` m. Ritum þetta með mismunandi einingum.
-
-  .. figure:: ./myndir/einingar/sol.svg
-    :align: center
-    :width: 50%
-
-  .. math::
-    \begin{aligned}
-      1.496 \cdot 10^{11} \text{ m} &= 149600000000 \text{ m} \\
-      & = 149.6 \cdot 10^{9} \text{ m} \\
-      & = 149.6 \text{ Gm} \\
-    \end{aligned}
-
-  Það eru því 149.6 gígametrar til sólarinnar.
-
-.. tip::
-  Rafeind í vetnisatómi ferðast í kringum kjarnann í fjarlægðinni :math:`5.29\cdot 10^{-11}` m.
-  Ritum þetta með mismunandi einingum.
-
-  .. figure:: ./myndir/einingar/atom.svg
-    :align: center
-    :width: 50%
-
-  .. math::
-    \begin{aligned}
-      5.29 \cdot 10^{-11} \text{ m} &= 0.0000000000529 \text{ m}\\
-      &= 52.9 \cdot 10^{-12} \text{ m}\\
-      &= 52.9 \text{ pm}\\
-    \end{aligned}
-
-  Rafeindin er því í 52.9 píkómetra fjarlægð frá kjarnanum.
-
-.. tip::
-
-  Edda á jörð sem er 12 ferkílómetrar. Hvað er lóðin margir hektarar (ferhektómetrar)?
-
-  **Lausn**
-
-  1 ferkílómetri er reitur sem er 1 kílómetri á hvorn kant. 1 kílómetri er 10 hektómetrar og því er:
-
-  .. math::
-    \begin{aligned}
-    1 \text{ km}^2 &= 1 \text{ km} \cdot 1 \text{ km} \\
-     &= 10 \text{ hm} \cdot 10 \text{ hm}\\ &= 100 \text{ hm}^2.
-    \end{aligned}
-
-  Jörðin hennar Eddu er því 1200 hektarar.
-
-  .. figure:: ./myndir/einingar/hektari.svg
-    :align: center
-    :width: 60%
-
------------
-
-.. eqt:: daemi-edlismassi
-
-  **Æfingadæmi** Eðlismassi kvikasilfurs (Hg) er :math:`\rho_{Hg}=13.5 \text{g/cm}^3`. Hver er eðlismassinn í SI-einingum?
-
-  A) :eqt:`I` :math:`\rho_{Hg}=13.5 \text{ kg/L}`
-
-  #) :eqt:`I` :math:`\rho_{Hg}=13500 \text{ kg/L}`
-
-  #) :eqt:`C` :math:`\rho_{Hg}=13500\text{ kg/m}^3`
-
-  #) :eqt:`I` :math:`\rho_{Hg}=13.5\text{ kg/m}^3`
-
---------------
-
-Önnur mælikerfi
----------------
-
-Í Bandaríkjunum er SI-einingakerfið ekki alltaf notað. Við notum þær aldrei hér en það er ágætt að þekkja þær engu að síður.
-Þar eru lengdir mældar í  eftirfarandi einingum:
-
-.. math::
-  \begin{array}{c | c | c  }
-	  \text{Mælistærð} & \text{Enskt heiti}& \text{Grunneining} \\ \hline
-	  \text{Míla} & \text{mile} & 1609 \text{ m} \\
-    \text{Stika} &\text{yard} & 0.9144 \text{ m} \\
-    \text{Fet} & \text{foot} &  0.3048 \text{ m} \\
-	  \text{Tomma} & \text{inch} &  0.0254 \text{ m} \\ \hline
-  \end{array}
-
-.. tip::
-
-  Jörðin hennar Eddu er 12 ferkílómetrar. Hvað eru það margar fermílur?
+  Reiknum vigurinn frá punktinum :math:`A=(-1,7)` til punktsins :math:`B=(5,2)` .
 
   **Lausn**
 
   .. math::
     \begin{aligned}
-      1 \text{ míla} &= 1609 \text{ m} = 1.609 \text{ km} \\
-      (1 \text{ km})^2 &= \left( \frac{1}{1.609} \text{ míla} \right) ^2 \\
-      1 \text{ km}^2 &= 0.386   \text{ míla}^2 \\
-      12 \text{ km}^2 &=   12 \cdot 0.386 \text{ míla}^2 = 4.635 \text{ míla}^2 \\
+      \overline{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
+      &= \begin{pmatrix} 5-(-1) \\ 2-7 \end{pmatrix} \\
+      &= \begin{pmatrix} 6 \\ -5 \end{pmatrix}
     \end{aligned}
 
-  12 ferkílómetrar eru því 4.635 fermílur.
+  .. figure:: ./myndir/vigrar/vigurtveirpkt.svg
+    :align: center
+    :width: 50%
 
-Massi er þar mældur í pundum (e. pound) og únsum (e. ounces) en :math:`1 \text{ pund} = 0.4536 \text{ kg}` og :math:`1 \text{ únsa}=0.0283495 \text{kg}`.
+  Vigurinn :math:`\begin{pmatrix} 6 \\ -5 \end{pmatrix}` er sá sami, hvort sem hann liggur á milli :math:`A` og :math:`B` eða frá upphafspunktinum til punktsins :math:`(6,-5)` .
 
-Þar er hitastig mælt á Fahrenheit-kvarða, sem breyta má í Celcius (sem við notum) með eftirfarandi formúlu:
+Hallatala vigurs
+~~~~~~~~~~~~~~~~
 
-.. math::
-  T_{°C}=\frac{5}{9}(T_{°F}-32)
-
-SI- einingin fyrir hitastig er aftur á móti hvorki Celcius-kvarðinn né Fahrenheit-kvarðinn, heldur *Kelvin*.
-Svona má breyta Celcius í Kelvin:
-
-.. math::
-  T_{K}=T_{°C}+273.15
-
-Kelvin-kvarðinn er svipaður Celcius-kvarðanum að því leyti að aukning í hita um 1 K er jafnt aukningu í hita um 1 °C.
-Munurinn er sá að Celcius setur 0 °C við frostmark vatns þá setur Kelvin 0 við *alkul*, lægsta mögulega hitastig efnisheimsins (:math:`-273.15^{\circ}\text{C} = 0\text{ K}`) en þá verða atóm alveg kyrr.
-Það eru því ekki til neikvæð hitastig á Kelvin-kvarðanum!
-
-Staðalform
-----------
-
-Staðalform (e. `scientific notation <https://en.wikipedia.org/wiki/Scientific_notation>`_) er gjarnan til þess að lýsa stærðum í eðlisfræði.
-Þá er komman færð fram um :math:`n` bil og talan margfölduð með :math:`10^n` .
-Þetta skýrist best með dæmum:
+Stundum er talað um að tvívíður vigur hafi *hallatölu*  :math:`h=\frac{a_y}{a_x}` , ef :math:`a_x\neq 0` .
+Tveir vigrar eru *samsíða* ef þeir hafa sömu hallatölu.
 
 .. tip::
-	Ljóshraðinn, með níu markverðum stöfum, er :math:`c=299792458` m/s. Á staðalformi er ljóshraðinn skrifaður :math:`c=2.99792458\cdot10^8` m/s, en þá er komman færð áfram um 8 sæti.
+  Finnum vigur sem er samsíða :math:`\bar{a}=(-1,6)` og hefur lengdina 9.
 
-	Í langflestum tilvikum er nógu nákvæmt að vinna með :math:`c=3.00\cdot10^8` m/s og er það yfirleitt gert.
+  **Lausn**
 
+  Hallatala :math:`\bar{a}` er :math:`h_{\bar{a}}=\frac{a_y}{a_x}=\frac{6}{-1}=-6` .
+  Þá vitum við að vigurinn sem við leitum að, :math:`\bar{b}` , uppfyllir það sama:
 
-Notkun staðalforms auðveldar eðlisfræðingum að átta sig á *stærðargráðu* þess sem þau erum að skoða. Í öllum útreikningum þá getur maður metið um það bil hversu stóra tölu við búumst við í niðurstöðunni. Ef við erum að reikna hversu hratt bíll keyrir eftir götu sést að útreikningarnir hljóta að vera rangir ef svarið er af of stórri stærðargráðu:
+  .. math::
+    h_{\bar{b}}=\frac{b_y}{b_x}=-6
 
-.. math::
+  sem er jafngilt því að :math:`b_y=-6b_x` .
 
-	v=1\cdot 10^4 \text{ m/s}= 10000\text{ m/s}
+  Skilyrðið að :math:`\bar{b}` þurfi að hafa lengdina 9 gefur að:
 
-eða of lítilli:
+  .. math::
+    |\bar{b}| = \sqrt{b_x^2+b_y^2} =9
 
-.. math::
+  Setjum :math:`b_y=-6b_x` inn og fáum:
 
-	v=1\cdot 10^{-5}\text{ m/s}=0.00001\text{ m/s}
+  .. math::
+    \begin{aligned}
+      9 &= \sqrt{b_x^2+b_y^2}\\
+      &=\sqrt{b_x^2+(-6b_x)^2} \\
+      &= \sqrt{b_x^2+36b_x^2} \\
+      &=\sqrt{37b_x^2} \\
+      &=b_x\sqrt{37} \\
+      b_x&=\frac{9}{\sqrt{37}} \approx 1.480\\
+      b_y&= -6b_x = \frac{-54}{\sqrt{37}} \approx -8.878
+    \end{aligned}
 
+  Vigur sem er samsíða :math:`\bar{a}=(-1,6)` og hefur lengdina 9 er því
+
+  .. math::
+    \bar{b}= \frac{1}{\sqrt{37}} \begin{pmatrix} 9 \\  -54 \end{pmatrix}
+
+Að liða vigra
 -------------
 
-.. eqt:: daemi-stadalform
+Vigra er annað hvort hægt að tákna með rétthyrndum hnitum, eins og við höfum gert hingað til, eða með pólhnitum, þá lýsum við vigri með lengd og stefnuhorni: :math:`\bar{a} = (a,\theta)` .
+Hornið :math:`\theta` er skilgreint frá jákvæðum :math:`x`-ás og að vigrinum.
+Með þessum upplýsingum er hægt að liða vigurinn eftir :math:`x`- og :math:`y`-ás með því að nota hornaföll.
+`Hér <http://edbook.hi.is/undirbuningur_stae/Kafli07.html>`_ má finna efni um hornaföll.
 
-  **Æfingadæmi** Hvernig er hraðinn :math:`0.002\text{ m/s}`  skrifaður á staðalformi?
+Þættir vigursins eru föll af stefnuhorninu sem er yfirleitt merkt :math:`\theta` eða :math:`\phi` :
 
-  A) :eqt:`I` :math:`0.002\text{ m/s}`
+.. math::
+  a_x = a\cos(\theta) \\
+  a_y = a\sin(\theta)
 
-  #) :eqt:`I` :math:`2\cdot 10^3 \text{ m/s}`
+þar sem :math:`a=|\bar{a}|` er lengd vigursins.
 
-  #) :eqt:`C` :math:`2\cdot 10^{-3}\text{ m/s}`
-
-  #) :eqt:`I` :math:`2\cdot 10^{-2}\text{ m/s}`
-
------------------
-
-Markverðir stafir
------------------
-Ef þú myndir mæla þykkt kennslubókarinnar í *Eðlisfræði 1* með venjulegri reglustriku myndirðu geta sagt að hún væri 2.7 cm á þykkt.
-Þú mættir ekki segja að hún væri 2.70 cm þykk af því reglustrikur eru ekki sérlega nákvæmar, bókin gæti allt eins verið 2.68 cm eða 2.73 cm án þess að þú sæir það í mælingunni.
-Ef þú myndir síðan mæla þykktina aftur en nú með `skíðmáli <https://is.wikipedia.org/wiki/Sk%C3%ADðmál>`_ myndirðu komast að því að hún væri 2.723 cm þykk.
-Munurinn sem væri á mælingunum tveimur væri sá að *óvissa* (e. uncertainty) eða *skekkja* (e. error) skíðmálsins er minni en óvissa reglustrikunnar.
-
-Við táknum *nákvæmni* (e. accuracy) mældrar stærðar með tákninu :math:`\pm` (plús-mínus).
-Mæling reglustrikunnar á þykkt bókarinnar myndum við tákna með :math:`2.7 \pm 0.1` cm, en mælinguna með skíðmálinu með :math:`2.723 \pm 0.001` cm.
-Reglustrikan myndi gefa þykkt bókarinnar með tveimur markverðum stöfum, en skíðmálið með fjórum.
+Myndrænt má ímynda sér að ljósi sé lýst á :math:`x`-ásinn með vasaljósi sem er hornrétt á ásinn.
+:math:`x`-þáttur vigursins er þá eins og skuggi vigursins á :math:`x`-ásnum.
+Þetta er líka kallað ofanvarp vigursins á :math:`x`-ásinn.
 
 .. tip::
+  Hér sjáum við aftur vigurinn frá því í upphafi kaflans:
+
+  .. math::
+    \bar{a}= (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}
+
+  en nú skulum við athuga hvernig við getum lýst honum með lengd og stefnuhorni.
+
+  .. figure:: ./myndir/vigrar/mynd-vigur.svg
+     :width: 60%
+     :align: center
+
+  Lengd vigursins er eins og áður 5, en stefnuhornið finnum við með því að skoða skammhliðarnar.
+
+  .. math::
+    \tan(\theta) = \frac{a_y}{a_x} = \frac{3}{4}\\
+    \theta\approx 0.6435
+
+  Vigurinn :math:`(4,3)` má því líka skrifa sem :math:`(a,\theta) = (5,0.6435)`
+
+Öllum vigrum er hægt að lýsa með annað hvort lengdum í :math:`x`- og :math:`y`- stefnu eða með lengd og stefnuhorni.
+Eins og við höfum séð er lítið mál að breyta á milli.
+
+--------------------
+
+.. eqt:: daemi-stefnuhorn
+
+	**Æfingadæmi** Hvert er stefnuhorn vigursins :math:`\vec{b}=\begin{pmatrix} 5 \\ -2 \end{pmatrix}` ?
+
+	A) :eqt:`I` :math:`21.8^{\circ}`
+
+	#) :eqt:`C` :math:`-21.8^{\circ}`
+
+	#) :eqt:`I` :math:`68.2^{\circ}`
+
+	#) :eqt:`I` :math:`-68.2^{\circ}`
+
+	 .. eqt-solution::
+	   Við vitum að :math:`b_x=b\cos(\theta)` og :math:`b_y=b\sin(\theta)` og því fæst
+
+			.. math::
+				\begin{aligned}
+					\frac{b_y}{b_x} &= \frac{b\cos(\theta)}{b\sin(\theta)} \\
+					\frac{b_y}{b_x} &= \frac{\cos(\theta)}{\sin(\theta)} \\
+					\frac{b_y}{b_x} &= \tan(\theta) \\
+					\arctan\left(\frac{b_y}{b_x} \right) &= \theta\\
+					\theta &= \arctan\left(\frac{-2}{5} \right) \\
+					\theta &= -21.8^{\circ}
+				\end{aligned}
+
+			.. figure:: ./myndir/vigrar/mynd-vigur-daemi.svg
+				:width: 60%
+				:align: center
+
+--------------------
+
+Einingarvigrar
+--------------
+Einingarvigrar eru vigrar sem hafa lengdina 1, en þeir eru oft merktir með höttum (:math:`\hat{e}`) í staðinn fyrir yfirstrikum eða örvum.
+Einingavigrarnir :math:`\hat{\imath}`, :math:`\hat{\jmath}` og :math:`\hat{k}` liggja samsíða :math:`x` - , :math:`y` - og  :math:`z` - ásunum í rétthyrndu hnitakerfi .
+
+.. math::
+  \begin{aligned}
+  \hat{\imath} &= \begin{pmatrix} 1 \\0 \\0 \end{pmatrix} \\
+  \hat{\jmath} &= \begin{pmatrix} 0 \\1 \\0 \end{pmatrix} \\
+  \hat{k} &= \begin{pmatrix} 0 \\0 \\1 \end{pmatrix} \\
+  \end{aligned}
+
+Þeir eru líka stundum táknaðir með :math:`\hat{e}_x`, :math:`\hat{e}_y` og :math:`\hat{e}_z`
+
+.. figure:: ./myndir/vigrar/einingarvigrar.svg
+   :width: 50%
+   :align: center
+
+Einingarvigrarnir :math:`\hat{\imath}`, :math:`\hat{\jmath}` og :math:`\hat{k}` eru *línulega óháðir* (e. linearly independent), sem þýðir að engan þeirra er hægt að mynda úr hinum tveimur með samlagningu þeirra eða margföldun með tölu.
+Hvernig sem þú teygir á og raðar saman :math:`\hat{\imath}` og :math:`\hat{\jmath}` færðu aldrei út :math:`\hat{k}` .
+Þessi eiginleiki kemur til vegna þess að einingarvigrarnir eru allir *hornréttir* á hvorn annan.
+
+Alla vigra má skrifa sem skalarstærðir margfaldaðar við einingarvigrana:
+
+.. math::
+  \bar{a} = (a_x, \; a_y, \; a_z ) = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}
+
+Samlagning vigra
+----------------
+Þegar vigrar eru lagðir saman eru hnit eftir hverjum ás fyrir sig lögð saman.
+Summa tveggja vigra :math:`\bar{a} = (a_x,a_y)` og :math:`\bar{b} = (b_x,b_y)` er:
+
+.. math::
+  \bar{c} = \bar{a} + \bar{b} = (a_x + b_x, a_y +b_y) = \begin{pmatrix} a_x+b_x \\ a_y+b_y \end{pmatrix}
+
+Fyrir þrívíða vigra gildir sambærilegt, en summa tveggja vigra :math:`\bar{a} = (a_x,a_y,a_z)` og :math:`\bar{b} = (b_x,b_y,b_z)` er:
+
+.. math::
+  \bar{c} = \bar{a} + \bar{b} = (a_x + b_x, a_y +b_y, a_z+b_z) = \begin{pmatrix} a_x+b_x \\ a_y+b_y \\ a_z+b_z  \end{pmatrix}
+
+.. tip::
+
+  Leggjum saman vigrana :math:`\bar{a}=(4,3)` og :math:`\bar{b}=(1,3)` :
+
+  .. math::
+    \bar{a}+\bar{b}=(4,3) + (1,3) = (4+1, 3+3) = (5,6)
+
+Myndrænt má ímynda sér að upphafspunktur seinni vigursins sé settur í endapunkt fyrri vigursins,
+og summa þeirra er frá upphafspunkti fyrri vigursins til endapunkts þess seinni.
+
+.. figure:: ./myndir/vigrar/vigrasamlagning.svg
+   :width: 60%
+   :align: center
+
+.. note::
+  Þegar vigrar eru lagðir saman þá leggjast lengdirnar yfirleitt **ekki** saman.
+  Þó að :math:`\bar{c} = \bar{a} + \bar{b}` þýðir það **ekki** að :math:`c = a + b`.
+
+  Í dæminu hér á undan er t.d.
+
+  .. math::
+    c = |\bar{c}| = \sqrt{5^2+6^2} \approx 7,8 \\
+    a + b = \sqrt{4^2+3^2} + \sqrt{1^2+3^2} \approx 8,2
+
+--------------------------------
+
+Um samlagningu vigra gilda eftirfarandi reglur:
+
+.. math::
+  \begin{aligned}
+    \bar{a} +\bar{b} &= \bar{b} + \bar{a} & \text{Víxlregla}\\
+    (\bar{a}+\bar{b})+\bar{c} &= \bar{a} + (\bar{b}+\bar{c}) & \text{Tengiregla}
+  \end{aligned}
+
+--------------------------------
+
+.. tip::
+  Höfum þrjá punkta:
+
   .. math::
     \begin{aligned}
-      11.2 &= 1.12\cdot 10^1  & \text{þrír markverðir stafir}\\
-      0.0000045&=4.5\cdot 10^{-6} & \text{tveir markverðir stafir}
+      A&=(x_1,y_1)=(1,2) \\
+      B&=(x_2,y_2)=(4,5) \\
+      C&=(x_3,y_3)=(3,-1) \\
     \end{aligned}
+
+  Reiknum nú vigrana á milli punktanna: :math:`\overline{AB}, \overline{AC} \text{ og } \overline{BC}`
+
+  .. math::
+    \begin{aligned}
+      \overline{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
+      &=\begin{pmatrix} 4-1 \\ 5-2\end{pmatrix} =\begin{pmatrix} 3 \\3\end{pmatrix} \\
+      &\\
+      \overline{AC} &= \begin{pmatrix}x_3-x_1 \\ y_3-y_1 \end{pmatrix}\\
+      &=\begin{pmatrix} 3 - 1 \\ (-1)-2 \end{pmatrix} =\begin{pmatrix} 2 \\ -3\end{pmatrix} \\
+      &\\
+      \overline{BC} &= \begin{pmatrix} x_3-x_2 \\ y_3-y_2 \end{pmatrix}\\
+      &=\begin{pmatrix} 3 - 4 \\ (-1) -5 \end{pmatrix} = \begin{pmatrix} -1 \\ -6 \end{pmatrix} \\
+    \end{aligned}
+
+  .. figure:: ./myndir/vigrar/innskots.svg
+    :align: center
+    :width: 50%
+
+  Hér eru punktarnir teiknaðir inn ásamt vigrunum :math:`\overline{AB}, \overline{AC} \text{ og } \overline{BC}` .
+
+Af þessu dæmi má sjá *innskotsregluna* :
+
+.. math::
+  \overline{AC} = \overline{AB} + \overline{BC}
+
+
+Innfeldi og krossfeldi
+----------------------
+
+Þegar vigur :math:`\bar{v}` er margfaldaður með tölu :math:`s` er hver þáttur vigursins margfaldaður með tölunni:
+
+.. math::
+    \begin{aligned}
+        s \cdot \bar{v} &= s\cdot (v_x, v_y, v_z) \\
+        &= (s \cdot v_x, s \cdot v_y, s \cdot v_z)
+    \end{aligned}
+
+Margfeldi vigra er tvenns konar, *innfeldi* (punktfeldi, e. dot product, scalar product) og *krossfeldi* (e. cross product, vector product).
+
+Innfeldi
+~~~~~~~~
+
+**Innfeldi** tveggja vigra er táknað með punkti og útkoman er *tala*: :math:`c = \bar{a} \cdot \bar{b}` .
+Ef þættir vigranna eru þekktir er innfeldið reiknað:
+
+.. math::
+  \boxed{
+  \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y
+  }
+
+eða, ef vigrarnir eru þrívíðir:
+
+.. math::
+
+	\bar{a} \cdot \bar{b} = a_x b_x + a_y b_y + a_z b_z
+
+.. tip::
+    Reiknum innfeldi vigranna :math:`\bar{a}=(7,8)` og :math:`\bar{b}=(-1,3)` :
+
+    **Lausn**
+
+    .. math::
+      \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y = 7\cdot (-1)+ 8\cdot 3 = -7+24 =17
+
+Innfeldið má líka reikna með:
+
+.. math::
+  \bar{a} \cdot \bar{b} = a b \cos{\phi}
+
+þar sem :math:`\phi` er hornið milli :math:`\bar{a}` og :math:`\bar{b}` þegar þeir hafa sama upphafspunkt.
+
+.. note::
+  **Tveir vigrar eru hornréttir ef innfeldi þeirra er núll.**
+
+.. tip::
+    Reiknum hornið á milli vigranna :math:`\bar{a}=(2,4)` og :math:`\bar{b}=(4,2)` :
+
+    .. figure:: ./myndir/vigrar/innfeldi.svg
+      :align: center
+      :width: 60%
+
+    **Lausn**
+
+    Við vitum að :math:`\bar{a} \cdot \bar{b} = a b \cos{\phi}` , þar sem :math:`a` og :math:`b` eru lengdir vigranna.
+    Lengdirnar eru:
+
+    .. math::
+      \begin{aligned}
+        a = \sqrt{a_x^2 + a_y^2} = \sqrt{2^2 + 4^2} = \sqrt{20} \\
+        b = \sqrt{b_x^2 + b_y^2} = \sqrt{4^2 + 2^2} = \sqrt{20}
+      \end{aligned}
+
+    Reiknum innfeldi vigranna:
+
+    .. math::
+      \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y = 2\cdot 4+ 4\cdot 2 = 16
+
+    Því er
+
+    .. math::
+      \begin{aligned}
+        \bar{a} \cdot \bar{b} &= a b \cos{\phi} \\
+        \cos{\phi} &= \frac{\bar{a} \cdot \bar{b}}{a b} = \frac{16}{\sqrt{20} \cdot \sqrt{20}} = \frac{16}{20}\\
+        \phi &= 36.8 ° = 0.644 \text{Rad}
+      \end{aligned}
+
+
+Krossfeldi
+~~~~~~~~~~
+
+**Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\bar{c} = \bar{a} \times \bar{b}` . Krossfeldi koma mikið fyrir í eðlisfræði, sérstaklega í tengslum við rafsegulkrafta.
+Krossfeldi tveggja vigra :math:`\bar{a}=(a_x,a_y,a_z)` og :math:`\bar{b}=(b_x,b_y,b_z)` er:
+
+.. math::
+  \boxed{
+    \bar{c}=\bar{a} \times \bar{b} =(a_y b_z - a_z b_y, \quad a_z b_x - a_x b_z, \quad a_x b_y - a_y b_x)
+    }
+
+Þetta er löng runa til að muna utan að, en hér eftir kemur aðferð til að reikna krossfeldi.
 
 --------------
 
-Þegar stærðir eru margfaldaðar saman þá má útkoman ekki hafa fleiri markverða stafi en sú tala sem hafði fæsta markverða stafi.
+Skrifum vigrana upp í tvær línur:
 
-.. tip::
+.. math::
+  \begin{aligned}
+    \bar{a} \quad &\rightarrow \quad & a_x \quad a_y \quad a_z \\
+    \bar{b} \quad &\rightarrow \quad & b_x \quad b_y \quad b_z
+  \end{aligned}
+
+Fyrsta stak krossfeldisins fæst með því að "fela" fyrsta dálkinn (:math:`a_x` og :math:`b_x`) og margfalda hin stökin í kross og finna mismun. Þetta skýrist best grafískt:
+
+.. figure:: ./myndir/vigrar/kr-utskyring1.svg
+  :width: 50%
+  :align: center
+
+Til að finna fyrsta stakið hunsum við fyrsta dálkinn, margföldum saman hornalínuna :math:`\searrow` og drögum síðan frá margfeldið af hornalínunni :math:`\swarrow`.
+Fyrsta stak krossfeldisins er því
+
+.. math::
+
+  c_x=a_yb_z - a_zb_y
+
+------------------
+
+.. figure:: ./myndir/vigrar/kr-utskyring2.svg
+  :width: 60%
+  :align: center
+
+Til að finna annað stakið bætum við fyrsta dálkinum aftur við aftast, hunsum annan dálkinn, margföldum í kross yfir þriðja og fjórða dálkinn; fyrst :math:`\searrow` og  drögum síðan :math:`\swarrow` frá.
+Annað stak krossfeldisins er því
+
+.. math::
+
+	c_y=a_zb_x - a_xb_z
+
+-----------------
+
+.. figure:: ./myndir/vigrar/kr-utskyring3.svg
+  :width: 50%
+  :align: center
+
+Við finnum þriðja stak krossfeldisins með því að hunsa þriðja dálkinn og margfalda í kross yfir fyrsta og annan dálkinn. Fáum
+
+.. math::
+
+	c_z=a_xb_y-a_yb_x
+
+----------------
+
+Þannig sjáum við að krossfeldi vigranna :math:`\bar{a} = (a_x,a_y,a_z)` og :math:`\bar{b} = (b_x,b_y,b_z)` er:
+
+.. math::
+  \bar{c}=\bar{a} \times \bar{b} = (a_yb_z - a_zb_y,a_xb_z - a_zb_x,a_xb_y-a_yb_x)
+
+
+----------------
+
+.. figure:: ./myndir/vigrar/krossfeldi.svg
+   :width: 60%
+   :align: center
+
+Útkoma krossfeldisins er vigur sem er hornréttur á bæði :math:`\bar{a}` og :math:`\bar{b}`. Hér er :math:`\bar{c} =\bar{a} \times \bar{b}`. Stefna :math:`\bar{c}` ákvarðast af **hægri** handar reglunni:
+
+.. figure:: ./myndir/vigrar/hhr.svg
+    :width: 60%
+    :align: center
+
+Lengd krossfeldis :math:`\bar{a} \text{ og } \bar{b}` má reikna úr frá lengdum vigranna og horninu á milli þeirra.
+
+.. math::
+  |\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)
+
+.. note::
+  Þegar krossfeldi er reiknað skiptir því máli hvor vigurinn er á undan.
+
   .. math::
-    \frac{0.745\cdot 2.2}{3.885} = 0.42
-
-  Sú tala sem hefur fæsta stafi í þessu dæmi er 2.2, sem hefur 2 markverða stafi.
-  Því er rétt að gefa svarið með 2 markverðum stöfum, 0.42, þó að flestar reiknivélar myndu gefa svarið :math:`0.4218790219`.
-
-
-Þegar stærðir eru lagðar saman þá má útkoman ekki hafa minni óvissu en sú sem hafði mesta óvissu.
-Markverðir stafir í samlagningu fer því eftir aukastöfum stærðanna, en ekki óvissu þeirra.
+    \bar{a} \times \bar{b} = - \bar{b} \times \bar{a}
 
 .. tip::
+    Reiknum krossfeldi vigranna :math:`\bar{a}=(1,2,3)` og :math:`\bar{b}=(4,5,6)`.
+
+    **Lausn**
+
+    .. math::
+      \begin{aligned}
+        \bar{a} \times \bar{b} &= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
+        &= (2\cdot 6-3\cdot 5)\hat{\imath} + (3\cdot 4 - 1 \cdot 6) \hat{\jmath} + ( 1\cdot 5 - 2\cdot 4) \hat{k}\\
+        &= -3 \hat{\imath} +6 \hat{\jmath} - 3\hat{k}\\
+        &= (-3,6,-3)
+      \end{aligned}
+
+-------------------
+
+.. eqt:: daemi-krossfeldi
+
+  **Æfingadæmi** Reiknið krossfeldi vigranna :math:`\overline{a}= (-1,3)` og :math:`\overline{b}=(3,1)`
+
+  A) :eqt:`I` :math:`(0,0,6)`
+
+  #) :eqt:`I` :math:`0`
+
+  #) :eqt:`C` :math:`(0,0,-6)`
+
+  #) :eqt:`I` :math:`6`
+
+  .. eqt-solution::
+    Þegar við reiknum krossfeldi vigra sem liggja í :math:`xy`-planinu, þá setjum við :math:`a_z=0` og :math:`b_z=0`.
+    Við skulum nota formúluna sem var gefin hér að ofan
+
+    .. math::
+
+      \begin{aligned}
+        \bar{a} \times \bar{b} &= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
+        &= (3\cdot 0- 0\cdot 1)\hat{\imath}  + (0\cdot 3- (-1)\cdot 0 )\hat{\jmath} + ((-1)\cdot 3 - 3\cdot 1)\hat{k}\\
+        &= (0,0,-6)
+      \end{aligned}
+
+    Þar sem :math:`\overline{a}` og :math:`\overline{b}` voru báðir í :math:`xy`- planinu og krossfeldi þeirra þarf að vera hornrétt á þá báða þá erum við ekki hissa þó að niðurstaðan okkar sé að krossfeldið sé samsíða :math:`z`- ásnum.
+
+------------------
+
+.. tip::
+	Reiknum hornið milli vigranna :math:`\bar{a}=(1,2,3)` og :math:`\bar{b}=(4,5,6)`.
+
+	**Lausn**
+
+	Þetta dæmi er bæði hægt að leysa með því að nota regluna um krossfeldi: :math:`|\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)` eða regluna um innfeldi: :math:`\overline{a}\cdot \overline{b} = ab\cos(\phi)` og auðvitað er niðurstaðan sú sama sama hvor reglan er notuð.
+
+	Notum nú regluna :math:`|\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)` og byrjum á því að reikna lengd vigranna:
+
 	.. math::
-		27.153 + 138.2-11.74=153.6
+		\begin{aligned}
+			|\bar{a}| &=\sqrt{1^2+2^2+3^2} = \sqrt{14} \\
+			|\bar{b}| &=\sqrt{4^2+5^2+6^2} = \sqrt{77} \\
+			|\bar{a} \times \bar{b}| &= \sqrt{(-3)^2+6^2+(-3)^2}=\sqrt{54}
+		\end{aligned}
 
-	Hér hefur talan 138.2 mesta óvissu (fæsta aukastafi aftan við kommu) svo gefa þarf svarið með jafn mikilli óvissu, þ.e. einum aukastaf á eftir kommu. Flestar reiknivélar myndu gefa svarið 153.613 en í vísindalegum útreikningum getum við ekki tekið mark á síðustu tveimur tölunum.
+	Þá fáum við:
 
-Reglur þessar um meðferð markverðra stafa eiga við um alla útreikninga í eðlisfræði, bæði verklegum og fræðilegum.
+	.. math::
+		\begin{aligned}
+			\sin(\phi) &= \frac{|\bar{a} \times \bar{b}| }{|\bar{a}| |\bar{b}|} \\
+			&=\frac{\sqrt{54}}{\sqrt{14}\sqrt{77}} \\
+			&=\sqrt{\frac{54}{1078}}\\
+			\phi&\approx0.226 \text{ Rad} \\
+			\phi&\approx 13° \\
+		\end{aligned}

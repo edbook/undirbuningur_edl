@@ -1,268 +1,223 @@
-Orka
-====
-Öll eðlisfræðileg kerfi hafa að geyma orku af einhverju tagi, en hún segir til um hve mikla vinnu þarf til þess að breyta ástandi kerfisins.
+Skriðþungi
+==========
 
-Varðveisla orku er eitt af mikilvægustu lögmálum eðlisfræðinnar.
+Hugsum okkur hlut sem hefur fastan massa :math:`m`. Nú verður þessi hlutur fyrir einhverjum kröftum, en skv. fyrsta lögmáli Newtons getum við skrifað:
 
-**Orku er ekki hægt að búa til eða eyða.** Hún getur hvorki birst upp úr þurru, né horfið sporlaust. Orka varðveitist í öllum ferlum en getur breytt um form.
-Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
+.. math::
+  \sum \overline{F} = m\overline{a}
 
-*Mættisorka* (e. potential energy) er geymd á einhvern máta:
+þar sem :math:`\overline{a}` er hröðunin sem hluturinn fær vegna kraftanna. Þar sem hröðun er tímaafleiða hraða, :math:`\overline{a} = \frac{d\overline{v}}{dt}`, þá getum við skrifað:
 
-- þyngdarstöðuorka (t.d. vegna þyngdarsviði jarðar)
-- gormstöðuorka eða spennuorka (t.d. í teygðum og þjöppuðum gormum)
-- efnaorka (í efnatengjum sameinda)
-- kjarnorka (í kjörnum atóma)
+.. math::
+  \sum \overline{F} = m \frac{d\overline{v}}{dt}
 
-*Hreyfiorka* (e. kinetic energy) er þar sem hlutir eða eindir eru á hreyfingu:
+Við skilgreinum *skriðþunga* (e. momentum) hlutar á hreyfingu sem margfeldi massans og hraðans sem hann er á.
 
-- varmarorka (titrandi atóm)
-- hljóð (titrandi efni)
-- rafsegulorka (ljós)
-- raforka (rafeindir á hreyfingu)
+.. math::
 
-.. tip::
-  **Orka breytir um form.**
-
-  Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
-  Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
-
-  Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í efnatengjum atóma sem *efnaorka*.
+  \overline{p}=m\overline{v}
 
 .. note::
-  Orka er skalarstærð, *ekki vigur*. Lokað eðlisfræðilegt kerfi býr yfir fastri orku, sem getur breytt um form en getur aldrei horfið eða aukist, en orkan bendir ekki í neina sérstaka átt.
 
-Hér munum við einbeita okkur að
+	Þar sem skriðþungi er margfeldi vigurs (hraðans) og skalarstærðar (massans) þá sjáum við að *skriðþungi er vigur*. Eining skriðþunga er :math:`\text{kg}\cdot\text{m/s}` sem er það sama og :math:`\text{N}\cdot\text{s}`
 
-Vinna
------
-Kraftur :math:`F` er sagður vinna *vinnu* (e. work) þegar hann flytur hlut um *vegalengd* (e. displacement) :math:`s` .
-Vinna er oft táknuð með :math:`W` og er margfeldi kraftsins og færslunnar:
+Massamikill hlutur á miklum hraða hefur því mikinn skriðþunga á meðan massalitlir hlutir á hægri hreyfingu mjög lítinn.
+
+Því gildir að summa kraftanna sem verka á hlut er jöfn breytingunni sem verður á skriðþunga hlutarins.
 
 .. math::
-  W=F\cdot s
+  \sum \overline{F} = \frac{d\overline{p}}{dt}
 
-Einingin fyrir vinnu er Joule, táknað :math:`J`.
-
-.. math::
-  1 \text{ J} = 1 \text{ N} \cdot 1 \text{ m} = 1 \frac{\text{kg}\text{ m}^2}{\text{s}^2}
+Þetta þýðir því að það ef koma á massamiklum hlut á mikla hreyfingu úr kyrrstöðu þarf mikinn kraft.
+Hugsaðu þér að þú sért að versla í innkaupakerru. Í upphafi ferðarinnar er kerran tóm og hún lætur auðveldlega að stjórn. Eftir því sem vörurnar safnast í hana, þyngist hún og það verður sífellt erfiðara (krefst meiri krafts) að koma henni af stað. Að sama skapi er erfitt að stoppa hana sé hún komin á skrið.
 
 .. tip::
-  Vinna togkrafts :math:`T=25 \text{ N}` við að flytja hlut vegalengdina :math:`s=10 \text{ m}` er
+  :math:`m=1600` kg bíll keyrir áfram á :math:`|\overline{v}|=5` m/s.
+  Skriðþungi hans er :math:`|\overline{p}|=m|\overline{v}|= 1600\text{ kg}\cdot 5 \text{m} /\text{s} = 8000 \text{ kg } \text{m} /\text{s}`.
+  Hér er massamikill hlutur á hægri hreyfingu. Væri bíllinn að fara tvöfalt hraðar myndi skriðþunginn tvöfaldast líka.
+
+  Byssukúla hefur hraðann :math:`|\overline{v}|=965` m/s og hefur massann :math:`4.2` g :math:`=0.0042` kg.
+  Skriðþungi hennar er þá  :math:`|\overline{p}|=m|\overline{v}| =0.0042\text{kg} \cdot 965\text{m} /\text{s} = 40.5  \text{ kg } \text{m} /\text{s}`. Hér er massalítill hlutur á miklum hraða, meira en tvöföldum hljóðhraða.
+
+
+Atlag
+-----
+Hugsum okkur hlut sem verður fyrir kröftum (sem hafa summuna :math:`\sum \overline{F}`) frá tímanum :math:`t_1` til tímans :math:`t_2`. Þá er *atlag* (e. impulse) kraftsins margfeldi kraftanna við lengd tímabilsins:
+
+.. math::
+  \overline{J} = \sum \overline{F}(t_2-t_1) = \sum \overline{F} \Delta t
+
+Ef hluturinn verður fyrir sama kraftinum allt tímabilið þá er atlagið jafnt breytingunni á skriðþungnanum:
+
+.. math::
+  \overline{J} = \overline{p_2} - \overline{p_1} = \Delta \overline{p}
+
+.. tip::
+  Hvað þarf að beita miklum (jöfnum) krafti til þess að stöðva 50 kg innkaupakerru sem fer á 6 m/s, ef það þarf að takast á 3 sekúndum?
+
+  .. figure:: ./myndir/skrth/kerra.svg
+    :align: center
+    :width: 60%
+
+  Skriðþunginn í upphafi er :math:`p_1 = mv_1 = 50 \text{ kg} \cdot 6 \text{m/s} = 300 \text{kg m/s}` . Skriðþunginn í lokin er :math:`p_2 = 0` því :math:`v_2=0`. Við gerum ráð fyrir að aðeins einn kraftur verki, :math:`\overline{F}`, svo :math:`\sum \overline{F} = \overline{F}` . Þar sem krafturinn verkar bara í einni vídd þá dugar að hugsa bara um stærð vigursins, :math:`F`. Hér er :math:`\Delta t = 3 \text{ s}`
 
   .. math::
-    W=F\cdot s = 25 \text{ N} \cdot 10 \text{ m} = 250 \text{ J}
+    \begin{aligned}
+    J=F\Delta t &= \Delta p  = p_2-p_1\\
+    F &= \frac{p_2-p_1}{\Delta t} \\
+     &= \frac{0-300 \text{kg m/s}}{3 \text{ s}} \\
+     &= -100 \text{ N}
+    \end{aligned}
 
-Ef vinna er ekki samsíða færslunni þurfum við að skoða vigrana sem krafturinn og færslan eru.
-Vinna er þá innfeldi kraftavigursins og færsluvigursins:
+  Krafturinn fær neikvætt gildi því hann bendir á móti hreyfingunni.
+
+
+Varðveisla
+----------
+
+Varðveisla, líkt og orka, er varðveitt stærð í lokuðu eðlisfræðilegu kerfi. Skriðþungi kerfis er varðveittur *ef summa allra kraftanna sem verka á kerfið er núll*.
+
+Skriðþungi einstakra hluta innan kerfisins getur vel breyst, t.d. í árekstrum, en heildarskriðþunginn er varðveittur.
+
+Ef við táknum skriðþunga kerfis fyrir einhvern atburð með :math:`p_i` (:math:`i` fyrir initial í ensku) og skriðþunga kerfisins eftir atburðinn með :math:`p_f` (:math:`f` fyrir final í ensku) þá getum við sett fram skriðþungavarðveislu fyrir kerfið með:
+
+.. math::
+
+	\overline{p}_i=\overline{p}_f
+
+.. note::
+  Skriðþungi er varðveittur ef engir kraftar koma utan frá.
+
+.. tip::
+
+  Skytta heldur laust á riffli þannig að þegar hún hleypir af skoti getur hann hreyfst afturfyrir sig. Riffillinn hefur massann :math:`m_r=3.00\text{ kg}` og kúla sem hann skýtur hefur massann :math:`m_k=5.00\text{ g} = 5.00\cdot 10^{-3}\text{ kg}`. Ef kúlan fer á hraðanum :math:`|\overline{v}_k| = 300 \text{ m/s}` til hægri, hve hratt kastast riffillinn til vinstri við skotið?
+
+  **Lausn**
+
+  Hér getum við gert ráð fyrir að engir utanaðkomandi kraftar séu að verki, þar sem skyttan heldur laust á rifflinum (þ.e. er ekki að ýta á móti hreyfingunni). Vegna þess að allar hreyfingarnar í þessu dæmi gerast eftir sömu línunni (kúlan ferðast í aðra áttina en riffillinn í hina) þá þarf lítið að velta því fyrir sér að skriðþungi er vigur. Það er einfaldara að hugsa að kúlan hafi jákvæðan hraða (fari áfram) en að riffillinn hafi neikvæðan (fari afturábak).
+
+  Skriðþunginn fyrir skotið er núll, af því bæði byssan og kúlan eru kyrrstæðar (hafa hraðann :math:`v_i=0`), þ.e. :math:`p_{k,i} = 0`, :math:`p_{r,i}=0`.
+
+  Heildarskriðþunginn fyrir skotið er:
+
+  .. math::
+
+  	p_i=p_{k,i} +p_{r,i} = 0 \text{ kg m/s}
+
+  Þar sem skriðþunginn er varðveittur þarf hann líka að vera núll eftir skotið, þó báðir hlutirnir séu á hreyfingu, þ.e. :math:`p_i=p_f`
+
+  Byssukúlan er massalítil en fer hratt og hefur skriðþungann:
+
+  .. math::
+
+  	p_{k,f} = m_k v_k = 5.00\cdot 10^{-3}\text{ kg} \cdot 300 \text{ m/s} = 1.50 \text{N s}
+
+  Heildarskriðþunginn eftir skotið er:
+
+  .. math::
+
+  	p_f=p_{k,f} + p_{r,f}
+
+  Skriðþungavarðveisla gefur okkur að :math:`p_f =0 \text{ kg m/s}` og því er :math:`p_{r,f} =- p_{k,f}`
+  Þar sem við vitum bæði hraðann og skriðþungann er lítið mál að finna hraða riffilsins:
+
+  .. math::
+
+  	v_{r,f} = \frac{p_{r,f}}{m_{r}} = \frac{-1.5 \text{ kg m/s}}{3.00 \text{kg}} = -0.5 \text{m/s}
+
+
+
+
+Hugsum okkur tvær kúlur á núningslausu borði (það að borðið sé núningslaust gefur okkur vísbendingu um að engir utanaðkomandi kraftar, eins og núningur, eru að verki). Þær hafa massa :math:`m_1` og :math:`m_2` og önnur þeirra (2) er kyrr á meðan hin (1) hefur hraðann :math:`{v}_0`.
+
+Hér erum við að fjalla um hraða eftir beinni línu og því getum við hunsað það tímabundið að skriðþungi sé vigur.
+
+Þá er heildarskriðþungi kerfisins fyrir áreksturinn :math:`{p}_i=m_1\overline{v}_0`.
+Við skulum kalla hraða kúlu 1 eftir áreksturinn :math:`{v}_1` en hraða kúlu 2 :math:`{v}_2`. Hvað gerist þegar þær rekast saman?
+
+.. figure:: ./myndir/skrth/skrth1.svg
+  :align: center
+  :width: 60%
+
+Fullkomlega fjaðrandi árekstur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Kúlurnar gætu verið þannig gerðar að þær skelli harkalega saman. Það er kallað *fullkomlega fjarðandi árekstur* þegar kúla 2 rekur við öllum skriðþunganum sem kúla 1 hafði. Þá stendur kúla 1 eftir kyrr (:math:`v_1=0`) en kúla 2 ferðast áfram með einhvern hraða :math:`v_2`. Heildarskriðþunginn eftir áreksturinn er því :math:`p_f=m_2v_2`
+
+.. figure:: ./myndir/skrth/skrth2.svg
+  :align: center
+  :width: 60%
+
+Fyrst skriðþunginn er varðveittur þá er:
 
 .. math::
   \begin{aligned}
-    W&=\overline{F}\cdot\overline{s} \\
-    W&= Fs\cos(\phi)
+    p_i&=p_f \\
+    m_1 v_0 &= m_2 v_2
   \end{aligned}
 
-þar sem :math:`\phi` er hornið á milli vigranna.
+þ.a. hraði seinni kúlunnar eftir áreksturinn er:
 
-.. figure:: ./myndir/vinna/vinna5.svg
+.. math::
+  v_2 = \frac{m_1 v_0}{m_2}
+
+Ef kúlurnar tvær hafa sama massann :math:`m_1=m_2` þá mun seinni kúlan fara áfram með hraðanum :math:`v_2=v_0`
+
+Fullkomlega ófjaðrandi árekstur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+En hvað ef kúlurnar eru þannig gerðar að þær klístrist saman við áreksturinn? Þá er talað um *fullkomlega ófjaðrandi árekstur* og kúlurnar myndu ferðast áfram, klesstar saman, en með annan hraða en fyrir árekstur. Heildarskriðþunginn eftir áreksturinn er þá skriðþungi kúlu 1 auk skriðþunga kúlu 2:
+
+.. math::
+  \begin{aligned}
+    p_f&=p_1+p_2 \\
+    &= m_1v_1 +m_2v_2
+  \end{aligned}
+
+.. figure:: ./myndir/skrth/skrth3.svg
   :align: center
-  :width: 70%
+  :width: 60%
 
-
-.. note::
-  Vinna getur verið jákvæð, neikvæð eða núll.
-
-  * Þegar krafturinn er í sömu stefnu og færslan, þ.e. ef hann er að vinna með hreyfingunni, er vinnan jákvæð. Ef :math:`-90°<\phi<90°` þá er :math:`\cos(\phi)>0` .
-
-  .. figure:: ./myndir/vinna/vinna2.svg
-    :align: center
-    :width: 70%
-
-  * Ef krafturinn er gagnstefna færslunni, þ.e. að vinna gegn hreyfingunni, þá er vinnan neikvæð. Ef :math:`90°<\phi< 270°` þá er :math:`\cos(\phi)<0`.
-
-  .. figure:: ./myndir/vinna/vinna3.svg
-    :align: center
-    :width: 70%
-
-  * Ef krafturinn er hornréttur á færsluna þá er vinna kraftsins á hlutinn núll. Ef :math:`\phi=90°` eða :math:`\phi=270°` þá er :math:`\cos(\phi)=0`.
-
-  .. figure:: ./myndir/vinna/vinna4.svg
-    :align: center
-    :width: 70%
-
-Afl
----
-Afl er breyting á vinnu á tímabili, eða tímaafleiða vinnu:
+Hér er skriðþunginn líka varðveittur, svo:
 
 .. math::
-  P_{meðal} = \frac{\Delta W}{\Delta t}
+  \begin{aligned}
+    p_i&=p_f \\
+    m_1 v_0 &= m_1v_1 +m_2v_2 \\
+    m_1 v_0 &= (m_1+m_2)v_2
+  \end{aligned}
+
+því þær fara á sama hraða eftir áreksturinn :math:`v_1=v_2`. Því er hraðinn sem þær fara á:
 
 .. math::
-  P=\lim_{\Delta t \to 0} \frac{\Delta W}{\Delta t} = \frac{dW}{dt}
+  v_1=v_2 = \frac{m_1v_0}{m_1+m_2}
 
-Einingin fyrir afl er Watt, táknað W.
+Ef kúlurnar hafa sama massann :math:`m_1=m_2` þá er hraðinn sem kúlurnar ferðast saman á hálfur upprunalegi hraðinn: :math:`v_1=v_2=\frac12 v_0`.
 
-.. math::
-  1 W=\frac{1 \text{ J}}{1\text{ s}}
+Önnur tilvik
+~~~~~~~~~~~~
 
-.. note::
-  Passið ykkur á því að ruglast ekki á einingunni Watt fyrir afl og tákninu :math:`W` sem er oft er notað fyrir orku! Það er yfirleitt skýrt af samhenginu hvort er um að ræða.
+Langflestir árekstrar hluta í raunveruleikanum eru hvorki fullkomlega fjaðrandi né fullkomlega ófjaðrandi.
+Skriðþunginn á engu að síður að vera varðveittur.
 
-Hreyfiorka
-----------
-Hlutur sem hefur massann :math:`m` og fer á hraðanum :math:`v` hefur hreyfiorku (e. kinetic energy) :math:`K` :
+.. figure:: ./myndir/skrth/skrth5.svg
+  :align: center
+  :width: 45%
 
-.. math::
-  K= \frac{1}{2}mv^2
-
-.. note::
-  Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans skalarstærð. Hreyfiorkan er bara háð stærð hraðans, :math:`v=|\overline{v}|` en ekki stefnu hans.
-
-Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt *vinnu-hreyfiorkusetningunni*:
+Það getur gerst að fyrri kúlan ýti seinni af stað en haldi sjálf áfram líka (en hægar). Þá þarf að gilda að samanlagður skriðþungi kúlnanna eftir áreksturinn sé jafn skriðþunganum fyrir áreksturinn:
 
 .. math::
-  W=\Delta K=K_2-K_1 = \frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2
+  m_1v_0 = m_1v_1+m_2v_2
 
-* Þegar vinnan er jákvæð þá er hreyfiorkan að aukast.
-* Þegar vinnan er neikvæð þá er hreyfiorkan að minnka.
-* Þegar vinnan er núll þá er hreyfiorkan ekki að breytast.
+Þetta er jafna með tvær óþekktar stærðir, :math:`v_1` og :math:`v_2`. Því eru til *óendanlega margar* lausnir á þessu verkefni og við myndum þurfa meiri upplýsingar til að leysa það. Í raunveruleikanum myndi þetta ráðast af eiginleikum efnanna, hvort þau eru hörð eða mjúk. Ein lausn er að önnur kúlan endi á að fara þrefalt hraðar en hin (:math:`v_2 = 3v_1`) .
 
-Hreyfiorka segir til um vinnuna sem þarf til þess að að koma massa :math:`m` úr kyrrstöðu í hraðann :math:`v`.
-
-.. tip::
-  Sleði með massann :math:`m=20` kg rennur eftir sléttum, láréttum snjó.
-  Þar er lítill núningur, en samt nóg til þess að hægja á sleðanum.
-  Hver er vinna núningsins ef upphafshraði sleðans er :math:`v_1 =10` m/s og lokahraðinn er :math:`v_2=5` m/s?
-
-  **Lausn**
-
-  Við vitum að vinnan :math:`W` er jöfn breytingunni á hreyfiorkunni.
-  Hreyfiorkan í upphafi er
-
-  .. math::
-    K_1= \frac{1}{2} mv_1^2 =  1000 \text{ J}
-
-  Hreyfiorkan í lokin er
-
-  .. math::
-    K_2=\frac{1}{2} mv_2^2 = 250 \text{ J}
-
-  Því er vinnan
-
-  .. math::
-    \begin{aligned}
-      W=K_2-K_1 &= 250 \text{ J}- 1000 \text{ J} \\
-      W&= -750 \text{ J}
-    \end{aligned}
-
-  Vinnan er neikvæð því krafturinn vinnur gegn hreyfingunni og hreyfiorkan er að minnka.
-
-Stöðuorka
----------
-Hér ætlum við að fjalla um þær tegundir stöðuorku sem koma oftast fyrir í klassískri eðlisfræði, þyngarstöðuorku og gormstöðuorku. Hinar tegundirnar, efnaorka og kjarnorka eru engu að síður mikilvægar og áhugaverðar.
-
-Þyngdarstöðuorka
-~~~~~~~~~~~~~~~~
-
-Þegar hlutir eru í *þyngdarsviði*, þ.e. nálægt yfirborði miklu stærri hlutar (eins og jarðarinnar) hafa þeir *þyngdarstöðuorku* (e. gravitational potential energy) :math:`U_{grav}` :
-
-.. math::
-  U_{grav} = mgy
-
-þar sem :math:`y` er hæð massans yfir einhverjum tilteknum viðmiðunarpunkti, sem er oft yfirborð jarðarinnar.
-
-Gormstöðuorka
-~~~~~~~~~~~~~
-Þegar orka er geymd í hlut sem getur afmyndast, eins og t.d. gormum og gúmmíteygjum, þá köllum við það *gormstöðuorku* (e. elastic potential energy). Fyrir gorm með gormstuðul :math:`k` sem teygður er (eða þjappaður) um vegalengdina :math:`x` þá er gormstöðuorkan :math:`U_{el}`:
-
-.. math::
-
-	U_{el} = \frac{1}{2}kx^2
-
-Orkuvarðveisla
---------------
-Orka er einn eðliseiginleika kerfis sem er *varðveittur*, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
-
-Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.
-Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst.
-
-Séu allir kraftarnir í kerfinu geymnir, þ.e. ef það er enginn núningur eða annað viðnám, þá er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:
-
-.. math::
-  K_1+U_1 = K_2+U_2
-
-Þar sem :math:`U` táknar alla stöðuorku sem kerfið gæti búið yfir, bæði gorm- og þyngdarstöðuorku, og :math:`K` táknar hreyfiorku þess.
-Lágvísirinn, eins og oft áður, segir til um *hvenær* við erum að skoða orku kerfisins. :math:`_1` táknar þá fyrir einhvern atburð, við tímann :math:`t_1` og :math:`_2` táknar eftir einhvern atburð, við tímann :math:`t_2`.
-
-.. tip::
-  :math:`0.5\text{ kg}` steinn fellur úr kyrrstöðu í 20 metra hæð til jarðar.
-  Hver er hraði hans rétt áður en hann skellur á yfirborði jarðarinnar?
-
-  **Lausn**
-
-  Gerum ráð fyrir að loftmótsstaðan hafi engin áhrif, þ.e. að núningurinn á milli steinsins og loftsins sé ekki að vinna neina vinnu.
-
-  Í upphafi er hreyfiorka steinsins núll (:math:`K_1=0`), fyrst hann fellur úr kyrrstöðu, en þyngdarstöðuorka hans er:
-
-  .. math::
-    U_{grav,1} = mgy=0.5 \text{ kg}\cdot  9.8 \text{m/s}^2\cdot 20 \text{ m} = 98 \text{ J}
-
-  Rétt áður en steinninn skellur á yfirborði jarðarinnar í :math:`0` metra hæð er stöðuorkan orðin að núlli (:math:`U_{grav,2}=0`), en steinninn er á fleygiferð.
-  Öll stöðuorka steinsins í upphafi er nú orðin að hreyfiorku.
-  Því er:
-
-  .. math::
-    \begin{aligned}
-    K_1+U_1&=K_2+U_2\\
-    0+ U_1&=K_2+0 \\
-    U_1 &= \frac{1}{2}mv_2^2 \\
-    2 \cdot U_1 / m &= v_2^2 \\
-    v&=\sqrt{2\cdot98\text{ J} /20\text{ kg}} = 3.13 \text{m/s}
-    \end{aligned}
-
-  .. figure:: ./myndir/vinna/steinn.svg
-    :align: center
-    :width: 40%
-
-Vinnu-hreyfiorkusetningin
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Ef einhver kraftanna í kerfinu er ógeyminn, t.d. ef það er núningur eða annað viðnám, þá er orkan ekki varðveitt. Þá verður orkutap í kerfinu sem nemur vinnu ógeymna kraftsins, líkt og í vinnu-hreyfiorkusetningunni.
-
-.. tip::
-  Þegar krakki hoppar á trampólíni kemur margskonar orka fyrir. Þegar krakkinn er í loftinu býr hann yfir þyngdarstöðuorku, sem breytist í hreyfiorku þegar hann fellur í átt að trampólíninu. Þegar hann lendir á dúknum tognar á honum og kerfið býr yfir gormstöðuorku, sem aftur breytist í hreyfiorku þegar krakkinn skýst aftur upp í loft.
-
-  Núningur í trampólíninu og loftmótstaða veldur því að þessar þrjár orkutegundir eru ekki alveg varðveittar, heldur vinnur núningurinn vinnu. Samkvæmt vinnu-hreyfiorkusetningunni mun hreyfiorka krakkans minnka, þ.e. hraði hans á leiðinni upp í loftið mun minnka og þar af leiðandi mun hann ekki komast jafn hátt (þyngdarstöðuorkan verður ekki jafn mikil og í fyrra hoppi). Að lokum mun krakkinn hætta að skoppa, nema hann láti fæturna vinna vinnu sem vegur á móti vinnu núningsins.
-
----------------------
-
-.. eqt:: daemi-orkuvard
-
-  **Æfingadæmi** Massinn :math:`m=2.00\text{ kg}` hvílir á (núningslausu) borði fyrir framan gorm sem hefur gormstuðulinn :math:`k=100\text{ N/m}`. Það er búið að þjappa gorminn saman um :math:`x=30.0 \text{ cm}`. Hver verður upphafshraði massans þegar gormurinn þenst aftur út?
-
-  .. figure:: ./myndir/vinna/gormorka.svg
-    :align: center
-    :width: 40%
+Það eru líka til lausnir þar sem fyrri kúlan fær hraða í gagnstæða átt og skoppar til baka. Þá er :math:`v_1<0`
 
 
-  A) :eqt:`I` :math:`1.07 \text{ m/s}^2`
+.. figure:: ./myndir/skrth/skrth4.svg
+  :align: center
+  :width: 60%
 
-  #) :eqt:`C` :math:`2.12 \text{ m/s}`
-
-  #) :eqt:`I` :math:`212 \text{ m/s}`
-
-  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
-
-  .. eqt-solution::
-
-    Þegar gorminum var þjappað saman þurfti til þess orkuna :math:`U_{el}= \frac{1}{2}kx^2` en þegar hann þenst út aftur losnar sú orka aftur. Orkan ferður að hreyfiorku massans: :math:`K=\frac{1}{2}mv^2` og því fæst:
-
-    .. math::
-      \begin{aligned}
-        K&=U_{el} \\
-        \frac{1}{2}mv^2 &= \frac{1}{2}kx^2 \\
-        v^2 &= \frac{kx^2}{m} \\
-        v &=\sqrt{ \frac{kx^2}{m}} = 2.12 \text{m/s}
-      \end{aligned}
-
-    Munið að breyta :math:`\text{cm}` í metra í útreikningunum!
+Varðveisla í tveimur víddum
+---------------------------

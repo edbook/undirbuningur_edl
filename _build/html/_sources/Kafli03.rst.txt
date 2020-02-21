@@ -1,595 +1,565 @@
-.. _s.vigrar:
+Hraði og hröðun
+===============
 
-Vigrar
-======
+Hraði
+-----
 
-Táknmál
--------
-*Vigur* (e. vector) er stærðfræðilegt hugtak fyrir stærð sem hefur bæði stærð og stefnu.
+*Hraði* (e. velocity) hlutar á hreyfingu er skilgreindur sem breyting á staðsetningu á tímaeiningu.
+Algengast er að nota metra á sekúndu (m/s) í útreikningum, enda er það úr SI-einingakerfinu, en í daglegu tali er oft talað um kílómetra á klukkustund.
 
-Vigrar eru oftast táknaðir með striki eða ör fyrir ofan bókstafinn, :math:`\bar{a}` , :math:`\vec{a}` , en sumir setja strikið undir, :math:`\underline{a}` .
-Í kennslubókum eru vigrar oft ekki yfirstrikaðir heldur aðeins feitletraðir, :math:`\boldsymbol{a}` .
-
-Þeir eru jafnan teiknaðir sem örvar í hnitakerfi og lýst með hnitum (e. coordinates).
-Hnit vigurs eru venjulegar tölur, líka kallaðar *skalarstærðir* (e. scalar), og lýsa staðsetningu endapunkts miðað við upphafspunkt.
-Hvert hnit er tengt einum ás í hnitakerfinu, yfirleitt rétthyrnt, sem notað er og stærð hnitsins (tölunnar) lýsir lengd vigursins í þá átt. Hnitin geta bæði verið jákvæð og neikvæð (eða núll).
-
-Vigrar geta bæði verið tvívíðir, í venjulegu :math:`xy`- hnitakerfi, eða þrívíðir, í :math:`xyz`- hnitakerfi. Vigrar eru yfirleitt ritaðir sem pör (eða þrennur) af hnitum sínum, lárétt eða lóðrétt.
-
-.. figure:: ./myndir/vigrar/vigur2.svg
-   :width: 60%
-   :align: center
-
-Ef vigurinn er tvívíður skrifum við:
+Táknum staðsetningu hlutar við tímann :math:`t_1` með :math:`x_1` og staðsetningu við tímann :math:`t_2` með :math:`x_2` þá reiknum við meðalhraðann með
 
 .. math::
-
-	\overline{a}= (a_x,a_y) = \begin{pmatrix} a_x \\ a_y \end{pmatrix}
-
-Ef vigurinn er þrívíður þá skrifum við:
-
-.. math::
-
-		\overline{a}= (a_x,a_y,a_z) = \begin{pmatrix} a_x \\ a_y \\a_z \end{pmatrix}
-
-þar sem :math:`a_x` er lengd vigursins :math:`\bar{a}` í stefnu :math:`x` - áss, :math:`a_y` er lengd vigursins :math:`\bar{a}` í stefnu :math:`y` - áss og :math:`a_z` er lengd vigursins :math:`\bar{a}` í stefnu :math:`z` - áss.
-
-Lengd vigurs
-~~~~~~~~~~~~
-
-*Lengd* vigra er táknuð með lóðréttum strikum, algildismerkjum, :math:`|\bar{a}|`, eða einfaldlega bókstafnum án yfirstriksins, :math:`a`. Lengdina má reikna með jöfnu Pýþagórasar, ef vigur er tvívíður þá er heildarlengd vigurs:
-
-.. math::
-
-	|\bar{a}| = a = \sqrt{a_x^2 + a_y^2}
-
-En ef hann er þrívíður þá er lengdin:
-
-.. math::
-
-	|\bar{a}| = a = \sqrt{a_x^2 + a_y^2+a_z^2}
-
-.. figure:: ./myndir/vigrar/vigur.svg
-   :width: 60%
-   :align: center
-
-Vigurinn á myndinni hér að ofan hefur lengd 4 eftir :math:`x`-ásnum og 3 eftir :math:`y`-ásnum, svo hnit hans eru :math:`a_x = 4` og :math:`a_y = 3`
-og vigurinn :math:`\bar{a}` má þá rita:
-
-.. math::
-  \bar{a} = (a_x,a_y) = (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}
-
-Vigurinn á myndinni hér að ofan hefur því lengdina :math:`a = \sqrt{4^2 + 3^2} = 5` .
+  v=\frac{x_2-x_1}{t_2-t_1}=\frac{\Delta x}{\Delta t}
 
 .. note::
-  Stærð og stefna vigurs er óháð því hvar í hnitakerfinu hann er.
+  Gríski stafurinn :math:`\Delta` (stórt delta) er oft notaður í eðlisfræði og stærðfræði til að tákna mismun og breytingar.
 
---------------------
+.. note::
+  Hraði hefur bæði stærð og stefnu og er því :ref:`vigur <s.vigrar>` .
+  Hraði getur verið í allar stefnur :math:`(x,y,z)` svo hraðavigurinn er yfirleitt táknaður með :math:`\overline{v}=(v_x, v_y, v_z)` .
+  Í þessum kafla er fengist við einvíðar hreyfingar, þar sem allar færslur eru eftir sömu línunni, þ.e. aðeins einn þáttur hraðavigursins er ekki núll.
 
-.. eqt:: daemi-lengdvigurs
+.. tip::
 
-  **Æfingadæmi** Hver er lengd vigursins :math:`\vec{b}=\begin{pmatrix} 5 \\ -2 \end{pmatrix}` ?
+  Allra bestu hlaupararnir í 100 metra spretthlaupi klára hlaupið á um 10 sekúndum. Hver er meðalhraði hlauparanna í kílómetrum á klukkustund?
 
-  A) :eqt:`I` :math:`|\vec{b}| = 7`
+  **Lausn**
 
-  #) :eqt:`I` :math:`|\vec{b}| = \sqrt{21}`
+  Meðalhraði hlauparanna, í metrum á sekúndu, er:
 
-  #) :eqt:`C` :math:`|\vec{b}| = \sqrt{29}`
+  .. math::
+    \frac{100\text{ m}}{10\text{ s}}=10\frac{\text{m}}{\text{s}}
+
+  Breytum kílómetrum í metra og sekúndum í klukkustundir.
+  Við vitum að :math:`1 \text{ km} = 1 \cdot 10^3 \text{ m} =1000 \text{ m}` og :math:`1 \text{ klst}=60 \text{ mínútur}=60\cdot60 \text{ sekúndur}=3600 \text{ sekúndur}`
+
+  Því gildir að:
+
+  .. math::
+    \begin{aligned}
+      \frac{1 \text{ km}}{1000 \text{ m}}&=1 \\
+      \frac{1 \text{ klst}}{3600\text{ s}}&=1
+    \end{aligned}
+
+  Það má alltaf margfalda stærð með 1 og því getum við breytt :math:`10` m/s í km/klst með því að margfalda:
+
+  .. math::
+    \begin{aligned}
+      10\frac{\text{ m}}{\text{ s}}&=10\frac{\text{ m}}{\text{ s}}\cdot \frac{1 \text{ km}}{1000 \text{ m}} \cdot \frac{3600\text{ s}}{1 \text{ klst}}\\
+      &=\frac{10\cdot 1 \cdot 3600}{1000 \cdot 1} \frac{\text{ km}}{\text{ klst}} \\
+      &=36 \frac{\text{km}}{\text{klst}}
+    \end{aligned}
+
+  því einingarnar styttast út.
+
+-----------------------
+
+.. eqt:: daemi-hradi1
+
+  **Æfingadæmi** Hversu langt kemst maður sem gengur á hraðanum :math:`v=3 \text{ m/s}` á einni mínútu?
+
+  A) :eqt:`I` 300 metra
+
+  #) :eqt:`I` 3 metra
+
+  #) :eqt:`C` 180 metra
+
+  #) :eqt:`I` Ekkert af ofangreindu
 
   .. eqt-solution::
-    Notum reglu Pýþagórasar:
+    Í einni mínútu eru 60 sekúndur. Við margföldum saman hraðann og tímann og fáum:
 
-		.. math::
-			\begin{aligned}
-				|\bar{b}| &= \sqrt{b_x^2 + b_y^2} \\
-				&= \sqrt{(5)^2+(-2)^2}\\
-				&=\sqrt{25+4}\\
-				&= \sqrt{29}
-			\end{aligned}
+    .. math::
+      60\text{ s} \cdot 3 \text{ m/s} = 180 \text{ m}
 
---------------------
+-----------------------
 
-Vigrar milli punkta
-~~~~~~~~~~~~~~~~~~~
 
-Algengt er að láta vigra liggja frá upphafspunkti hnitakerfisins (stöðu- eða staðarvigur) en það er hægt að reikna vigra á milli gefinna upphafs- og endapunkta.
-Vigurinn frá punktinum :math:`A=(x_1,y_1)` til punktsins :math:`B=(x_2,y_2)` er:
+Hröðun
+------
+*Hröðun* (e. acceleration) hlutar á hreyfingu er skilgreindur sem breyting á hraða á tímaeiningu.
+Ef hraði hlutar við tímann :math:`t_1` er :math:`v_1` og hraðinn við tímann :math:`t_2` er :math:`v_2` þá reiknum við hröðunina með:
 
 .. math::
-  \overline{AB} = (x_2-x_1,y_2-y_1) = \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}
+  a=\frac{v_2-v_1}{t_2-t_1}=\frac{\Delta v}{\Delta t}
 
-Ef við erum að skoða punkta í þrívíðu rúmi :math:`A=(x_1,y_1,z_1)` og :math:`B=(x_2,y_2,z_2)` þá er vigurinn á milli punktanna:
+Þegar hröðunin er núll þá er hraðinn fastur, þ.e. ekki að breytast með tíma.
 
-.. math::
-  \overline{AB} = (x_2-x_1,y_2-y_1, z_2-z_1) = \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \\z_2-z_1 \end{pmatrix}
+.. note::
+  Líkt og hraði þá er hröðun líka :ref:`vigur <s.vigrar>` með stærð og stefnu.
+  Hröðunarvigurinn er yfirleitt táknaður með :math:`\vec{a}=(a_x,a_y,a_z)` .
+
+  **Hröðunarvigurinn og hraðavigurinn eru ekki endilega samstefna.**
 
 .. tip::
-  Reiknum vigurinn frá punktinum :math:`A=(-1,7)` til punktsins :math:`B=(5,2)` .
+  Til þess að eldflaug geti komist úr þyngdarsviði jarðarinnar þarf hún að ferðast með hraðanum :math:`11.2` km/s.
+  Hve mikla hröðun mun eldflaugin verða fyrir ef hún fer af stað úr kyrrstöðu og er komin í lausnarhraðann eftir 10 mínútur?
 
   **Lausn**
 
-  .. math::
-    \begin{aligned}
-      \overline{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
-      &= \begin{pmatrix} 5-(-1) \\ 2-7 \end{pmatrix} \\
-      &= \begin{pmatrix} 6 \\ -5 \end{pmatrix}
-    \end{aligned}
-
-  .. figure:: ./myndir/vigrar/vigurtveirpkt.svg
-    :align: center
-    :width: 50%
-
-  Vigurinn :math:`\begin{pmatrix} 6 \\ -5 \end{pmatrix}` er sá sami, hvort sem hann liggur á milli :math:`A` og :math:`B` eða frá upphafspunktinum til punktsins :math:`(6,-5)` .
-
-Hallatala vigurs
-~~~~~~~~~~~~~~~~
-
-Stundum er talað um að tvívíður vigur hafi *hallatölu*  :math:`h=\frac{a_y}{a_x}` , ef :math:`a_x\neq 0` .
-Tveir vigrar eru *samsíða* ef þeir hafa sömu hallatölu.
-
-.. tip::
-  Finnum vigur sem er samsíða :math:`\bar{a}=(-1,6)` og hefur lengdina 9.
-
-  **Lausn**
-
-  Hallatala :math:`\bar{a}` er :math:`h_{\bar{a}}=\frac{a_y}{a_x}=\frac{6}{-1}=-6` .
-  Þá vitum við að vigurinn sem við leitum að, :math:`\bar{b}` , uppfyllir það sama:
+  10 mínútur eru 600 sekúndur, hér er því :math:`t_2=600` s og :math:`v_2=11.2` km/s :math:`=11200` m/s. Þar sem eldflaugin byrjar í kyrrstöðu er :math:`v_1=0` m/s og :math:`t_1=0`.
+  Því þarf hröðunin að vera
 
   .. math::
-    h_{\bar{b}}=\frac{b_y}{b_x}=-6
+    a=\frac{v_2-v_1}{t_2-t_1} =\frac{11200 \text{m/s}-0 \text{m/s}}{600 \text{s}-0\text{s}}=\frac{11200 \text{m/s}}{600\text{s}}=18.67 \text{m/s}^2
 
-  sem er jafngilt því að :math:`b_y=-6b_x` .
+-----------------------
 
-  Skilyrðið að :math:`\bar{b}` þurfi að hafa lengdina 9 gefur að:
+.. eqt:: daemi-hrodun
 
-  .. math::
-    |\bar{b}| = \sqrt{b_x^2+b_y^2} =9
+  **Æfingadæmi** Hver er hraði eldflaugar eftir tvær sekúndur ef hún byrjar með hraðann :math:`v_i=3\text{ m/s}` og hægir á sér með hröðuninni :math:`a=-1 \text{ m/s}^2`?
 
-  Setjum :math:`b_y=-6b_x` inn og fáum:
+  A) :eqt:`C` :math:`v_f=1\text{m/s}`
 
-  .. math::
-    \begin{aligned}
-      9 &= \sqrt{b_x^2+b_y^2}\\
-      &=\sqrt{b_x^2+(-6b_x)^2} \\
-      &= \sqrt{b_x^2+36b_x^2} \\
-      &=\sqrt{37b_x^2} \\
-      &=b_x\sqrt{37} \\
-      b_x&=\frac{9}{\sqrt{37}} \approx 1.480\\
-      b_y&= -6b_x = \frac{-54}{\sqrt{37}} \approx -8.878
-    \end{aligned}
+  #) :eqt:`I` :math:`v_f=-1\text{m/s}`
 
-  Vigur sem er samsíða :math:`\bar{a}=(-1,6)` og hefur lengdina 9 er því
+  #) :eqt:`I` :math:`v_f=2\text{m/s}`
 
-  .. math::
-    \bar{b}= \frac{1}{\sqrt{37}} \begin{pmatrix} 9 \\  -54 \end{pmatrix}
+  #) :eqt:`I` Ekkert af ofangreindu
 
-Að liða vigra
--------------
-
-Vigra er annað hvort hægt að tákna með rétthyrndum hnitum, eins og við höfum gert hingað til, eða með pólhnitum, þá lýsum við vigri með lengd og stefnuhorni: :math:`\bar{a} = (a,\theta)` .
-Hornið :math:`\theta` er skilgreint frá jákvæðum :math:`x`-ás og að vigrinum.
-Með þessum upplýsingum er hægt að liða vigurinn eftir :math:`x`- og :math:`y`-ás með því að nota hornaföll.
-`Hér <http://edbook.hi.is/undirbuningur_stae/Kafli07.html>`_ má finna efni um hornaföll.
-
-Þættir vigursins eru föll af stefnuhorninu sem er yfirleitt merkt :math:`\theta` eða :math:`\phi` :
-
-.. math::
-  a_x = a\cos(\theta) \\
-  a_y = a\sin(\theta)
-
-þar sem :math:`a=|\bar{a}|` er lengd vigursins.
-
-Myndrænt má ímynda sér að ljósi sé lýst á :math:`x`-ásinn með vasaljósi sem er hornrétt á ásinn.
-:math:`x`-þáttur vigursins er þá eins og skuggi vigursins á :math:`x`-ásnum.
-Þetta er líka kallað ofanvarp vigursins á :math:`x`-ásinn.
-
-.. tip::
-  Hér sjáum við aftur vigurinn frá því í upphafi kaflans:
-
-  .. math::
-    \bar{a}= (4,3) = \begin{pmatrix} 4 \\ 3 \end{pmatrix}
-
-  en nú skulum við athuga hvernig við getum lýst honum með lengd og stefnuhorni.
-
-  .. figure:: ./myndir/vigrar/mynd-vigur.svg
-     :width: 60%
-     :align: center
-
-  Lengd vigursins er eins og áður 5, en stefnuhornið finnum við með því að skoða skammhliðarnar.
-
-  .. math::
-    \tan(\theta) = \frac{a_y}{a_x} = \frac{3}{4}\\
-    \theta\approx 0.6435
-
-  Vigurinn :math:`(4,3)` má því líka skrifa sem :math:`(a,\theta) = (5,0.6435)`
-
-Öllum vigrum er hægt að lýsa með annað hvort lengdum í :math:`x`- og :math:`y`- stefnu eða með lengd og stefnuhorni.
-Eins og við höfum séð er lítið mál að breyta á milli.
-
---------------------
-
-.. eqt:: daemi-stefnuhorn
-
-	**Æfingadæmi** Hvert er stefnuhorn vigursins :math:`\vec{b}=\begin{pmatrix} 5 \\ -2 \end{pmatrix}` ?
-
-	A) :eqt:`I` :math:`21.8^{\circ}`
-
-	#) :eqt:`C` :math:`-21.8^{\circ}`
-
-	#) :eqt:`I` :math:`68.2^{\circ}`
-
-	#) :eqt:`I` :math:`-68.2^{\circ}`
-
-	 .. eqt-solution::
-	   Við vitum að :math:`b_x=b\cos(\theta)` og :math:`b_y=b\sin(\theta)` og því fæst
-
-			.. math::
-				\begin{aligned}
-					\frac{b_y}{b_x} &= \frac{b\cos(\theta)}{b\sin(\theta)} \\
-					\frac{b_y}{b_x} &= \frac{\cos(\theta)}{\sin(\theta)} \\
-					\frac{b_y}{b_x} &= \tan(\theta) \\
-					\arctan\left(\frac{b_y}{b_x} \right) &= \theta\\
-					\theta &= \arctan\left(\frac{-2}{5} \right) \\
-					\theta &= -21.8^{\circ}
-				\end{aligned}
-
-			.. figure:: ./myndir/vigrar/mynd-vigur-daemi.svg
-				:width: 60%
-				:align: center
-
---------------------
-
-Einingarvigrar
---------------
-Einingarvigrar eru vigrar sem hafa lengdina 1, en þeir eru oft merktir með höttum (:math:`\hat{e}`) í staðinn fyrir yfirstrikum eða örvum.
-Einingavigrarnir :math:`\hat{\imath}`, :math:`\hat{\jmath}` og :math:`\hat{k}` liggja samsíða :math:`x` - , :math:`y` - og  :math:`z` - ásunum í rétthyrndu hnitakerfi .
-
-.. math::
-  \begin{aligned}
-  \hat{\imath} &= \begin{pmatrix} 1 \\0 \\0 \end{pmatrix} \\
-  \hat{\jmath} &= \begin{pmatrix} 0 \\1 \\0 \end{pmatrix} \\
-  \hat{k} &= \begin{pmatrix} 0 \\0 \\1 \end{pmatrix} \\
-  \end{aligned}
-
-Þeir eru líka stundum táknaðir með :math:`\hat{e}_x`, :math:`\hat{e}_y` og :math:`\hat{e}_z`
-
-.. figure:: ./myndir/vigrar/einingarvigrar.svg
-   :width: 50%
-   :align: center
-
-Einingarvigrarnir :math:`\hat{\imath}`, :math:`\hat{\jmath}` og :math:`\hat{k}` eru *línulega óháðir* (e. linearly independent), sem þýðir að engan þeirra er hægt að mynda úr hinum tveimur með samlagningu þeirra eða margföldun með tölu.
-Hvernig sem þú teygir á og raðar saman :math:`\hat{\imath}` og :math:`\hat{\jmath}` færðu aldrei út :math:`\hat{k}` .
-Þessi eiginleiki kemur til vegna þess að einingarvigrarnir eru allir *hornréttir* á hvorn annan.
-
-Alla vigra má skrifa sem skalarstærðir margfaldaðar við einingarvigrana:
-
-.. math::
-  \bar{a} = (a_x, \; a_y, \; a_z ) = a_x \hat{\imath} + a_y \hat{\jmath} + a_z \hat{k}
-
-Samlagning vigra
-----------------
-Þegar vigrar eru lagðir saman eru hnit eftir hverjum ás fyrir sig lögð saman.
-Summa tveggja vigra :math:`\bar{a} = (a_x,a_y)` og :math:`\bar{b} = (b_x,b_y)` er:
-
-.. math::
-  \bar{c} = \bar{a} + \bar{b} = (a_x + b_x, a_y +b_y) = \begin{pmatrix} a_x+b_x \\ a_y+b_y \end{pmatrix}
-
-Fyrir þrívíða vigra gildir sambærilegt, en summa tveggja vigra :math:`\bar{a} = (a_x,a_y,a_z)` og :math:`\bar{b} = (b_x,b_y,b_z)` er:
-
-.. math::
-  \bar{c} = \bar{a} + \bar{b} = (a_x + b_x, a_y +b_y, a_z+b_z) = \begin{pmatrix} a_x+b_x \\ a_y+b_y \\ a_z+b_z  \end{pmatrix}
-
-.. tip::
-
-  Leggjum saman vigrana :math:`\bar{a}=(4,3)` og :math:`\bar{b}=(1,3)` :
-
-  .. math::
-    \bar{a}+\bar{b}=(4,3) + (1,3) = (4+1, 3+3) = (5,6)
-
-Myndrænt má ímynda sér að upphafspunktur seinni vigursins sé settur í endapunkt fyrri vigursins,
-og summa þeirra er frá upphafspunkti fyrri vigursins til endapunkts þess seinni.
-
-.. figure:: ./myndir/vigrar/vigrasamlagning.svg
-   :width: 60%
-   :align: center
-
-.. note::
-  Þegar vigrar eru lagðir saman þá leggjast lengdirnar yfirleitt **ekki** saman.
-  Þó að :math:`\bar{c} = \bar{a} + \bar{b}` þýðir það **ekki** að :math:`c = a + b`.
-
-  Í dæminu hér á undan er t.d.
-
-  .. math::
-    c = |\bar{c}| = \sqrt{5^2+6^2} \approx 7,8 \\
-    a + b = \sqrt{4^2+3^2} + \sqrt{1^2+3^2} \approx 8,2
-
---------------------------------
-
-Um samlagningu vigra gilda eftirfarandi reglur:
-
-.. math::
-  \begin{aligned}
-    \bar{a} +\bar{b} &= \bar{b} + \bar{a} & \text{Víxlregla}\\
-    (\bar{a}+\bar{b})+\bar{c} &= \bar{a} + (\bar{b}+\bar{c}) & \text{Tengiregla}
-  \end{aligned}
-
---------------------------------
-
-.. tip::
-  Höfum þrjá punkta:
-
-  .. math::
-    \begin{aligned}
-      A&=(x_1,y_1)=(1,2) \\
-      B&=(x_2,y_2)=(4,5) \\
-      C&=(x_3,y_3)=(3,-1) \\
-    \end{aligned}
-
-  Reiknum nú vigrana á milli punktanna: :math:`\overline{AB}, \overline{AC} \text{ og } \overline{BC}`
-
-  .. math::
-    \begin{aligned}
-      \overline{AB} &= \begin{pmatrix} x_2-x_1 \\ y_2-y_1 \end{pmatrix}\\
-      &=\begin{pmatrix} 4-1 \\ 5-2\end{pmatrix} =\begin{pmatrix} 3 \\3\end{pmatrix} \\
-      &\\
-      \overline{AC} &= \begin{pmatrix}x_3-x_1 \\ y_3-y_1 \end{pmatrix}\\
-      &=\begin{pmatrix} 3 - 1 \\ (-1)-2 \end{pmatrix} =\begin{pmatrix} 2 \\ -3\end{pmatrix} \\
-      &\\
-      \overline{BC} &= \begin{pmatrix} x_3-x_2 \\ y_3-y_2 \end{pmatrix}\\
-      &=\begin{pmatrix} 3 - 4 \\ (-1) -5 \end{pmatrix} = \begin{pmatrix} -1 \\ -6 \end{pmatrix} \\
-    \end{aligned}
-
-  .. figure:: ./myndir/vigrar/innskots.svg
-    :align: center
-    :width: 50%
-
-  Hér eru punktarnir teiknaðir inn ásamt vigrunum :math:`\overline{AB}, \overline{AC} \text{ og } \overline{BC}` .
-
-Af þessu dæmi má sjá *innskotsregluna* :
-
-.. math::
-  \overline{AC} = \overline{AB} + \overline{BC}
-
-
-Innfeldi og krossfeldi
-----------------------
-
-Þegar vigur :math:`\bar{v}` er margfaldaður með tölu :math:`s` er hver þáttur vigursins margfaldaður með tölunni:
-
-.. math::
-    \begin{aligned}
-        s \cdot \bar{v} &= s\cdot (v_x, v_y, v_z) \\
-        &= (s \cdot v_x, s \cdot v_y, s \cdot v_z)
-    \end{aligned}
-
-Margfeldi vigra er tvenns konar, *innfeldi* (punktfeldi, e. dot product, scalar product) og *krossfeldi* (e. cross product, vector product).
-
-Innfeldi
-~~~~~~~~
-
-**Innfeldi** tveggja vigra er táknað með punkti og útkoman er *tala*: :math:`c = \bar{a} \cdot \bar{b}` .
-Ef þættir vigranna eru þekktir er innfeldið reiknað:
-
-.. math::
-  \boxed{
-  \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y
-  }
-
-eða, ef vigrarnir eru þrívíðir:
-
-.. math::
-
-	\bar{a} \cdot \bar{b} = a_x b_x + a_y b_y + a_z b_z
-
-.. tip::
-    Reiknum innfeldi vigranna :math:`\bar{a}=(7,8)` og :math:`\bar{b}=(-1,3)` :
-
-    **Lausn**
+  .. eqt-solution::
+    Hröðun er breyting á hraða á tímaeiningu, þ.e.
 
     .. math::
-      \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y = 7\cdot (-1)+ 8\cdot 3 = -7+24 =17
 
-Innfeldið má líka reikna með:
+    	a=\frac{\Delta v}{\Delta t}
 
-.. math::
-  \bar{a} \cdot \bar{b} = a b \cos{\phi}
-
-þar sem :math:`\phi` er hornið milli :math:`\bar{a}` og :math:`\bar{b}` þegar þeir hafa sama upphafspunkt.
-
-.. note::
-  **Tveir vigrar eru hornréttir ef innfeldi þeirra er núll.**
-
-.. tip::
-    Reiknum hornið á milli vigranna :math:`\bar{a}=(2,4)` og :math:`\bar{b}=(4,2)` :
-
-    .. figure:: ./myndir/vigrar/innfeldi.svg
-      :align: center
-      :width: 60%
-
-    **Lausn**
-
-    Við vitum að :math:`\bar{a} \cdot \bar{b} = a b \cos{\phi}` , þar sem :math:`a` og :math:`b` eru lengdir vigranna.
-    Lengdirnar eru:
+    Umritum þessa jöfnu og fáum
 
     .. math::
-      \begin{aligned}
-        a = \sqrt{a_x^2 + a_y^2} = \sqrt{2^2 + 4^2} = \sqrt{20} \\
-        b = \sqrt{b_x^2 + b_y^2} = \sqrt{4^2 + 2^2} = \sqrt{20}
-      \end{aligned}
 
-    Reiknum innfeldi vigranna:
+      \Delta v= a\Delta t = -1\frac{\text{m}}{\text{s}^2}\cdot 2\text{s} = -2\frac{\text{m}}{\text{s}}
 
-    .. math::
-      \bar{a} \cdot \bar{b} = a_x b_x + a_y b_y = 2\cdot 4+ 4\cdot 2 = 16
-
-    Því er
-
-    .. math::
-      \begin{aligned}
-        \bar{a} \cdot \bar{b} &= a b \cos{\phi} \\
-        \cos{\phi} &= \frac{\bar{a} \cdot \bar{b}}{a b} = \frac{16}{\sqrt{20} \cdot \sqrt{20}} = \frac{16}{20}\\
-        \phi &= 36.8 ° = 0.644 \text{Rad}
-      \end{aligned}
+    Þar sem :math:`\Delta v = v_f-v_i` þá sést að :math:`v_f = v_i+\Delta v = 3\text{ m/s}-2\text{ m/s}=1\text{ m/s}`
 
 
-Krossfeldi
-~~~~~~~~~~
+-----------------------
 
-**Krossfeldi** (e. cross product) er táknað með krossi og útkoman er *vigur*: :math:`\bar{c} = \bar{a} \times \bar{b}` . Krossfeldi koma mikið fyrir í eðlisfræði, sérstaklega í tengslum við rafsegulkrafta.
-Krossfeldi tveggja vigra :math:`\bar{a}=(a_x,a_y,a_z)` og :math:`\bar{b}=(b_x,b_y,b_z)` er:
-
-.. math::
-  \boxed{
-    \bar{c}=\bar{a} \times \bar{b} =(a_y b_z - a_z b_y, \quad a_z b_x - a_x b_z, \quad a_x b_y - a_y b_x)
-    }
-
-Þetta er löng runa til að muna utan að, en hér eftir kemur aðferð til að reikna krossfeldi.
-
+Myndræn túlkun
 --------------
 
-Skrifum vigrana upp í tvær línur:
+Sé *staðsetning* hlutar (:math:`x`) teiknuð upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hraða* hlutarins, enda er :math:`v=\frac{\Delta x}{\Delta t}`. Hér er það gert fyrir fyrra dæmið:
 
-.. math::
-  \begin{aligned}
-    \bar{a} \quad &\rightarrow \quad & a_x \quad a_y \quad a_z \\
-    \bar{b} \quad &\rightarrow \quad & b_x \quad b_y \quad b_z
-  \end{aligned}
-
-Fyrsta stak krossfeldisins fæst með því að "fela" fyrsta dálkinn (:math:`a_x` og :math:`b_x`) og margfalda hin stökin í kross og finna mismun. Þetta skýrist best grafískt:
-
-.. figure:: ./myndir/vigrar/kr-utskyring1.svg
-  :width: 50%
+.. image:: ./myndir/hradi/hlauparar.svg
+  :width: 70 %
   :align: center
 
-Til að finna fyrsta stakið hunsum við fyrsta dálkinn, margföldum saman hornalínuna :math:`\searrow` og drögum síðan frá margfeldið af hornalínunni :math:`\swarrow`.
-Fyrsta stak krossfeldisins er því
-
-.. math::
-
-  c_x=a_yb_z - a_zb_y
-
-------------------
-
-.. figure:: ./myndir/vigrar/kr-utskyring2.svg
-  :width: 60%
-  :align: center
-
-Til að finna annað stakið bætum við fyrsta dálkinum aftur við aftast, hunsum annan dálkinn, margföldum í kross yfir þriðja og fjórða dálkinn; fyrst :math:`\searrow` og  drögum síðan :math:`\swarrow` frá.
-Annað stak krossfeldisins er því
-
-.. math::
-
-	c_y=a_zb_x - a_xb_z
+Gröf sem sýna staðsetningu sem fall af tíma eru oft kölluð :math:`x-t` gröf.
 
 -----------------
 
-.. figure:: ./myndir/vigrar/kr-utskyring3.svg
-  :width: 50%
+Sé *hraði* hlutar (:math:`v`) teiknaður upp sem fall af tíma (:math:`t`) þá táknar hallatala grafsins *hröðun* hlutarins, enda er :math:`a=\frac{\Delta v}{\Delta t}`. Hér er það gert fyrir seinna dæmið:
+
+.. image:: ./myndir/hradi/eldflaug.svg
+  :width: 70 %
   :align: center
 
-Við finnum þriðja stak krossfeldisins með því að hunsa þriðja dálkinn og margfalda í kross yfir fyrsta og annan dálkinn. Fáum
-
-.. math::
-
-	c_z=a_xb_y-a_yb_x
+Gröf sem sýna hraða sem fall af tíma eru oft kölluð :math:`v-t` gröf.
 
 ----------------
-
-Þannig sjáum við að krossfeldi vigranna :math:`\bar{a} = (a_x,a_y,a_z)` og :math:`\bar{b} = (b_x,b_y,b_z)` er:
-
-.. math::
-  \bar{c}=\bar{a} \times \bar{b} = (a_yb_z - a_zb_y,a_xb_z - a_zb_x,a_xb_y-a_yb_x)
-
-
-----------------
-
-.. figure:: ./myndir/vigrar/krossfeldi.svg
-   :width: 60%
-   :align: center
-
-Útkoma krossfeldisins er vigur sem er hornréttur á bæði :math:`\bar{a}` og :math:`\bar{b}`. Hér er :math:`\bar{c} =\bar{a} \times \bar{b}`. Stefna :math:`\bar{c}` ákvarðast af **hægri** handar reglunni:
-
-.. figure:: ./myndir/vigrar/hhr.svg
-    :width: 60%
-    :align: center
-
-Lengd krossfeldis :math:`\bar{a} \text{ og } \bar{b}` má reikna úr frá lengdum vigranna og horninu á milli þeirra.
-
-.. math::
-  |\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)
 
 .. note::
-  Þegar krossfeldi er reiknað skiptir því máli hvor vigurinn er á undan.
+  Á :math:`x-t` grafi þýðir lárétt lína að *staðsetning hlutarins sé föst*, þ.e. að staðsetning hans sé ekki að breytast. Þá hlýtur hraði hlutarins að vera núll (:math:`v=0`) því hallatala línunnar er núll.
 
-  .. math::
-    \bar{a} \times \bar{b} = - \bar{b} \times \bar{a}
+  Á :math:`v-t` grafi þýðir lárétt lína að *hraði hlutarins sé fastur*, þ.e. að hraði hans sé ekki að breytast. Þá hlýtur hröðun hlutarins að vera núll (:math:`a=0`) því hallatala línunnar er núll.
 
 .. tip::
-    Reiknum krossfeldi vigranna :math:`\bar{a}=(1,2,3)` og :math:`\bar{b}=(4,5,6)`.
+  Blettatígur sér antílópu í 35 m fjarlægð og hleypur af stað.
+  Einni sekúndu síðar hefur antílópan áttað sig á hættunni og hleypur af stað.
+  Blettatígrar geta hlaupið á 99 km/klst (en aðeins í 100 metra sprettum) en antílópur geta hlaupið á hraðanum 81 km/klst og hafa þol í lengri vegalengdir.
+  Ef gert er ráð fyrir hraðabreyting dýranna taki engan tíma (e. immediate, instantaneous), mun antílópan lifa af? Ef ekki, hvenær nær blettatígurinn bráðinni?
 
-    **Lausn**
+  **Lausn**
 
-    .. math::
-      \begin{aligned}
-        \bar{a} \times \bar{b} &= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
-        &= (2\cdot 6-3\cdot 5)\hat{\imath} + (3\cdot 4 - 1 \cdot 6) \hat{\jmath} + ( 1\cdot 5 - 2\cdot 4) \hat{k}\\
-        &= -3 \hat{\imath} +6 \hat{\jmath} - 3\hat{k}\\
-        &= (-3,6,-3)
-      \end{aligned}
+  Byrjum á að breyta í SI-einingar. Fyrir blettatígurinn:
 
--------------------
+  .. math::
+    99 \frac{\text{ km}}{\text{ klst}}\cdot \frac{1\text{ klst}}{3600\text{ s}} \cdot \frac{1000\text{ m}}{1 \text{ km}} = \frac{99}{3.6} \frac{\text{m}}{\text{s}} = 27.5\frac{\text{m}}{\text{s}}
 
-.. eqt:: daemi-krossfeldi
+  Fyrir antílópuna:
 
-  **Æfingadæmi** Reiknið krossfeldi vigranna :math:`\overline{a}= (-1,3)` og :math:`\overline{b}=(3,1)`
+  .. math::
+    81 \frac{\text{ km}}{\text{ klst}} =  \frac{81}{3.6} \frac{\text{ m}}{\text{ s}} = 22.5\frac{\text{ m}}{\text{ s}}
 
-  A) :eqt:`I` :math:`(0,0,6)`
+  Á þessari fyrstu sekúndu kemst blettatígurinn 27.5 metrum nær antílópunni, þá eru 7.5 metrar á milli þeirra.
+  Mismunurinn á hraða þeirra er :math:`27.5\frac{\text{ m}}{\text{ s}}-22.5\frac{\text{ m}}{\text{ s}}=5\frac{\text{ m}}{\text{ s}}` .
+  Því myndi það taka blettatígurinn :math:`\frac{7.5\text{ m}}{5 \text{m/s}}=1.5 \text{ s}` að loka bilinu og ná antílópunni.
+  Blettatígurinn nær antílópunni **2.5 sekúndum** eftir að hann hleypur af stað.
 
-  #) :eqt:`I` :math:`0`
+  Svona dæmi er oft þægilegt að leysa myndrænt. Hér er staðsetning dýranna teiknuð sem fall af tíma, en blái ferillinn táknar antílópuna og rauða blettatígurinn. Sjá má að hallatala rauða ferilsins er meiri en bláa, vegna þess að blettatígurinn hleypur hraðar en antílópan. Þar sem hallatölur línanna er ekki sú sama hljóta línurnar að skerast, ef blettatígurinn getur hlaupið nógu lengi. Blettatígurinn nær antílópunni þegar ferlarnir skerast en hefðu ferlarnir ekki skorist hefði antílópan komist undan. Tíminn :math:`t=3.6363` m/s er merktur inn því það er tíminn sem það tæki blettatígurinn að verða örmagna eftir sinn 100 metra sprett.
 
-  #) :eqt:`C` :math:`(0,0,-6)`
+  .. figure:: ./myndir/hradi/antilopa.svg
+    :align: center
 
-  #) :eqt:`I` :math:`6`
+
+.. _s.hreyfijofnur:
+
+Augnablikshraði og augnablikshröðun
+-----------------------------------
+
+Ef það er hröðun í kerfinu þá er hraði hlutar ekki jafn allan tímann, en þarf að reikna *augnablikshraða* hlutarins.
+Þá er hraðinn reiknaður með að skoða staðsetninguna með afar stuttu millibili, við tímann :math:`t` og :math:`t+h` þar sem :math:`h` er mjög lítil tala.
+Það er það sama og að reikna *afleiðu* (diffra, deilda, e. differentiate) staðsetningarinnar m.t.t. tíma:
+
+.. math::
+  v=\lim_{h\to 0} \frac{x_{t+h}-x_{t}}{(t+h) - t} = \lim_{h\to 0}\frac{x_{t+h}-x_{t}}{h} = \frac{dx}{dt}
+
+Sömuleiðis er *augnablikshröðun* hlutar afleiða hraðans m.t.t. tíma:
+
+.. math::
+  a=\lim_{h\to 0} \frac{v_{t+h}-v_{t}}{(t+h) - t} = \lim_{h\to 0}\frac{v_{t+h}-v_{t}}{h} = \frac{dv}{dt}
+
+Út frá þessum skilgreiningum getum við leitt út *hreyfijöfnurnar* (e. kinematic equations) fyrir hlut sem hefur upphafsstaðsetningu :math:`x_0` , upphafshraða :math:`v_0` og fasta hröðun :math:`a`:
+
+----------------------------------------------------
+
+.. math::
+    \begin{aligned}
+      v&=v_0+a\cdot t \qquad &\text{Hraði sem fall af tíma} \\
+      x&=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 \qquad & \text{Staðsetning sem fall af tíma} \\
+      v^2 &=v_0^2+2a\cdot (x-x_0) \qquad & \text{Tímaóháða jafnan} \\
+      x-x_0 &=\frac{1}{2}(v_0 + v)\cdot t \qquad & \text{Færsla}
+    \end{aligned}
+
+----------------------------------------------------
+
+.. begin-toggle::
+  :label: Sýna útleiðslu á hreyfijöfnum
+  :starthidden: True
+
+Hröðun er afleiða hraðans og því má lýsa sem afleiðujöfnu:
+
+.. math::
+  \begin{aligned}
+    &\text{Upphaflega jafnan} &    a &=\frac{dv(t)}{dt} \\
+    &\text{Umritum} &    dv(t) &=  a\cdot dt \\
+    &\text{Heildum beggja vegna} &     \int_0^t dv &= a \cdot \int_0^t dt \\
+    &\text{ } &       v(t)-v(0) &= a\cdot (t-0) \\
+    &\text{} & v(t) &= a\cdot t +v_0
+  \end{aligned}
+
+sem er einmitt jafnan fyrir hraða sem fall af tíma.
+
+Hraði er afleiða staðsetningarinnar :math:`v(t)=\frac{dx(t)}{dt}= a\cdot t +v_0`.
+
+.. math::
+  \begin{aligned}
+    &\text{Upphaflega jafnan} & \frac{dx(t)}{dt}&= a\cdot t +v_0\\
+    &\text{Umritum}  &  dx(t) &=  (a\cdot t +v_0) dt\\
+    &\text{Heildum} & \int_0^x dx &= \int_0^t (a\cdot t +v_0) dt \\
+    &\text{ } & x(t)-x_0 &= \frac12 a\cdot t^2 + v_0 \cdot t \\
+    & \text{ } & x(t) &= x_0 + v_0 \cdot t +\frac12 a\cdot t^2
+  \end{aligned}
+
+sem er einmitt jafnan fyrir staðsetningu sem fall af tíma.
+
+Tímaóháðu jöfnuna má leiða út með því að setja saman þessar tvær jöfnur. Fyrst þarf að einangra tímann úr jöfnunni sem lýsir hraða sem fall af tíma og svo er hann settur inn fyrir tímann í jöfnunni sem lýsir staðsetningunni.
+
+.. math::
+  \begin{aligned}
+    &\text{} & v(t) &= a\cdot t +v_0 \\
+    &\text{Umritum} &  t &= \frac{v-v_0}{a} \\
+    &\text{Jafna fyrir } x(t) & x&=  x_0 + v_0 \cdot t +\frac12 a\cdot t^2 \\
+    &\text{Setjum tímann inn}  &  x&=x_0+ v_0 \cdot \frac{v-v_0}{a} +\frac12 a\cdot \left( \frac{v-v_0}{a} \right)^2\\
+    &\text{Margfalda inn í sviga} & x&=x_0+ \cdot \frac{v_0\cdot v-v_0^2}{a} +\frac{v^2+v_0^2-2v\cdot v_0}{2 a}\\
+    &\text{Margfalda með 2}a & 2a\cdot x &= 2a\cdot x_0 +2v\cdot v_0 -2v_0 +v^2 +v_0^2- 2v\cdot v_0\\ 
+    &  & 2a(x-x_0)&=v^2-v_0^2 \\
+    & & v^2&=v_0^2 + 2a\cdot (x-x_0)
+  \end{aligned}
+
+
+.. end-toggle::
+
+.. tip::
+  Bíll bíður á rauðu ljósi. Þegar ljósið verður grænt fær bíllinn samstundis hröðunina :math:`6 \frac{\text{ m}}{\text{ s}^2}` . Hve hratt fer hann eftir 5 sekúndur og hve langt í burtu er hann?
+
+  **Lausn**
+
+  Notum :ref:`hreyfijöfnurnar <s.hreyfijofnur>` :
+
+  .. math::
+    \begin{aligned}
+      v&=v_0+a\cdot t = 0\frac{\text{ m}}{\text{ s}}+6 \frac{\text{ m}}{\text{ s}^2} \cdot 5\text{ s} \\
+      v&= 30 \frac{\text{ m}}{\text{ s}}\\
+      x&=x_0 + v_0 \cdot t + \frac{1}{2} a\cdot t^2 = 0\text{ m}+0\frac{\text{ m}}{\text{ s}}\cdot 5\text{ s} + \frac{1}{2}\cdot 6 \frac{\text{ m}}{\text{ s}^2} \cdot (5\text{ s})^2 \\
+      x&= 75\text{ m}
+    \end{aligned}
+
+Afstæður hraði
+--------------
+
+*Afstæður hraði* (eða innbyrðis hraði, e. relative velocity) er hraði eins hlutar miðað við hreyfingar annars hlutar. Í raun er hraði alls afstæður, en við miðum langoftast við yfirborð jarðar þegar við tölum um hraða okkar, vindsins og bílanna í kringum okkur.
+
+Þegar þú ekur eftir vegi virðast bílarnir sem fara hraðar en þú fara áfram en þeir sem fara hægar virðast vera að bakka, þó að einhver sem stendur í vegkantinum sér að allir bílarnir eru að keyra í sömu átt. Þegar tveir athugendur mæla hraða bíls sem er á hreyfingu munu þeir fá sömu niðurstöðu ef þeir eru sjálfir á hreyfingu, t.d. gangandi eða á hjóli, vegna þess að þeir væru að mæla hraða bílsins *miðað við sjálfa sig*. Athugendur mynda í kringum sig það sem við köllum *viðmiðunarkerfi* þar sem þeir geta mælt hraða og staðsetningu bílsins miðað við sjálfa sig.
+
+Ef fyrirbærið :math:`P` er á hreyfingu miðað við viðmiðunarkerfi :math:`B` og :math:`B` er að hreyfast miðað við viðmiðunarkerfið :math:`A` þá er hraði fyrirbærisins :math:`P` miðað við :math:`A`:
+
+.. math::
+
+	v_{P/A} = v_{P/B} + v_{B/A}
+
+þar sem :math:`v_{x/y}` er hraði :math:`x` miðað við kerfið :math:`y`.
+
+.. tip::
+  Reiðhjól og gangandi maður eru að ferðast í sömu átt. Reiðhjólið fer á hraðanum :math:`v_h=6 \text{ m/s}` (miðað við jörðina) en maðurinn á :math:`v_g=1 \text{ m/s}` (líka miðað við jörðina). Hver er hraði hjólsins miðað við manninn?
+
+  **Lausn**
+
+  Köllum nú jörðina :math:`A`, manninn :math:`B` og reiðhjólið :math:`P`. Þá er :math:`v_h=v_{P/A}` og :math:`v_g=v_{B/A}`.
+
+  Við erum að leita að hraða :math:`P` miðað við :math:`B`, :math:`v_{P/B}`. Umritum jöfnuna :math:`v_{P/A} = v_{P/B} + v_{B/A}` og fáum
+
+  .. math::
+
+  	v_{P/B} = v_{P/A}-v_{B/A}
+
+  Þannig að hraði hjólsins miðað við manninn er
+
+  .. math::
+
+  	v_{P/B} = v_{P/A}-v_{B/A} = 6 \text{ m/s} - 1 \text{ m/s} = 5 \text{ m/s}
+
+
+Hraði ljóss og hljóðs
+---------------------
+
+Hljóð berst frá uppsprettu sinni til eyrna okkar með því að hrista efnið sem ber það (t.d. loft eða vatn), en hraði hljóðbylgnanna fer eftir því hvaða efni það er og hvert hitastig þess er. Hraði hljóðs í lofti við 20°C er:
+
+.. math::
+
+	v_{loft} = 344 \text{m/s}
+
+en hraði hljóðs í vatni við 20°C er meira en fjórfalt hraðari:
+
+.. math::
+
+	v_{vatn} = 1480 \text{m/s}
+
+Ljós er *rafsegulbylgjur* (e. electromagnetic waves) sem berast fra uppsprettu sinni til augna okkar með því að skapa truflanir í raf- og segulsviði. Ljós getur borist um tómarúm (en það getur hljóð ekki) en efni hægir örlítið á ljósi. Ljóshraði er hæsti hraði sem mögulegur er í heiminum, ekkert getur farið hraðar en ljós, en í lofttæmi er ljóshraðinn:
+
+.. math::
+
+	c = 3.00\cdot 10^8 \text{m/s}
+
+Það er ekki aðeins sýnilegt ljós sem fer um á þessum ógnarhraða heldur gera útvarpsbylgjur (þ.m.t. þráðlaust netmerki, Wi-Fi) það líka.
+
+--------------
+
+.. eqt:: daemi-ljos
+
+  **Æfingadæmi** Ef það eru :math:`1.496\cdot10^{11}\text{m}` til sólarinnar, hve langan tími líður milli þess að ljósið fer frá sólinni þar til það berst til okkar?
+
+  A) :eqt:`I` 600 sekúndur
+
+  #) :eqt:`I` :math:`4.5 \cdot 10^{11}\text{s}`
+
+  #) :eqt:`C` 8.3 mínútur
 
   .. eqt-solution::
-    Þegar við reiknum krossfeldi vigra sem liggja í :math:`xy`-planinu, þá setjum við :math:`a_z=0` og :math:`b_z=0`.
-    Við skulum nota formúluna sem var gefin hér að ofan
+    Hraði er breyting á staðsetningu á tímabili, þ.e.
 
     .. math::
 
-      \begin{aligned}
-        \bar{a} \times \bar{b} &= (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
-        &= (3\cdot 0- 0\cdot 1)\hat{\imath}  + (0\cdot 3- (-1)\cdot 0 )\hat{\jmath} + ((-1)\cdot 3 - 3\cdot 1)\hat{k}\\
-        &= (0,0,-6)
-      \end{aligned}
+      v=\frac{\Delta x}{\Delta t}
 
-    Þar sem :math:`\overline{a}` og :math:`\overline{b}` voru báðir í :math:`xy`- planinu og krossfeldi þeirra þarf að vera hornrétt á þá báða þá erum við ekki hissa þó að niðurstaðan okkar sé að krossfeldið sé samsíða :math:`z`- ásnum.
+    Umritum þessa jöfnu og fáum
+
+    .. math::
+
+      \Delta t=\frac{\Delta x}{v} =\frac{1.496\cdot10^{11}\text{m}}{3.00\cdot 10^8 \text{m/s}} = 498.7 \text{s}
+
+    Breytum nú sekúndum í mínútur:
+
+    .. math::
+
+    	498.7\text{s} \cdot \frac{1 \text{mín}}{60 \text{s}} = 8.3 \text{mín}
+
 
 ------------------
 
+Þyngdarhröðun
+-------------
+
+Allt sem er nálægt yfirborði jarðarinnar verður fyrir sömu hröðun í átt að miðju jarðarinnar (í daglegu tali köllum við þessa átt *niður*).
+Við táknum þessa tilteknu hröðun, *þyngdarhröðun*, með :math:`g`.
+
+Þyngdarhröðunin :math:`g` bendir alltaf í átt að miðju jarðar.
+Stærð :math:`g` er dálítið mismunandi eftir staðsetningu, bæði hæð yfir miðju jarðar (lækkandi með hæð) og því á hvaða breiddargráðu mælt er (lægra við miðbaug en hærra við pólana) en á Íslandi er gildið við sjávarmál
+
+.. math::
+  g=9.82\frac{\text{ m}}{\text{ s}^2}
+
+
 .. tip::
-	Reiknum hornið milli vigranna :math:`\bar{a}=(1,2,3)` og :math:`\bar{b}=(4,5,6)`.
+  Una stendur á Golden Gate brúnni í San Fransisco og ætlar að taka mynd af útsýninu. Þar er þyngdarhröðunin 9,80 m/s :math:`^2` .
+  Henni bregður og missir símann sinn yfir handriðið, síminn steypist að yfirborði sjávarins, 67 metrum neðar.
 
-	**Lausn**
+  Hve hratt hreyfist síminn þegar hann skellur á yfirborðinu? Hve langan tíma tekur fallið?
+  (Gera má ráð fyrir að síminn byrji í kyrrstöðu og að engin loftmótstaða sé).
 
-	Þetta dæmi er bæði hægt að leysa með því að nota regluna um krossfeldi: :math:`|\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)` eða regluna um innfeldi: :math:`\overline{a}\cdot \overline{b} = ab\cos(\phi)` og auðvitað er niðurstaðan sú sama sama hvor reglan er notuð.
+  .. figure:: ./myndir/hradi/goldenuna.svg
+    :width: 40%
+    :align: center
 
-	Notum nú regluna :math:`|\bar{a} \times \bar{b}| = |\bar{a}| |\bar{b}| \sin(\phi)` og byrjum á því að reikna lengd vigranna:
+  **Lausn**
 
-	.. math::
-		\begin{aligned}
-			|\bar{a}| &=\sqrt{1^2+2^2+3^2} = \sqrt{14} \\
-			|\bar{b}| &=\sqrt{4^2+5^2+6^2} = \sqrt{77} \\
-			|\bar{a} \times \bar{b}| &= \sqrt{(-3)^2+6^2+(-3)^2}=\sqrt{54}
-		\end{aligned}
+  Notum :ref:`hreyfijöfnurnar <s.hreyfijofnur>` , fyrst tímaóháðu jöfnuna til að reikna hraðann:
 
-	Þá fáum við:
+  .. math::
+    \begin{aligned}
+      v^2 &= v_0^2 + 2a\cdot (x-x_0) = \left( 0\frac{\text{ m}}{\text{ s}}\right)^2+ 2\cdot g \cdot(67-0) \text{m}\\
+      v^2 &= 1313.2 \frac{\text{ m}^2}{\text{ s}^2} \\
+      v &= \sqrt{1313.2 \frac{\text{ m}^2}{\text{ s}^2}} = 36.2 \frac{\text{ m}}{\text{ s}}
+    \end{aligned}
 
-	.. math::
-		\begin{aligned}
-			\sin(\phi) &= \frac{|\bar{a} \times \bar{b}| }{|\bar{a}| |\bar{b}|} \\
-			&=\frac{\sqrt{54}}{\sqrt{14}\sqrt{77}} \\
-			&=\sqrt{\frac{54}{1078}}\\
-			\phi&\approx0.226 \text{ Rad} \\
-			\phi&\approx 13° \\
-		\end{aligned}
+  Notum síðan hraðajöfnuna til að finna tímann sem fallið tekur:
+
+  .. math::
+    \begin{aligned}
+      v&=v_0+a\cdot t \\
+      t&=\frac{v-v_0}{a} = \frac{36.2 \frac{\text{ m}}{\text{ s}}}{9.80 \frac{\text{ m}}{\text{ s}^2}} \\
+      t&=3.7 \text{s}
+    \end{aligned}
+
+  .. figure:: ./myndir/hradi/unasimi.svg
+    :width: 20%
+    :align: center
+
+.. tip::
+
+  Körfubolta er kastað beint upp með hraðanum :math:`v_0=5 \frac{\text{ m}}{\text{ s}}` .
+  Hve hátt drífur boltinn?
+
+  **Lausn**
+
+  Boltinn ferðast upp á við, en þyngdarhröðunin togar í hann og hægir þannig á honum.
+  Að endingu hefur þyngdarhröðunin hægt það mikið á honum að hann stoppar í augnablik áður en hann fellur á ný til jarðar.
+
+  Höfum því upphafshraðann :math:`v_0=5 \frac{\text{ m}}{\text{ s}}`, lokahraðann :math:`v=0 \frac{\text{ m}}{\text{ s}}` og hröðun :math:`g=9.82\frac{\text{ m}}{\text{ s}^2}`.
+  Upphafleg staðsetning boltans er :math:`x_0=0`, en við leitum að hæðinni :math:`x` .
+
+  Hér þarf að fara varlega með formerki! Við vitum að hröðunin stefnir niður en upphafshraðinn upp. Því reiknum við með :math:`g` sem neikvæðri tölu.
+
+  .. math::
+    \begin{aligned}
+      v^2 &=v_0^2+2a\cdot (x-x_0)\\
+      \left(0 \frac{\text{ m}}{\text{ s}}\right) &= \left(5 \frac{\text{ m}}{\text{ s}}\right)^2+2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2}) \cdot(x-0 \text{m}) \\
+      x &= \frac{\left(5 \frac{\text{ m}}{\text{ s}}\right)^2}{-2\cdot(-9.82\frac{\text{ m}}{\text{ s}^2})} = 1.27 \text{ m}
+    \end{aligned}
+
+  .. figure:: ./myndir/hradi/asakarfa.svg
+    :width: 20%
+    :align: center
+
+.. tip::
+  SpaceX ætlar að skjóta upp eldflaug.
+  Vélar eldflaugarinnar gefa henni hröðun :math:`a_1=30.0\text{ m/s}^2` upp á við.
+  Eftir 10 sekúndur bila vélarnar og eldflaugin verður í frjálsu falli.
+
+  * Hve langt kemst skutlan upp áður en hún tekur að falla í átt að jörðu?
+  * Hver verður hraði eldflaugarinnar þegar hún brotlendir aftur á jörðinni?
+  * Hvenær brotlendir hún á jörðinni?
+
+  **Lausn**
+
+  Munum að allir hlutir nálægt yfirborði jarðar fá hröðunina :math:`g=9.82\text{ m/s}^2` , sama hvort þeir eru á hreyfingu eða verða fyrir öðrum hröðunum.
+  Við gerum ráð fyrir að eldflaugin fari ekki mjög langt og verði þess vegna fyrir þeirri hröðun allan tímann.
+  Heildarhröðunin á eldflaugina á meðan kveikt er á vélunum er því :math:`a_1-g=30.0\text{ m/s}^s-9.8\text{ m/s}^2 = 20.2\text{ m/s}^2` .
+  Skiptum reikningum okkar upp í nokkra hluta (0 er upphafsástand, 1 er þegar vélarnar bila, 2 er þegar flaugin er í hámarkshæð og 3 þegar hún brotlendir).
+
+  Notum nú :ref:`hreyfijöfnurnar <s.hreyfijofnur>` til að reikna hve hratt flaugin fer þegar vélarnar bila.
+
+  .. math::
+    \begin{aligned}
+      v_1&=v_0+a\cdot t_1 \\
+      v_1&=v_0+(a_1-g)\cdot t_1 \\
+      v_1&= 0 \text{ m/s} + (30\text{ m/s}^s-9.82\text{ m/s}^2) \cdot 10 \text{ s} \\
+      v_1 &= 201.8 \text{ m/s} \\
+    \end{aligned}
+
+  Þá er eldflaugin í hæðinni:
+
+  .. math::
+    \begin{aligned}
+      x_1&=x_0 + v_0 \cdot t_1 + \frac{1}{2} a\cdot t_1^2 \\
+      x_1&=x_0 + v_0 \cdot t_1 + \frac{1}{2} (a_1-g)\cdot t_1^2 \\
+      x_1&= 0\text{ m} + 0 \text{ m/s} \cdot 10 \text{ s} +\frac12 (30\text{ m/s}^s-9.82\text{ m/s}^2) \cdot (10 \text{ s})^2 \\
+      x_1&=1009 \text{ m}\\
+    \end{aligned}
+
+  .. figure:: ./myndir/hradi/flokid2.svg
+    :align: center
+    :width: 50%
+
+  Þegar vélarnar bila er flaugin í :math:`1009 \text{ m}` hæð yfir yfirborði, ferðast upp á við með hraðanum :math:`201.8 \text{ m/s}` og verður fyrir þyngdarhröðuninni :math:`g= 9.82 \text{ m/s}` *niður á við*.
+  Reiknum nú hvenær hraði flaugarinnar er orðinn :math:`v_2=0 \text{ m/s}` .
+
+  .. math::
+    \begin{aligned}
+      v_2&=v_1+a\cdot t_2 \\
+      v_2&=v_1-g\cdot t_2 \\
+      t_2&=\frac{v_2-v_1}{-g} = \frac{0 \text{ m/s}-201.8 \text{ m/s}}{-9.82 \text{ m/s}^2}\\
+      t_2&=20.5 \text{ s}
+    \end{aligned}
+
+  Þá er eldflaugin í hæðinni:
+
+  .. math::
+    \begin{aligned}
+      x_2 &= x_1 + v_1 \cdot t_2 + \frac{1}{2} (-g)\cdot t_2^2 \\
+      x_2 &= 1009 \text{ m} + 201.8 \text{ m/s} \cdot 20,5 \text{ s} - \frac12 \cdot 9.82 \text{ m/s}^2 \cdot (20,5 \text{ s})^2 \\
+      x_2 &= 3082 \text{ m} \\
+    \end{aligned}
+
+  .. figure:: ./myndir/hradi/flokid3.svg
+    :align: center
+    :width: 45%
+
+  Nú byrjar hún að falla til jarðarinnar úr þessari hæð.
+  Hún hefur enn hröðunina :math:`g=9.82\text{ m/s}^2` niður á við. Notum tímaóháðu jöfnuna:
+
+  .. math::
+    \begin{aligned}
+      v_3^2 &=v_2^2+2(-g)\cdot (x_0-x_2) \\
+      v_3&= \pm \sqrt{0\text{ m/s} + 2\cdot (-9.82\text{ m/s}^2)(0\text{ m} - 3082\text{ m} )    } \\
+      v_3 &= - 246 \text{ m/s}
+    \end{aligned}
+
+  Veljum neikvætt formerki á :math:`v_3` kemur vegna þess að hraðinn stefnir niður á við.
+  Reiknum að lokum hve langan tíma fallið til jarðarinnar tekur:
+
+  .. math::
+    \begin{aligned}
+      x_0-x_2 &=\frac{1}{2}(v_2 + v_3)\cdot t_3\\
+      t_3 &= \frac{x_0-x_2}{\frac12 (v_2 + v_3)} \\
+      t_3 &= \frac{0-3082\text{ m}}{\frac12 (0 - 246 \text{ m/s})} \\
+      t_3 &= 25 \text{ s}\\
+    \end{aligned}
+
+  Þessi misheppnaða svaðilför eldflaugarinnar tekur hana því :math:`t_1+t_2+t_3=55.5 \text{s}` .
+
+  .. image:: ./myndir/hradi/flokid.svg
+    :width: 60 %
+    :align: center
+
+--------------
+
+.. eqt:: daemi-gravity
+
+  **Æfingadæmi** Jón kastar bolta beint upp í loftið með hraðann :math:`v_i`. Hver er hraði boltans þegar Jón grípur hann aftur? (Gerum ráð fyrir engri loftmótsstöðu)
+
+  A) :eqt:`C` Hraðinn við lendingu er sá sami, :math:`v_f=v_i`
+
+  #) :eqt:`I` Boltinn fer hraðar þegar hann lendir, :math:`v_f>v_i`
+
+  #) :eqt:`I` Boltinn fer hægar þegar hann lendir, :math:`v_f<v_i`
+
+  #) :eqt:`I` Jón mun aldrei grípa boltann
+
+  .. eqt-solution::
+    Þegar boltanum er kastað þá hefur hann upphafshraðann :math:`v` en þyngdarhröðunin :math:`g` hægir á honum þar til hann stoppar í tiltekinni hæð. Þá snýr boltinn við og byrjar að falla til jarðar. Á tímanum sem það tekur boltann að falla niður sömu vegalengd þá eykur þyngdarhröðunin :math:`g` hraða boltans jafn mikið og hún hægði á boltanum á leiðinni upp. Þess vegna er hraði boltans sá sami í upphafi og í lokin, þó :math:`v_i` og :math:`v_f` bendi í gagnstæðar stefnur.
+
+    .. figure:: ./myndir/hradi/bolti.svg
+      :width: 75 %
+      :align: center

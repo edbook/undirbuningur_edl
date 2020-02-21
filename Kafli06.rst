@@ -1,342 +1,268 @@
-Kraftar
-=======
+Orka
+====
+Öll eðlisfræðileg kerfi hafa að geyma orku af einhverju tagi, en hún segir til um hve mikla vinnu þarf til þess að breyta ástandi kerfisins.
 
-*Kraftur* (e. force) er orð sem við notum um samspil hluta sem veldur breytingu á hreyfingu þeirra, þ.e. valda því að hlutirnir fá hröðun. Kraftar eru :ref:`vigrar <s.vigrar>`, sem þýðir að þeir hafa  *bæði stærð og stefnu*.
-SI- einingin fyrir krafta er *Newton*, táknað :math:`\text{N}`. Eitt Newton er sá kraftur sem þarf til þess að gefa :math:`1 \text{ kg}` massa hröðunina :math:`1 \frac{\text{m}}{\text{s}^2}` .
-Kraftar eru margfeldi massa og hröðunar og því má skrifa eininguna Newton sem :math:`1\text{ N} = 1 \text{ kg}\cdot \frac{\text{m}}{\text{s}^2}` .
+Varðveisla orku er eitt af mikilvægustu lögmálum eðlisfræðinnar.
 
-.. note::
-  Athugið að í eðlisfræði er *massi* ekki það sama og þyngd, þó að í daglegu tali sé þyngd oft notað fyrir bæði.
+**Orku er ekki hægt að búa til eða eyða.** Hún getur hvorki birst upp úr þurru, né horfið sporlaust. Orka varðveitist í öllum ferlum en getur breytt um form.
+Birtingarmyndum orku má skipta í tvo meginflokka, mættisorku og hreyfiorku.
 
-  *Massi* (e. mass) hlutar lýsir því hve mikið efni er í honum og er eins sama hvar í alheiminum hann er. SI-eining massa er kílógramm.
+*Mættisorka* (e. potential energy) er geymd á einhvern máta:
 
-  *Þyngd* (e. weight) hlutar er stærð þyngdarkraftsins sem á hann verkar, þ.e. margfeldi massans við þyngdarhröðunina :math:`g`. SI-eining þyngdar er Newton.
+- þyngdarstöðuorka (t.d. vegna þyngdarsviði jarðar)
+- gormstöðuorka eða spennuorka (t.d. í teygðum og þjöppuðum gormum)
+- efnaorka (í efnatengjum sameinda)
+- kjarnorka (í kjörnum atóma)
 
-Kraftar eru oftast táknaðir með :math:`F` eða :math:`f`, frá enska heitinu *force*. :math:`F` er þá táknið fyrir þyngdarkraft og aðra krafta sem beitt er á hluti en :math:`f` táknar viðbragðskrafta eins og t.d. núning.
+*Hreyfiorka* (e. kinetic energy) er þar sem hlutir eða eindir eru á hreyfingu:
+
+- varmarorka (titrandi atóm)
+- hljóð (titrandi efni)
+- rafsegulorka (ljós)
+- raforka (rafeindir á hreyfingu)
 
 .. tip::
-  Skoðum samlagningu kraftvigra.
-  Inga og Gunna eru í reipitogi. Inga togar í reipið beint til vinstri með kraftinum :math:`F_I=1000 \text{N}` en Gunna beint til hægri með kraftinum :math:`F_G = 1200 \text{N}`. Í hvaða átt hreyfist reipið?
+  **Orka breytir um form.**
 
-  **Lausn**
-  Þar sem krafar Ingu og Gunnu eru vigrar notum við vigursamlagningu til þess að skoða hver heildarkrafturinn er á reipið.
+  Bolti sem fellur til jarðar hefur *stöðuorku* vegna þyngdarsviðs jarðar, en hún breytist í *hreyfiorku* á meðan fallinu stendur. Þegar boltinn lendir á jörðinni þá breytist hreyfiorka boltans sem *hreyfiorka* loftsins í kringum hann í formi hljóðbylgja og mögulega varma auk þess sem jörðin tekur á sig högg.
+  Eftir því sem boltinn er hærra yfir yfirborðinu, því meiri stöðuorku hefur hann í upphafi og þar af leiðandi meiri hreyfiorku þegar niður er komið.
 
-  .. figure:: ./myndir/kraftar/reipitog.svg
+  Þegar sprengja springur losnar mikil *hreyfiorka*, *varmaorka* og *rafsegulorka* (ljós) á stuttum tíma, en öll sú orka var í sprengjunni fyrir, bundin í efnatengjum atóma sem *efnaorka*.
+
+.. note::
+  Orka er skalarstærð, *ekki vigur*. Lokað eðlisfræðilegt kerfi býr yfir fastri orku, sem getur breytt um form en getur aldrei horfið eða aukist, en orkan bendir ekki í neina sérstaka átt.
+
+Hér munum við einbeita okkur að
+
+Vinna
+-----
+Kraftur :math:`F` er sagður vinna *vinnu* (e. work) þegar hann flytur hlut um *vegalengd* (e. displacement) :math:`s` .
+Vinna er oft táknuð með :math:`W` og er margfeldi kraftsins og færslunnar:
+
+.. math::
+  W=F\cdot s
+
+Einingin fyrir vinnu er Joule, táknað :math:`J`.
+
+.. math::
+  1 \text{ J} = 1 \text{ N} \cdot 1 \text{ m} = 1 \frac{\text{kg}\text{ m}^2}{\text{s}^2}
+
+.. tip::
+  Vinna togkrafts :math:`T=25 \text{ N}` við að flytja hlut vegalengdina :math:`s=10 \text{ m}` er
+
+  .. math::
+    W=F\cdot s = 25 \text{ N} \cdot 10 \text{ m} = 250 \text{ J}
+
+Ef vinna er ekki samsíða færslunni þurfum við að skoða vigrana sem krafturinn og færslan eru.
+Vinna er þá innfeldi kraftavigursins og færsluvigursins:
+
+.. math::
+  \begin{aligned}
+    W&=\overline{F}\cdot\overline{s} \\
+    W&= Fs\cos(\phi)
+  \end{aligned}
+
+þar sem :math:`\phi` er hornið á milli vigranna.
+
+.. figure:: ./myndir/vinna/vinna5.svg
+  :align: center
+  :width: 70%
+
+
+.. note::
+  Vinna getur verið jákvæð, neikvæð eða núll.
+
+  * Þegar krafturinn er í sömu stefnu og færslan, þ.e. ef hann er að vinna með hreyfingunni, er vinnan jákvæð. Ef :math:`-90°<\phi<90°` þá er :math:`\cos(\phi)>0` .
+
+  .. figure:: ./myndir/vinna/vinna2.svg
     :align: center
     :width: 70%
 
-  Kraftvigur Ingu bendir til vinstri, þ.a. :math:`x` hnit hans er neikvætt.
+  * Ef krafturinn er gagnstefna færslunni, þ.e. að vinna gegn hreyfingunni, þá er vinnan neikvæð. Ef :math:`90°<\phi< 270°` þá er :math:`\cos(\phi)<0`.
+
+  .. figure:: ./myndir/vinna/vinna3.svg
+    :align: center
+    :width: 70%
+
+  * Ef krafturinn er hornréttur á færsluna þá er vinna kraftsins á hlutinn núll. Ef :math:`\phi=90°` eða :math:`\phi=270°` þá er :math:`\cos(\phi)=0`.
+
+  .. figure:: ./myndir/vinna/vinna4.svg
+    :align: center
+    :width: 70%
+
+Afl
+---
+Afl er breyting á vinnu á tímabili, eða tímaafleiða vinnu:
+
+.. math::
+  P_{meðal} = \frac{\Delta W}{\Delta t}
+
+.. math::
+  P=\lim_{\Delta t \to 0} \frac{\Delta W}{\Delta t} = \frac{dW}{dt}
+
+Einingin fyrir afl er Watt, táknað W.
+
+.. math::
+  1 W=\frac{1 \text{ J}}{1\text{ s}}
+
+.. note::
+  Passið ykkur á því að ruglast ekki á einingunni Watt fyrir afl og tákninu :math:`W` sem er oft er notað fyrir orku! Það er yfirleitt skýrt af samhenginu hvort er um að ræða.
+
+Hreyfiorka
+----------
+Hlutur sem hefur massann :math:`m` og fer á hraðanum :math:`v` hefur hreyfiorku (e. kinetic energy) :math:`K` :
+
+.. math::
+  K= \frac{1}{2}mv^2
+
+.. note::
+  Þó hraði sé vigur (sem hefur bæði stærð og stefnu) þá er hreyfiorka massans skalarstærð. Hreyfiorkan er bara háð stærð hraðans, :math:`v=|\overline{v}|` en ekki stefnu hans.
+
+Hreyfiorka og vinna tengjast með þeim hætti að vinna krafts er jöfn breytingunni sem verður á hreyfiorkunni samkvæmt *vinnu-hreyfiorkusetningunni*:
+
+.. math::
+  W=\Delta K=K_2-K_1 = \frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2
+
+* Þegar vinnan er jákvæð þá er hreyfiorkan að aukast.
+* Þegar vinnan er neikvæð þá er hreyfiorkan að minnka.
+* Þegar vinnan er núll þá er hreyfiorkan ekki að breytast.
+
+Hreyfiorka segir til um vinnuna sem þarf til þess að að koma massa :math:`m` úr kyrrstöðu í hraðann :math:`v`.
+
+.. tip::
+  Sleði með massann :math:`m=20` kg rennur eftir sléttum, láréttum snjó.
+  Þar er lítill núningur, en samt nóg til þess að hægja á sleðanum.
+  Hver er vinna núningsins ef upphafshraði sleðans er :math:`v_1 =10` m/s og lokahraðinn er :math:`v_2=5` m/s?
+
+  **Lausn**
+
+  Við vitum að vinnan :math:`W` er jöfn breytingunni á hreyfiorkunni.
+  Hreyfiorkan í upphafi er
 
   .. math::
-    \overline{F}_I = \begin{pmatrix} -1000 \\ 0 \end{pmatrix} \text{N}
+    K_1= \frac{1}{2} mv_1^2 =  1000 \text{ J}
 
-  Kraftvigur Gunnu bendir til hægri, þ.a. :math:`x` hnit hans er jákvætt.
+  Hreyfiorkan í lokin er
 
   .. math::
-    \overline{F}_G = \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N}
+    K_2=\frac{1}{2} mv_2^2 = 250 \text{ J}
 
-  Leggjum nú saman vigrana:
+  Því er vinnan
 
   .. math::
     \begin{aligned}
-    \overline{F}_{net} &= \overline{F}_I + \overline{F}_G \\
-    &= \begin{pmatrix} -1000 \\ 0 \end{pmatrix}  \text{N} + \begin{pmatrix} 1200 \\ 0 \end{pmatrix}  \text{N} \\
-    &= \begin{pmatrix} 200 \\ 0 \end{pmatrix}  \text{N}
+      W=K_2-K_1 &= 250 \text{ J}- 1000 \text{ J} \\
+      W&= -750 \text{ J}
     \end{aligned}
 
-  Samanlagður krafturinn sem verkar á reipið er því :math:`F_{net}=\begin{pmatrix} 200 \\ 0 \end{pmatrix} \text{N}`. Reipið mun því hreyfast til hægri og Gunna vinnur reipitogið. Þetta kemur okkur ekkert á óvart, enda togar hún fastar í reipið.
+  Vinnan er neikvæð því krafturinn vinnur gegn hreyfingunni og hreyfiorkan er að minnka.
 
-.. _s.newton:
+Stöðuorka
+---------
+Hér ætlum við að fjalla um þær tegundir stöðuorku sem koma oftast fyrir í klassískri eðlisfræði, þyngarstöðuorku og gormstöðuorku. Hinar tegundirnar, efnaorka og kjarnorka eru engu að síður mikilvægar og áhugaverðar.
 
-Lögmál Newtons
+Þyngdarstöðuorka
+~~~~~~~~~~~~~~~~
+
+Þegar hlutir eru í *þyngdarsviði*, þ.e. nálægt yfirborði miklu stærri hlutar (eins og jarðarinnar) hafa þeir *þyngdarstöðuorku* (e. gravitational potential energy) :math:`U_{grav}` :
+
+.. math::
+  U_{grav} = mgy
+
+þar sem :math:`y` er hæð massans yfir einhverjum tilteknum viðmiðunarpunkti, sem er oft yfirborð jarðarinnar.
+
+Gormstöðuorka
+~~~~~~~~~~~~~
+Þegar orka er geymd í hlut sem getur afmyndast, eins og t.d. gormum og gúmmíteygjum, þá köllum við það *gormstöðuorku* (e. elastic potential energy). Fyrir gorm með gormstuðul :math:`k` sem teygður er (eða þjappaður) um vegalengdina :math:`x` þá er gormstöðuorkan :math:`U_{el}`:
+
+.. math::
+
+	U_{el} = \frac{1}{2}kx^2
+
+Orkuvarðveisla
 --------------
-Enski eðlisfræðingurinn `Isaac Newton <https://is.wikipedia.org/wiki/Isaac_Newton>`_ setti fram þrjú lögmál um krafta á 17. öld, en þau mynda grunn þess hluta eðlisfræðinnar sem er kölluð aflfræði (e. classical mechanics).
+Orka er einn eðliseiginleika kerfis sem er *varðveittur*, þ.e. hún getur aldrei birst upp úr þurru né horfið sporlaust.
 
-Fyrsta lögmál Newtons
-~~~~~~~~~~~~~~~~~~~~~
-"Hlutur sem enginn kraftur verkar á helst kyrr eða ferðast áfram á jöfnum hraða."
+Hún getur aðeins breytt um form, t.d. þá getur stöðuorka orðið að hreyfiorku og öfugt.
+Þegar hlutur fellur til jarðar úr einhverri hæð minnkar stöðuorka hans, en á móti kemur að hann fer hraðar, þ.e. hreyfiorka hlutarins eykst.
 
-Þetta lögmál er oft nefnt **tregðulögmálið** og segir m.a. að bolti muni liggja kyrr á jörðinni þangað til einhver sparkar í hann og að boltinn muni halda áfram að rúlla endalaust, nema núningur hans við grasflötina hægi á honum.
-
-Kraftar valda hröðun svo að tregðulögmálið gildir þegar enginn kraftur er til staðar eða þegar allir kraftarnir sem eru ýta hver á móti öðrum.
-Hröðun er afleiða hraðans, svo ef hröðunin er núll þá er hraðinn :math:`\overline{v}` er fasti, svo hluturinn er annað hvort kyrr eða ferðast á jöfnum hraða.
-
-.. _s.lnII:
-
-Annað lögmál Newtons
-~~~~~~~~~~~~~~~~~~~~
-"Kraftur sem verkar á hlut er margfeldi massa hlutarins og hröðunar sem hann verður fyrir."
+Séu allir kraftarnir í kerfinu geymnir, þ.e. ef það er enginn núningur eða annað viðnám, þá er öll orka kerfisins annað hvort stöðuorka eða hreyfiorka og þá gildir að:
 
 .. math::
-   \overline{F} = m \overline{a}
+  K_1+U_1 = K_2+U_2
 
-Kraftur og hröðun eru vigrar sem hafa sömu stefnu og massi er einskonar hlutfallsstuðull milli krafts og hröðunar.
-Þannig má túlka massa sem *tregðustuðul*, þ.e. fyrir mikinn massa fæst lítil hröðun fyrir gefinn kraft. Massi hlutar segir okkur hve erfitt það er að breyta hraða hans.
-
-Þriðja lögmál Newtons
-~~~~~~~~~~~~~~~~~~~~~
-"Sérhvert átak á sér gagnátak." Það þýðir að alltaf þegar kraftur verkar frá einum hlut til annars þá ýtir sá síðari á móti.
-
-.. math::
-   \overline{F}_{AB} = -\overline{F}_{BA}
-
-:math:`F_{AB}` er kraftur sem hlutur A veldur á B og :math:`F_{BA}` er verkun B á A.
-Kraftarnir eru jafnstórir en stefna gegn hvorum öðrum.
-
-Normalkraftur
--------------
-Hlutur sem liggur kyrrstæður á borði er í kraftajafnvægi (fyrst hann er ekki á hreyfingu getur ekki verið nein hröðun) og samkvæmt fyrsta lögmálinu mun hann vera kyrrstæður áfram meðan svo er.
-Þó að hluturinn se kyrrstæður þýðir það samt ekki að engir kraftar verki á hann.
-Þyngdarkrafturinn togar hann niður að borðinu og samkvæmt þriðja lögmálinu er jafnstór kraftur frá borðinu sem ýtir hlutnum upp.
-Sá kraftur er kallaður normalkraftur, oft táknaður :math:`f_{n}` .
-
-.. figure:: ./myndir/kraftar/normal.svg
-  :align: center
-  :width: 60%
-
-Normalkraftar eru hornréttir á yfirborðið sem þeir koma frá. Nafnið kemur einmitt þaðan, en *normalvigur* er vigur sem er hornréttur á annan, líka kallað þvervigur. Á hallandi yfirborði er normalkrafturinn minni en á láréttu yfirborði, en þetta verður skoðað nánar með dæmi síðar.
-
-Núningskraftur
---------------
-Núningskraftar eru kraftar sem verða á milli yfirborða og vinna gegn hreyfingu þeirra miðað við hvort annað.
-Núningur finnst í nær öllum kerfum, hann er ástæða þess við getum farið um á hjóli; það er kraftur milli dekkjanna og malbiksins sem ýtir hjólinu áfram þegar dekkin snúast. Annars myndi hjólið spóla og standa í stað, eins og gerist þegar það er mikil hálka.
-Skautasvell er einmitt dæmi um kerfi þar sem er nær enginn núningur og hefur afar lítil áhrif á útreikninga dæmisins. Ef núningurinn er mjög lítill getum við leyft okkur að hunsa hann.
-
-Núningur kemur frá því að yfirborð hluta eru ekki alveg slétt, þó okkur sýnist þau vera það.
-
-Stærð núningskrafts er háður stærð normalkraftsins með stuðli sem er kallaður núningsstuðull, :math:`\mu_k` :
-
-.. math::
-
-	f_{nún} = \mu_k f_n
+Þar sem :math:`U` táknar alla stöðuorku sem kerfið gæti búið yfir, bæði gorm- og þyngdarstöðuorku, og :math:`K` táknar hreyfiorku þess.
+Lágvísirinn, eins og oft áður, segir til um *hvenær* við erum að skoða orku kerfisins. :math:`_1` táknar þá fyrir einhvern atburð, við tímann :math:`t_1` og :math:`_2` táknar eftir einhvern atburð, við tímann :math:`t_2`.
 
 .. tip::
-  **(a)** Ásta ætlar að toga þungan kassa eftir steypugólfi og beitir til þess krafti :math:`F_{tog}` á kassann.
-  Kassinn hreyfist ekki. Af hverju ekki?
-
-  **(b)** Ásta togar fastar og kassinn fær hröðun í átt til hennar. Hvaða kraftar verka á kassann og Ástu?
+  :math:`0.5\text{ kg}` steinn fellur úr kyrrstöðu í 20 metra hæð til jarðar.
+  Hver er hraði hans rétt áður en hann skellur á yfirborði jarðarinnar?
 
   **Lausn**
 
-  **(a)** Fyrst kassinn hreyfist ekki er hraði hans fasti (í núlli) og því hlýtur heildarkrafturinn sem verkar á hann að vera núll.
-  Skoðum kraftana betur:
+  Gerum ráð fyrir að loftmótsstaðan hafi engin áhrif, þ.e. að núningurinn á milli steinsins og loftsins sé ekki að vinna neina vinnu.
 
-  Kassinn verður fyrir þyngdarkrafti :math:`F_g` og gólfið ýtir á móti með jafnstórum en gagnstefna normalkrafti :math:`f_n`.
-  Kraftarnir tveir stytta hvorn annan út og það helst óbreytt þó Ásta togi í kassann.
+  Í upphafi er hreyfiorka steinsins núll (:math:`K_1=0`), fyrst hann fellur úr kyrrstöðu, en þyngdarstöðuorka hans er:
 
-  Fyrst kassinn hreyfist ekki þýðir það að summa kraftanna sem verka á hann er núll.
-  Því hlýtur að vera núningskraftur sem er að toga á móti þegar Ásta togar í kassann.
-  Á meðan kassinn hreyfist ekki er núningskrafturinn jafnstór togkraftinum sem Ásta beitir.
+  .. math::
+    U_{grav,1} = mgy=0.5 \text{ kg}\cdot  9.8 \text{m/s}^2\cdot 20 \text{ m} = 98 \text{ J}
 
-  .. figure:: ./myndir/kraftar/asta.svg
+  Rétt áður en steinninn skellur á yfirborði jarðarinnar í :math:`0` metra hæð er stöðuorkan orðin að núlli (:math:`U_{grav,2}=0`), en steinninn er á fleygiferð.
+  Öll stöðuorka steinsins í upphafi er nú orðin að hreyfiorku.
+  Því er:
+
+  .. math::
+    \begin{aligned}
+    K_1+U_1&=K_2+U_2\\
+    0+ U_1&=K_2+0 \\
+    U_1 &= \frac{1}{2}mv_2^2 \\
+    2 \cdot U_1 / m &= v_2^2 \\
+    v&=\sqrt{2\cdot98\text{ J} /20\text{ kg}} = 3.13 \text{m/s}
+    \end{aligned}
+
+  .. figure:: ./myndir/vinna/steinn.svg
     :align: center
-    :width: 60%
+    :width: 40%
 
-  **(b)** Þar sem kassinn fær hröðun er heildarkrafturinn á hann ekki lengur núll.
-  Togkraftur Ástu er núna meiri en núningskrafturinn.
-  Þetta eru þó ekki allir kraftarnir sem verka í þessum aðstæðum. Samkvæmt 3. lögmáli Newtons koma kraftar í pörum jafnsstórra og andstæðra krafta.
-  Þegar Ásta togar í kassann verður því líka til kraftur jafnstór togkraftinum sem verkar á hana.
-  Ef hún stæði á sleipu gólfi myndi hún fá hröðun í átt að kassanum (og sennilega detta á hausinn), því núningskraftur hennar við gólfið yrði ekki nægur til að vega á móti togkraftinum.
+Vinnu-hreyfiorkusetningin
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  Því eru fjórir kraftar sem verka á Ásta og kassann: togkraftapar á milli þeirra og núningskraftur undir þeim báðum.
-  Auk þess, auðvitað, verða bæði Ásta og kassinn fyrir þyngdarkrafti og normalkrafti frá gólfinu.
-
-  .. figure:: ./myndir/kraftar/asta2.svg
-    :align: center
-    :width: 60%
+Ef einhver kraftanna í kerfinu er ógeyminn, t.d. ef það er núningur eða annað viðnám, þá er orkan ekki varðveitt. Þá verður orkutap í kerfinu sem nemur vinnu ógeymna kraftsins, líkt og í vinnu-hreyfiorkusetningunni.
 
 .. tip::
-  Hokkípökkur með massa :math:`m = 0.15` kg rennur á svelli með hraðanum :math:`\overline{v}_0 = 5 \text{m/s}`  .
-  Núningskrafturinn milli hokkípökksins og svellsins er :math:`\overline{f}_{nún} = 0.3 \text{N}`.
+  Þegar krakki hoppar á trampólíni kemur margskonar orka fyrir. Þegar krakkinn er í loftinu býr hann yfir þyngdarstöðuorku, sem breytist í hreyfiorku þegar hann fellur í átt að trampólíninu. Þegar hann lendir á dúknum tognar á honum og kerfið býr yfir gormstöðuorku, sem aftur breytist í hreyfiorku þegar krakkinn skýst aftur upp í loft.
 
-  Hvaða kraftar verka á pökkinn?
-  Hversu langt rennur pökkurinn áður en hann stöðvast?
+  Núningur í trampólíninu og loftmótstaða veldur því að þessar þrjár orkutegundir eru ekki alveg varðveittar, heldur vinnur núningurinn vinnu. Samkvæmt vinnu-hreyfiorkusetningunni mun hreyfiorka krakkans minnka, þ.e. hraði hans á leiðinni upp í loftið mun minnka og þar af leiðandi mun hann ekki komast jafn hátt (þyngdarstöðuorkan verður ekki jafn mikil og í fyrra hoppi). Að lokum mun krakkinn hætta að skoppa, nema hann láti fæturna vinna vinnu sem vegur á móti vinnu núningsins.
 
-  **Lausn**
+---------------------
 
-  Byrjum á að teikna kraftamynd.
+.. eqt:: daemi-orkuvard
 
-  .. figure:: ./myndir/kraftar/hockey.svg
-    :width: 70%
+  **Æfingadæmi** Massinn :math:`m=2.00\text{ kg}` hvílir á (núningslausu) borði fyrir framan gorm sem hefur gormstuðulinn :math:`k=100\text{ N/m}`. Það er búið að þjappa gorminn saman um :math:`x=30.0 \text{ cm}`. Hver verður upphafshraði massans þegar gormurinn þenst aftur út?
+
+  .. figure:: ./myndir/vinna/gormorka.svg
     :align: center
-
-  Pökkurinn verður fyrir þyndarkrafti :math:`f_g` og normalkrafti :math:`f_n` vegna hans, auk núningskraftsins :math:`f_{nún}` sem bendir gegn hreyfingunni af því hann er að reyna að hægja á pökknum.
-
-  Upphafshraðinn :math:`v_0` er merktur inn rauður.
-
-  Þyngdarkrafturinn og normalkrafturinn eru jafnstórir og gagnstefna og stytta því hvorn annan út.
-  Það er því engin hreyfing í :math:`y` stefnu og við megum gera ráð fyrir að það muni vera þannig áfram.
-
-  Það er því bara hreyfing í eina stefnu, eftir x-ásnum, svo við getum sleppt hinum víddum kraftanna.
-  Þá þarf ekki að pæla í stefnu vigranna, þeir sem benda í eina átt fá jákvætt gildi, en þeir sem benda í hina fá neikvætt gildi.
-  Höfum því hraðann jákvæðan og núningskrafturinn neikvæðan.
-
-  Látum pökkinn byrja í miðju hnitakerfisins, svo :math:`x_0 = 0` .
-  Notum annað lögmál Newtons til að finna hröðunina sem núningskrafturinn gefur pökknum, þ.e. hve mikið hann hægir á honum.
-
-  .. math::
-    f_{nún} = m a \Rightarrow a = \frac{f_{nún}}{m} = \frac{-0.3 \text{N}}{0.15 \text{kg}} = -2 \text{m/s}^2
-
-  Takið eftir að hröðunin er neikvæð eins og krafturinn.
-  Notum nú eina af :ref:`hreyfijöfnunum <s.hreyfijofnur>` til að finna lokastaðsetninguna:
-
-  .. math::
-    v^2 - v_0^2 &= 2 a (x - x_0) \\
-    (0 \text{m/s})^2 - (5 \text{m/s})^2 &= 2(-2\text{m/s}^2)(x-0\text{m}) \\
-    \Rightarrow x &= \frac{25 \text{m}^2\text{/s}^2}{4\text{m/s}^2}   = 6.25 \text{m}
-
-  Pökkurinn rennur því  :math:`6.25` m á svellinu áður en hann stöðvast vegna núningskraftsins.
+    :width: 40%
 
 
-.. tip::
-  :math:`5.00\text{kg}` kassi liggur kyrrstæður á skáplani með hallann :math:`\theta = 30°` .
-  Hver þarf núningskrafturinn á milli kassans og skáplansins (:math:`f_{nún}`) að vera til þess að kassinn haldist kyrr?
+  A) :eqt:`I` :math:`1.07 \text{ m/s}^2`
 
-  **Lausn**
+  #) :eqt:`C` :math:`2.12 \text{ m/s}`
 
-  Byrjum á að teikna kraftamynd.
+  #) :eqt:`I` :math:`212 \text{ m/s}`
 
-  .. figure:: ./myndir/kraftar/skaplan.svg
-    :width: 70%
-    :align: center
-
-  Á kassann verkar þyngdarkraftur :math:`F_g` beint niður.
-  Normalkrafturinn :math:`f_n` ýtir á kassann, hornrétt af yfirborði skáplansins.
-  Núningskrafturinn :math:`f_{nún}` liggur samsíða skáplaninu, upp eftir því.
-  Við teiknum alla kraftana út frá miðju kassans.
-
-  Nú er komið að því að við veljum okkur hnitakerfi en þar eru tveir góðir kostir. Við getum annað hvort búið til hnitakerfi "eins og venjulega", þ.e. þannig að :math:`x`-ás hnitakerfisins sé láréttur og :math:`y`-ásinn sé samsíða þyngdarhröðuninni, svona:
-
-  .. figure:: ./myndir/kraftar/skaplanhornrett.svg
-    :width: 70%
-    :align: center
-
-  Hér er þyngdarkrafturinn samsíða :math:`y` - ásnum en normal- og núningskraftarnir eru hvorki samsíða :math:`x`- né :math:`y`- ásnum.
-  Hinn valmöguleikinn er að snúa hnitakerfinu þannig að :math:`x`-ásinn sé samsíða skápaninu og :math:`y`-ásinn hornrétt á hann, svona:
-
-  .. figure:: ./myndir/kraftar/skaplanhnit.svg
-    :width: 70%
-    :align: center
-
-  Hér er normalkrafturinn :math:`f_n` samsíða :math:`y`- ásnum og núningskrafturinn samsíða :math:`x`-ásnum en þyngdarkrafturinn samsíða hvorugum.
-
-  Markmið okkar í þessu dæmi er að skoða hvernig kraftarnir verka á hlutinn og við viljum að það sé enginn nettókraftur á kassann. Það þýðir að við viljum að þegar við leggjum saman kraftavigrana þá sé niðurstaðan núll, þ.e. að þættir vigranna í hverja stefnu hnitakerfisins styttist út. Við veljum að hafa hnitakerfið á ská, því þá þurfum við bara að liða þyngdarkraftinn í stað þess að liða bæði núningskraftinn og normalkraftinn.
-
-  Liðum þyngdarkraftinn í þann hluta sem er samsíða skáplaninu, :math:`F_{g,x}` og þann sem er hornrétt á það, :math:`F_{g,y}`.
-
-  .. figure:: ./myndir/kraftar/skaplanhnit2.svg
-    :width: 70%
-    :align: center
-
-
-  Til þess að kassinn haldist kyrr þurfa samanlagðir kraftar í hvora stefnu, :math:`x` - og :math:`y`, að vera núll.
-  Því þarf normalkrafturinn að vera jafnstór :math:`y` - þætti þyngdarkraftsins og núningskrafturinn að vera jafnstór :math:`x` - þættinum.
-
-  Þyngdarkrafturinn er:
-
-  .. math::
-    F_g = m \cdot g = 5.00 \text{kg} \cdot 9.80 \text{m/s} = 49.0 \text{N}
-
-  Þá er þáttur hans samsíða skáplaninu:
-
-  .. math::
-    F_{g,x} = F_g \sin{\theta} = 49.0 \text{N} \cdot \sin{30°} = 24.5 \text{N}
-
-  Þar með hlýtur núningskrafturinn að vera :math:`f_{nún} = F_{g,x}= 24.5 \text{N}` .
-
-  Að sama skapi er normalkrafturinn jafnstór :math:`y` - þætti þyngdarkraftsins:
-
-  .. math::
-
-  	f_n = F_{g,y} = F_g \cos{\theta} 49.0 \text{N} \cdot \cos(30°) = 42.4 \text{N}
-
-.. note::
-  Þyngdarkrafturinn bendir *alltaf* beint niður til jarðar. Normalkraftur milli hluta verkar alltaf hornrétt á snertiflöt hlutanna. Núningskraftur er alltaf hornréttur á normalkraftinn.
-
-Gormkraftur
------------
-
-Gormar, eða aðrir teygjanlegir hlutir, koma gjarnan fyrir í eðlisfræðilegum kerfum. Hver gormur á sér einkennandi *gormstuðul* (e. spring constant) :math:`k` sem segir til um hve erfitt það er að teygja gorminn umfram náttúrulega lengd sína. Til þess að teygja gorm með gormstuðul :math:`k` um vegalengdina :math:`x` þarf kraftinn:
-
-.. math::
-
-	F_x=kx
-
-Við getum séð frá jöfnunni að einingin fyrir :math:`k` er :math:`\text{N/m}`. Þessi jafna er oft kölluð *Lögmál Hookes* og hún gildir fyrir flesta gorma, svo lengi sem við erum ekki að teygja þá of mikið.
-
-.. note::
-  Lögmál Hookes gildir fyrir gorma, hvort sem verið er að þjappa þá eða teygja.
-
--------------------
-
-.. eqt:: daemi-kragorm
-
-  **Æfingadæmi** Hversu mikið lengist gormur með gormstuðul :math:`k=100 \text{ N/m}` saman þegar massinn :math:`m=2.00\text{ kg}` er hengdur í hann?
-
-  .. figure:: ./myndir/kraftar/gormur.svg
-    :width: 45%
-    :align: center
-
-  #) :eqt:`I` :math:`20.4\text{ m}`
-
-  #) :eqt:`I` :math:`5.10 \text{ m}`
-
-  #) :eqt:`C` :math:`0.196 \text{m}`
+  #) :eqt:`I` :math:`0.342 \text{ m/s}^2`
 
   .. eqt-solution::
 
-    Þyngdarhröðun jarðar dregur í massann :math:`m` með krafti :math:`F_g=mg`. Þá lengist gormurinn um :math:`x` og togar í massann í hina áttina með krafti :math:`F_x=kx`. Nú er massinn í kraftajafnvægi (fyrst hann er kyrr) og því er :math:`F_g=F_x`:
+    Þegar gorminum var þjappað saman þurfti til þess orkuna :math:`U_{el}= \frac{1}{2}kx^2` en þegar hann þenst út aftur losnar sú orka aftur. Orkan ferður að hreyfiorku massans: :math:`K=\frac{1}{2}mv^2` og því fæst:
 
     .. math::
       \begin{aligned}
-        F_g&=F_x\\
-        mg&=kx \\
-        x&=\frac{mg}{k} =\frac{2.00\text{kg}\cdot 9.80 \text{m/s}^2}{100\text{N/m}} \\
-        x&= 0.196 \text{m}
+        K&=U_{el} \\
+        \frac{1}{2}mv^2 &= \frac{1}{2}kx^2 \\
+        v^2 &= \frac{kx^2}{m} \\
+        v &=\sqrt{ \frac{kx^2}{m}} = 2.12 \text{m/s}
       \end{aligned}
 
--------------------
-
-Vægi
-----
-
-*Vægi* (e. torque) er margfeldi vogararms og krafts hornrétt á arminn. Það er oft táknað með :math:`M` eða gríska stafnum :math:`\tau` (tá) og einingarnar eru Newton metrar :math:`1\text{N m}=1 \frac{\text{N m}^2}{\text{s}^2}`.
-
-.. math::
-
-	M=F\cdot r \qquad  \qquad  M_{tot} = \sum_i M_i= \sum_i F_i\cdot r_i
-
-Þar sem :math:`r` er fjarlægð kraftsins :math:`F` frá tilteknum punkt, sem reikna á vægið um.
-Vægi er skilgreint sem jákvætt ef það veldur hreyfingu rangsælis.
-
-.. figure:: ./myndir/kraftar/vaegiskilgr.svg
-  :align: center
-  :width: 60%
-
-Hér má sjá tvo jafnstóra krafta, :math:`F_1` og :math:`F_2`, verka á sitt hvorn endann á stöng sem hvílir á veltipunkti (grái þríhyrningurinn).
-Báðir kraftarnir gefa jákvætt vægi á stönguna um veltipunktinn, en vægið frá :math:`F_2` er meira vegna þess að armurinn er lengri, :math:`r_2>r_1`. Heildarvægið um veltipunktinn er þá summan:
-
-.. math::
-
-	M_{tot} = \sum_i M_i = M_1 + M_2 = F_1r_1+F_2r_2
-
-.. tip::
-  Kassi er fastur á enda 6 metra langrar stangar og verkar þar með kraftinum :math:`F_k=500\text{ N}`. Stöngin getur velt um punkt, :math:`A`, einum metra frá kassanum. Hve stór þarf krafturinn :math:`F` að vera til halda kassanum kyrrum?
-
-  .. figure:: ./myndir/kraftar/vog.svg
-    :align: center
-    :width: 60%
-
-  **Lausn**
-
-  Krafturinn :math:`F_k` veldur jákvæðu vægi um punktinn A, en :math:`F` veldur neikvæðu vægi. Kassinn mun hreyfast upp ef vægið frá :math:`F` er jafn stórt og vægið frá :math:`F_k`, þ.e. að heildarvægið um punktinn :math:`A` þarf að vera núll.
-
-  Reiknum nú heildarvægið um punktinn :math:`A` :
-
-  .. math::
-    \sum M_A = F_k \cdot 1 \text{ m} + (-F)\cdot 5 \text m = 500 \text{N m}-F\cdot 5\text{ m}
-
-  Heildarvægið er núll ef :math:`500 \text{N m}=F \cdot 5\text{ m}` þ.e.
-
-  .. math::
-    F=\frac{500 \text{N m}}{5\text{m}} = 100 \text{N}
+    Munið að breyta :math:`\text{cm}` í metra í útreikningunum!
