@@ -101,7 +101,7 @@ def builder_inited(app):
 
 def setup(app):
     try:
-        #        app.add_html_math_renderer('katex.py', html_visit_math, html_visit_displaymath)
+        #app.add_html_math_renderer('katex.py', html_visit_math, html_visit_displaymath)
         mathbase_setup(app, (html_visit_math, None), (html_visit_displaymath, None))
     except ExtensionError:
         raise ExtensionError('katex.katex: other math package is already loaded')

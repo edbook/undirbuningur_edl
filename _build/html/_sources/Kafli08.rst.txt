@@ -29,38 +29,37 @@ Ef tilraunir fella kenningu er hægt að þurrka hana af borðinu og hefja leit 
 
 ---------------
 
-Ein tilraunanna sem framkvæmd er verklega hluta Eðlisfræði 1 snýst um einfalda pendúla og hreyfingu þeirra.
+Ein algengasta tilraum í verklegri eðlisfræði hjá byrjendum snýst um einfalda pendúla og hreyfingu þeirra.
 Það er vel þekkt fyrirbæri og hefur verið rannsakað í þaula.
 Með mörgum tilraunum og úrvinnslu gagnanna var hægt að smíða líkan sem lýsir raunveruleikanum svo vel að hægt er að tala um vísindalegan sannleik.
-Þið fáið svo tækifæri til að spreyta ykkur á prófun þessa líkans og í leiðinni æfa ykkur í vísindalegum aðferðum við tilraunir.
 
-Verklegar æfingar
------------------
-Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.
-Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma. Í kennslustofum ætluðum verklegum tilraunum eru strangari reglur um umgengni, t.d. um neyslu matar og drykkja, sem öllum ber að kynna sér og fylgja.
-Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir. Að tilrauninni lokinni þarf hópurinn að klára vinnubókina áður en henni er síðan skilað til yfirferðar hjá kennara.
-
-`Þetta skjal <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ fjallar um meðferð og úrvinnslu gagna og er þess virði að lesa.
-Á heimasvæði `Martins Swift <https://notendur.hi.is/~martin/e0/>`_ má nálgast allskonar ítarefni um verklegar tilraunir.
-
-Verkbækur
----------
-Hver hópur þarf að halda vinnubók yfir allar tilraunirnar, þar skal safna saman öllu sem við kemur tilraununum.
-Rúðustrikuð stílabók, A4 eða A5, hentar vel í verkið.
-Gögn sem eru skráð á laus blöð skal hefta eða líma inn í bókina.
-
-Helstu efnisatriði vinnubókar fyrir hverja tilraun eru:
-
-* Skilgreining á tilraun og aðstæðum ásamt rissmynd af uppstillingu
-* Skilgreining og algebraisk nöfn á allar mældar og afleiddar stærðir
-* Frumgögn
-* Gagnavinnsla, grafisk framsetning gagna og túlkun
-* Samanburður við líkön ef við á og ályktun um samræmi/misræmi mælinga og líkans.
-* Slóðin frá frumgögnum til ályktana þarf alltaf að vera skýr og óslitin.
-
-Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé vel unnin og skýr.
-
-`Meira um verkbækur <https://notendur.hi.is/~martin/e0/verkbok/>`_ af síðu Martins.
+.. Verklegar æfingar
+.. -----------------
+.. Í námskeiðunum *Eðlisfræði 1V*, *Verklegri eðlisfræði 1R* og *Eðlisfræði B* verða framkvæmdar nokkrar tilraunir.
+.. Miklu máli skiptir að lesa verkseðilinn fyrirfram, mæta vel undirbúin/n og á réttum tíma. Í kennslustofum ætluðum verklegum tilraunum eru strangari reglur um umgengni, t.d. um neyslu matar og drykkja, sem öllum ber að kynna sér og fylgja.
+.. Verkseðlar og upplýsingar um röðun nemenda í hópa munu birtast á heimasvæði Ara Ólafsonar í upphafi kennslumisseris ( `Eðlisfræði 1 <https://notendur.hi.is/ario/e1.html>`_ , `Eðlisfræði B <https://notendur.hi.is/ario/eb.html>`_ ). Yfirleitt er unnið í 3-4 manna hópum og framkvæmd tilraunanna tekur 3-4 klukkustundir. Að tilrauninni lokinni þarf hópurinn að klára vinnubókina áður en henni er síðan skilað til yfirferðar hjá kennara.
+..
+.. `Þetta skjal <https://notendur.hi.is/ario/e1/e1lec.pdf>`_ fjallar um meðferð og úrvinnslu gagna og er þess virði að lesa.
+.. Á heimasvæði `Martins Swift <https://notendur.hi.is/~martin/e0/>`_ má nálgast allskonar ítarefni um verklegar tilraunir.
+..
+.. Verkbækur
+.. ---------
+.. Hver hópur þarf að halda vinnubók yfir allar tilraunirnar, þar skal safna saman öllu sem við kemur tilraununum.
+.. Rúðustrikuð stílabók, A4 eða A5, hentar vel í verkið.
+.. Gögn sem eru skráð á laus blöð skal hefta eða líma inn í bókina.
+..
+.. Helstu efnisatriði vinnubókar fyrir hverja tilraun eru:
+..
+.. * Skilgreining á tilraun og aðstæðum ásamt rissmynd af uppstillingu
+.. * Skilgreining og algebraisk nöfn á allar mældar og afleiddar stærðir
+.. * Frumgögn
+.. * Gagnavinnsla, grafisk framsetning gagna og túlkun
+.. * Samanburður við líkön ef við á og ályktun um samræmi/misræmi mælinga og líkans.
+.. * Slóðin frá frumgögnum til ályktana þarf alltaf að vera skýr og óslitin.
+..
+.. Ef skrifa á skýrslu síðar um tilraunina er mikilvægt að vinnubókin sé vel unnin og skýr.
+..
+.. `Meira um verkbækur <https://notendur.hi.is/~martin/e0/verkbok/>`_ af síðu Martins.
 
 Óvissureikningar
 ----------------
@@ -74,7 +73,7 @@ Látum :math:`A \pm \Delta A` og :math:`B \pm \Delta B` vera mælistærðir með
 ---------------
 
 Þegar :math:`A \pm \Delta A` er margfölduð með fastanum
-:math:`k` þá fæst að
+:math:`k` þá fæst að:
 
 .. math::
 	k \cdot \left( A \pm \Delta A  \right)= kA \pm k\Delta A
